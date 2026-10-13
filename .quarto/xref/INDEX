@@ -1,0 +1,92 @@
+{
+  "index.qmd": {
+    "index.html": "1e26b2d0"
+  },
+  "chapters/chapter-01.qmd": {
+    "chapter-01.html": "86c883e9"
+  },
+  "chapters/chapter-02.qmd": {
+    "chapter-02.html": "5c1c7b22"
+  },
+  "chapters/chapter-03.qmd": {
+    "chapter-03.html": "2592110f"
+  },
+  "chapters/chapter-04.qmd": {
+    "chapter-04.html": "badfcd00"
+  },
+  "chapters/chapter-05.qmd": {
+    "chapter-05.html": "e9bbca32"
+  },
+  "chapters/chapter-06.qmd": {
+    "chapter-06.html": "10944b5b"
+  },
+  "chapters/chapter-07.qmd": {
+    "chapter-07.html": "0e3badcc"
+  },
+  "chapters/chapter-08.qmd": {
+    "chapter-08.html": "ec3dda99"
+  },
+  "chapters/chapter-09.qmd": {
+    "chapter-09.html": "4afd18f9"
+  },
+  "chapters/chapter-10.qmd": {
+    "chapter-10.html": "9e3b8b44"
+  },
+  "chapters/chapter-11.qmd": {
+    "chapter-11.html": "a247a340"
+  },
+  "chapters/chapter-12.qmd": {
+    "chapter-12.html": "d2b0ae23"
+  },
+  "chapters/chapter-13.qmd": {
+    "chapter-13.html": "270142d2"
+  },
+  "chapters/chapter-14.qmd": {
+    "chapter-14.html": "5e257ea5"
+  },
+  "chapters/chapter-15.qmd": {
+    "chapter-15.html": "4d6de740"
+  },
+  "chapters/chapter-16.qmd": {
+    "chapter-16.html": "177d5385"
+  },
+  "chapters/chapter-17.qmd": {
+    "chapter-17.html": "6fc85cc5"
+  },
+  "chapters/chapter-18.qmd": {
+    "chapter-18.html": "643ed95a"
+  },
+  "chapters/chapter-19.qmd": {
+    "chapter-19.html": "0e1d026e"
+  },
+  "chapters/chapter-20.qmd": {
+    "chapter-20.html": "a16d3a4f"
+  },
+  "chapters/chapter-21.qmd": {
+    "chapter-21.html": "e90ce411"
+  },
+  "chapters/chapter-22.qmd": {
+    "chapter-22.html": "65373298"
+  },
+  "chapters/chapter-23.qmd": {
+    "chapter-23.html": "da081619"
+  },
+  "chapters/chapter-24.qmd": {
+    "chapter-24.html": "f4781c33"
+  },
+  "chapters/chapter-25.qmd": {
+    "chapter-25.html": "906edd67"
+  },
+  "datasets.qmd": {
+    "datasets.html": "9922af66"
+  },
+  "exercises.qmd": {
+    "exercises.html": "63553f47"
+  },
+  "data-policy.qmd": {
+    "data-policy.html": "e31f2ff6"
+  },
+  "references.qmd": {
+    "references.html": "2e63d335"
+  }
+}

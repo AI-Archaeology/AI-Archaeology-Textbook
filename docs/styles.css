@@ -1,0 +1,5 @@
+/* Restrained academic book styling */
+:root { --bs-primary: #176b82; }
+body { line-height: 1.75; }
+#title-block-header .title { font-weight: 650; }
+.sidebar-title { font-weight: 650; }

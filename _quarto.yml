@@ -1,0 +1,68 @@
+project:
+  type: book
+  output-dir: docs
+  resources:
+    - data/
+
+book:
+  title: "AI考古学通论"
+  subtitle: "数据、案例与实践 | Data, Cases & Exercises"
+  author: "教材编写组（待确认）"
+  repo-url: https://github.com/ZCJing2022/AI-Archaeology-Textbook
+  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+    - part: "第一编 认识AI考古学"
+      chapters:
+        - chapters/chapter-01.qmd
+        - chapters/chapter-02.qmd
+        - chapters/chapter-03.qmd
+        - chapters/chapter-04.qmd
+    - part: "第二编 方法基础：从统计到机器学习"
+      chapters:
+        - chapters/chapter-05.qmd
+        - chapters/chapter-06.qmd
+        - chapters/chapter-07.qmd
+        - chapters/chapter-08.qmd
+    - part: "第三编 解决考古问题"
+      chapters:
+        - chapters/chapter-09.qmd
+        - chapters/chapter-10.qmd
+        - chapters/chapter-11.qmd
+        - chapters/chapter-12.qmd
+        - chapters/chapter-13.qmd
+        - chapters/chapter-14.qmd
+        - chapters/chapter-15.qmd
+        - chapters/chapter-16.qmd
+        - chapters/chapter-17.qmd
+        - chapters/chapter-18.qmd
+        - chapters/chapter-19.qmd
+        - chapters/chapter-20.qmd
+    - part: "第四编 生成式AI与考古知识生产"
+      chapters:
+        - chapters/chapter-21.qmd
+        - chapters/chapter-22.qmd
+    - part: "第五编 研究实践与学术责任"
+      chapters:
+        - chapters/chapter-23.qmd
+        - chapters/chapter-24.qmd
+        - chapters/chapter-25.qmd
+    - part: "配套资源"
+      chapters:
+        - datasets.qmd
+        - exercises.qmd
+        - data-policy.qmd
+        - references.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    number-sections: true
+    code-copy: true
+    link-external-newwindow: true
+
+lang: zh
+execute:
+  freeze: auto

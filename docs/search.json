@@ -1,0 +1,1431 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI考古学通论",
+    "section": "",
+    "text": "欢迎\n《AI考古学通论》配套数据、案例与实践网站（筹建中）。\n本站面向中国高校考古学及相关专业本科生，侧重理解、比较和评价AI与传统计算方法，而非要求编程开发。\n请注意： 网站目前是教学资源框架。案例、教学数据、引用和许可均应在发布前核验。\n从左侧目录选择章节，或访问数据集目录与实践活动。",
+    "crumbs": [
+      "欢迎"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-01.html",
+    "href": "chapters/chapter-01.html",
+    "title": "1  人工智能与考古学：机遇、能力与边界",
+    "section": "",
+    "text": "1.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>人工智能与考古学：机遇、能力与边界</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-01.html#考古问题与方法",
+    "href": "chapters/chapter-01.html#考古问题与方法",
+    "title": "1  人工智能与考古学：机遇、能力与边界",
+    "section": "1.2 考古问题与方法",
+    "text": "1.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>人工智能与考古学：机遇、能力与边界</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-01.html#案例与数据",
+    "href": "chapters/chapter-01.html#案例与数据",
+    "title": "1  人工智能与考古学：机遇、能力与边界",
+    "section": "1.3 案例与数据",
+    "text": "1.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>人工智能与考古学：机遇、能力与边界</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-01.html#何时用何时不用",
+    "href": "chapters/chapter-01.html#何时用何时不用",
+    "title": "1  人工智能与考古学：机遇、能力与边界",
+    "section": "1.4 何时用、何时不用",
+    "text": "1.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>人工智能与考古学：机遇、能力与边界</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-01.html#动手试试选做",
+    "href": "chapters/chapter-01.html#动手试试选做",
+    "title": "1  人工智能与考古学：机遇、能力与边界",
+    "section": "1.5 动手试试（选做）",
+    "text": "1.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>人工智能与考古学：机遇、能力与边界</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-02.html",
+    "href": "chapters/chapter-02.html",
+    "title": "2  从计量考古到人工智能：考古学的计算转向",
+    "section": "",
+    "text": "2.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>从计量考古到人工智能：考古学的计算转向</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-02.html#考古问题与方法",
+    "href": "chapters/chapter-02.html#考古问题与方法",
+    "title": "2  从计量考古到人工智能：考古学的计算转向",
+    "section": "2.2 考古问题与方法",
+    "text": "2.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>从计量考古到人工智能：考古学的计算转向</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-02.html#案例与数据",
+    "href": "chapters/chapter-02.html#案例与数据",
+    "title": "2  从计量考古到人工智能：考古学的计算转向",
+    "section": "2.3 案例与数据",
+    "text": "2.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>从计量考古到人工智能：考古学的计算转向</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-02.html#何时用何时不用",
+    "href": "chapters/chapter-02.html#何时用何时不用",
+    "title": "2  从计量考古到人工智能：考古学的计算转向",
+    "section": "2.4 何时用、何时不用",
+    "text": "2.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>从计量考古到人工智能：考古学的计算转向</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-02.html#动手试试选做",
+    "href": "chapters/chapter-02.html#动手试试选做",
+    "title": "2  从计量考古到人工智能：考古学的计算转向",
+    "section": "2.5 动手试试（选做）",
+    "text": "2.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>从计量考古到人工智能：考古学的计算转向</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-03.html",
+    "href": "chapters/chapter-03.html",
+    "title": "3  从考古资料到可计算数据",
+    "section": "",
+    "text": "3.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-03.html#考古问题与方法",
+    "href": "chapters/chapter-03.html#考古问题与方法",
+    "title": "3  从考古资料到可计算数据",
+    "section": "3.2 考古问题与方法",
+    "text": "3.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-03.html#案例与数据",
+    "href": "chapters/chapter-03.html#案例与数据",
+    "title": "3  从考古资料到可计算数据",
+    "section": "3.3 案例与数据",
+    "text": "3.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-03.html#何时用何时不用",
+    "href": "chapters/chapter-03.html#何时用何时不用",
+    "title": "3  从考古资料到可计算数据",
+    "section": "3.4 何时用、何时不用",
+    "text": "3.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-03.html#动手试试选做",
+    "href": "chapters/chapter-03.html#动手试试选做",
+    "title": "3  从考古资料到可计算数据",
+    "section": "3.5 动手试试（选做）",
+    "text": "3.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-04.html",
+    "href": "chapters/chapter-04.html",
+    "title": "4  考古数据的局限：偏差、缺失与不确定性",
+    "section": "",
+    "text": "4.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>考古数据的局限：偏差、缺失与不确定性</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-04.html#考古问题与方法",
+    "href": "chapters/chapter-04.html#考古问题与方法",
+    "title": "4  考古数据的局限：偏差、缺失与不确定性",
+    "section": "4.2 考古问题与方法",
+    "text": "4.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>考古数据的局限：偏差、缺失与不确定性</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-04.html#案例与数据",
+    "href": "chapters/chapter-04.html#案例与数据",
+    "title": "4  考古数据的局限：偏差、缺失与不确定性",
+    "section": "4.3 案例与数据",
+    "text": "4.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>考古数据的局限：偏差、缺失与不确定性</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-04.html#何时用何时不用",
+    "href": "chapters/chapter-04.html#何时用何时不用",
+    "title": "4  考古数据的局限：偏差、缺失与不确定性",
+    "section": "4.4 何时用、何时不用",
+    "text": "4.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>考古数据的局限：偏差、缺失与不确定性</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-04.html#动手试试选做",
+    "href": "chapters/chapter-04.html#动手试试选做",
+    "title": "4  考古数据的局限：偏差、缺失与不确定性",
+    "section": "4.5 动手试试（选做）",
+    "text": "4.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>考古数据的局限：偏差、缺失与不确定性</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-05.html",
+    "href": "chapters/chapter-05.html",
+    "title": "5  从统计推断到机器学习",
+    "section": "",
+    "text": "5.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>从统计推断到机器学习</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-05.html#考古问题与方法",
+    "href": "chapters/chapter-05.html#考古问题与方法",
+    "title": "5  从统计推断到机器学习",
+    "section": "5.2 考古问题与方法",
+    "text": "5.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>从统计推断到机器学习</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-05.html#案例与数据",
+    "href": "chapters/chapter-05.html#案例与数据",
+    "title": "5  从统计推断到机器学习",
+    "section": "5.3 案例与数据",
+    "text": "5.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>从统计推断到机器学习</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-05.html#何时用何时不用",
+    "href": "chapters/chapter-05.html#何时用何时不用",
+    "title": "5  从统计推断到机器学习",
+    "section": "5.4 何时用、何时不用",
+    "text": "5.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>从统计推断到机器学习</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-05.html#动手试试选做",
+    "href": "chapters/chapter-05.html#动手试试选做",
+    "title": "5  从统计推断到机器学习",
+    "section": "5.5 动手试试（选做）",
+    "text": "5.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>从统计推断到机器学习</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html",
+    "href": "chapters/chapter-06.html",
+    "title": "6  经典机器学习方法",
+    "section": "",
+    "text": "6.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html#考古问题与方法",
+    "href": "chapters/chapter-06.html#考古问题与方法",
+    "title": "6  经典机器学习方法",
+    "section": "6.2 考古问题与方法",
+    "text": "6.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html#案例与数据",
+    "href": "chapters/chapter-06.html#案例与数据",
+    "title": "6  经典机器学习方法",
+    "section": "6.3 案例与数据",
+    "text": "6.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html#何时用何时不用",
+    "href": "chapters/chapter-06.html#何时用何时不用",
+    "title": "6  经典机器学习方法",
+    "section": "6.4 何时用、何时不用",
+    "text": "6.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html#动手试试选做",
+    "href": "chapters/chapter-06.html#动手试试选做",
+    "title": "6  经典机器学习方法",
+    "section": "6.5 动手试试（选做）",
+    "text": "6.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-07.html",
+    "href": "chapters/chapter-07.html",
+    "title": "7  深度学习、基础模型与小样本问题",
+    "section": "",
+    "text": "7.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>深度学习、基础模型与小样本问题</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-07.html#考古问题与方法",
+    "href": "chapters/chapter-07.html#考古问题与方法",
+    "title": "7  深度学习、基础模型与小样本问题",
+    "section": "7.2 考古问题与方法",
+    "text": "7.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>深度学习、基础模型与小样本问题</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-07.html#案例与数据",
+    "href": "chapters/chapter-07.html#案例与数据",
+    "title": "7  深度学习、基础模型与小样本问题",
+    "section": "7.3 案例与数据",
+    "text": "7.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>深度学习、基础模型与小样本问题</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-07.html#何时用何时不用",
+    "href": "chapters/chapter-07.html#何时用何时不用",
+    "title": "7  深度学习、基础模型与小样本问题",
+    "section": "7.4 何时用、何时不用",
+    "text": "7.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>深度学习、基础模型与小样本问题</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-07.html#动手试试选做",
+    "href": "chapters/chapter-07.html#动手试试选做",
+    "title": "7  深度学习、基础模型与小样本问题",
+    "section": "7.5 动手试试（选做）",
+    "text": "7.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>深度学习、基础模型与小样本问题</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-08.html",
+    "href": "chapters/chapter-08.html",
+    "title": "8  模型评估、可解释性与科学可信度",
+    "section": "",
+    "text": "8.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>模型评估、可解释性与科学可信度</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-08.html#考古问题与方法",
+    "href": "chapters/chapter-08.html#考古问题与方法",
+    "title": "8  模型评估、可解释性与科学可信度",
+    "section": "8.2 考古问题与方法",
+    "text": "8.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>模型评估、可解释性与科学可信度</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-08.html#案例与数据",
+    "href": "chapters/chapter-08.html#案例与数据",
+    "title": "8  模型评估、可解释性与科学可信度",
+    "section": "8.3 案例与数据",
+    "text": "8.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>模型评估、可解释性与科学可信度</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-08.html#何时用何时不用",
+    "href": "chapters/chapter-08.html#何时用何时不用",
+    "title": "8  模型评估、可解释性与科学可信度",
+    "section": "8.4 何时用、何时不用",
+    "text": "8.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>模型评估、可解释性与科学可信度</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-08.html#动手试试选做",
+    "href": "chapters/chapter-08.html#动手试试选做",
+    "title": "8  模型评估、可解释性与科学可信度",
+    "section": "8.5 动手试试（选做）",
+    "text": "8.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>模型评估、可解释性与科学可信度</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-09.html",
+    "href": "chapters/chapter-09.html",
+    "title": "9  这是什么？器物与遗存的智能识别",
+    "section": "",
+    "text": "9.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>这是什么？器物与遗存的智能识别</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-09.html#考古问题与方法",
+    "href": "chapters/chapter-09.html#考古问题与方法",
+    "title": "9  这是什么？器物与遗存的智能识别",
+    "section": "9.2 考古问题与方法",
+    "text": "9.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>这是什么？器物与遗存的智能识别</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-09.html#案例与数据",
+    "href": "chapters/chapter-09.html#案例与数据",
+    "title": "9  这是什么？器物与遗存的智能识别",
+    "section": "9.3 案例与数据",
+    "text": "9.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>这是什么？器物与遗存的智能识别</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-09.html#何时用何时不用",
+    "href": "chapters/chapter-09.html#何时用何时不用",
+    "title": "9  这是什么？器物与遗存的智能识别",
+    "section": "9.4 何时用、何时不用",
+    "text": "9.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>这是什么？器物与遗存的智能识别</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-09.html#动手试试选做",
+    "href": "chapters/chapter-09.html#动手试试选做",
+    "title": "9  这是什么？器物与遗存的智能识别",
+    "section": "9.5 动手试试（选做）",
+    "text": "9.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>这是什么？器物与遗存的智能识别</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html",
+    "href": "chapters/chapter-10.html",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "",
+    "text": "10.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#考古问题与方法",
+    "href": "chapters/chapter-10.html#考古问题与方法",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.2 考古问题与方法",
+    "text": "10.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#案例与数据",
+    "href": "chapters/chapter-10.html#案例与数据",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.3 案例与数据",
+    "text": "10.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#何时用何时不用",
+    "href": "chapters/chapter-10.html#何时用何时不用",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.4 何时用、何时不用",
+    "text": "10.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#动手试试选做",
+    "href": "chapters/chapter-10.html#动手试试选做",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.5 动手试试（选做）",
+    "text": "10.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-11.html",
+    "href": "chapters/chapter-11.html",
+    "title": "11  是什么时候的？年代序列、贝叶斯模型与智能断代",
+    "section": "",
+    "text": "11.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>是什么时候的？年代序列、贝叶斯模型与智能断代</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-11.html#考古问题与方法",
+    "href": "chapters/chapter-11.html#考古问题与方法",
+    "title": "11  是什么时候的？年代序列、贝叶斯模型与智能断代",
+    "section": "11.2 考古问题与方法",
+    "text": "11.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>是什么时候的？年代序列、贝叶斯模型与智能断代</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-11.html#案例与数据",
+    "href": "chapters/chapter-11.html#案例与数据",
+    "title": "11  是什么时候的？年代序列、贝叶斯模型与智能断代",
+    "section": "11.3 案例与数据",
+    "text": "11.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>是什么时候的？年代序列、贝叶斯模型与智能断代</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-11.html#何时用何时不用",
+    "href": "chapters/chapter-11.html#何时用何时不用",
+    "title": "11  是什么时候的？年代序列、贝叶斯模型与智能断代",
+    "section": "11.4 何时用、何时不用",
+    "text": "11.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>是什么时候的？年代序列、贝叶斯模型与智能断代</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-11.html#动手试试选做",
+    "href": "chapters/chapter-11.html#动手试试选做",
+    "title": "11  是什么时候的？年代序列、贝叶斯模型与智能断代",
+    "section": "11.5 动手试试（选做）",
+    "text": "11.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>是什么时候的？年代序列、贝叶斯模型与智能断代</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-12.html",
+    "href": "chapters/chapter-12.html",
+    "title": "12  从哪里来？原料来源、产地与交换",
+    "section": "",
+    "text": "12.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>从哪里来？原料来源、产地与交换</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-12.html#考古问题与方法",
+    "href": "chapters/chapter-12.html#考古问题与方法",
+    "title": "12  从哪里来？原料来源、产地与交换",
+    "section": "12.2 考古问题与方法",
+    "text": "12.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>从哪里来？原料来源、产地与交换</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-12.html#案例与数据",
+    "href": "chapters/chapter-12.html#案例与数据",
+    "title": "12  从哪里来？原料来源、产地与交换",
+    "section": "12.3 案例与数据",
+    "text": "12.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>从哪里来？原料来源、产地与交换</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-12.html#何时用何时不用",
+    "href": "chapters/chapter-12.html#何时用何时不用",
+    "title": "12  从哪里来？原料来源、产地与交换",
+    "section": "12.4 何时用、何时不用",
+    "text": "12.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>从哪里来？原料来源、产地与交换</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-12.html#动手试试选做",
+    "href": "chapters/chapter-12.html#动手试试选做",
+    "title": "12  从哪里来？原料来源、产地与交换",
+    "section": "12.5 动手试试（选做）",
+    "text": "12.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>从哪里来？原料来源、产地与交换</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-13.html",
+    "href": "chapters/chapter-13.html",
+    "title": "13  遗址在哪里？遥感、物探与遗址发现",
+    "section": "",
+    "text": "13.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>遗址在哪里？遥感、物探与遗址发现</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-13.html#考古问题与方法",
+    "href": "chapters/chapter-13.html#考古问题与方法",
+    "title": "13  遗址在哪里？遥感、物探与遗址发现",
+    "section": "13.2 考古问题与方法",
+    "text": "13.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>遗址在哪里？遥感、物探与遗址发现</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-13.html#案例与数据",
+    "href": "chapters/chapter-13.html#案例与数据",
+    "title": "13  遗址在哪里？遥感、物探与遗址发现",
+    "section": "13.3 案例与数据",
+    "text": "13.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>遗址在哪里？遥感、物探与遗址发现</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-13.html#何时用何时不用",
+    "href": "chapters/chapter-13.html#何时用何时不用",
+    "title": "13  遗址在哪里？遥感、物探与遗址发现",
+    "section": "13.4 何时用、何时不用",
+    "text": "13.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>遗址在哪里？遥感、物探与遗址发现</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-13.html#动手试试选做",
+    "href": "chapters/chapter-13.html#动手试试选做",
+    "title": "13  遗址在哪里？遥感、物探与遗址发现",
+    "section": "13.5 动手试试（选做）",
+    "text": "13.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>遗址在哪里？遥感、物探与遗址发现</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-14.html",
+    "href": "chapters/chapter-14.html",
+    "title": "14  聚落与景观怎样组织？空间关系与景观解释",
+    "section": "",
+    "text": "14.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>聚落与景观怎样组织？空间关系与景观解释</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-14.html#考古问题与方法",
+    "href": "chapters/chapter-14.html#考古问题与方法",
+    "title": "14  聚落与景观怎样组织？空间关系与景观解释",
+    "section": "14.2 考古问题与方法",
+    "text": "14.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>聚落与景观怎样组织？空间关系与景观解释</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-14.html#案例与数据",
+    "href": "chapters/chapter-14.html#案例与数据",
+    "title": "14  聚落与景观怎样组织？空间关系与景观解释",
+    "section": "14.3 案例与数据",
+    "text": "14.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>聚落与景观怎样组织？空间关系与景观解释</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-14.html#何时用何时不用",
+    "href": "chapters/chapter-14.html#何时用何时不用",
+    "title": "14  聚落与景观怎样组织？空间关系与景观解释",
+    "section": "14.4 何时用、何时不用",
+    "text": "14.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>聚落与景观怎样组织？空间关系与景观解释</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-14.html#动手试试选做",
+    "href": "chapters/chapter-14.html#动手试试选做",
+    "title": "14  聚落与景观怎样组织？空间关系与景观解释",
+    "section": "14.5 动手试试（选做）",
+    "text": "14.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>聚落与景观怎样组织？空间关系与景观解释</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-15.html",
+    "href": "chapters/chapter-15.html",
+    "title": "15  古人怎样生活？生业、人骨与环境证据",
+    "section": "",
+    "text": "15.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>古人怎样生活？生业、人骨与环境证据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-15.html#考古问题与方法",
+    "href": "chapters/chapter-15.html#考古问题与方法",
+    "title": "15  古人怎样生活？生业、人骨与环境证据",
+    "section": "15.2 考古问题与方法",
+    "text": "15.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>古人怎样生活？生业、人骨与环境证据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-15.html#案例与数据",
+    "href": "chapters/chapter-15.html#案例与数据",
+    "title": "15  古人怎样生活？生业、人骨与环境证据",
+    "section": "15.3 案例与数据",
+    "text": "15.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>古人怎样生活？生业、人骨与环境证据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-15.html#何时用何时不用",
+    "href": "chapters/chapter-15.html#何时用何时不用",
+    "title": "15  古人怎样生活？生业、人骨与环境证据",
+    "section": "15.4 何时用、何时不用",
+    "text": "15.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>古人怎样生活？生业、人骨与环境证据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-15.html#动手试试选做",
+    "href": "chapters/chapter-15.html#动手试试选做",
+    "title": "15  古人怎样生活？生业、人骨与环境证据",
+    "section": "15.5 动手试试（选做）",
+    "text": "15.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>古人怎样生活？生业、人骨与环境证据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-16.html",
+    "href": "chapters/chapter-16.html",
+    "title": "16  器物怎样制作和使用？技术、工艺与微痕",
+    "section": "",
+    "text": "16.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>器物怎样制作和使用？技术、工艺与微痕</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-16.html#考古问题与方法",
+    "href": "chapters/chapter-16.html#考古问题与方法",
+    "title": "16  器物怎样制作和使用？技术、工艺与微痕",
+    "section": "16.2 考古问题与方法",
+    "text": "16.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>器物怎样制作和使用？技术、工艺与微痕</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-16.html#案例与数据",
+    "href": "chapters/chapter-16.html#案例与数据",
+    "title": "16  器物怎样制作和使用？技术、工艺与微痕",
+    "section": "16.3 案例与数据",
+    "text": "16.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>器物怎样制作和使用？技术、工艺与微痕</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-16.html#何时用何时不用",
+    "href": "chapters/chapter-16.html#何时用何时不用",
+    "title": "16  器物怎样制作和使用？技术、工艺与微痕",
+    "section": "16.4 何时用、何时不用",
+    "text": "16.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>器物怎样制作和使用？技术、工艺与微痕</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-16.html#动手试试选做",
+    "href": "chapters/chapter-16.html#动手试试选做",
+    "title": "16  器物怎样制作和使用？技术、工艺与微痕",
+    "section": "16.5 动手试试（选做）",
+    "text": "16.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>器物怎样制作和使用？技术、工艺与微痕</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-17.html",
+    "href": "chapters/chapter-17.html",
+    "title": "17  碎片怎样复原？拼合、缀合与数字重建",
+    "section": "",
+    "text": "17.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>碎片怎样复原？拼合、缀合与数字重建</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-17.html#考古问题与方法",
+    "href": "chapters/chapter-17.html#考古问题与方法",
+    "title": "17  碎片怎样复原？拼合、缀合与数字重建",
+    "section": "17.2 考古问题与方法",
+    "text": "17.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>碎片怎样复原？拼合、缀合与数字重建</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-17.html#案例与数据",
+    "href": "chapters/chapter-17.html#案例与数据",
+    "title": "17  碎片怎样复原？拼合、缀合与数字重建",
+    "section": "17.3 案例与数据",
+    "text": "17.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>碎片怎样复原？拼合、缀合与数字重建</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-17.html#何时用何时不用",
+    "href": "chapters/chapter-17.html#何时用何时不用",
+    "title": "17  碎片怎样复原？拼合、缀合与数字重建",
+    "section": "17.4 何时用、何时不用",
+    "text": "17.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>碎片怎样复原？拼合、缀合与数字重建</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-17.html#动手试试选做",
+    "href": "chapters/chapter-17.html#动手试试选做",
+    "title": "17  碎片怎样复原？拼合、缀合与数字重建",
+    "section": "17.5 动手试试（选做）",
+    "text": "17.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>碎片怎样复原？拼合、缀合与数字重建</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-18.html",
+    "href": "chapters/chapter-18.html",
+    "title": "18  古文字写了什么？智能识别与辅助释读",
+    "section": "",
+    "text": "18.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>古文字写了什么？智能识别与辅助释读</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-18.html#考古问题与方法",
+    "href": "chapters/chapter-18.html#考古问题与方法",
+    "title": "18  古文字写了什么？智能识别与辅助释读",
+    "section": "18.2 考古问题与方法",
+    "text": "18.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>古文字写了什么？智能识别与辅助释读</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-18.html#案例与数据",
+    "href": "chapters/chapter-18.html#案例与数据",
+    "title": "18  古文字写了什么？智能识别与辅助释读",
+    "section": "18.3 案例与数据",
+    "text": "18.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>古文字写了什么？智能识别与辅助释读</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-18.html#何时用何时不用",
+    "href": "chapters/chapter-18.html#何时用何时不用",
+    "title": "18  古文字写了什么？智能识别与辅助释读",
+    "section": "18.4 何时用、何时不用",
+    "text": "18.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>古文字写了什么？智能识别与辅助释读</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-18.html#动手试试选做",
+    "href": "chapters/chapter-18.html#动手试试选做",
+    "title": "18  古文字写了什么？智能识别与辅助释读",
+    "section": "18.5 动手试试（选做）",
+    "text": "18.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>古文字写了什么？智能识别与辅助释读</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-19.html",
+    "href": "chapters/chapter-19.html",
+    "title": "19  考古报告怎样变成知识？文献挖掘与知识组织",
+    "section": "",
+    "text": "19.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>考古报告怎样变成知识？文献挖掘与知识组织</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-19.html#考古问题与方法",
+    "href": "chapters/chapter-19.html#考古问题与方法",
+    "title": "19  考古报告怎样变成知识？文献挖掘与知识组织",
+    "section": "19.2 考古问题与方法",
+    "text": "19.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>考古报告怎样变成知识？文献挖掘与知识组织</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-19.html#案例与数据",
+    "href": "chapters/chapter-19.html#案例与数据",
+    "title": "19  考古报告怎样变成知识？文献挖掘与知识组织",
+    "section": "19.3 案例与数据",
+    "text": "19.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>考古报告怎样变成知识？文献挖掘与知识组织</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-19.html#何时用何时不用",
+    "href": "chapters/chapter-19.html#何时用何时不用",
+    "title": "19  考古报告怎样变成知识？文献挖掘与知识组织",
+    "section": "19.4 何时用、何时不用",
+    "text": "19.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>考古报告怎样变成知识？文献挖掘与知识组织</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-19.html#动手试试选做",
+    "href": "chapters/chapter-19.html#动手试试选做",
+    "title": "19  考古报告怎样变成知识？文献挖掘与知识组织",
+    "section": "19.5 动手试试（选做）",
+    "text": "19.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>考古报告怎样变成知识？文献挖掘与知识组织</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-20.html",
+    "href": "chapters/chapter-20.html",
+    "title": "20  古代社会怎样运作？网络、模拟与社会解释",
+    "section": "",
+    "text": "20.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>古代社会怎样运作？网络、模拟与社会解释</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-20.html#考古问题与方法",
+    "href": "chapters/chapter-20.html#考古问题与方法",
+    "title": "20  古代社会怎样运作？网络、模拟与社会解释",
+    "section": "20.2 考古问题与方法",
+    "text": "20.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>古代社会怎样运作？网络、模拟与社会解释</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-20.html#案例与数据",
+    "href": "chapters/chapter-20.html#案例与数据",
+    "title": "20  古代社会怎样运作？网络、模拟与社会解释",
+    "section": "20.3 案例与数据",
+    "text": "20.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>古代社会怎样运作？网络、模拟与社会解释</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-20.html#何时用何时不用",
+    "href": "chapters/chapter-20.html#何时用何时不用",
+    "title": "20  古代社会怎样运作？网络、模拟与社会解释",
+    "section": "20.4 何时用、何时不用",
+    "text": "20.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>古代社会怎样运作？网络、模拟与社会解释</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-20.html#动手试试选做",
+    "href": "chapters/chapter-20.html#动手试试选做",
+    "title": "20  古代社会怎样运作？网络、模拟与社会解释",
+    "section": "20.5 动手试试（选做）",
+    "text": "20.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>古代社会怎样运作？网络、模拟与社会解释</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-21.html",
+    "href": "chapters/chapter-21.html",
+    "title": "21  大语言模型与考古知识工作：检索、分析与核查",
+    "section": "",
+    "text": "21.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第四编 生成式AI与考古知识生产",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>大语言模型与考古知识工作：检索、分析与核查</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-21.html#考古问题与方法",
+    "href": "chapters/chapter-21.html#考古问题与方法",
+    "title": "21  大语言模型与考古知识工作：检索、分析与核查",
+    "section": "21.2 考古问题与方法",
+    "text": "21.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第四编 生成式AI与考古知识生产",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>大语言模型与考古知识工作：检索、分析与核查</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-21.html#案例与数据",
+    "href": "chapters/chapter-21.html#案例与数据",
+    "title": "21  大语言模型与考古知识工作：检索、分析与核查",
+    "section": "21.3 案例与数据",
+    "text": "21.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第四编 生成式AI与考古知识生产",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>大语言模型与考古知识工作：检索、分析与核查</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-21.html#何时用何时不用",
+    "href": "chapters/chapter-21.html#何时用何时不用",
+    "title": "21  大语言模型与考古知识工作：检索、分析与核查",
+    "section": "21.4 何时用、何时不用",
+    "text": "21.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第四编 生成式AI与考古知识生产",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>大语言模型与考古知识工作：检索、分析与核查</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-21.html#动手试试选做",
+    "href": "chapters/chapter-21.html#动手试试选做",
+    "title": "21  大语言模型与考古知识工作：检索、分析与核查",
+    "section": "21.5 动手试试（选做）",
+    "text": "21.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第四编 生成式AI与考古知识生产",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>大语言模型与考古知识工作：检索、分析与核查</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-22.html",
+    "href": "chapters/chapter-22.html",
+    "title": "22  生成式AI、数字复原与公众考古",
+    "section": "",
+    "text": "22.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第四编 生成式AI与考古知识生产",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>生成式AI、数字复原与公众考古</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-22.html#考古问题与方法",
+    "href": "chapters/chapter-22.html#考古问题与方法",
+    "title": "22  生成式AI、数字复原与公众考古",
+    "section": "22.2 考古问题与方法",
+    "text": "22.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第四编 生成式AI与考古知识生产",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>生成式AI、数字复原与公众考古</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-22.html#案例与数据",
+    "href": "chapters/chapter-22.html#案例与数据",
+    "title": "22  生成式AI、数字复原与公众考古",
+    "section": "22.3 案例与数据",
+    "text": "22.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第四编 生成式AI与考古知识生产",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>生成式AI、数字复原与公众考古</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-22.html#何时用何时不用",
+    "href": "chapters/chapter-22.html#何时用何时不用",
+    "title": "22  生成式AI、数字复原与公众考古",
+    "section": "22.4 何时用、何时不用",
+    "text": "22.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第四编 生成式AI与考古知识生产",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>生成式AI、数字复原与公众考古</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-22.html#动手试试选做",
+    "href": "chapters/chapter-22.html#动手试试选做",
+    "title": "22  生成式AI、数字复原与公众考古",
+    "section": "22.5 动手试试（选做）",
+    "text": "22.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第四编 生成式AI与考古知识生产",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>生成式AI、数字复原与公众考古</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-23.html",
+    "href": "chapters/chapter-23.html",
+    "title": "23  怎样选择技术路线：问题、数据与研究要求",
+    "section": "",
+    "text": "23.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>怎样选择技术路线：问题、数据与研究要求</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-23.html#考古问题与方法",
+    "href": "chapters/chapter-23.html#考古问题与方法",
+    "title": "23  怎样选择技术路线：问题、数据与研究要求",
+    "section": "23.2 考古问题与方法",
+    "text": "23.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>怎样选择技术路线：问题、数据与研究要求</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-23.html#案例与数据",
+    "href": "chapters/chapter-23.html#案例与数据",
+    "title": "23  怎样选择技术路线：问题、数据与研究要求",
+    "section": "23.3 案例与数据",
+    "text": "23.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>怎样选择技术路线：问题、数据与研究要求</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-23.html#何时用何时不用",
+    "href": "chapters/chapter-23.html#何时用何时不用",
+    "title": "23  怎样选择技术路线：问题、数据与研究要求",
+    "section": "23.4 何时用、何时不用",
+    "text": "23.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>怎样选择技术路线：问题、数据与研究要求</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-23.html#动手试试选做",
+    "href": "chapters/chapter-23.html#动手试试选做",
+    "title": "23  怎样选择技术路线：问题、数据与研究要求",
+    "section": "23.5 动手试试（选做）",
+    "text": "23.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>23</span>  <span class='chapter-title'>怎样选择技术路线：问题、数据与研究要求</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-24.html",
+    "href": "chapters/chapter-24.html",
+    "title": "24  一个完整的AI考古研究项目怎样开展",
+    "section": "",
+    "text": "24.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>一个完整的AI考古研究项目怎样开展</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-24.html#考古问题与方法",
+    "href": "chapters/chapter-24.html#考古问题与方法",
+    "title": "24  一个完整的AI考古研究项目怎样开展",
+    "section": "24.2 考古问题与方法",
+    "text": "24.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>一个完整的AI考古研究项目怎样开展</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-24.html#案例与数据",
+    "href": "chapters/chapter-24.html#案例与数据",
+    "title": "24  一个完整的AI考古研究项目怎样开展",
+    "section": "24.3 案例与数据",
+    "text": "24.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>一个完整的AI考古研究项目怎样开展</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-24.html#何时用何时不用",
+    "href": "chapters/chapter-24.html#何时用何时不用",
+    "title": "24  一个完整的AI考古研究项目怎样开展",
+    "section": "24.4 何时用、何时不用",
+    "text": "24.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>一个完整的AI考古研究项目怎样开展</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-24.html#动手试试选做",
+    "href": "chapters/chapter-24.html#动手试试选做",
+    "title": "24  一个完整的AI考古研究项目怎样开展",
+    "section": "24.5 动手试试（选做）",
+    "text": "24.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>24</span>  <span class='chapter-title'>一个完整的AI考古研究项目怎样开展</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-25.html",
+    "href": "chapters/chapter-25.html",
+    "title": "25  AI考古学的伦理、规范与未来",
+    "section": "",
+    "text": "25.1 学习目标\n待编写与核验。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>AI考古学的伦理、规范与未来</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-25.html#考古问题与方法",
+    "href": "chapters/chapter-25.html#考古问题与方法",
+    "title": "25  AI考古学的伦理、规范与未来",
+    "section": "25.2 考古问题与方法",
+    "text": "25.2 考古问题与方法\n待编写。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>AI考古学的伦理、规范与未来</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-25.html#案例与数据",
+    "href": "chapters/chapter-25.html#案例与数据",
+    "title": "25  AI考古学的伦理、规范与未来",
+    "section": "25.3 案例与数据",
+    "text": "25.3 案例与数据\n案例及数据授权待核验。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>AI考古学的伦理、规范与未来</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-25.html#何时用何时不用",
+    "href": "chapters/chapter-25.html#何时用何时不用",
+    "title": "25  AI考古学的伦理、规范与未来",
+    "section": "25.4 何时用、何时不用",
+    "text": "25.4 何时用、何时不用\n待编写。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>AI考古学的伦理、规范与未来</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-25.html#动手试试选做",
+    "href": "chapters/chapter-25.html#动手试试选做",
+    "title": "25  AI考古学的伦理、规范与未来",
+    "section": "25.5 动手试试（选做）",
+    "text": "25.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "crumbs": [
+      "第五编 研究实践与学术责任",
+      "<span class='chapter-number'>25</span>  <span class='chapter-title'>AI考古学的伦理、规范与未来</span>"
+    ]
+  },
+  {
+    "objectID": "datasets.html",
+    "href": "datasets.html",
+    "title": "26  数据集目录",
+    "section": "",
+    "text": "本站将为每份教学数据提供：来源、许可、变量字典、版本、数据质量说明、真实性标记和适用章节。\n当前尚未发布经核验的数据集。\n\n\n\n数据集\n章节\n来源和许可\n状态\n\n\n\n\n陶器属性与聚类示例（拟建）\n6、10\n待核实\n待准备\n\n\n遥感候选点示例（拟建）\n13\n待核实\n待准备",
+    "crumbs": [
+      "配套资源",
+      "<span class='chapter-number'>26</span>  <span class='chapter-title'>数据集目录</span>"
+    ]
+  },
+  {
+    "objectID": "exercises.html",
+    "href": "exercises.html",
+    "title": "27  实践与练习",
+    "section": "",
+    "text": "每章设无代码基础活动；Orange、QGIS、CloudCompare、Python和R均为选做拓展。\n课程评价应独立于选做软件操作，必要时提供预制数据和模型结果。",
+    "crumbs": [
+      "配套资源",
+      "<span class='chapter-number'>27</span>  <span class='chapter-title'>实践与练习</span>"
+    ]
+  },
+  {
+    "objectID": "data-policy.html",
+    "href": "data-policy.html",
+    "title": "28  数据伦理、许可与使用说明",
+    "section": "",
+    "text": "本网站只发布已获授权且适合公开传播的数据。\n不公开可能助长盗掘的敏感遗址坐标、人类遗骸或古DNA敏感数据、未经授权的报告全文及图像。\n真实数据、教学模拟数据和生成式AI输出应显著区分。\n实际数据集必须逐项补充许可、来源、版本、数据字典与伦理审查状态。",
+    "crumbs": [
+      "配套资源",
+      "<span class='chapter-number'>28</span>  <span class='chapter-title'>数据伦理、许可与使用说明</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "参考资料",
+    "section": "",
+    "text": "待核对的参考文献将在正式编写时逐项添加。",
+    "crumbs": [
+      "配套资源",
+      "参考资料"
+    ]
+  }
+]
