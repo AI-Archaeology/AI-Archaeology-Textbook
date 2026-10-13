@@ -4,7 +4,7 @@
 
 ## 第3章：从考古记录到数据
 
-- [教学模拟陶片数据](data/teaching-ceramics-01/README.md)（**虚构记录**）
+- [教学模拟陶片数据](dataset-teaching-ceramics-01.qmd)（**虚构记录**）
 - [数据表下载](data/teaching-ceramics-01/ceramics.csv)与[变量字典](data/teaching-ceramics-01/data_dictionary.csv)
 - [第3章必做评价](chapters/chapter-03.qmd#必做评价无需编程)：区别观测单位、编码、缺失和解释界限
 - 选做：电子表格频数图；必须标注“教学模拟数据”
