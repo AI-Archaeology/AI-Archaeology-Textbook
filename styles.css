@@ -1,5 +1,88 @@
-/* Restrained academic book styling */
-:root { --bs-primary: #176b82; }
-body { line-height: 1.75; }
-#title-block-header .title { font-weight: 650; }
-.sidebar-title { font-weight: 650; }
+/* AI考古学通论 · stable site visual system v1 */
+:root {
+  --ai-ink: #24313a;
+  --ai-muted: #607079;
+  --ai-teal: #196b78;
+  --ai-teal-dark: #11515b;
+  --ai-line: #dce5e8;
+  --ai-soft: #f3f8f9;
+  --bs-primary: #196b78;
+  --bs-link-color: #196b78;
+  --bs-link-hover-color: #11515b;
+}
+body {
+  color: var(--ai-ink);
+  line-height: 1.82;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+#quarto-content main.content { font-size: 1.02rem; }
+main.content p, main.content li { line-height: 1.86; }
+main.content h1, main.content h2, main.content h3 { letter-spacing: -0.015em; font-weight: 650; }
+main.content h2 { margin-top: 2.4rem; padding-bottom: .42rem; border-bottom: 1px solid var(--ai-line); }
+main.content h3 { margin-top: 1.65rem; }
+a { text-underline-offset: 3px; }
+.sidebar-title { font-weight: 700; letter-spacing: .01em; }
+#quarto-sidebar .sidebar-item-text { line-height: 1.5; }
+#quarto-sidebar .sidebar-item { padding-top: .1rem; padding-bottom: .1rem; }
+#quarto-margin-sidebar { font-size: .9rem; }
+.sidebar-navigation .active { font-weight: 650; }
+/* Homepage only: hero styles apply wherever explicitly used. */
+.homepage-hero {
+  background: linear-gradient(125deg, #f2f8f8, #ffffff 72%);
+  border-left: 5px solid var(--ai-teal);
+  border-radius: 0 12px 12px 0;
+  padding: 2.8rem 2.2rem;
+  margin: .4rem 0 2.4rem;
+}
+.homepage-hero .hero-kicker { color: var(--ai-teal); font-size: .74rem; font-weight: 750; letter-spacing: .16em; margin-bottom: .75rem; }
+.homepage-hero .hero-title { color: #19323a; font-size: clamp(2.1rem, 3.2vw, 3rem); margin: 0 0 .65rem; line-height: 1.3; }
+.homepage-hero .hero-subtitle { font-size: 1.3rem; color: var(--ai-teal-dark); font-weight: 600; margin-bottom: 1.2rem; }
+.homepage-hero .hero-description { max-width: 45rem; color: #465a63; margin-bottom: 1.5rem; }
+.btn-primary { background-color: var(--ai-teal); border-color: var(--ai-teal); }
+.btn-primary:hover { background-color: var(--ai-teal-dark); border-color: var(--ai-teal-dark); }
+.btn-outline-primary { color: var(--ai-teal); border-color: var(--ai-teal); }
+.btn-outline-primary:hover { background-color: var(--ai-teal); border-color: var(--ai-teal); }
+main.content table { font-size: .95rem; }
+main.content table thead th { background: var(--ai-soft); }
+main.content blockquote { border-left: 3px solid var(--ai-teal); color: var(--ai-muted); }
+@media (max-width: 767px) {
+  .homepage-hero { padding: 1.6rem 1.15rem; }
+  .homepage-hero .hero-title { font-size: 2rem; }
+  #quarto-content main.content { font-size: 1rem; }
+}
+/* Homepage typography corrections */
+
+.homepage-hero {
+  padding: 2rem 2.5rem;
+}
+
+.homepage-hero .hero-title {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.homepage-hero .hero-subtitle {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.homepage-hero p.hero-description {
+  font-size: 1.05rem !important;
+  line-height: 1.85;
+  font-weight: 400;
+  color: #465A63;
+  letter-spacing: normal;
+}
+
+@media (max-width: 768px) {
+  .homepage-hero {
+    padding: 1.25rem;
+  }
+
+  .homepage-hero p.hero-description {
+    font-size: 1rem !important;
+  }
+}

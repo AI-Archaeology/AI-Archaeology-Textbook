@@ -7,7 +7,6 @@ project:
 book:
   title: "AI考古学通论"
   subtitle: "数据、案例与实践 | Data, Cases & Exercises"
-  author: "教材编写组（待确认）"
   repo-url: https://github.com/ZCJing2022/AI-Archaeology-Textbook
   repo-actions: [edit, issue]
   chapters:
@@ -57,6 +56,11 @@ book:
 format:
   html:
     theme: cosmo
+    grid:
+      sidebar-width: 320px
+      body-width: 900px
+      margin-width: 230px
+      gutter-width: 1.5rem
     css: styles.css
     toc: true
     number-sections: true

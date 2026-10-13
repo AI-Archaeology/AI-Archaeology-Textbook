@@ -1,4 +1,4 @@
-# 实践与练习
+# 实践与练习 {.unnumbered}
 
 每章设无代码基础活动；Orange、QGIS、CloudCompare、Python和R均为选做拓展。
 

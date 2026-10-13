@@ -1,9 +1,64 @@
+---
+title-block-style: none
+---
+
 # 欢迎 {.unnumbered}
 
-《AI考古学通论》配套数据、案例与实践网站（筹建中）。
+::: {.homepage-hero}
 
-本站面向中国高校考古学及相关专业本科生，侧重理解、比较和评价AI与传统计算方法，而非要求编程开发。
+<p class="hero-kicker">AI ARCHAEOLOGY · OPEN LEARNING RESOURCES</p>
 
-**请注意：** 网站目前是教学资源框架。案例、教学数据、引用和许可均应在发布前核验。
+# AI考古学通论 {.unnumbered .hero-title}
 
-从左侧目录选择章节，或访问[数据集目录](datasets.qmd)与[实践活动](exercises.qmd)。
+<p class="hero-subtitle">从考古问题出发，理解人工智能</p>
+
+<p class="hero-description">面向中国高校考古学及相关专业本科生的开放教学资源：以考古证据为中心，学习数据整理、方法比较、模型评价与负责任的 AI 应用。</p>
+
+[阅读教材章节](chapters/chapter-01.qmd){.btn .btn-primary .me-2} [浏览数据资源](datasets.qmd){.btn .btn-outline-primary}
+
+:::
+
+## 从问题到证据 {.unnumbered}
+
+本网站是《AI考古学通论》的配套资源平台，采用**五编、25章**的知识架构。我们强调两类方法的区别：传统统计／数字／计算考古方法是重要基础与比较基线；机器学习、深度学习及生成式模型是 AI 方法。二者均须接受考古学证据的检验。
+
+:::: {.columns}
+::: {.column width="50%"}
+### 阅读与理解 {.unnumbered}
+
+按章节阅读通俗解释、研究问题和方法比较，逐步建立必要的概念基础。
+
+[进入第一编 →](chapters/chapter-01.qmd)
+:::
+::: {.column width="50%"}
+### 数据与实践 {.unnumbered}
+
+浏览经许可的教学数据与说明，开展无需编程或低代码的练习，并学习评价研究结论。
+
+[查看数据集 →](datasets.qmd) · [查看实践 →](exercises.qmd)
+:::
+::::
+
+## 五编学习路线 {.unnumbered}
+
+| 部分 | 主题 | 章节 |
+|---|---|---|
+| 第一编 | 认识 AI 考古学 | 1–4 |
+| 第二编 | 方法基础：从统计到机器学习 | 5–8 |
+| 第三编 | 解决考古问题 | 9–20 |
+| 第四编 | 生成式 AI 与考古知识生产 | 21–22 |
+| 第五编 | 研究实践与学术责任 | 23–25 |
+
+## 如何使用本站 {.unnumbered}
+
+**初学者：** 建议从第 1、3、4 章入门，再学习第 5–8 章的基础方法与模型评价；之后按兴趣选择器物、年代、空间、古文字等应用主题。
+
+**教师与研究者：** 可按章节选择案例、数据和评价任务；每项数据均应有来源、许可、数据字典与质量说明。
+
+::: {.callout-note title="网站建设状态"}
+本网站目前处于建设阶段。尚未核验的考古案例、教学数据、参考文献和版权许可不会作为已确认研究成果发布。章节占位页面仅表示规划结构。
+:::
+
+## 开放与反馈 {.unnumbered}
+
+项目源代码托管于 [GitHub](https://github.com/ZCJing2022/AI-Archaeology-Textbook)。欢迎通过 [Issues](https://github.com/ZCJing2022/AI-Archaeology-Textbook/issues) 提出错误、更正或资源建议。

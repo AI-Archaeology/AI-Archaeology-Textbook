@@ -1,0 +1,22 @@
+/.quarto/
+**/*.quarto_ipynb
+# Quarto caches
+.quarto/
+
+# macOS
+.DS_Store
+
+# R temporary files
+.Rhistory
+.RData
+.Rproj.user/
+
+# Local downloads
+downloads/
+
+# Python
+__pycache__/
+.venv/
+
+# Temporary files
+*.tmp
