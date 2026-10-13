@@ -6,7 +6,7 @@
 
 | 数据集 | 类型与规模 | 对应章节 | 当前状态 |
 |---|---|---|---|
-| [教学模拟陶片属性数据 01](data/teaching-ceramics-01/README.md) | **模拟**；18行 × 8列 | 3、6、10 | 教学演示；许可待确认 |
+| [教学模拟陶片属性数据 01](dataset-teaching-ceramics-01.qmd) | **模拟**；18行 × 8列 | 3、6、10 | 教学演示；许可待确认 |
 | 遥感候选点示例（规划） | 尚无数据 | 13 | 未收录 |
 | 真实陶器或聚落数据（规划） | 须核验出处与授权 | 3、10、14 | 未收录 |
 
@@ -14,7 +14,7 @@
 
 > **教学模拟数据（SYNTHETIC）**：下列记录由教学目的虚构，不对应实际遗址或发掘发现，不能支持历史考古结论。
 
-[查看数据说明](data/teaching-ceramics-01/README.md) · [下载 CSV](data/teaching-ceramics-01/ceramics.csv) · [变量字典](data/teaching-ceramics-01/data_dictionary.csv) · [来源说明](data/teaching-ceramics-01/provenance.md) · [使用状态](data/teaching-ceramics-01/USAGE.md)
+[查看数据说明](dataset-teaching-ceramics-01.qmd) · [下载 CSV](data/teaching-ceramics-01/ceramics.csv) · [变量字典](data/teaching-ceramics-01/data_dictionary.csv) · [来源说明](data/teaching-ceramics-01/provenance.md) · [使用状态](data/teaching-ceramics-01/USAGE.md)
 
 **教学重点：** 观测单位、类别与数值变量、结构性缺失、记录缺失及考古解释的边界。参见[第3章](chapters/chapter-03.qmd)及[实践活动](exercises.qmd)。
 
@@ -22,4 +22,4 @@
 
 每个真实数据集须附：原始研究与出处、数据获取和转换流程、变量字典、版本、许可、敏感信息审核、抽样／保存／记录偏差、对应章节和可重复练习。许可与研究真实性未核实的资料不得标作已验证。
 
-新建数据页面请参考 [数据集页面模板](templates/dataset-page-template.qmd)。该模板仅供编写使用，不代表任何数据已批准公开。
+新建数据页面请参考 `templates/dataset-page-template.qmd`。该模板仅供编写使用，不代表任何数据已批准公开。
