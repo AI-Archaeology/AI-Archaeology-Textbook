@@ -18,7 +18,7 @@
 
 ## 教学数据：虚构陶片属性表
 
-本章采用 [教学模拟陶片属性数据 01](../data/teaching-ceramics-01/README.md)。表中有18条虚构陶片记录、8个字段，**所有记录均非真实考古资料**。
+本章采用 [教学模拟陶片属性数据 01](../dataset-teaching-ceramics-01.qmd)。表中有18条虚构陶片记录、8个字段，**所有记录均非真实考古资料**。
 
 [下载 CSV](../data/teaching-ceramics-01/ceramics.csv) · [查看变量字典](../data/teaching-ceramics-01/data_dictionary.csv) · [查看来源与限制](../data/teaching-ceramics-01/provenance.md)
 
