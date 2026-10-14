@@ -1,0 +1,10 @@
+﻿artifact_id,illustrative_manual_type,kmeans_k2_label,ward_k2_label
+TC001,甲,0,0
+TC003,甲,0,0
+TC004,乙,1,1
+TC007,甲,0,0
+TC009,乙,1,1
+TC010,乙,1,1
+TC013,甲,0,0
+TC015,乙,1,0
+TC017,甲,0,0

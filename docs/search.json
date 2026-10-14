@@ -373,40 +373,106 @@
     "href": "chapters/chapter-06.html",
     "title": "6  经典机器学习方法",
     "section": "",
-    "text": "6.1 学习目标\n待编写与核验。",
+    "text": "6.1 研究问题\n聚类、降维、分类与回归分别回答什么问题？面对少量考古测量数据，如何判断算法是否合适，结果与传统人工分组有何不同？",
     "crumbs": [
       "第二编 方法基础：从统计到机器学习",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
     ]
   },
   {
-    "objectID": "chapters/chapter-06.html#考古问题与方法",
-    "href": "chapters/chapter-06.html#考古问题与方法",
+    "objectID": "chapters/chapter-06.html#学习成果",
+    "href": "chapters/chapter-06.html#学习成果",
     "title": "6  经典机器学习方法",
-    "section": "6.2 考古问题与方法",
-    "text": "6.2 考古问题与方法\n待编写。",
+    "section": "6.2 学习成果",
+    "text": "6.2 学习成果\n完成本示例后，学生应能：\n\n解释基于数值相似性的算法分组与考古类型定义为何不同（6.1、6.6）。［核心］\n比较聚类、降维、分类与回归的任务、前提及输出，区分PCA坐标与聚类标签（6.1–6.4）。［核心／阅读］\n判断特征工程、单位及尺度为何改变距离与分组（6.5）。［核心］\n解释类别标签0／1及簇数人为指定的含义，指出小样本推论边界（6.1、6.6）。［核心］\n核查研究报告是否提供适当的非AI比较基线与独立证据，而非仅宣称算法准确（6.6）。［阅读］",
     "crumbs": [
       "第二编 方法基础：从统计到机器学习",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
     ]
   },
   {
-    "objectID": "chapters/chapter-06.html#案例与数据",
-    "href": "chapters/chapter-06.html#案例与数据",
+    "objectID": "chapters/chapter-06.html#聚类从相似性发现分组",
+    "href": "chapters/chapter-06.html#聚类从相似性发现分组",
     "title": "6  经典机器学习方法",
-    "section": "6.3 案例与数据",
-    "text": "6.3 案例与数据\n案例及数据授权待核验。",
+    "section": "6.3 6.1 聚类：从相似性发现分组",
+    "text": "6.3 6.1 聚类：从相似性发现分组\n聚类依据选定变量的相似程度将记录分组。层次聚类与k均值都可用于探索，但分组不等于经过独立考古证据确立的类型。",
     "crumbs": [
       "第二编 方法基础：从统计到机器学习",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
     ]
   },
   {
-    "objectID": "chapters/chapter-06.html#何时用何时不用",
-    "href": "chapters/chapter-06.html#何时用何时不用",
+    "objectID": "chapters/chapter-06.html#降维主成分分析与对应分析",
+    "href": "chapters/chapter-06.html#降维主成分分析与对应分析",
     "title": "6  经典机器学习方法",
-    "section": "6.4 何时用、何时不用",
-    "text": "6.4 何时用、何时不用\n待编写。",
+    "section": "6.4 6.2 降维：主成分分析与对应分析",
+    "text": "6.4 6.2 降维：主成分分析与对应分析\nPCA用于概括数值变量的共同变化；对应分析更适合考察频数表中类别之间的关系。两者不是断代方法本身，也不自动形成类型。本章教学数据只有9条虚构口沿测量；正式阅读任务须再选经过核验的真实文献方法段。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html#分类与回归",
+    "href": "chapters/chapter-06.html#分类与回归",
+    "title": "6  经典机器学习方法",
+    "section": "6.5 6.3 分类与回归",
+    "text": "6.5 6.3 分类与回归\n分类预测离散标签，回归预测连续数值；聚类通常不需要给定真实标签。请先问标签从哪里来、是否可靠，再选择模型。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html#决策树随机森林与支持向量机",
+    "href": "chapters/chapter-06.html#决策树随机森林与支持向量机",
+    "title": "6  经典机器学习方法",
+    "section": "6.6 6.4 决策树、随机森林与支持向量机",
+    "text": "6.6 6.4 决策树、随机森林与支持向量机\n这些是常见监督学习方法。本科教学以理解使用条件、训练标签质量、独立测试要求和与较简单方法的比较为目标，不要求数学推导或独立训练复杂模型。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html#特征工程与考古知识",
+    "href": "chapters/chapter-06.html#特征工程与考古知识",
+    "title": "6  经典机器学习方法",
+    "section": "6.7 6.5 特征工程与考古知识",
+    "text": "6.7 6.5 特征工程与考古知识\n比较口径、口沿厚度与倾角时必须考虑计量单位、测量误差、结构性缺失和标准化。若在数据中直接加入人工类型标签，再用聚类检验是否重现人工类型，可能产生循环论证。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html#算法分组与考古类型学",
+    "href": "chapters/chapter-06.html#算法分组与考古类型学",
+    "title": "6  经典机器学习方法",
+    "section": "6.8 6.6 算法分组与考古类型学",
+    "text": "6.8 6.6 算法分组与考古类型学\n这次教学示例取自18条虚构陶片记录中的9条口沿记录；为其增加虚构的厚度、倾角和示意人工类型。KMeans与Ward方法在事先指定为两个簇时，并不完全给出相同分组。两种算法都不能根据这份数据证明有两个真实考古类型。\n方法记录、限制与复现说明。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html#数据与预制结果",
+    "href": "chapters/chapter-06.html#数据与预制结果",
+    "title": "6  经典机器学习方法",
+    "section": "6.9 数据与预制结果",
+    "text": "6.9 数据与预制结果\n\n虚构口沿形态测量表（UTF-8 CSV）\nExcel兼容测量表\n预制KMeans与Ward分组结果（CSV）\nExcel兼容分组结果\n变量字典\n\n注意： 聚类标签0、1是算法任意编号，不能把0直接当作“甲”或把1当作“乙”。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html#必做综合任务无代码",
+    "href": "chapters/chapter-06.html#必做综合任务无代码",
+    "title": "6  经典机器学习方法",
+    "section": "6.10 必做综合任务（无代码）",
+    "text": "6.10 必做综合任务（无代码）\n利用两个CSV及方法记录，完成不超过400字的判断：\n\n比较KMeans与Ward结果，找出是否存在不同归组的记录，并说明为什么标签编号不能直接比较。（成果1、4）\n解释为什么对口径、厚度、角度采用标准化，若加入“人工类型”作为输入有什么问题。（成果3）\n就“本组数据适合聚类、PCA、分类还是回归”分别说明研究任务和数据条件；指出仅凭提供的输出无法判断PCA表现、SVM效果或分类预测精度。（成果2）\n指出至少一个恰当的非AI基线和一个尚缺的独立考古证据来源。（成果5）\n\n5分钟短测： “监督学习与聚类区别？”“为什么提前指定两个簇不等于发现两个考古类型？”“何时不用复杂AI？”\n真实论文阅读评价待补： 正式教学需提供来源已核验、可合法节选的论文方法段。仅靠上述模拟数据不能完成［阅读］层的最终验收。",
     "crumbs": [
       "第二编 方法基础：从统计到机器学习",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
@@ -416,8 +482,30 @@
     "objectID": "chapters/chapter-06.html#动手试试选做",
     "href": "chapters/chapter-06.html#动手试试选做",
     "title": "6  经典机器学习方法",
-    "section": "6.5 动手试试（选做）",
-    "text": "6.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "section": "6.11 动手试试（选做）",
+    "text": "6.11 动手试试（选做）\n在Orange中使用数值字段探索聚类与降维，或在已配置Python环境中运行 复现脚本。基础必做评价完全不依赖该选做操作。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html#何时用何时不用",
+    "href": "chapters/chapter-06.html#何时用何时不用",
+    "title": "6  经典机器学习方法",
+    "section": "6.12 何时用、何时不用",
+    "text": "6.12 何时用、何时不用\n当变量具有明确考古含义、记录标准一致、样本规模与研究问题相称且能提供独立比较时，可以把聚类用于探索。样本极少、缺失机制不清、类型定义依赖年代与地层、缺乏非AI基线时，不应把聚类视为已证实的考古分类。",
+    "crumbs": [
+      "第二编 方法基础：从统计到机器学习",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-06.html#继续深入",
+    "href": "chapters/chapter-06.html#继续深入",
+    "title": "6  经典机器学习方法",
+    "section": "6.13 继续深入",
+    "text": "6.13 继续深入\n以第8章模型验证为前提，再联系第10章的类型学讨论。真实案例与分层阅读书目仍待编写组学术核验。",
     "crumbs": [
       "第二编 方法基础：从统计到机器学习",
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>经典机器学习方法</span>"
@@ -593,40 +681,106 @@
     "href": "chapters/chapter-10.html",
     "title": "10  怎样分类型？类型学、聚类与形态分析",
     "section": "",
-    "text": "10.1 学习目标\n待编写与核验。",
+    "text": "10.1 考古问题\n考古类型的依据从何而来？算法发现的相似分组，与依靠器形、纹饰、地层、年代和使用痕迹综合建立的类型有什么不同？",
     "crumbs": [
       "第三编 解决考古问题",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
     ]
   },
   {
-    "objectID": "chapters/chapter-10.html#考古问题与方法",
-    "href": "chapters/chapter-10.html#考古问题与方法",
+    "objectID": "chapters/chapter-10.html#学习成果",
+    "href": "chapters/chapter-10.html#学习成果",
     "title": "10  怎样分类型？类型学、聚类与形态分析",
-    "section": "10.2 考古问题与方法",
-    "text": "10.2 考古问题与方法\n待编写。",
+    "section": "10.2 学习成果",
+    "text": "10.2 学习成果\n学生应能：\n\n解释考古类型定义所涉及的观察、属性选择和分类准则。［核心］\n比较人工示意标签与算法分组，判断一致和不一致可能来自哪些分类规则。［核心］\n判断口径、口沿厚度、角度及口沿形态各能说明什么，哪些证据仍缺失。［核心］\n提出检验类型边界所需的独立地层、年代、工艺或使用证据，而不依据模拟数据虚构具体考古原因。［阅读］\n比较传统类型学、形态测量、聚类与降维的适用条件、成本和误用。［核心／阅读］",
     "crumbs": [
       "第三编 解决考古问题",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
     ]
   },
   {
-    "objectID": "chapters/chapter-10.html#案例与数据",
-    "href": "chapters/chapter-10.html#案例与数据",
+    "objectID": "chapters/chapter-10.html#类型学的目标与方法",
+    "href": "chapters/chapter-10.html#类型学的目标与方法",
     "title": "10  怎样分类型？类型学、聚类与形态分析",
-    "section": "10.3 案例与数据",
-    "text": "10.3 案例与数据\n案例及数据授权待核验。",
+    "section": "10.3 10.1 类型学的目标与方法",
+    "text": "10.3 10.1 类型学的目标与方法\n传统类型学建立可供比较的器物类别，关键在于标准能否重复、是否具有研究意义，以及类别与年代、技术、功能等其他证据有何关系。",
     "crumbs": [
       "第三编 解决考古问题",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
     ]
   },
   {
-    "objectID": "chapters/chapter-10.html#何时用何时不用",
-    "href": "chapters/chapter-10.html#何时用何时不用",
+    "objectID": "chapters/chapter-10.html#人工分类与算法分类",
+    "href": "chapters/chapter-10.html#人工分类与算法分类",
     "title": "10  怎样分类型？类型学、聚类与形态分析",
-    "section": "10.4 何时用、何时不用",
-    "text": "10.4 何时用、何时不用\n待编写。",
+    "section": "10.4 10.2 人工分类与算法分类",
+    "text": "10.4 10.2 人工分类与算法分类\n本示例的“甲／乙”来自人工设计的教学标签；KMeans及Ward的0／1标签由实际算法计算。即使两种分组一致，也不能单凭内部一致性证明历史有效性。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#类型定义与特征选择",
+    "href": "chapters/chapter-10.html#类型定义与特征选择",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.5 10.3 类型定义与特征选择",
+    "text": "10.5 10.3 类型定义与特征选择\n口沿轮廓的人工描述与口径、厚度、倾角测量不属于同一类证据。一个分类方案强调口沿形态，另一个依据测量距离，结论不同并不必然表示其中一个错误。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#形态空间与形态测量",
+    "href": "chapters/chapter-10.html#形态空间与形态测量",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.6 10.4 形态空间与形态测量",
+    "text": "10.6 10.4 形态空间与形态测量\n9个口沿记录只展示几个测量指标，不是完整器形、二维地标几何形态测量或三维扫描。本示例不能替代真实几何形态测量研究。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#人工类型与算法分组的一致性",
+    "href": "chapters/chapter-10.html#人工类型与算法分组的一致性",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.7 10.5 人工类型与算法分组的一致性",
+    "text": "10.7 10.5 人工类型与算法分组的一致性\n将 人工标签与两个聚类结果 并列阅读。比较前须允许算法0／1标签整体交换；不要把编号相同误认为考古含义相同。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#分组是否具有年代功能或社会意义",
+    "href": "chapters/chapter-10.html#分组是否具有年代功能或社会意义",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.8 10.6 分组是否具有年代、功能或社会意义？",
+    "text": "10.8 10.6 分组是否具有年代、功能或社会意义？\n这些模拟记录没有独立地层、可靠年代、加工实验、使用痕迹与出土语境，因此不能证明任何真实类型的年代、功能和社会意义。教学任务应是提出待验证的假设和相应证据，而不是给模拟数据编故事。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#共享数据",
+    "href": "chapters/chapter-10.html#共享数据",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.9 共享数据",
+    "text": "10.9 共享数据\n\n口沿属性与人工示意标签\nExcel兼容口沿数据\n预制聚类结果\n生成、算法参数与解释限制\n\n请注意：第10章不要求先完成第6章选做的Orange练习。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#必做综合任务无代码",
+    "href": "chapters/chapter-10.html#必做综合任务无代码",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.10 必做综合任务（无代码）",
+    "text": "10.10 必做综合任务（无代码）\n阅读两张预制表，完成一页“类型学证据审查卡”：\n\n给出示意人工类型的记录规则，说明这与聚类所依据的数值字段有何区别。（成果1、3）\n找到一个人工标签与算法分组需要进一步比较的记录，说明为何不同分类方案可以产生不同边界；回答时先考虑簇标签可能整体互换。（成果2）\n分别提出“工艺不同”“年代不同”“使用不同”的可能解释类别，并为每个类别写出检验它所需要的独立材料；不得把它们写为该模拟案例的事实。（成果4）\n比较人工目鉴、形态测量与机器聚类在本题中的贡献，指出何种条件下应当拒绝AI自动定型。（成果5）\n\n5分钟短测： “测量相似是否等于类型相同？”“为什么口沿不等于完整器形？”“没有独立年代证据时能否讨论类型先后？”\n真实论文阅读评价待补： ［阅读］层仍须使用经核验的真实研究材料；模拟数据不能替代该项评价。",
     "crumbs": [
       "第三编 解决考古问题",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
@@ -636,8 +790,41 @@
     "objectID": "chapters/chapter-10.html#动手试试选做",
     "href": "chapters/chapter-10.html#动手试试选做",
     "title": "10  怎样分类型？类型学、聚类与形态分析",
-    "section": "10.5 动手试试（选做）",
-    "text": "10.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "section": "10.11 动手试试（选做）",
+    "text": "10.11 动手试试（选做）\n可用Excel制作各字段散点图，或在Orange里改变输入变量重看分组。重点写出特征选择的影响；不以完成软件操作为评价前提。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#同一问题的其他解法",
+    "href": "chapters/chapter-10.html#同一问题的其他解法",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.12 同一问题的其他解法",
+    "text": "10.12 同一问题的其他解法\n传统考古类型学、属性编码、几何形态测量、对应分析、聚类和监督分类方法各自依赖不同的研究问题及证据前提。没有外部验证时，只能讨论分组，不宜宣称新的文化类型。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#何时用何时不用",
+    "href": "chapters/chapter-10.html#何时用何时不用",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.13 何时用、何时不用",
+    "text": "10.13 何时用、何时不用\n只有当分类特征可比、误差可控且有独立地层、年代或技术证据时，机器分类才可能帮助检验类型学假设。无标签来源、样本小、部位不一致或参照群体不充分时，应优先回到实物、报告和可检验的类型标准。",
+    "crumbs": [
+      "第三编 解决考古问题",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-10.html#继续深入",
+    "href": "chapters/chapter-10.html#继续深入",
+    "title": "10  怎样分类型？类型学、聚类与形态分析",
+    "section": "10.14 继续深入",
+    "text": "10.14 继续深入\n第6章提供机器学习方法原理，第8章提供验证与可靠性准则。正式案例、真实形态数据和书目仍待选取、核验与授权。",
     "crumbs": [
       "第三编 解决考古问题",
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>怎样分类型？类型学、聚类与形态分析</span>"
@@ -1495,7 +1682,7 @@
     "href": "datasets.html#首个教学数据集",
     "title": "数据集目录",
     "section": "首个教学数据集",
-    "text": "首个教学数据集\n\n教学模拟数据（SYNTHETIC）：下列记录由教学目的虚构，不对应实际遗址或发掘发现，不能支持历史考古结论。\n\n查看数据说明 · 下载标准 CSV · 下载 Excel 兼容 CSV · 变量字典 · 来源说明 · 使用状态\n教学重点： 观测单位、类别与数值变量、结构性缺失、记录缺失及考古解释的边界。参见第3章及实践活动。",
+    "text": "首个教学数据集\n\n教学模拟数据（SYNTHETIC）：下列记录由教学目的虚构，不对应实际遗址或发掘发现，不能支持历史考古结论。\n\n查看数据说明 · 下载标准 CSV · 下载 Excel 兼容 CSV · 变量字典 · 来源说明 · 使用状态\n教学重点： 第3章训练数据整理与缺失判断；第6章使用另附的虚构形态测量和真实计算的聚类结果比较方法；第10章审查示意类型和独立考古证据的关系。参见第3章及实践活动。\n第6／10章共享资源： 口沿测量数据 · Excel兼容版 · 预制聚类结果 · 算法来源与限制。所有新增测量与人工类型均为虚构。",
     "crumbs": [
       "配套资源",
       "数据集目录"
@@ -1528,7 +1715,7 @@
     "href": "dataset-teaching-ceramics-01.html#数据概况",
     "title": "教学模拟陶片属性数据 01",
     "section": "",
-    "text": "项目\n说明\n\n\n\n\n数据集 ID\nteaching-ceramics-01\n\n\n版本\n0.1（教学示范，待审核）\n\n\n类型\n完全虚构／模拟\n\n\n规模\n18条记录，8个字段\n\n\n观测单位\n一条虚构陶片记录\n\n\n适用章节\n第3章；为第6、10章的未来练习提供字段结构\n\n\n许可\n尚未确认开放许可，见使用说明\n\n\n实际遗址及年代\n不适用",
+    "text": "项目\n说明\n\n\n\n\n数据集 ID\nteaching-ceramics-01\n\n\n版本\n0.1（教学示范，待审核）\n\n\n类型\n完全虚构／模拟\n\n\n规模\n18条记录，8个字段\n\n\n观测单位\n一条虚构陶片记录\n\n\n适用章节\n第3章的数据整理；第6、10章共享的模拟形态／分组比较\n\n\n许可\n尚未确认开放许可，见使用说明\n\n\n实际遗址及年代\n不适用",
     "crumbs": [
       "配套资源",
       "教学模拟陶片属性数据 01"
@@ -1579,6 +1766,17 @@
     ]
   },
   {
+    "objectID": "dataset-teaching-ceramics-01.html#第6章与第10章共享的拓展资源",
+    "href": "dataset-teaching-ceramics-01.html#第6章与第10章共享的拓展资源",
+    "title": "教学模拟陶片属性数据 01",
+    "section": "第6章与第10章共享的拓展资源",
+    "text": "第6章与第10章共享的拓展资源\n\n仍属教学模拟。 新增9条虚构口沿形态测量记录，与第3章的陶片标识符相连；甲／乙标签由教学设计指定，0／1是实际计算的聚类编号，不能推出真实考古类型。\n\n\n虚构口沿形态测量 CSV · Excel兼容版\n两种聚类的预制输出 CSV · Excel兼容版\n测量字段字典 · 算法与真实性说明\n第6章：方法比较 · 第10章：类型学证据审查",
+    "crumbs": [
+      "配套资源",
+      "教学模拟陶片属性数据 01"
+    ]
+  },
+  {
     "objectID": "dataset-teaching-ceramics-01.html#配套教学",
     "href": "dataset-teaching-ceramics-01.html#配套教学",
     "title": "教学模拟陶片属性数据 01",
@@ -1623,11 +1821,22 @@
     ]
   },
   {
-    "objectID": "exercises.html#预备中的后续活动",
-    "href": "exercises.html#预备中的后续活动",
+    "objectID": "exercises.html#第6章方法选择与聚类必做无代码评价",
+    "href": "exercises.html#第6章方法选择与聚类必做无代码评价",
     "title": "实践与练习",
-    "section": "预备中的后续活动",
-    "text": "预备中的后续活动\n第6章将提供预制聚类结果，比较算法分组与类型学；第10章可共享底层数据，但转向形态特征和独立证据检验。当前数据表不含真实类型标签或模型输出，故这两章的正式评价尚未发布。",
+    "section": "第6章：方法选择与聚类（必做无代码评价）",
+    "text": "第6章：方法选择与聚类（必做无代码评价）\n阅读虚构形态测量表和预制KMeans/Ward结果，说明算法前提、标准化、分组差异及非AI基线。详见第6章。Orange与Python复现均选做。",
+    "crumbs": [
+      "配套资源",
+      "实践与练习"
+    ]
+  },
+  {
+    "objectID": "exercises.html#第10章考古类型学与独立证据必做无代码评价",
+    "href": "exercises.html#第10章考古类型学与独立证据必做无代码评价",
+    "title": "实践与练习",
+    "section": "第10章：考古类型学与独立证据（必做无代码评价）",
+    "text": "第10章：考古类型学与独立证据（必做无代码评价）\n共享底层表，但评价问题不同： 比较人工示意类型和形态数值归组，列出可能解释需要什么独立地层、年代、工艺或使用证据。详见第10章。不能以模拟数据声称发现真实历史原因。\n目前仍待核验的环节： 第6、10章的［阅读］层需要真实论文方法或结果的合规节选，尚未完成。",
     "crumbs": [
       "配套资源",
       "实践与练习"
