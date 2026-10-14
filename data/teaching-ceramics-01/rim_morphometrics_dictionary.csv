@@ -1,0 +1,7 @@
+variable,meaning,units_or_values,missing_policy
+artifact_id,与第3章虚构表相同的陶片编码,TC001…TC018,不可缺失
+rim_diameter_cm,虚构口沿直径估计,cm,仅9条口沿记录
+rim_thickness_cm,虚构口沿厚度估计,cm,不可缺失
+rim_angle_deg,虚构口沿倾角,degree,不可缺失
+lip_profile,虚构口沿形态描述,外侈/折沿,不可缺失
+illustrative_manual_type,基于教学设计指定的人工分类标签,甲/乙,不是专家鉴定或真实考古类型
