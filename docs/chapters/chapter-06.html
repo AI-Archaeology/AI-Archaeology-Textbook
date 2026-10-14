@@ -379,11 +379,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">目录</h2>
    
   <ul>
-  <li><a href="#学习目标" id="toc-学习目标" class="nav-link active" data-scroll-target="#学习目标"><span class="header-section-number">6.1</span> 学习目标</a></li>
-  <li><a href="#考古问题与方法" id="toc-考古问题与方法" class="nav-link" data-scroll-target="#考古问题与方法"><span class="header-section-number">6.2</span> 考古问题与方法</a></li>
-  <li><a href="#案例与数据" id="toc-案例与数据" class="nav-link" data-scroll-target="#案例与数据"><span class="header-section-number">6.3</span> 案例与数据</a></li>
-  <li><a href="#何时用何时不用" id="toc-何时用何时不用" class="nav-link" data-scroll-target="#何时用何时不用"><span class="header-section-number">6.4</span> 何时用、何时不用</a></li>
-  <li><a href="#动手试试选做" id="toc-动手试试选做" class="nav-link" data-scroll-target="#动手试试选做"><span class="header-section-number">6.5</span> 动手试试（选做）</a></li>
+  <li><a href="#研究问题" id="toc-研究问题" class="nav-link active" data-scroll-target="#研究问题"><span class="header-section-number">6.1</span> 研究问题</a></li>
+  <li><a href="#学习成果" id="toc-学习成果" class="nav-link" data-scroll-target="#学习成果"><span class="header-section-number">6.2</span> 学习成果</a></li>
+  <li><a href="#聚类从相似性发现分组" id="toc-聚类从相似性发现分组" class="nav-link" data-scroll-target="#聚类从相似性发现分组"><span class="header-section-number">6.3</span> 6.1 聚类：从相似性发现分组</a></li>
+  <li><a href="#降维主成分分析与对应分析" id="toc-降维主成分分析与对应分析" class="nav-link" data-scroll-target="#降维主成分分析与对应分析"><span class="header-section-number">6.4</span> 6.2 降维：主成分分析与对应分析</a></li>
+  <li><a href="#分类与回归" id="toc-分类与回归" class="nav-link" data-scroll-target="#分类与回归"><span class="header-section-number">6.5</span> 6.3 分类与回归</a></li>
+  <li><a href="#决策树随机森林与支持向量机" id="toc-决策树随机森林与支持向量机" class="nav-link" data-scroll-target="#决策树随机森林与支持向量机"><span class="header-section-number">6.6</span> 6.4 决策树、随机森林与支持向量机</a></li>
+  <li><a href="#特征工程与考古知识" id="toc-特征工程与考古知识" class="nav-link" data-scroll-target="#特征工程与考古知识"><span class="header-section-number">6.7</span> 6.5 特征工程与考古知识</a></li>
+  <li><a href="#算法分组与考古类型学" id="toc-算法分组与考古类型学" class="nav-link" data-scroll-target="#算法分组与考古类型学"><span class="header-section-number">6.8</span> 6.6 算法分组与考古类型学</a></li>
+  <li><a href="#数据与预制结果" id="toc-数据与预制结果" class="nav-link" data-scroll-target="#数据与预制结果"><span class="header-section-number">6.9</span> 数据与预制结果</a></li>
+  <li><a href="#必做综合任务无代码" id="toc-必做综合任务无代码" class="nav-link" data-scroll-target="#必做综合任务无代码"><span class="header-section-number">6.10</span> 必做综合任务（无代码）</a></li>
+  <li><a href="#动手试试选做" id="toc-动手试试选做" class="nav-link" data-scroll-target="#动手试试选做"><span class="header-section-number">6.11</span> 动手试试（选做）</a></li>
+  <li><a href="#何时用何时不用" id="toc-何时用何时不用" class="nav-link" data-scroll-target="#何时用何时不用"><span class="header-section-number">6.12</span> 何时用、何时不用</a></li>
+  <li><a href="#继续深入" id="toc-继续深入" class="nav-link" data-scroll-target="#继续深入"><span class="header-section-number">6.13</span> 继续深入</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ZCJing2022/AI-Archaeology-Textbook/edit/main/chapters/chapter-06.qmd" class="toc-action"><i class="bi bi-github"></i>编辑该页面</a></li><li><a href="https://github.com/ZCJing2022/AI-Archaeology-Textbook/issues/new" class="toc-action"><i class="bi empty"></i>反馈问题</a></li></ul></div></nav>
     </div>
@@ -410,27 +418,82 @@ ul.task-list li input[type="checkbox"] {
 
 
 <blockquote class="blockquote">
-<p>本章内容正在编写。本页为教材配套网站的占位页面，不代表章节正文已经审定。</p>
+<p><strong>教学示范（不是教材正文定稿）</strong>：本页仅使用人工构造的9条口沿测量数据和真实运行的算法预制结果。不能将模拟数据的分组解释成考古类型或研究发现。</p>
 </blockquote>
-<section id="学习目标" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="学习目标"><span class="header-section-number">6.1</span> 学习目标</h2>
-<p>待编写与核验。</p>
+<section id="研究问题" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="研究问题"><span class="header-section-number">6.1</span> 研究问题</h2>
+<p>聚类、降维、分类与回归分别回答什么问题？面对少量考古测量数据，如何判断算法是否合适，结果与传统人工分组有何不同？</p>
 </section>
-<section id="考古问题与方法" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="考古问题与方法"><span class="header-section-number">6.2</span> 考古问题与方法</h2>
-<p>待编写。</p>
+<section id="学习成果" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="学习成果"><span class="header-section-number">6.2</span> 学习成果</h2>
+<p>完成本示例后，学生应能：</p>
+<ol type="1">
+<li><strong>解释</strong>基于数值相似性的算法分组与考古类型定义为何不同（6.1、6.6）。［核心］</li>
+<li><strong>比较</strong>聚类、降维、分类与回归的任务、前提及输出，区分PCA坐标与聚类标签（6.1–6.4）。［核心／阅读］</li>
+<li><strong>判断</strong>特征工程、单位及尺度为何改变距离与分组（6.5）。［核心］</li>
+<li><strong>解释</strong>类别标签0／1及簇数人为指定的含义，指出小样本推论边界（6.1、6.6）。［核心］</li>
+<li><strong>核查</strong>研究报告是否提供适当的非AI比较基线与独立证据，而非仅宣称算法准确（6.6）。［阅读］</li>
+</ol>
 </section>
-<section id="案例与数据" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="案例与数据"><span class="header-section-number">6.3</span> 案例与数据</h2>
-<p>案例及数据授权待核验。</p>
+<section id="聚类从相似性发现分组" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="聚类从相似性发现分组"><span class="header-section-number">6.3</span> 6.1 聚类：从相似性发现分组</h2>
+<p>聚类依据选定变量的相似程度将记录分组。层次聚类与k均值都可用于探索，但<strong>分组不等于经过独立考古证据确立的类型</strong>。</p>
 </section>
-<section id="何时用何时不用" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="何时用何时不用"><span class="header-section-number">6.4</span> 何时用、何时不用</h2>
-<p>待编写。</p>
+<section id="降维主成分分析与对应分析" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="降维主成分分析与对应分析"><span class="header-section-number">6.4</span> 6.2 降维：主成分分析与对应分析</h2>
+<p>PCA用于概括数值变量的共同变化；对应分析更适合考察频数表中类别之间的关系。两者不是断代方法本身，也不自动形成类型。本章教学数据只有9条虚构口沿测量；正式阅读任务须再选经过核验的真实文献方法段。</p>
 </section>
-<section id="动手试试选做" class="level2" data-number="6.5">
-<h2 data-number="6.5" class="anchored" data-anchor-id="动手试试选做"><span class="header-section-number">6.5</span> 动手试试（选做）</h2>
-<p>待编写；必做评价需提供独立可用的数据与材料。</p>
+<section id="分类与回归" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="分类与回归"><span class="header-section-number">6.5</span> 6.3 分类与回归</h2>
+<p>分类预测离散标签，回归预测连续数值；聚类通常不需要给定真实标签。请先问标签从哪里来、是否可靠，再选择模型。</p>
+</section>
+<section id="决策树随机森林与支持向量机" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="决策树随机森林与支持向量机"><span class="header-section-number">6.6</span> 6.4 决策树、随机森林与支持向量机</h2>
+<p>这些是常见监督学习方法。本科教学以理解使用条件、训练标签质量、独立测试要求和与较简单方法的比较为目标，不要求数学推导或独立训练复杂模型。</p>
+</section>
+<section id="特征工程与考古知识" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="特征工程与考古知识"><span class="header-section-number">6.7</span> 6.5 特征工程与考古知识</h2>
+<p>比较口径、口沿厚度与倾角时必须考虑计量单位、测量误差、结构性缺失和标准化。若在数据中直接加入人工类型标签，再用聚类检验是否重现人工类型，可能产生循环论证。</p>
+</section>
+<section id="算法分组与考古类型学" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="算法分组与考古类型学"><span class="header-section-number">6.8</span> 6.6 算法分组与考古类型学</h2>
+<p>这次教学示例取自18条虚构陶片记录中的9条口沿记录；为其增加虚构的厚度、倾角和示意人工类型。KMeans与Ward方法在<strong>事先指定为两个簇</strong>时，并不完全给出相同分组。两种算法都不能根据这份数据证明有两个真实考古类型。</p>
+<p><a href="../data/teaching-ceramics-01/methods_typology_note.md">方法记录、限制与复现说明</a>。</p>
+</section>
+<section id="数据与预制结果" class="level2" data-number="6.9">
+<h2 data-number="6.9" class="anchored" data-anchor-id="数据与预制结果"><span class="header-section-number">6.9</span> 数据与预制结果</h2>
+<ul>
+<li><a href="../data/teaching-ceramics-01/rim_morphometrics_synthetic.csv">虚构口沿形态测量表（UTF-8 CSV）</a></li>
+<li><a href="../data/teaching-ceramics-01/rim_morphometrics_excel_utf8bom.csv">Excel兼容测量表</a></li>
+<li><a href="../data/teaching-ceramics-01/prepared_clusters.csv">预制KMeans与Ward分组结果（CSV）</a></li>
+<li><a href="../data/teaching-ceramics-01/prepared_clusters_excel_utf8bom.csv">Excel兼容分组结果</a></li>
+<li><a href="../data/teaching-ceramics-01/rim_morphometrics_dictionary.csv">变量字典</a></li>
+</ul>
+<p><strong>注意：</strong> 聚类标签0、1是算法任意编号，不能把0直接当作“甲”或把1当作“乙”。</p>
+</section>
+<section id="必做综合任务无代码" class="level2" data-number="6.10">
+<h2 data-number="6.10" class="anchored" data-anchor-id="必做综合任务无代码"><span class="header-section-number">6.10</span> 必做综合任务（无代码）</h2>
+<p>利用两个CSV及方法记录，完成不超过400字的判断：</p>
+<ol type="1">
+<li>比较KMeans与Ward结果，找出是否存在不同归组的记录，并说明为什么标签编号不能直接比较。（成果1、4）</li>
+<li>解释为什么对口径、厚度、角度采用标准化，若加入“人工类型”作为输入有什么问题。（成果3）</li>
+<li>就“本组数据适合聚类、PCA、分类还是回归”分别说明研究任务和数据条件；指出仅凭提供的输出<strong>无法</strong>判断PCA表现、SVM效果或分类预测精度。（成果2）</li>
+<li>指出至少一个恰当的非AI基线和一个尚缺的独立考古证据来源。（成果5）</li>
+</ol>
+<p><strong>5分钟短测：</strong> “监督学习与聚类区别？”“为什么提前指定两个簇不等于发现两个考古类型？”“何时不用复杂AI？”</p>
+<p><strong>真实论文阅读评价待补：</strong> 正式教学需提供来源已核验、可合法节选的论文方法段。仅靠上述模拟数据不能完成［阅读］层的最终验收。</p>
+</section>
+<section id="动手试试选做" class="level2" data-number="6.11">
+<h2 data-number="6.11" class="anchored" data-anchor-id="动手试试选做"><span class="header-section-number">6.11</span> 动手试试（选做）</h2>
+<p>在Orange中使用数值字段探索聚类与降维，或在已配置Python环境中运行 <a href="../data/teaching-ceramics-01/reproduce_clusters.py">复现脚本</a>。基础必做评价<strong>完全不依赖</strong>该选做操作。</p>
+</section>
+<section id="何时用何时不用" class="level2" data-number="6.12">
+<h2 data-number="6.12" class="anchored" data-anchor-id="何时用何时不用"><span class="header-section-number">6.12</span> 何时用、何时不用</h2>
+<p>当变量具有明确考古含义、记录标准一致、样本规模与研究问题相称且能提供独立比较时，可以把聚类用于探索。样本极少、缺失机制不清、类型定义依赖年代与地层、缺乏非AI基线时，不应把聚类视为已证实的考古分类。</p>
+</section>
+<section id="继续深入" class="level2" data-number="6.13">
+<h2 data-number="6.13" class="anchored" data-anchor-id="继续深入"><span class="header-section-number">6.13</span> 继续深入</h2>
+<p>以第8章模型验证为前提，再联系第10章的类型学讨论。真实案例与分层阅读书目仍待编写组学术核验。</p>
 
 
 </section>

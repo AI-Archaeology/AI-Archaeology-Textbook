@@ -29,6 +29,14 @@
 - `coarse_inclusion_flag = 0` 不等于证实粗颗粒不存在。
 - 不得利用这些模拟数据推断真实生产工艺、文化分期或社会组织。
 
+## 第6章与第10章的扩展资源
+
+- [虚构9条口沿测量](rim_morphometrics_synthetic.csv)与[Excel兼容版本](rim_morphometrics_excel_utf8bom.csv)
+- [KMeans／Ward预制结果](prepared_clusters.csv)与[Excel兼容版本](prepared_clusters_excel_utf8bom.csv)
+- [变量补充字典](rim_morphometrics_dictionary.csv)、[算法说明与解释边界](methods_typology_note.md)、[选做复现脚本](reproduce_clusters.py)
+
+这些记录仍然是虚构材料；聚类结果虽由实际算法运行取得，却不能代表考古学证据。两章的必做任务不需要学生训练模型。
+
 ## 建议的基础任务
 
 1. 数出记录数，区分一行（陶片）与一列（变量）。
