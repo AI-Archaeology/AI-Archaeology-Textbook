@@ -12,7 +12,7 @@
 | 类型 | **完全虚构／模拟** |
 | 规模 | 18条记录，8个字段 |
 | 观测单位 | 一条虚构陶片记录 |
-| 适用章节 | 第3章；为第6、10章的未来练习提供字段结构 |
+| 适用章节 | 第3章的数据整理；第6、10章共享的模拟形态／分组比较 |
 | 许可 | **尚未确认开放许可**，见使用说明 |
 | 实际遗址及年代 | 不适用 |
 
@@ -53,6 +53,15 @@
 - 一条“未记录”的表面信息用于课堂检查。
 - `context_id` 未提供地层关系或独立年代信息。
 - 无真实标注者、测量误差评估、图像或研究出处，故不适合模型性能评估。
+
+## 第6章与第10章共享的拓展资源
+
+> **仍属教学模拟。** 新增9条虚构口沿形态测量记录，与第3章的陶片标识符相连；甲／乙标签由教学设计指定，0／1是实际计算的聚类编号，不能推出真实考古类型。
+
+- [虚构口沿形态测量 CSV](data/teaching-ceramics-01/rim_morphometrics_synthetic.csv) · [Excel兼容版](data/teaching-ceramics-01/rim_morphometrics_excel_utf8bom.csv)
+- [两种聚类的预制输出 CSV](data/teaching-ceramics-01/prepared_clusters.csv) · [Excel兼容版](data/teaching-ceramics-01/prepared_clusters_excel_utf8bom.csv)
+- [测量字段字典](data/teaching-ceramics-01/rim_morphometrics_dictionary.csv) · [算法与真实性说明](data/teaching-ceramics-01/methods_typology_note.md)
+- [第6章：方法比较](chapters/chapter-06.qmd) · [第10章：类型学证据审查](chapters/chapter-10.qmd)
 
 ## 配套教学
 
