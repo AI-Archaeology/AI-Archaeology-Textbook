@@ -1689,6 +1689,17 @@
     ]
   },
   {
+    "objectID": "datasets.html#真实研究数据候选尚未托管原始数据",
+    "href": "datasets.html#真实研究数据候选尚未托管原始数据",
+    "title": "数据集目录",
+    "section": "真实研究数据候选（尚未托管原始数据）",
+    "text": "真实研究数据候选（尚未托管原始数据）\n\n中国贸易陶瓷与西印度洋考古发现——来源和许可核查档案：原始研究范围、CC BY 4.0 页面标记、拟用于教材的问题及正式收录前的检查清单。目前只有来源链接，不提供未经审查的数据附件。\n备选来源：东亚卜骨开放数据；中国考古碳十四数据库（两者的数据文件核验仍未完成）。",
+    "crumbs": [
+      "配套资源",
+      "数据集目录"
+    ]
+  },
+  {
     "objectID": "datasets.html#收录与发布要求",
     "href": "datasets.html#收录与发布要求",
     "title": "数据集目录",
@@ -1697,6 +1708,83 @@
     "crumbs": [
       "配套资源",
       "数据集目录"
+    ]
+  },
+  {
+    "objectID": "real-data-candidate-chinese-ceramics.html",
+    "href": "real-data-candidate-chinese-ceramics.html",
+    "title": "真实数据候选01：中国贸易陶瓷与西印度洋考古发现",
+    "section": "",
+    "text": "来源信息",
+    "crumbs": [
+      "配套资源",
+      "真实数据候选01：中国贸易陶瓷与西印度洋考古发现"
+    ]
+  },
+  {
+    "objectID": "real-data-candidate-chinese-ceramics.html#来源信息",
+    "href": "real-data-candidate-chinese-ceramics.html#来源信息",
+    "title": "真实数据候选01：中国贸易陶瓷与西印度洋考古发现",
+    "section": "",
+    "text": "项目\n已核对内容\n\n\n\n\n论文／数据标题\nChinese ceramics as global commodities: a thousand years of production and trade of Chinese ceramics in the Western Indian Ocean\n\n\n数据作者\nRan Zhang\n\n\n数据发布页面\nTaylor & Francis / Figshare\n\n\n永久标识\nDOI: 10.6084/m9.figshare.27842990\n\n\n页面发布日期\n2024-11-18\n\n\n平台标注许可\nCC BY 4.0；具体附件与第三方权利仍须核查\n\n\n数据文件清点\n未完成（当前环境无法可靠获取附件）\n\n\n网站收录状态\n候选／仅链接原平台，不托管数据副本",
+    "crumbs": [
+      "配套资源",
+      "真实数据候选01：中国贸易陶瓷与西印度洋考古发现"
+    ]
+  },
+  {
+    "objectID": "real-data-candidate-chinese-ceramics.html#研究范围哪些事实已经得到来源支持",
+    "href": "real-data-candidate-chinese-ceramics.html#研究范围哪些事实已经得到来源支持",
+    "title": "真实数据候选01：中国贸易陶瓷与西印度洋考古发现",
+    "section": "研究范围：哪些事实已经得到来源支持？",
+    "text": "研究范围：哪些事实已经得到来源支持？\n该研究讨论约公元800—1900年间中国贸易陶瓷在西印度洋考古遗址中的发现、流通和贸易。作者在数据页面的摘要中描述了216处遗址、15类中国陶瓷产品的比较研究。\n重要区别： 这些数字描述研究范围，不等于已核实数据附件中恰有216行、15列或某种特定字段结构。本数据不是“中国境内陶瓷窑址数据库”，也不能直接视为完整、无偏的国际贸易记录。",
+    "crumbs": [
+      "配套资源",
+      "真实数据候选01：中国贸易陶瓷与西印度洋考古发现"
+    ]
+  },
+  {
+    "objectID": "real-data-candidate-chinese-ceramics.html#与ai考古学通论的教学关系",
+    "href": "real-data-candidate-chinese-ceramics.html#与ai考古学通论的教学关系",
+    "title": "真实数据候选01：中国贸易陶瓷与西印度洋考古发现",
+    "section": "与《AI考古学通论》的教学关系",
+    "text": "与《AI考古学通论》的教学关系\n\n第3章： 阅读真正的研究数据说明，识别观测单位与字段设计（须取得数据字典后才能开展）。\n第10章： 讨论陶瓷产品“类型”的界定、研究类别与可计算属性的关系；不把数据中的分类直接当作无需检验的真值。\n第12章： 对比器物发现地、生产窑址、产地证据与交换路径。发现地不等于生产地，分布图不能直接证明航线。\n第14章／第20章： 讨论空间覆盖、调查偏差与交换网络推论的局限，避免把缺失记录直接解释为历史不存在。",
+    "crumbs": [
+      "配套资源",
+      "真实数据候选01：中国贸易陶瓷与西印度洋考古发现"
+    ]
+  },
+  {
+    "objectID": "real-data-candidate-chinese-ceramics.html#无需下载数据的预备阅读任务",
+    "href": "real-data-candidate-chinese-ceramics.html#无需下载数据的预备阅读任务",
+    "title": "真实数据候选01：中国贸易陶瓷与西印度洋考古发现",
+    "section": "无需下载数据的预备阅读任务",
+    "text": "无需下载数据的预备阅读任务\n阅读原始数据页面及其关联论文说明，回答：\n\n为什么“西印度洋遗址发现的中国陶瓷”与“中国生产窑址”不能作为同一观测单位？\n为什么216处遗址的研究范围并不代表完整覆盖所有沿线遗址？\n在讨论贸易网络前，需要哪些更独立的证据（例如分期、来源研究、运销背景或保存／调查信息）？\n如果要比较15类产品的分布，需要从原始资料确认哪些字段、编码和分类标准？\n\n评价性质： 这是基于真实已发表资料的研究设计阅读练习，不是对尚未取得数据的计算分析结果的评价。",
+    "crumbs": [
+      "配套资源",
+      "真实数据候选01：中国贸易陶瓷与西印度洋考古发现"
+    ]
+  },
+  {
+    "objectID": "real-data-candidate-chinese-ceramics.html#进入正式数据集的核验门槛",
+    "href": "real-data-candidate-chinese-ceramics.html#进入正式数据集的核验门槛",
+    "title": "真实数据候选01：中国贸易陶瓷与西印度洋考古发现",
+    "section": "进入正式数据集的核验门槛",
+    "text": "进入正式数据集的核验门槛\n\n下载并逐个清点原始附件的文件名、格式、大小和版本，并保存校验信息。\n打开每份数据，核对实际字段、记录单位、缺失、重复、时期和地理范围。\n检查原作者的数据说明、关联论文与相关使用许可；平台页面的 CC BY 声明不能自动排除附件中的第三方限制。\n判断是否包含敏感遗址坐标、未公开个体定位信息或其他不适宜再分发的内容。\n进行描述统计与可重复检查，保留转换脚本及字段字典；不得“补造”缺失考古事实。\n经编写组审定后才决定托管脱敏、合规的教学派生数据，或者仅保留来源链接。",
+    "crumbs": [
+      "配套资源",
+      "真实数据候选01：中国贸易陶瓷与西印度洋考古发现"
+    ]
+  },
+  {
+    "objectID": "real-data-candidate-chinese-ceramics.html#另外两项备选来源",
+    "href": "real-data-candidate-chinese-ceramics.html#另外两项备选来源",
+    "title": "真实数据候选01：中国贸易陶瓷与西印度洋考古发现",
+    "section": "另外两项备选来源",
+    "text": "另外两项备选来源\n\nOracle Bones in East Asia，Brunson、Li、Flad；Open Context DOI 10.6078/M74B2Z7J，项目页面标示CC BY 4.0。需检查实际可下载记录、字段及适用性。\nChronology of Early China，中国考古放射性碳测年资料；论文描述7083条测年记录，需进一步核对数据文件结构、许可与敏感位置信息。\n\n核查状态说明： 本页面仅摘述可以从数据发布页和论文页面明确确认的信息，不声称上述三个来源已经通过文件级或出版级数据审查。",
+    "crumbs": [
+      "配套资源",
+      "真实数据候选01：中国贸易陶瓷与西印度洋考古发现"
     ]
   },
   {
