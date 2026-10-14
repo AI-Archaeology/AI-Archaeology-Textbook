@@ -35,6 +35,8 @@
 
 `Country` 中的26种文本标签包含区域／属地名称（如Southern Africa），不是26个主权国家。原Sites表没有经纬度，不能直接绘制准确遗址点位。
 
+**教师配套：** [原论文阅读定位](real-data-reading-guide-v1.qmd)与[四项任务评分量规](real-data-rubrics-v1.qmd)。请先核对全文可访问性及适用许可。
+
 ## 4. 必做综合评价（无代码）
 
 **材料包：** 此页面的四表结构摘要；[V1文件级核验记录](../data/external-candidates/chinese-ceramics-file-audit-v1.md)、[V2记录及异文审查](../data/external-candidates/chinese-ceramics-version-duplicates-license-v2.md)、原研究的[数据发布页](https://doi.org/10.6084/m9.figshare.27842990)。无需获得私有CSV。
