@@ -36,9 +36,9 @@
 
 内部键值关联和数量分配对账通过；浮点误差在预期范围内。**但这仅是用户提供附件的内部初审，不是官方版本逐字节核验，也不构成对原作者解释的独立证明。**
 
-**特别注意：** 有7组相同遗址—类别组合（不同Assemblage ID），不能未经核实擅自去重；`Country` 含26种标签，并非26个主权国家；原表没有遗址经纬度；年代权重不是单片陶片的实测年代。论文一处“869 assemblages”与附件896条记录不同，仍待询证。
+**进一步定位：** 7组相同遗址—类别组合中，6组位于马尔代夫Kinolhas（Site 077），1组位于苏丹Suakin（Site 174）；对应记录ID和陶片数见[V2审核附表](data/external-candidates/chinese-ceramics-version-duplicates-license-v2.md)。**特别注意：** 有7组相同遗址—类别组合（不同Assemblage ID），不能未经核实擅自去重；`Country` 含26种标签，并非26个主权国家；原表没有遗址经纬度；年代权重不是单片陶片的实测年代。论文一处“869 assemblages”与附件896条记录不同，仍待询证。
 
-[查看文件级核验记录](data/external-candidates/chinese-ceramics-file-audit-v1.md)。**本网站不提供原始Excel文件或真实数据CSV下载。**
+[查看文件级核验记录V1](data/external-candidates/chinese-ceramics-file-audit-v1.md) · [查看官方文件、重复记录及许可核验补充说明V2](data/external-candidates/chinese-ceramics-version-duplicates-license-v2.md)。**本网站不提供原始Excel文件或真实数据CSV下载。** 官方下载目前可定位到Figshare文件ID 50601581，文件名及显示大小均与用户提供副本相符，但仍未获得可比较的官方独立哈希；此情况详见[V2核验说明](data/external-candidates/chinese-ceramics-version-duplicates-license-v2.md)。
 
 ## 与《AI考古学通论》的教学关系
 
