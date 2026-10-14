@@ -16,7 +16,9 @@
 
 [查看数据说明](dataset-teaching-ceramics-01.qmd) · [下载标准 CSV](data/teaching-ceramics-01/ceramics.csv) · [下载 Excel 兼容 CSV](data/teaching-ceramics-01/ceramics_excel_utf8bom.csv) · [变量字典](data/teaching-ceramics-01/data_dictionary.csv) · [来源说明](data/teaching-ceramics-01/provenance.md) · [使用状态](data/teaching-ceramics-01/USAGE.md)
 
-**教学重点：** 观测单位、类别与数值变量、结构性缺失、记录缺失及考古解释的边界。参见[第3章](chapters/chapter-03.qmd)及[实践活动](exercises.qmd)。
+**教学重点：** 第3章训练数据整理与缺失判断；第6章使用另附的虚构形态测量和真实计算的聚类结果比较方法；第10章审查示意类型和独立考古证据的关系。参见[第3章](chapters/chapter-03.qmd)及[实践活动](exercises.qmd)。
+
+**第6／10章共享资源：** [口沿测量数据](data/teaching-ceramics-01/rim_morphometrics_synthetic.csv) · [Excel兼容版](data/teaching-ceramics-01/rim_morphometrics_excel_utf8bom.csv) · [预制聚类结果](data/teaching-ceramics-01/prepared_clusters.csv) · [算法来源与限制](data/teaching-ceramics-01/methods_typology_note.md)。所有新增测量与人工类型均为虚构。
 
 ## 收录与发布要求
 
