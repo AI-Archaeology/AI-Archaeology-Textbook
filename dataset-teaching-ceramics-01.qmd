@@ -18,8 +18,10 @@
 
 ## 下载与核查
 
-- [下载数据表（CSV）](data/teaching-ceramics-01/ceramics.csv)
-- [下载变量字典（CSV）](data/teaching-ceramics-01/data_dictionary.csv)
+- [下载数据表（标准 UTF-8 CSV）](data/teaching-ceramics-01/ceramics.csv)
+- [下载数据表（Excel 兼容 UTF-8 BOM CSV）](data/teaching-ceramics-01/ceramics_excel_utf8bom.csv)
+- [下载变量字典（标准 UTF-8 CSV）](data/teaching-ceramics-01/data_dictionary.csv)
+- [下载变量字典（Excel 兼容 UTF-8 BOM CSV）](data/teaching-ceramics-01/data_dictionary_excel_utf8bom.csv)
 - [来源与构造说明](data/teaching-ceramics-01/provenance.md)
 - [使用状态与许可说明](data/teaching-ceramics-01/USAGE.md)
 
