@@ -1,0 +1,10 @@
+artifact_id,rim_diameter_cm,rim_thickness_cm,rim_angle_deg,lip_profile,illustrative_manual_type
+TC001,18.2,1.9,35,外侈,甲
+TC003,16.4,1.7,31,外侈,甲
+TC004,21.1,2.4,43,折沿,乙
+TC007,13.5,1.4,25,外侈,甲
+TC009,20,2.2,40,折沿,乙
+TC010,22.4,2.5,46,折沿,乙
+TC013,15.1,1.8,29,外侈,甲
+TC015,19.3,2,37,折沿,乙
+TC017,17.8,1.9,34,外侈,甲
