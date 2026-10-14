@@ -8,6 +8,8 @@
 - [第11章：年代范围、Aoristic分配与证据判断（真实研究数据模块）](real-data-ch11-module-v1.qmd)
 - [Real Data 01 来源、审核状态与限制](../real-data-candidate-chinese-ceramics.qmd)
 
+**教学实施补充：** [真实论文小节与图表定位](real-data-reading-guide-v1.qmd) · [T3-A/T3-B/T11-A/T11-B四项评分量规](real-data-rubrics-v1.qmd)。
+
 ## 全部10条成果的覆盖矩阵
 
 | 学习成果 | 层次 | 必做综合评价 | 真实论文阅读 | 补充检查 | 完成标准 |
