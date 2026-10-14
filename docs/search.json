@@ -164,40 +164,51 @@
     "href": "chapters/chapter-03.html",
     "title": "3  从考古资料到可计算数据",
     "section": "",
-    "text": "3.1 学习目标\n待编写与核验。",
+    "text": "3.1 本章问题\n一件陶片怎样成为数据表中的一行？考古学家把器物描述转换为可计算字段时，保留了什么，又可能丢失哪些信息？",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
     ]
   },
   {
-    "objectID": "chapters/chapter-03.html#考古问题与方法",
-    "href": "chapters/chapter-03.html#考古问题与方法",
+    "objectID": "chapters/chapter-03.html#学习成果",
+    "href": "chapters/chapter-03.html#学习成果",
     "title": "3  从考古资料到可计算数据",
-    "section": "3.2 考古问题与方法",
-    "text": "3.2 考古问题与方法\n待编写。",
+    "section": "3.2 学习成果",
+    "text": "3.2 学习成果\n完成本示例后，学生应能：\n\n解释考古实物、记录、观测单位和数据字段之间的区别。\n判断类别变量、数值变量与二元编码的意义及适用条件。\n核查空白、未记录和零值是否被混为一谈。\n比较按碎片记录与按遗迹／器物组合汇总的不同研究含义。\n说明为何数据分组本身并不能证明年代、工艺或社会差异。",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
     ]
   },
   {
-    "objectID": "chapters/chapter-03.html#案例与数据",
-    "href": "chapters/chapter-03.html#案例与数据",
+    "objectID": "chapters/chapter-03.html#教学数据虚构陶片属性表",
+    "href": "chapters/chapter-03.html#教学数据虚构陶片属性表",
     "title": "3  从考古资料到可计算数据",
-    "section": "3.3 案例与数据",
-    "text": "3.3 案例与数据\n案例及数据授权待核验。",
+    "section": "3.3 教学数据：虚构陶片属性表",
+    "text": "3.3 教学数据：虚构陶片属性表\n本章采用 教学模拟陶片属性数据 01。表中有18条虚构陶片记录、8个字段，所有记录均非真实考古资料。\n下载标准 CSV · Excel 兼容 CSV · 查看变量字典 · 查看来源与限制\n\n\n\n\n\n\n\n\n字段\n观测内容\n需要注意\n\n\n\n\nartifact_id\n陶片标识符\n标识符不是数值测量\n\n\ncontext_id\n模拟记录单位\n不是实际遗址、地点或年代\n\n\nfragment_part\n口沿、腹片或底部\n分类标准需保持一致\n\n\nfabric\n胎质记录\n原始观察可能存在主观差异\n\n\nsurface_treatment\n表面特征\n“未记录”不是器物类型\n\n\nrim_diameter_cm\n口沿直径估计（cm）\n非口沿留空，不等于0\n\n\ncoarse_inclusion_flag\n粗颗粒夹杂记录（0/1）\n0并非“证明不存在”\n\n\nsurface_unrecorded_flag\n表面记录缺失标志（0/1）\n用于数据质量审查",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
     ]
   },
   {
-    "objectID": "chapters/chapter-03.html#何时用何时不用",
-    "href": "chapters/chapter-03.html#何时用何时不用",
+    "objectID": "chapters/chapter-03.html#资料变为数据五个关键判断",
+    "href": "chapters/chapter-03.html#资料变为数据五个关键判断",
     "title": "3  从考古资料到可计算数据",
-    "section": "3.4 何时用、何时不用",
-    "text": "3.4 何时用、何时不用\n待编写。",
+    "section": "3.4 资料变为数据：五个关键判断",
+    "text": "3.4 资料变为数据：五个关键判断\n\n3.4.1 1. 一行代表什么？\n在这张表中，一行是一条陶片记录，而不是一件完整器物，也不是一个遗址。同一记录单位可能包含多条记录。把碎片数量当作完整器物数量会产生错误结论。\n\n\n3.4.2 2. 一列代表什么？\n部位与胎质是类别变量；口沿直径是有单位的数值变量；0/1 是编码，含义取决于数据字典。编号字段不能拿来计算平均数。\n\n\n3.4.3 3. 为什么有空白？\n只有口沿碎片才适合记录口沿直径；其他部位的空白是结构性缺失。某条“未记录”表示观察记录欠缺，不能当作素面或任何真实表面类型。\n\n\n3.4.4 4. 为什么需要来源和版本？\n没有出处、编码规则和质量说明的数据表，别人无法判断它是否适合比较，更无法复核研究。真实考古数据还须注明抽样方式、保存偏差与使用许可。\n\n\n3.4.5 5. 从表格能推断什么？\n这份教学表只能支持关于数据结构、记录质量和分析流程的判断。任何关于真实器物类型、文化、年代、生产组织或交换的结论都超出了证据。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-03.html#必做评价无需编程",
+    "href": "chapters/chapter-03.html#必做评价无需编程",
+    "title": "3  从考古资料到可计算数据",
+    "section": "3.5 必做评价（无需编程）",
+    "text": "3.5 必做评价（无需编程）\n材料：陶片表格和变量字典。\n\n写出本数据的观测单位与两种不同类型的变量。\n解释非口沿样本的 rim_diameter_cm 为空白与填为0有何不同。\n说明将“未记录”当作一种真实表面类型会造成什么问题。\n指出若希望判断两组陶片是否属于不同年代，还必须收集哪些独立证据。\n\n评价覆盖： 成果1–3、5；成果4通过课堂短问“按碎片和按记录单位汇总，分母有何变化？”另行检验。基础评价不以运行软件为前提。",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
@@ -207,8 +218,41 @@
     "objectID": "chapters/chapter-03.html#动手试试选做",
     "href": "chapters/chapter-03.html#动手试试选做",
     "title": "3  从考古资料到可计算数据",
-    "section": "3.5 动手试试（选做）",
-    "text": "3.5 动手试试（选做）\n待编写；必做评价需提供独立可用的数据与材料。",
+    "section": "3.6 动手试试（选做）",
+    "text": "3.6 动手试试（选做）\n用 Excel、LibreOffice、R 或 Python 任一工具打开 CSV；绘制碎片部位的频数图，并记录每个字段的缺失情况。务必在输出写明“教学模拟数据”。不得将可视化结果解释成真实遗址发现。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-03.html#何时用何时不用",
+    "href": "chapters/chapter-03.html#何时用何时不用",
+    "title": "3  从考古资料到可计算数据",
+    "section": "3.7 何时用、何时不用",
+    "text": "3.7 何时用、何时不用\n结构化表格适合整理重复观察、进行一致性核查和简单统计；对出土环境、器形整体、非标准化观察及文化解释等复杂问题，字段化会损失语境。必要时应返回原始记录、照片和实物，不应仅依赖表格或模型结果。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-03.html#同一问题的其他解法",
+    "href": "chapters/chapter-03.html#同一问题的其他解法",
+    "title": "3  从考古资料到可计算数据",
+    "section": "3.8 同一问题的其他解法",
+    "text": "3.8 同一问题的其他解法\n传统手工登记册、电子表格、关系数据库、规则式字段抽取和AI辅助信息提取各有前提。是否使用AI应根据资料规模、记录一致性、来源可追溯性、核查成本与误用风险判断。",
+    "crumbs": [
+      "第一编 认识AI考古学",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter-03.html#继续深入",
+    "href": "chapters/chapter-03.html#继续深入",
+    "title": "3  从考古资料到可计算数据",
+    "section": "3.9 继续深入",
+    "text": "3.9 继续深入\n先理解数据字典、测量尺度与缺失机制，再进入第4章的偏差与不确定性、第5–8章的方法基础。真实研究案例和分层阅读文献仍待编写组核验补充。",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
@@ -1429,10 +1473,131 @@
     "href": "datasets.html",
     "title": "数据集目录",
     "section": "",
-    "text": "本站将为每份教学数据提供：来源、许可、变量字典、版本、数据质量说明、真实性标记和适用章节。\n当前尚未发布经核验的数据集。\n\n\n\n数据集\n章节\n来源和许可\n状态\n\n\n\n\n陶器属性与聚类示例（拟建）\n6、10\n待核实\n待准备\n\n\n遥感候选点示例（拟建）\n13\n待核实\n待准备",
+    "text": "数据集目录\n这里收录《AI考古学通论》的教学数据、数据字典、来源记录与适用边界。数据是否真实与是否获得公开许可分别标注；公开页面不意味着资料可任意再利用。",
     "crumbs": [
       "配套资源",
       "数据集目录"
+    ]
+  },
+  {
+    "objectID": "datasets.html#数据集目录",
+    "href": "datasets.html#数据集目录",
+    "title": "数据集目录",
+    "section": "",
+    "text": "数据集\n类型与规模\n对应章节\n当前状态\n\n\n\n\n教学模拟陶片属性数据 01\n模拟；18行 × 8列\n3、6、10\n教学演示；许可待确认\n\n\n遥感候选点示例（规划）\n尚无数据\n13\n未收录\n\n\n真实陶器或聚落数据（规划）\n须核验出处与授权\n3、10、14\n未收录",
+    "crumbs": [
+      "配套资源",
+      "数据集目录"
+    ]
+  },
+  {
+    "objectID": "datasets.html#首个教学数据集",
+    "href": "datasets.html#首个教学数据集",
+    "title": "数据集目录",
+    "section": "首个教学数据集",
+    "text": "首个教学数据集\n\n教学模拟数据（SYNTHETIC）：下列记录由教学目的虚构，不对应实际遗址或发掘发现，不能支持历史考古结论。\n\n查看数据说明 · 下载标准 CSV · 下载 Excel 兼容 CSV · 变量字典 · 来源说明 · 使用状态\n教学重点： 观测单位、类别与数值变量、结构性缺失、记录缺失及考古解释的边界。参见第3章及实践活动。",
+    "crumbs": [
+      "配套资源",
+      "数据集目录"
+    ]
+  },
+  {
+    "objectID": "datasets.html#收录与发布要求",
+    "href": "datasets.html#收录与发布要求",
+    "title": "数据集目录",
+    "section": "收录与发布要求",
+    "text": "收录与发布要求\n每个真实数据集须附：原始研究与出处、数据获取和转换流程、变量字典、版本、许可、敏感信息审核、抽样／保存／记录偏差、对应章节和可重复练习。许可与研究真实性未核实的资料不得标作已验证。\n新建数据页面请参考 templates/dataset-page-template.qmd。该模板仅供编写使用，不代表任何数据已批准公开。",
+    "crumbs": [
+      "配套资源",
+      "数据集目录"
+    ]
+  },
+  {
+    "objectID": "dataset-teaching-ceramics-01.html",
+    "href": "dataset-teaching-ceramics-01.html",
+    "title": "教学模拟陶片属性数据 01",
+    "section": "",
+    "text": "数据概况",
+    "crumbs": [
+      "配套资源",
+      "教学模拟陶片属性数据 01"
+    ]
+  },
+  {
+    "objectID": "dataset-teaching-ceramics-01.html#数据概况",
+    "href": "dataset-teaching-ceramics-01.html#数据概况",
+    "title": "教学模拟陶片属性数据 01",
+    "section": "",
+    "text": "项目\n说明\n\n\n\n\n数据集 ID\nteaching-ceramics-01\n\n\n版本\n0.1（教学示范，待审核）\n\n\n类型\n完全虚构／模拟\n\n\n规模\n18条记录，8个字段\n\n\n观测单位\n一条虚构陶片记录\n\n\n适用章节\n第3章；为第6、10章的未来练习提供字段结构\n\n\n许可\n尚未确认开放许可，见使用说明\n\n\n实际遗址及年代\n不适用",
+    "crumbs": [
+      "配套资源",
+      "教学模拟陶片属性数据 01"
+    ]
+  },
+  {
+    "objectID": "dataset-teaching-ceramics-01.html#下载与核查",
+    "href": "dataset-teaching-ceramics-01.html#下载与核查",
+    "title": "教学模拟陶片属性数据 01",
+    "section": "下载与核查",
+    "text": "下载与核查\n\n下载数据表（标准 UTF-8 CSV）\n下载数据表（Excel 兼容 UTF-8 BOM CSV）\n下载变量字典（标准 UTF-8 CSV）\n下载变量字典（Excel 兼容 UTF-8 BOM CSV）\n来源与构造说明\n使用状态与许可说明",
+    "crumbs": [
+      "配套资源",
+      "教学模拟陶片属性数据 01"
+    ]
+  },
+  {
+    "objectID": "dataset-teaching-ceramics-01.html#变量说明",
+    "href": "dataset-teaching-ceramics-01.html#变量说明",
+    "title": "教学模拟陶片属性数据 01",
+    "section": "变量说明",
+    "text": "变量说明\n\n\n\n字段\n意义\n典型检查\n\n\n\n\nartifact_id\n记录ID\n唯一性\n\n\ncontext_id\n虚构记录单位\n不当作真实遗址坐标\n\n\nfragment_part\n碎片部位\n分类一致性\n\n\nfabric\n模拟胎质\n类别编码\n\n\nsurface_treatment\n模拟表面描述\n“未记录”与真实类别的区别\n\n\nrim_diameter_cm\n口沿直径估计\n仅口沿可填，空白不是0\n\n\ncoarse_inclusion_flag\n粗颗粒夹杂记录\n二元编码的观测界限\n\n\nsurface_unrecorded_flag\n表面记录缺失标志\n缺失审计\n\n\n\n变量的准确编码、单位和缺失规则应以数据字典为准。",
+    "crumbs": [
+      "配套资源",
+      "教学模拟陶片属性数据 01"
+    ]
+  },
+  {
+    "objectID": "dataset-teaching-ceramics-01.html#考古问题与教学用途",
+    "href": "dataset-teaching-ceramics-01.html#考古问题与教学用途",
+    "title": "教学模拟陶片属性数据 01",
+    "section": "考古问题与教学用途",
+    "text": "考古问题与教学用途\n为什么同一批材料被整理为不同类型的字段后，会改变可回答的问题？为何结构性空白不应填成0？数据是否能够支持解释，取决于记录体系、采样背景和独立的考古证据。\n本数据只用于说明如何审查数据，不用于发现任何真实历史规律。",
+    "crumbs": [
+      "配套资源",
+      "教学模拟陶片属性数据 01"
+    ]
+  },
+  {
+    "objectID": "dataset-teaching-ceramics-01.html#数据质量与局限",
+    "href": "dataset-teaching-ceramics-01.html#数据质量与局限",
+    "title": "教学模拟陶片属性数据 01",
+    "section": "数据质量与局限",
+    "text": "数据质量与局限\n\n18个虚构记录均为人为设置，不代表考古抽样。\nrim_diameter_cm 在非口沿碎片中为空白，是结构性缺失。\n一条“未记录”的表面信息用于课堂检查。\ncontext_id 未提供地层关系或独立年代信息。\n无真实标注者、测量误差评估、图像或研究出处，故不适合模型性能评估。",
+    "crumbs": [
+      "配套资源",
+      "教学模拟陶片属性数据 01"
+    ]
+  },
+  {
+    "objectID": "dataset-teaching-ceramics-01.html#配套教学",
+    "href": "dataset-teaching-ceramics-01.html#配套教学",
+    "title": "教学模拟陶片属性数据 01",
+    "section": "配套教学",
+    "text": "配套教学\n第3章：从考古资料到可计算数据 · 实践与练习\n必做任务： 判定观测单位、变量性质、缺失机制及其推论限制。\n选做任务： 用电子表格绘制碎片部位频数图，并在所有输出上标注“教学模拟数据”。",
+    "crumbs": [
+      "配套资源",
+      "教学模拟陶片属性数据 01"
+    ]
+  },
+  {
+    "objectID": "dataset-teaching-ceramics-01.html#发布状态",
+    "href": "dataset-teaching-ceramics-01.html#发布状态",
+    "title": "教学模拟陶片属性数据 01",
+    "section": "发布状态",
+    "text": "发布状态\n此页面属于教学示范草稿，尚需编写组确认知识表述、字段定义和数据许可。对外公开展示不等于已经完成出版级核验。",
+    "crumbs": [
+      "配套资源",
+      "教学模拟陶片属性数据 01"
     ]
   },
   {
@@ -1440,7 +1605,29 @@
     "href": "exercises.html",
     "title": "实践与练习",
     "section": "",
-    "text": "每章设无代码基础活动；Orange、QGIS、CloudCompare、Python和R均为选做拓展。\n课程评价应独立于选做软件操作，必要时提供预制数据和模型结果。",
+    "text": "第3章：从考古记录到数据\n每章应提供无需编程的基础评价。Orange、QGIS、CloudCompare、R、Python和RAG等工具属于选做拓展；选做操作不得成为后续必修任务的数据前提。\n评价原则： 每条学习成果需对应可收集证据；真实论文阅读成果须使用经核验的原始材料及合规节选。模拟数据只可用于练习方法理解，不可据此杜撰考古原因。",
+    "crumbs": [
+      "配套资源",
+      "实践与练习"
+    ]
+  },
+  {
+    "objectID": "exercises.html#第3章从考古记录到数据",
+    "href": "exercises.html#第3章从考古记录到数据",
+    "title": "实践与练习",
+    "section": "",
+    "text": "教学模拟陶片数据（虚构记录）\n数据表下载与变量字典\n第3章必做评价：区别观测单位、编码、缺失和解释界限\n选做：电子表格频数图；必须标注“教学模拟数据”",
+    "crumbs": [
+      "配套资源",
+      "实践与练习"
+    ]
+  },
+  {
+    "objectID": "exercises.html#预备中的后续活动",
+    "href": "exercises.html#预备中的后续活动",
+    "title": "实践与练习",
+    "section": "预备中的后续活动",
+    "text": "预备中的后续活动\n第6章将提供预制聚类结果，比较算法分组与类型学；第10章可共享底层数据，但转向形态特征和独立证据检验。当前数据表不含真实类型标签或模型输出，故这两章的正式评价尚未发布。",
     "crumbs": [
       "配套资源",
       "实践与练习"
@@ -1451,7 +1638,29 @@
     "href": "data-policy.html",
     "title": "数据伦理、许可与使用说明",
     "section": "",
-    "text": "本网站只发布已获授权且适合公开传播的数据。\n不公开可能助长盗掘的敏感遗址坐标、人类遗骸或古DNA敏感数据、未经授权的报告全文及图像。\n真实数据、教学模拟数据和生成式AI输出应显著区分。\n实际数据集必须逐项补充许可、来源、版本、数据字典与伦理审查状态。",
+    "text": "公开发布原则\n本站区分真实考古数据、经过加工的派生数据、教学模拟数据与AI生成输出，每份数据均须独立标注真实性、来源、版本、敏感性与使用许可。\n不公开可能助长盗掘的敏感遗址坐标、未经授权的人类遗骸或古DNA敏感资料、未经许可的发掘报告全文及图像。真实数据发布前必须核实原始出处、权利人许可、第三方内容、适用规范以及可重复性所需的元数据。",
+    "crumbs": [
+      "配套资源",
+      "数据伦理、许可与使用说明"
+    ]
+  },
+  {
+    "objectID": "data-policy.html#关于教学模拟数据",
+    "href": "data-policy.html#关于教学模拟数据",
+    "title": "数据伦理、许可与使用说明",
+    "section": "关于教学模拟数据",
+    "text": "关于教学模拟数据\n教学模拟陶片数据 01 是为解释数据结构而构造的完全虚构记录，不代表任何真实考古发现。其使用许可尚待编写组确认；当前不声称已采用开放数据许可证。不得将其分析结果当作历史研究发现。",
+    "crumbs": [
+      "配套资源",
+      "数据伦理、许可与使用说明"
+    ]
+  },
+  {
+    "objectID": "data-policy.html#数据集最低文档标准",
+    "href": "data-policy.html#数据集最低文档标准",
+    "title": "数据伦理、许可与使用说明",
+    "section": "数据集最低文档标准",
+    "text": "数据集最低文档标准\n\n真实／模拟／派生标识\n原始来源、引用与版本\n使用许可与再分发条件\n观测单位、数据字典、编码和测量单位\n保存、抽样、调查、记录偏差及缺失处理\n脱敏与敏感信息处理\n适用教材章节、评价任务和已知误用\n\n返回数据集目录。",
     "crumbs": [
       "配套资源",
       "数据伦理、许可与使用说明"
