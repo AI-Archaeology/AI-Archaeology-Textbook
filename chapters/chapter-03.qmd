@@ -20,7 +20,7 @@
 
 本章采用 [教学模拟陶片属性数据 01](../dataset-teaching-ceramics-01.qmd)。表中有18条虚构陶片记录、8个字段，**所有记录均非真实考古资料**。
 
-[下载 CSV](../data/teaching-ceramics-01/ceramics.csv) · [查看变量字典](../data/teaching-ceramics-01/data_dictionary.csv) · [查看来源与限制](../data/teaching-ceramics-01/provenance.md)
+[下载标准 CSV](../data/teaching-ceramics-01/ceramics.csv) · [Excel 兼容 CSV](../data/teaching-ceramics-01/ceramics_excel_utf8bom.csv) · [查看变量字典](../data/teaching-ceramics-01/data_dictionary.csv) · [查看来源与限制](../data/teaching-ceramics-01/provenance.md)
 
 | 字段 | 观测内容 | 需要注意 |
 |---|---|---|
