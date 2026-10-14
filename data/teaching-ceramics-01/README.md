@@ -14,8 +14,10 @@
 
 ## 文件
 
-- [ceramics.csv](ceramics.csv)：UTF-8 CSV 数据表
-- [data_dictionary.csv](data_dictionary.csv)：变量字典
+- [ceramics.csv](ceramics.csv)：标准 UTF-8 CSV 数据表
+- [ceramics_excel_utf8bom.csv](ceramics_excel_utf8bom.csv)：面向 Excel 直接打开的 UTF-8 BOM 版本，数据内容相同
+- [data_dictionary.csv](data_dictionary.csv)：标准 UTF-8 变量字典
+- [data_dictionary_excel_utf8bom.csv](data_dictionary_excel_utf8bom.csv)：Excel 兼容 UTF-8 BOM 变量字典
 - [provenance.md](provenance.md)：数据来源、构造方式与适用边界
 - [USAGE.md](USAGE.md)：目前的使用许可状态与发布要求
 
