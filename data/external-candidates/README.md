@@ -7,8 +7,8 @@
 - 来源：Ran Zhang (2024), *Chinese ceramics as global commodities: a thousand years of production and trade of Chinese ceramics in the Western Indian Ocean*.
 - DOI：https://doi.org/10.6084/m9.figshare.27842990
 - 许可：Figshare 页面标注 CC BY 4.0，仍需检查附件和第三方权利。
-- 当前状态：**用户提供的Excel附件已完成工作表、字段、参照关系及年代分配的文件级初审；与Figshare官方当前附件的哈希一致性、重复组合的记录含义及再分发审核尚未完成。**
-- 官方文件、重复记录与许可进一步审核：`chinese-ceramics-version-duplicates-license-v2.md`。官方文件ID 50601581、文件名及显示大小与用户上传副本相符，但尚无官方哈希对比。重复组已定位至Kinolhas（6组）及Suakin（1组）；原文另有12/15与869/896的表述差异。
+- 当前状态：**用户提供的Excel附件已完成工作表、字段、参照关系及年代分配的文件级初审；**2026-10-14由用户确认官方独立下载并完成SHA-256一致性核验**；重复组合的记录含义及再分发审核尚未完成。**
+- 官方文件、重复记录与许可进一步审核：`chinese-ceramics-version-duplicates-license-v2.md`。官方文件ID 50601581、文件名及显示大小与用户上传副本相符；2026-10-14用户从Figshare独立下载后所得SHA-256与审计副本完全相同。重复组已定位至Kinolhas（6组）及Suakin（1组）；原文另有12/15与869/896的表述差异。
 - 文件级审核摘要：`chinese-ceramics-file-audit-v1.md`（不含原始数据；用户提供附件 SHA-256：`c9da819ad41c1e8cb9c6a5629bd4341bb1f07e39f2b8b9dfb17d8afd33abdfd1`）。
 - 网站评审页：`real-data-candidate-chinese-ceramics.qmd`
 - 核验统计单位：216处遗址、15种上位产品类型、55个细分类、896条发现汇总记录、31,729片陶片。不得将896条记录称为896片陶片或完整器物。

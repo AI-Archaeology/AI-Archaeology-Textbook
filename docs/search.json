@@ -1726,7 +1726,7 @@
     "href": "real-data-candidate-chinese-ceramics.html#来源信息",
     "title": "真实数据候选01：中国贸易陶瓷与西印度洋考古发现",
     "section": "",
-    "text": "项目\n已核对内容\n\n\n\n\n论文／数据标题\nChinese ceramics as global commodities: a thousand years of production and trade of Chinese ceramics in the Western Indian Ocean\n\n\n数据作者\nRan Zhang\n\n\n数据发布页面\nTaylor & Francis / Figshare\n\n\n永久标识\nDOI: 10.6084/m9.figshare.27842990\n\n\n页面发布日期\n2024-11-18\n\n\n平台标注许可\nCC BY 4.0；具体附件与第三方权利仍须核查\n\n\n本次审核附件\nrwar_a_2425801_sm6887.xlsx（用户提供；221,610 bytes；不在公开仓库中）\n\n\nSHA-256\nc9da819ad41c1e8cb9c6a5629bd4341bb1f07e39f2b8b9dfb17d8afd33abdfd1\n\n\n文件级初审\n完成（2026-10-14；结构、关联、数值对账）\n\n\n官方附件一致性\n尚未比对当前Figshare版本的文件哈希\n\n\n再分发审核\n尚未完成；原始文件和派生数据均不在本仓库托管\n\n\n网站收录状态\n候选／仅链接原平台，不托管数据副本",
+    "text": "项目\n已核对内容\n\n\n\n\n论文／数据标题\nChinese ceramics as global commodities: a thousand years of production and trade of Chinese ceramics in the Western Indian Ocean\n\n\n数据作者\nRan Zhang\n\n\n数据发布页面\nTaylor & Francis / Figshare\n\n\n永久标识\nDOI: 10.6084/m9.figshare.27842990\n\n\n页面发布日期\n2024-11-18\n\n\n平台标注许可\nCC BY 4.0；具体附件与第三方权利仍须核查\n\n\n本次审核附件\nrwar_a_2425801_sm6887.xlsx（用户提供；221,610 bytes；不在公开仓库中）\n\n\nSHA-256\nc9da819ad41c1e8cb9c6a5629bd4341bb1f07e39f2b8b9dfb17d8afd33abdfd1\n\n\n文件级初审\n完成（2026-10-14；结构、关联、数值对账）\n\n\n官方附件一致性\n2026-10-14核验通过：用户确认独立从Figshare官方页面下载，SHA-256与审计副本一致；以后版本更新需复核\n\n\n再分发审核\n尚未完成；原始文件和派生数据均不在本仓库托管\n\n\n网站收录状态\n候选／仅链接原平台，不托管数据副本",
     "crumbs": [
       "配套资源",
       "真实数据候选01：中国贸易陶瓷与西印度洋考古发现"
@@ -1748,7 +1748,7 @@
     "href": "real-data-candidate-chinese-ceramics.html#用户提供附件的文件级初审2026-10-14",
     "title": "真实数据候选01：中国贸易陶瓷与西印度洋考古发现",
     "section": "用户提供附件的文件级初审（2026-10-14）",
-    "text": "用户提供附件的文件级初审（2026-10-14）\n\n\n\n\n\n\n\n工作表\n核验结果\n\n\n\n\nPart 1 - Sites\n216个唯一遗址编号；4列；含地理文字标签与参考文献\n\n\nPart 2 - Classification\n55个陶瓷细分类，13列；归为15个 Product Type\n\n\nPart 3 - Chinese Ceramic Finds\n896个唯一 Assemblage ID，5列；发现记录数量合计31,729片陶片\n\n\nPart 4 - Aoristic Results\n896条年代分配明细加说明与汇总；23列；按百年时间箱分配的权重总和为31,729\n\n\n\n内部键值关联和数量分配对账通过；浮点误差在预期范围内。但这仅是用户提供附件的内部初审，不是官方版本逐字节核验，也不构成对原作者解释的独立证明。\n进一步定位： 7组相同遗址—类别组合中，6组位于马尔代夫Kinolhas（Site 077），1组位于苏丹Suakin（Site 174）；对应记录ID和陶片数见V2审核附表。特别注意： 有7组相同遗址—类别组合（不同Assemblage ID），不能未经核实擅自去重；Country 含26种标签，并非26个主权国家；原表没有遗址经纬度；年代权重不是单片陶片的实测年代。论文一处“869 assemblages”与附件896条记录不同，仍待询证。\n查看文件级核验记录V1 · 查看官方文件、重复记录及许可核验补充说明V2。本网站不提供原始Excel文件或真实数据CSV下载。 官方下载目前可定位到Figshare文件ID 50601581，文件名及显示大小均与用户提供副本相符，但仍未获得可比较的官方独立哈希；此情况详见V2核验说明。",
+    "text": "用户提供附件的文件级初审（2026-10-14）\n\n\n\n\n\n\n\n工作表\n核验结果\n\n\n\n\nPart 1 - Sites\n216个唯一遗址编号；4列；含地理文字标签与参考文献\n\n\nPart 2 - Classification\n55个陶瓷细分类，13列；归为15个 Product Type\n\n\nPart 3 - Chinese Ceramic Finds\n896个唯一 Assemblage ID，5列；发现记录数量合计31,729片陶片\n\n\nPart 4 - Aoristic Results\n896条年代分配明细加说明与汇总；23列；按百年时间箱分配的权重总和为31,729\n\n\n\n内部键值关联和数量分配对账通过；浮点误差在预期范围内。数据结构与数值核查仍属于工作簿的内部初审；另已核对2026-10-14官方独立下载附件与审计副本的SHA-256一致，但不构成对作者考古学解释的独立证明。\n进一步定位： 7组相同遗址—类别组合中，6组位于马尔代夫Kinolhas（Site 077），1组位于苏丹Suakin（Site 174）；对应记录ID和陶片数见V2审核附表。特别注意： 有7组相同遗址—类别组合（不同Assemblage ID），不能未经核实擅自去重；Country 含26种标签，并非26个主权国家；原表没有遗址经纬度；年代权重不是单片陶片的实测年代。论文一处“869 assemblages”与附件896条记录不同，仍待询证。\n查看文件级核验记录V1 · 查看官方文件、重复记录及许可核验补充说明V2。本网站不提供原始Excel文件或真实数据CSV下载。 Figshare文件ID为50601581；用户确认2026-10-14独立下载该官方附件，其SHA-256与审计副本一致（不代表平台另行公布过哈希）；详见V2核验说明。",
     "crumbs": [
       "配套资源",
       "真实数据候选01：中国贸易陶瓷与西印度洋考古发现"
@@ -1792,7 +1792,7 @@
     "href": "real-data-candidate-chinese-ceramics.html#另外两项备选来源",
     "title": "真实数据候选01：中国贸易陶瓷与西印度洋考古发现",
     "section": "另外两项备选来源",
-    "text": "另外两项备选来源\n\nOracle Bones in East Asia，Brunson、Li、Flad；Open Context DOI 10.6078/M74B2Z7J，项目页面标示CC BY 4.0。需检查实际可下载记录、字段及适用性。\nChronology of Early China，中国考古放射性碳测年资料；论文描述7083条测年记录，需进一步核对数据文件结构、许可与敏感位置信息。\n\n核查状态说明： 第一项来源的用户提供工作簿已经通过结构与数值初审；官方附件一致性、重复组合含义、版权和再分发条件尚未完成核验。其他候选来源未通过文件级审查。本页面不宣称任何候选数据已获最终公开托管批准。",
+    "text": "另外两项备选来源\n\nOracle Bones in East Asia，Brunson、Li、Flad；Open Context DOI 10.6078/M74B2Z7J，项目页面标示CC BY 4.0。需检查实际可下载记录、字段及适用性。\nChronology of Early China，中国考古放射性碳测年资料；论文描述7083条测年记录，需进一步核对数据文件结构、许可与敏感位置信息。\n\n核查状态说明： 第一项来源的用户提供工作簿已经通过结构与数值初审；本次下载版本一致性已核验；重复组合含义、第三方权利与再分发条件尚未完成审核。其他候选来源未通过文件级审查。本页面不宣称任何候选数据已获最终公开托管批准。",
     "crumbs": [
       "配套资源",
       "真实数据候选01：中国贸易陶瓷与西印度洋考古发现"
