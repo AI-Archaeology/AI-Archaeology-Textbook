@@ -26,5 +26,7 @@
 - [第3章真实研究模块](teaching-modules/real-data-ch03-module-v1.qmd)：不同统计单位、四表关系、重复组合和证据界限；必做T3-A、T3-B。
 - [第11章真实研究模块](teaching-modules/real-data-ch11-module-v1.qmd)：年代区间、Aoristic权重与年代解释；必做T11-A、T11-B。
 - [10条学习成果与评价证据矩阵](teaching-modules/real-data-outcomes-matrix-v1.qmd)：教师审查表。
+- [真实论文方法段及图表定位](teaching-modules/real-data-reading-guide-v1.qmd)：按原论文小节/图号阅读，不复制长段或图像。
+- [四项必做评价评分量规](teaching-modules/real-data-rubrics-v1.qmd)：四维×四级的教学评分建议。
 
 这组模块使用已核验的**真实研究摘要**，但**不提供真实行级数据下载**。其中第11章20片的计算例子明确为虚构；正式［阅读］评价需教师核实并合法获取原论文节选。
