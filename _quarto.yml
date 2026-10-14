@@ -49,6 +49,7 @@ book:
     - part: "配套资源"
       chapters:
         - datasets.qmd
+        - real-data-candidate-chinese-ceramics.qmd
         - dataset-teaching-ceramics-01.qmd
         - exercises.qmd
         - data-policy.qmd

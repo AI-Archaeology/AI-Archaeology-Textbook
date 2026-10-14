@@ -20,6 +20,11 @@
 
 **第6／10章共享资源：** [口沿测量数据](data/teaching-ceramics-01/rim_morphometrics_synthetic.csv) · [Excel兼容版](data/teaching-ceramics-01/rim_morphometrics_excel_utf8bom.csv) · [预制聚类结果](data/teaching-ceramics-01/prepared_clusters.csv) · [算法来源与限制](data/teaching-ceramics-01/methods_typology_note.md)。所有新增测量与人工类型均为虚构。
 
+## 真实研究数据候选（尚未托管原始数据）
+
+- [中国贸易陶瓷与西印度洋考古发现——来源和许可核查档案](real-data-candidate-chinese-ceramics.qmd)：原始研究范围、CC BY 4.0 页面标记、拟用于教材的问题及正式收录前的检查清单。**目前只有来源链接，不提供未经审查的数据附件。**
+- 备选来源：东亚卜骨开放数据；中国考古碳十四数据库（两者的数据文件核验仍未完成）。
+
 ## 收录与发布要求
 
 每个真实数据集须附：原始研究与出处、数据获取和转换流程、变量字典、版本、许可、敏感信息审核、抽样／保存／记录偏差、对应章节和可重复练习。许可与研究真实性未核实的资料不得标作已验证。
