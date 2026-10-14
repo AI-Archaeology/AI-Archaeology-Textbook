@@ -53,6 +53,8 @@ book:
         - teaching-modules/real-data-ch03-module-v1.qmd
         - teaching-modules/real-data-ch11-module-v1.qmd
         - teaching-modules/real-data-outcomes-matrix-v1.qmd
+        - teaching-modules/real-data-reading-guide-v1.qmd
+        - teaching-modules/real-data-rubrics-v1.qmd
         - dataset-teaching-ceramics-01.qmd
         - exercises.qmd
         - data-policy.qmd
