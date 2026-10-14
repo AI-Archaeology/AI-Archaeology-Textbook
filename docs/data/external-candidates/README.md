@@ -7,9 +7,11 @@
 - 来源：Ran Zhang (2024), *Chinese ceramics as global commodities: a thousand years of production and trade of Chinese ceramics in the Western Indian Ocean*.
 - DOI：https://doi.org/10.6084/m9.figshare.27842990
 - 许可：Figshare 页面标注 CC BY 4.0，仍需检查附件和第三方权利。
-- 当前状态：**来源核对通过；原始附件下载、字段核对、敏感性与再分发审核未完成。**
+- 当前状态：**用户提供的Excel附件已完成工作表、字段、参照关系及年代分配的文件级初审；与Figshare官方当前附件的哈希一致性、重复组合的记录含义及再分发审核尚未完成。**
+- 文件级审核摘要：`chinese-ceramics-file-audit-v1.md`（不含原始数据；用户提供附件 SHA-256：`c9da819ad41c1e8cb9c6a5629bd4341bb1f07e39f2b8b9dfb17d8afd33abdfd1`）。
 - 网站评审页：`real-data-candidate-chinese-ceramics.qmd`
-- 禁止：不得把研究描述“216个遗址、15种产品类型”误称为已核实的CSV记录行数或字段数。
+- 核验统计单位：216处遗址、15种上位产品类型、55个细分类、896条发现汇总记录、31,729片陶片。不得将896条记录称为896片陶片或完整器物。
+- 已发现7组重复遗址—类别组合；`Country` 包含区域／属地标签；无原始经纬度；aoristic权重不是实测单片年代。未经核验不得任意合并、地理编码或推断贸易强度。
 
 ## 备选
 
