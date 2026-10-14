@@ -1,0 +1,9 @@
+variable,description_zh,data_type,allowed_values_or_unit,missing_rule
+artifact_id,教学模拟陶片标识符,文本,TC001–TC018,不得缺失
+context_id,虚构出土单位标识（不代表真实遗址）,类别,A01/A02/B01/B02/C01/C02,不得缺失
+fragment_part,碎片部位,类别,口沿/腹片/底部,不得缺失
+fabric,模拟胎质描述,类别,泥质/夹砂,不得缺失
+surface_treatment,模拟表面处理记录,类别,素面/绳纹/磨光/未记录,未记录表示记录缺失而非器物特征
+rim_diameter_cm,口沿直径估计值,数值,厘米（cm）,非口沿碎片留空；不等于0
+coarse_inclusion_flag,是否记录可见粗颗粒夹杂,二元,0/1,0表示未记录到而非不存在
+surface_unrecorded_flag,表面处理是否未记录,二元,0/1,1对应surface_treatment为未记录

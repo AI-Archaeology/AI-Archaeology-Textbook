@@ -1,0 +1,66 @@
+# 教学模拟陶片属性数据 01 {.unnumbered}
+
+> **SYNTHETIC TEACHING DATA · 完全虚构的教学数据**  
+> 该表不来自真实考古遗址、发掘报告或论文，不可据此推断古代文化、年代、工艺或社会关系。
+
+## 数据概况
+
+| 项目 | 说明 |
+|---|---|
+| 数据集 ID | `teaching-ceramics-01` |
+| 版本 | 0.1（教学示范，待审核） |
+| 类型 | **完全虚构／模拟** |
+| 规模 | 18条记录，8个字段 |
+| 观测单位 | 一条虚构陶片记录 |
+| 适用章节 | 第3章；为第6、10章的未来练习提供字段结构 |
+| 许可 | **尚未确认开放许可**，见使用说明 |
+| 实际遗址及年代 | 不适用 |
+
+## 下载与核查
+
+- [下载数据表（标准 UTF-8 CSV）](data/teaching-ceramics-01/ceramics.csv)
+- [下载数据表（Excel 兼容 UTF-8 BOM CSV）](data/teaching-ceramics-01/ceramics_excel_utf8bom.csv)
+- [下载变量字典（标准 UTF-8 CSV）](data/teaching-ceramics-01/data_dictionary.csv)
+- [下载变量字典（Excel 兼容 UTF-8 BOM CSV）](data/teaching-ceramics-01/data_dictionary_excel_utf8bom.csv)
+- [来源与构造说明](data/teaching-ceramics-01/provenance.md)
+- [使用状态与许可说明](data/teaching-ceramics-01/USAGE.md)
+
+## 变量说明
+
+| 字段 | 意义 | 典型检查 |
+|---|---|---|
+| `artifact_id` | 记录ID | 唯一性 |
+| `context_id` | 虚构记录单位 | 不当作真实遗址坐标 |
+| `fragment_part` | 碎片部位 | 分类一致性 |
+| `fabric` | 模拟胎质 | 类别编码 |
+| `surface_treatment` | 模拟表面描述 | “未记录”与真实类别的区别 |
+| `rim_diameter_cm` | 口沿直径估计 | 仅口沿可填，空白不是0 |
+| `coarse_inclusion_flag` | 粗颗粒夹杂记录 | 二元编码的观测界限 |
+| `surface_unrecorded_flag` | 表面记录缺失标志 | 缺失审计 |
+
+变量的准确编码、单位和缺失规则应以[数据字典](data/teaching-ceramics-01/data_dictionary.csv)为准。
+
+## 考古问题与教学用途
+
+为什么同一批材料被整理为不同类型的字段后，会改变可回答的问题？为何结构性空白不应填成0？数据是否能够支持解释，取决于记录体系、采样背景和独立的考古证据。
+
+本数据只用于说明**如何审查数据**，不用于发现任何真实历史规律。
+
+## 数据质量与局限
+
+- 18个虚构记录均为人为设置，不代表考古抽样。
+- `rim_diameter_cm` 在非口沿碎片中为空白，是结构性缺失。
+- 一条“未记录”的表面信息用于课堂检查。
+- `context_id` 未提供地层关系或独立年代信息。
+- 无真实标注者、测量误差评估、图像或研究出处，故不适合模型性能评估。
+
+## 配套教学
+
+[第3章：从考古资料到可计算数据](chapters/chapter-03.qmd) · [实践与练习](exercises.qmd)
+
+**必做任务：** 判定观测单位、变量性质、缺失机制及其推论限制。  
+**选做任务：** 用电子表格绘制碎片部位频数图，并在所有输出上标注“教学模拟数据”。
+
+## 发布状态
+
+此页面属于教学示范草稿，尚需编写组确认知识表述、字段定义和数据许可。对外公开展示不等于已经完成出版级核验。
