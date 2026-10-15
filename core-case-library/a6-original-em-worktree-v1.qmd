@@ -1,0 +1,75 @@
+# A6 原始EM模块私有兼容性工作副本 V1 {.unnumbered}
+
+> **实施准备稿，未经本地Positron实际测试。** 本页针对原作者2014年固定版本程序做**最小兼容性工作副本**；只验证部分原始函数的类别编码和对数联合概率。**没有运行完整E步、M步、MAP先验、随机重启、交叉验证或162件真实象牙的聚类**。在获得实际测试输出前，不宣布行为等价。
+
+## 为什么要建立私有工作副本？
+
+已有PR #16完成13项固定源码静态检查，PR #17完成11项独立环境及缺失编码测试，PR #18完成10项自编虚构EM参考测试。然而，这些并不等于历史`aneic-core/src/aneic/mfm.py`可在现代Python 3.14、NumPy 2.5.4、pandas 3.0.6环境中工作。
+
+本轮开始调用**原作者的部分数学计算函数**，但保留两个固定Git源码目录完全不变。所需测试代码自编，真实CSV不用于本轮，且只在被Git忽略的私有工作目录产生兼容性副本。
+
+## 固定来源与许可
+
+- 原模型：`aneic-core@43a394f3a2409f2918d38f9d3cfc6dd5472970c1`，原模块`src/aneic/mfm.py`。
+- 论文：Gansell et al. 2014，*Journal of Archaeological Science* 44:194–205。[DOI](https://doi.org/10.1016/j.jas.2013.11.005)。
+- 代码与数据须分别遵循许可证；原程序代码MIT，真实CSV语料CC BY-SA 3.0，第三方象牙图片有不同版权。**本项目只公开新编的验收工具及教学说明，不再分发原源码或器物文件。**
+
+## 四处最小兼容性替换
+
+| 原始接口 | 工作副本处理 | 必须通过的观察 |
+|---|---|---|
+| `pd.core.categorical.Categorical.from_array` | `pd.Categorical` | 相同虚构类别得到同序编码 |
+| `cat.levels`、`cat.labels` | `categories`、`codes`，缺失码暂安全索引再恢复NaN | 缺失值不被错当成普通类别或0 |
+| 多级列`sum(axis=1, level=0)` | 先转置再按类别特征层级`groupby(level=0).sum()` | 同一类别特征内部相加，缺失贡献为中性值 |
+| 源码其余部分 | **原样保留** | 不改变历史模型的其他算法路径 |
+
+脚本将工作副本放到`downloads/private-workflow/a6-reproduction/compat-v1/src/aneic/mfm.py`。**只修改这个副本，不改动`aneic-core`原始仓库**；对比补丁`A6_PATCH_DIFF_PRIVATE.patch`也留在私有目录。
+
+## 本轮真实调用的原模块函数
+
+验证对象为`get_indicator`、`_log_px_z`、`_log_py_z`及`_log_pxyz`的组合（通过最后一项调用）。输入全部是**4条虚构记录**：包含两个数值可观察值、一个数值缺失值、一个类别缺失值及一个额外数值观测。两种类别A/B、两簇、明确的初始混合权重和Gaussian参数均是演示假设。
+
+将作者部分函数生成的对数联合概率转换成责任概率，再与**独立公式**检查：
+
+- 每条记录的责任概率之和为1。
+- 第一条完整记录的簇A后验等于单独计算的期望值（约0.967273）。
+- 数值缺失仅由类别与混合权重决定（簇A概率为0.8）。
+- 类别缺失只根据数值与权重分配（簇A概率为0.6）。
+- 原模型文件的Git提交在执行前后不变。
+
+**重要：** 这只是原始函数的**局部数学行为检验**。旧版`e_step`仍涉及`.as_matrix()`和SciPy，`m_step`仍存在旧版分组归一化与可能的轴语义问题。因此本轮不能声称“原始EM迭代通过”或“MAP模型已复现”。
+
+## 在Positron中运行（无须重新安装依赖）
+
+以下命令从教材项目根目录执行，使用已建立的独立venv：
+
+```bash
+downloads/private-workflow/a6-reproduction/.venv/bin/python \
+  audit-tools/a6_original_em_private_worktree_v1.py
+```
+
+需事先确保先前的`aneic-core`固定commit仍在：`43a394f3a2409f2918d38f9d3cfc6dd5472970c1`。程序拒绝覆盖已有且与预期不同的兼容副本，若历史源码有未提交修改也会拒绝继续；检查失败时应保留日志，不得通过重置真实数据来修复。
+
+输出位置：
+
+```text
+downloads/private-workflow/a6-reproduction/compat-v1/
+  src/aneic/mfm.py                  # 私有工作副本，不上传
+  A6_PATCH_DIFF_PRIVATE.patch       # 精确补丁，私有
+
+downloads/private-review/a6-ivories/
+  A6_AUTHOR_TOY_EQ_CHECKS_PRIVATE.csv
+  A6_AUTHOR_TOY_EQ_REPORT_PRIVATE.json
+```
+
+**工作副本中的原作者源码仍受MIT许可，但在本项目中有意仅保留私有版。任何公开的兼容性实现须经过单独代码/许可证核验。**
+
+## 后续准入条件
+
+1. 先证明上述局部原函数测试实际全部PASS，且原始仓库零修改。
+2. 复核`m_step`对数值均值/精度、类别概率、混合权重的数学更新和不同缺失规则；验证MAP先验参数一致性。
+3. 在**独立的第二版工作副本**实现逐项修复，新增作者`e_step`和`m_step`的逐结果测试；保留每项补丁前后差异及偏离原因。
+4. 再在完全虚构的极小样本上尝试一次完整EM循环，明确随机性和收敛日志。
+5. 最后经过审查后，才批准对真实162条属性和原始K范围进行受控复现，不发布对象级聚类归属。
+
+**本轮结果状态：** 源码兼容工作副本工具**已准备**，实际Python运行与数值对照**未执行**；本页不得被引用为已完成2014年研究复现的证明。
