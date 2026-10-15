@@ -10,6 +10,11 @@ book:
   subtitle: "数据、案例与实践 | Data, Cases & Exercises"
   repo-url: https://github.com/ZCJing2022/AI-Archaeology-Textbook
   repo-actions: [edit, issue]
+  # Quarto Book derives its navigation from chapters; keep all pages in the book.
+  # A6 archival entries are visually suppressed by styles.css but remain rendered/linkable.
+  sidebar:
+    collapse-level: 1
+    search: true
   chapters:
     - index.qmd
     - part: "第一编 认识AI考古学"
@@ -54,6 +59,8 @@ book:
         - core-case-library/a1-charcoal-hearths.qmd
         - core-case-library/a4-tusayan-pottery.qmd
         - core-case-library/a6-ivories.qmd
+        - core-case-library/a6-teaching-resources.qmd
+        - core-case-library/a6-reproducibility-archive.qmd
         - core-case-library/a6-ivories-file-audit-v1.qmd
         - core-case-library/a6-method-audit-v1.qmd
         - core-case-library/a6-original-algorithm-compatibility-v1.qmd
