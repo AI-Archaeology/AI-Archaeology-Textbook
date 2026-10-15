@@ -72,6 +72,8 @@
 
 **A6真实数据小规模试验准入：** [只读复现准备核验与HOLD决策V1](a6-real-data-pilot-readiness-v1.qmd)。即使技术PASS也不自动授权真实数据训练。
 
+**A6拟议真实试运行协议：** [版本、参数、输出记录与HOLD决策V1](a6-real-pilot-protocol-finalization-v1.qmd)，未运行真实聚类。
+
 ## 文件核验与出版准入清单
 
 - [ ] 官方存档/论文版本记录，具体文件大小、checksum、获取日期。
