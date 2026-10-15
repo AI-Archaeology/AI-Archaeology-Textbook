@@ -1,0 +1,66 @@
+# A6：EM停止条件与返回状态一致性审查 V1 {.unnumbered}
+
+> **当前状态：只读诊断程序已编写，尚待用户在Positron运行。** 本实验继续沿用已验收的私有 `compat-v3`，只使用8条完全虚构的记录，不改变原作者代码、不修补原有停止条件、不读取真实162件象牙的属性。
+
+## 为什么要审查返回状态？
+
+此前[完整EM短程测试](a6-original-full-em-loop-v1.qmd)已完成20 PASS / 0 FAIL。使用 `K=2`、种子17及8条虚构记录，目标函数记录为−17.91250759、−17.89377596、−17.85935844、−17.76236094。但这些数字的递增和可重复性**不能单独证明**模型输出 `q`、后验概率 `gamma`、目标函数列表 `L` 指向同一次参数状态，更不能证明收敛。
+
+在作者固定提交 `aneic-core@43a394f3a2409f2918d38f9d3cfc6dd5472970c1` 的 `src/aneic/mfm.py` 中，`em()` 的核心控制是：
+
+```python
+g, L_ = e_step(real, cat, q_["pi"], q_["mu"], q_["l"], q_["rho"], ...)
+dL = ((L_ - L[-1]) / np.abs(L[-1])) if it else np.nan
+if it > 1 and ((dL < eps) or it > max_iter):
+    break
+L.append(L_)
+q["pi"], q["mu"], q["l"], q["rho"] = (
+    q_["pi"], q_["mu"], q_["l"], q_["rho"]
+)
+q_["pi"], q_["mu"], q_["l"], q_["rho"] = m_step(...)
+```
+
+上面只是为解释而省略部分调用参数的片段；精确函数以固定Git代码为准。[原始源码](https://github.com/aneic/aneic-core/blob/43a394f3a2409f2918d38f9d3cfc6dd5472970c1/src/aneic/mfm.py)。
+
+这意味着停止条件是在一次新的E步**之后、写入L及q之前**判断：返回的`gamma`可能来自刚刚求值的参数`q_`，而返回的`q`和`L`仍保留前一次被接受的状态。这是一个**待用真实执行轨迹验证**的返回状态相位问题，不能笼统声称概率分配和模型参数必然一致。
+
+## 本轮四项核查
+
+| 核查目标 | 方法 | 要区别的结论 |
+|---|---|---|
+| 停止条件的符号 | 直接检查原表达式`dL < eps` | 负值下降也满足不等式；不能无条件理解为良性收敛 |
+| 最大迭代数边界 | 检查`it > max_iter` | 用`max_iter=3`不代表最多做三次E步 |
+| 目标函数轨迹 | 在内存中临时包装原作者`e_step`，记录每次实际计算及是否进入返回的`L` | 区分最后求值与最后记录的目标函数 |
+| 参数与后验相位 | 临时记录每次E步输入参数、输出`gamma`，并和返回的`q`比较 | 判断`q`与`gamma`究竟对应哪个被求值的状态 |
+
+**这些是只读动态观察**：只在运行时暂时替换Python模块对象中的函数引用以记录计算，测试结束恢复引用，不修改磁盘上的 `compat-v3` 文件，不改变数学步骤。
+
+## Positron执行命令
+
+请在教材根目录运行：
+
+```bash
+downloads/private-workflow/a6-reproduction/.venv/bin/python \
+  audit-tools/a6_em_return_state_audit_v1.py
+```
+
+现有虚拟环境中已装NumPy、pandas和SciPy。本脚本不会要求新增依赖。测试以相同的虚构8条对象、`K=2`、种子17、`max_iter=3`调用原作者私有兼容版完整`em()`，记录E/M调用次数、参数快照与目标函数。
+
+输出仅保存在被Git忽略的本地目录：
+
+```text
+downloads/private-review/a6-ivories/
+  A6_EM_RETURN_STATE_CHECKS_PRIVATE.csv
+  A6_EM_RETURN_STATE_OBSERVATIONS_PRIVATE.csv
+  A6_EM_RETURN_STATE_REPORT_PRIVATE.json
+```
+
+脚本将严格区分 `PASS/FAIL` 与 `OBSERVED`：**PASS**只表示追踪到的调用和独立一致性检查正确；若显示返回状态偏移，是需要研究的**诊断发现**，不能被PASS掩盖，也不应被误写成完整EM实验失败。
+
+## 随后如何处理？
+
+此轮先**不修改**原始停止条件、返回策略和MAP计算。取得运行轨迹后，再决定是否需要在下一轮兼容副本中建立两种明确对照：**保持原算法历史行为**与**经过定义的终止/返回状态修正**。任何修正都需要重新测试目标函数、迭代次数、概率归一化、随机种子可重复性和后验归属，并保留差异说明。
+
+在原始控制流的终止和输出语义明确之前，不批准真实162条数据的全量重启聚类。A6仍然属于**算法复现前的兼容性与正确性审查**阶段，而非论文结果复现。
+
+引用：Gansell等（2014），*Journal of Archaeological Science* 44:194–205，[DOI](https://doi.org/10.1016/j.jas.2013.11.005)。

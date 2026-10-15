@@ -1704,7 +1704,7 @@
     "href": "datasets.html#核心ai考古学案例库正在核验",
     "title": "数据集目录",
     "section": "核心AI考古学案例库（正在核验）",
-    "text": "核心AI考古学案例库（正在核验）\n核心案例库：六项AI研究的数据与教学准入审查 V1 — 涵盖LiDAR炭窑识别、Tusayan陶器图像、Levantine象牙属性聚类、Evron石器光谱、Ithaca希腊铭文与Aeneas拉丁铭文。各例均有单独来源和许可档案、拟定学习成果、必做无代码评价与后续核验事项。\n重要： 这是论文/仓库级候选资料目录，不是已经托管开放数据的文件目录。六项研究的真实数据均未在本教材仓库中发布；目前仅可按来源链接访问原作者资源。机器学习案例与原有的非AI中国贸易陶瓷资料分开标注。\nA6第二阶段数据审查： Levantine ivories官方CSV结构与许可核验。此项仅托管审查记录与脚本，不提供原始属性数据下载。\nA6方法学与教学延伸： 方法/原代码审查V1 · 第5章特征练习 · 第6章聚类练习 · 第10章类型学解释练习。不托管真实数据。\nA6算法复现前检查： 原始Python兼容性审查V1；此页为静态检查与版本追踪，不是已复现模型或开放数据集。\nA6受控环境： 隔离Python环境及编码测试V1。工具不再分发真实CSV或作者原始代码。\nA6算法数学行为准备： 独立虚构数据EM测试V1，不托管真实研究观测或输出。\nA6原作者代码最小兼容试验： 私有工作副本及虚构对照V1（尚未经本地运行，不上传原作者源码）。\nA6原作者单次E步与M步测试方案： 私有兼容性副本V1，只测试虚构记录，不发布真实输入和输出。\nA6原始EM迭代： 完全虚构小样本受控循环诊断V1。不包含真实考古数据或历史结果。",
+    "text": "核心AI考古学案例库（正在核验）\n核心案例库：六项AI研究的数据与教学准入审查 V1 — 涵盖LiDAR炭窑识别、Tusayan陶器图像、Levantine象牙属性聚类、Evron石器光谱、Ithaca希腊铭文与Aeneas拉丁铭文。各例均有单独来源和许可档案、拟定学习成果、必做无代码评价与后续核验事项。\n重要： 这是论文/仓库级候选资料目录，不是已经托管开放数据的文件目录。六项研究的真实数据均未在本教材仓库中发布；目前仅可按来源链接访问原作者资源。机器学习案例与原有的非AI中国贸易陶瓷资料分开标注。\nA6第二阶段数据审查： Levantine ivories官方CSV结构与许可核验。此项仅托管审查记录与脚本，不提供原始属性数据下载。\nA6方法学与教学延伸： 方法/原代码审查V1 · 第5章特征练习 · 第6章聚类练习 · 第10章类型学解释练习。不托管真实数据。\nA6算法复现前检查： 原始Python兼容性审查V1；此页为静态检查与版本追踪，不是已复现模型或开放数据集。\nA6受控环境： 隔离Python环境及编码测试V1。工具不再分发真实CSV或作者原始代码。\nA6算法数学行为准备： 独立虚构数据EM测试V1，不托管真实研究观测或输出。\nA6原作者代码最小兼容试验： 私有工作副本及虚构对照V1（尚未经本地运行，不上传原作者源码）。\nA6原作者单次E步与M步测试方案： 私有兼容性副本V1，只测试虚构记录，不发布真实输入和输出。\nA6原始EM迭代： 完全虚构小样本受控循环诊断V1。不包含真实考古数据或历史结果。\nA6算法终止与返回状态审查： 只读EM迭代轨迹诊断V1，仍不涉及真实162件象牙的聚类实验。",
     "crumbs": [
       "配套资源",
       "数据集目录"
@@ -1770,7 +1770,7 @@
     "href": "core-case-library/index.html#共通的学生学习路径与评分证据",
     "title": "AI考古学核心案例库：六例数据与教学准入审查 V1",
     "section": "共通的学生学习路径与评分证据",
-    "text": "共通的学生学习路径与评分证据\nLevel 1：论文证据审查（必做，无代码）。明确研究问题、原始观测单位、模型输入输出、传统比较基线、误差与推断边界。提交一页四栏证据表。\nLevel 2：经过审查的演示材料（必做，暂用自行虚构数据）。在尚未确认许可前，只使用显著标为虚构的混淆矩阵、缺失示例或残文，评估模型预测与考古证据之间的推论链。\nLevel 3：原始资料小型练习（选做、待准入）。先核验原仓库实际文件、版本/哈希、类别/ID、训练测试划分、再分发许可及遗址/文化资料敏感性；批准后才能构建有数据字典和出处的教学子集。\nLevel 4：研究复现（高级选做、尚未批准）。在软硬件环境、数据权限和评价协议审查后尝试运行原程序，不以“公开代码”替代复现成功证据。\nA6进展更新： 已直接读取固定commit的官方CSV，记录其162行×34列、1,931个空白单元格，并核对语料与图像分别授权。详细结果见A6第二阶段文件初审；仍需在Positron执行独立R脚本核验本地SHA-256，不能称为聚类复现通过。\nA6复现准备： 2014年算法与现代Python兼容性审查V1。已定位Python 2语法和旧pandas/NumPy接口，下一步只读检查固定仓库版本，不安装旧依赖。\nA6受控复现准备： 独立Python环境与最小编码冒烟测试V1（未执行历史EM，不是数值复现）。\nA6最小数学行为检查（新）： 完全虚构数据的EM数值基准V1。它不运行历史原算法，也不产出真实器物聚类结果。\nA6原始模块局部核验候选： 私有兼容副本和独立虚构概率对照V1。这比自编演示算法更接近原研究，但尚未执行完整E/M步骤。\nA6原作者E/M函数试验： E步与M步的私有兼容副本和虚构数值对照V1，测试准备尚待运行，不是历史聚类结果的复现。\nA6完整EM短程测试准备： 原作者em()循环的私有compat-v3诊断V1。尚未在Positron执行，不代表真实象牙聚类已复现。",
+    "text": "共通的学生学习路径与评分证据\nLevel 1：论文证据审查（必做，无代码）。明确研究问题、原始观测单位、模型输入输出、传统比较基线、误差与推断边界。提交一页四栏证据表。\nLevel 2：经过审查的演示材料（必做，暂用自行虚构数据）。在尚未确认许可前，只使用显著标为虚构的混淆矩阵、缺失示例或残文，评估模型预测与考古证据之间的推论链。\nLevel 3：原始资料小型练习（选做、待准入）。先核验原仓库实际文件、版本/哈希、类别/ID、训练测试划分、再分发许可及遗址/文化资料敏感性；批准后才能构建有数据字典和出处的教学子集。\nLevel 4：研究复现（高级选做、尚未批准）。在软硬件环境、数据权限和评价协议审查后尝试运行原程序，不以“公开代码”替代复现成功证据。\nA6进展更新： 已直接读取固定commit的官方CSV，记录其162行×34列、1,931个空白单元格，并核对语料与图像分别授权。详细结果见A6第二阶段文件初审；仍需在Positron执行独立R脚本核验本地SHA-256，不能称为聚类复现通过。\nA6复现准备： 2014年算法与现代Python兼容性审查V1。已定位Python 2语法和旧pandas/NumPy接口，下一步只读检查固定仓库版本，不安装旧依赖。\nA6受控复现准备： 独立Python环境与最小编码冒烟测试V1（未执行历史EM，不是数值复现）。\nA6最小数学行为检查（新）： 完全虚构数据的EM数值基准V1。它不运行历史原算法，也不产出真实器物聚类结果。\nA6原始模块局部核验候选： 私有兼容副本和独立虚构概率对照V1。这比自编演示算法更接近原研究，但尚未执行完整E/M步骤。\nA6原作者E/M函数试验： E步与M步的私有兼容副本和虚构数值对照V1，测试准备尚待运行，不是历史聚类结果的复现。\nA6完整EM短程测试准备： 原作者em()循环的私有compat-v3诊断V1。尚未在Positron执行，不代表真实象牙聚类已复现。\nA6循环控制审查： EM收敛条件与返回状态一致性V1。本轮观察原作者私有兼容版的停止及输出语义，不使用真实器物数据。",
     "crumbs": [
       "配套资源",
       "AI考古学核心案例库：六例数据与教学准入审查 V1"
@@ -2452,7 +2452,7 @@
     "href": "core-case-library/a6-original-full-em-loop-v1.html#四在positron运行",
     "title": "A6 原作者完整EM循环：小规模虚构数据诊断 V1",
     "section": "四、在Positron运行",
-    "text": "四、在Positron运行\n从教材项目根目录，直接沿用此前的私有Python虚拟环境：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python \\\n  audit-tools/a6_original_full_em_toy_v1.py\n不必重新安装NumPy、pandas、SciPy。前期产生的compat-v2及两个原始固定Git仓库必须仍在私有目录，不要删除或移动。\n仅生成下列私有文件：\ndownloads/private-workflow/a6-reproduction/compat-v3/\n  src/aneic/mfm.py\n  A6_V2_TO_V3_PATCH_PRIVATE.patch\n\ndownloads/private-review/a6-ivories/\n  A6_AUTHOR_FULL_EM_TOY_CHECKS_PRIVATE.csv\n  A6_AUTHOR_FULL_EM_TOY_REPORT_PRIVATE.json\n首次执行可能暴露新兼容性或数值异常。如有FAIL请保留完整traceback；不要手动编辑原作者aneic-core。",
+    "text": "四、在Positron运行\n从教材项目根目录，直接沿用此前的私有Python虚拟环境：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python \\\n  audit-tools/a6_original_full_em_toy_v1.py\n不必重新安装NumPy、pandas、SciPy。前期产生的compat-v2及两个原始固定Git仓库必须仍在私有目录，不要删除或移动。\n仅生成下列私有文件：\ndownloads/private-workflow/a6-reproduction/compat-v3/\n  src/aneic/mfm.py\n  A6_V2_TO_V3_PATCH_PRIVATE.patch\n\ndownloads/private-review/a6-ivories/\n  A6_AUTHOR_FULL_EM_TOY_CHECKS_PRIVATE.csv\n  A6_AUTHOR_FULL_EM_TOY_REPORT_PRIVATE.json\n首次执行可能暴露新兼容性或数值异常。如有FAIL请保留完整traceback；不要手动编辑原作者aneic-core。\n下一轮诊断： 原作者EM停止条件及返回参数状态一致性审查V1，通过只读运行轨迹核对最终E步、L与q的迭代相位。",
     "crumbs": [
       "配套资源",
       "A6 原作者完整EM循环：小规模虚构数据诊断 V1"
@@ -2467,6 +2467,61 @@
     "crumbs": [
       "配套资源",
       "A6 原作者完整EM循环：小规模虚构数据诊断 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-em-convergence-return-state-v1.html",
+    "href": "core-case-library/a6-em-convergence-return-state-v1.html",
+    "title": "A6：EM停止条件与返回状态一致性审查 V1",
+    "section": "",
+    "text": "为什么要审查返回状态？\n此前完整EM短程测试已完成20 PASS / 0 FAIL。使用 K=2、种子17及8条虚构记录，目标函数记录为−17.91250759、−17.89377596、−17.85935844、−17.76236094。但这些数字的递增和可重复性不能单独证明模型输出 q、后验概率 gamma、目标函数列表 L 指向同一次参数状态，更不能证明收敛。\n在作者固定提交 aneic-core@43a394f3a2409f2918d38f9d3cfc6dd5472970c1 的 src/aneic/mfm.py 中，em() 的核心控制是：\n上面只是为解释而省略部分调用参数的片段；精确函数以固定Git代码为准。原始源码。\n这意味着停止条件是在一次新的E步之后、写入L及q之前判断：返回的gamma可能来自刚刚求值的参数q_，而返回的q和L仍保留前一次被接受的状态。这是一个待用真实执行轨迹验证的返回状态相位问题，不能笼统声称概率分配和模型参数必然一致。",
+    "crumbs": [
+      "配套资源",
+      "A6：EM停止条件与返回状态一致性审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-em-convergence-return-state-v1.html#为什么要审查返回状态",
+    "href": "core-case-library/a6-em-convergence-return-state-v1.html#为什么要审查返回状态",
+    "title": "A6：EM停止条件与返回状态一致性审查 V1",
+    "section": "",
+    "text": "g, L_ = e_step(real, cat, q_[\"pi\"], q_[\"mu\"], q_[\"l\"], q_[\"rho\"], ...)\ndL = ((L_ - L[-1]) / np.abs(L[-1])) if it else np.nan\nif it &gt; 1 and ((dL &lt; eps) or it &gt; max_iter):\n    break\nL.append(L_)\nq[\"pi\"], q[\"mu\"], q[\"l\"], q[\"rho\"] = (\n    q_[\"pi\"], q_[\"mu\"], q_[\"l\"], q_[\"rho\"]\n)\nq_[\"pi\"], q_[\"mu\"], q_[\"l\"], q_[\"rho\"] = m_step(...)",
+    "crumbs": [
+      "配套资源",
+      "A6：EM停止条件与返回状态一致性审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-em-convergence-return-state-v1.html#本轮四项核查",
+    "href": "core-case-library/a6-em-convergence-return-state-v1.html#本轮四项核查",
+    "title": "A6：EM停止条件与返回状态一致性审查 V1",
+    "section": "本轮四项核查",
+    "text": "本轮四项核查\n\n\n\n\n\n\n\n\n核查目标\n方法\n要区别的结论\n\n\n\n\n停止条件的符号\n直接检查原表达式dL &lt; eps\n负值下降也满足不等式；不能无条件理解为良性收敛\n\n\n最大迭代数边界\n检查it &gt; max_iter\n用max_iter=3不代表最多做三次E步\n\n\n目标函数轨迹\n在内存中临时包装原作者e_step，记录每次实际计算及是否进入返回的L\n区分最后求值与最后记录的目标函数\n\n\n参数与后验相位\n临时记录每次E步输入参数、输出gamma，并和返回的q比较\n判断q与gamma究竟对应哪个被求值的状态\n\n\n\n这些是只读动态观察：只在运行时暂时替换Python模块对象中的函数引用以记录计算，测试结束恢复引用，不修改磁盘上的 compat-v3 文件，不改变数学步骤。",
+    "crumbs": [
+      "配套资源",
+      "A6：EM停止条件与返回状态一致性审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-em-convergence-return-state-v1.html#positron执行命令",
+    "href": "core-case-library/a6-em-convergence-return-state-v1.html#positron执行命令",
+    "title": "A6：EM停止条件与返回状态一致性审查 V1",
+    "section": "Positron执行命令",
+    "text": "Positron执行命令\n请在教材根目录运行：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python \\\n  audit-tools/a6_em_return_state_audit_v1.py\n现有虚拟环境中已装NumPy、pandas和SciPy。本脚本不会要求新增依赖。测试以相同的虚构8条对象、K=2、种子17、max_iter=3调用原作者私有兼容版完整em()，记录E/M调用次数、参数快照与目标函数。\n输出仅保存在被Git忽略的本地目录：\ndownloads/private-review/a6-ivories/\n  A6_EM_RETURN_STATE_CHECKS_PRIVATE.csv\n  A6_EM_RETURN_STATE_OBSERVATIONS_PRIVATE.csv\n  A6_EM_RETURN_STATE_REPORT_PRIVATE.json\n脚本将严格区分 PASS/FAIL 与 OBSERVED：PASS只表示追踪到的调用和独立一致性检查正确；若显示返回状态偏移，是需要研究的诊断发现，不能被PASS掩盖，也不应被误写成完整EM实验失败。",
+    "crumbs": [
+      "配套资源",
+      "A6：EM停止条件与返回状态一致性审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-em-convergence-return-state-v1.html#随后如何处理",
+    "href": "core-case-library/a6-em-convergence-return-state-v1.html#随后如何处理",
+    "title": "A6：EM停止条件与返回状态一致性审查 V1",
+    "section": "随后如何处理？",
+    "text": "随后如何处理？\n此轮先不修改原始停止条件、返回策略和MAP计算。取得运行轨迹后，再决定是否需要在下一轮兼容副本中建立两种明确对照：保持原算法历史行为与经过定义的终止/返回状态修正。任何修正都需要重新测试目标函数、迭代次数、概率归一化、随机种子可重复性和后验归属，并保留差异说明。\n在原始控制流的终止和输出语义明确之前，不批准真实162条数据的全量重启聚类。A6仍然属于算法复现前的兼容性与正确性审查阶段，而非论文结果复现。\n引用：Gansell等（2014），Journal of Archaeological Science 44:194–205，DOI。",
+    "crumbs": [
+      "配套资源",
+      "A6：EM停止条件与返回状态一致性审查 V1"
     ]
   },
   {
