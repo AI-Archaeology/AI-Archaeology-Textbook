@@ -52,6 +52,12 @@
 
 **数字化并不等于AI。** 将照片存进数据库、绘制GIS地图、测量元素成分和建立三维模型，通常是数字记录、科学测量或传统计算任务；是否使用机器学习，需要进一步查看实际使用的方法。
 
+### 为什么算法学习的是考古材料的“代理表示”，而不是器物本身？ {.unnumbered}
+
+Orengo、Berganzo-Besga与Lumbreras（2026）在对考古机器学习理论与实践的分析中，区分了**实际考古对象**和**为计算构造的代理表示（proxies）**。例如同一片陶片可以表现为颜色像素、轮廓、纹理、测量值或人工类别标签；这些可计算特征没有一个能够穷尽“陶片是什么”。论文强调，模型的学习结果会随考古学家怎样定义目标、怎样获取资料、怎样标注和取样而变化。[论文第2—3节](https://doi.org/10.1016/j.jas.2026.106571)。
+
+Lucas的*Archaeological Situations*（版权页2023）第3章“Making Records”也从考古实践本身讨论资料记录，并涉及数据轨迹与概念模型。两者的出发点不同，却共同提醒我们：**资料形成过程需要被记录，不能把数字字段当作无须解释的直接事实。** 这里是两部作品的教学性对读，并不是说它们使用了相同的理论术语。
+
 ## 变量、测量尺度与类型学概念的量化
 
 **变量**是针对观察单位定义的可记录属性。一列可以表示陶片部位，另一列表示口沿直径；但是只有在定义明确、记录规则相同的前提下，不同记录的数值才适合比较。
@@ -172,5 +178,12 @@
 ### 继续深入 {.unnumbered}
 
 **入门：** 阅读[教学模拟数据说明](../dataset-teaching-ceramics-01.qmd)及其数据字典。**进阶：** 进入第4章的缺失与偏差、第5章的变量与统计推断以及第8章的评价设计。**研究实践：** 比较不同考古项目如何记录对象、采样、出处、版本及许可；必要时进一步学习CIDOC CRM与[FAIR原则原始论文](https://doi.org/10.1038/sdata.2016.18)。
+
+### 有针对性的基础阅读 {.unnumbered}
+
+- Lucas, Gavin. 2023. *Archaeological Situations: Archaeological Theory from the Inside Out*. Routledge，特别是第3章“Making Records”及其中的数据轨迹和开放考古讨论。[出版物DOI](https://doi.org/10.4324/9781003098294)。
+- Carver, Martin, and Madeleine Hummler. 2025. *Archaeological Investigation*. 2nd ed. Routledge，尤其第6章发掘记录、第7章分析及第12章档案与报告。[出版物DOI](https://doi.org/10.4324/9781003185147)。上传文件名写作2024，实际版权页写明2025年。
+- Chapman, Robert, and Alison Wylie. 2016. *Evidential Reasoning in Archaeology*. Bloomsbury Academic，尤其第2章田野工作和第3章旧资料重新利用的论证。
+- Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571。
 
 > **编写与事实边界：** 本章不发布任何真实出土记录。18条陶片数据与清洗示例均为明确标注的教学虚构材料；方法与规范性概念需要随全书参考文献建设进一步核验。本章是依照定稿大纲完成的待审正文，不代表已通过正式教材学术终审。
