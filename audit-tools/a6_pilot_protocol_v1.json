@@ -1,0 +1,65 @@
+{
+  "protocol_id": "A6-REAL-PILOT-PROTOCOL-V1",
+  "status": "PROPOSED_NOT_AUTHORIZED",
+  "authorization": "HOLD",
+  "experiment_type": "bounded_private_diagnostic_not_paper_replication",
+  "source": {
+    "corpus_relative_path": "downloads/official/levantine_corpus_gansell.csv",
+    "corpus_sha256": "d52ed8033ad7304024e207e02117d2cc1b425da8799e582858dac8a6b0b90941",
+    "core_commit": "43a394f3a2409f2918d38f9d3cfc6dd5472970c1",
+    "scripts_commit": "c45445a0e090853c6eb544bffe8042557e4db440"
+  },
+  "input_contract": {
+    "rows": 162,
+    "source_columns": 34,
+    "record_index": "Key",
+    "excluded_fields": [
+      "Site"
+    ],
+    "selected_feature_count": 32,
+    "numeric_candidate_count": 12,
+    "categorical_candidate_count": 20,
+    "missing_feature_cells": 1931,
+    "enforce_original_order": true,
+    "categorical_levels": "OBSERVED_FROM_CANONICAL_CSV_NO_LEVEL_INFERENCE_OVERRIDE",
+    "missingness": "PRESERVE_NA_NOT_ZERO",
+    "paper_feature_discrepancy": "OPEN_33_IN_PAPER_VS_32_IN_FIXED_RUNNER"
+  },
+  "pilot_primary": {
+    "implementation": "compat-v4",
+    "semantics": "return_state_aligned_with_historical_stop",
+    "K": 2,
+    "seed": 17,
+    "proposed_initializations": 1,
+    "proposed_max_iter": 3,
+    "prior_a": 2,
+    "proposed_sigma": 1,
+    "precision_prior_b": "HOLD_UNTIL_CONFIRMED_FROM_SOURCE_RUNNER_AND_INPUT_VARIANCES",
+    "initialization": "AUTHOR_CODE_SEEDED_DIRICHLET",
+    "output": "PRIVATE_ONLY"
+  },
+  "sensitivity": {
+    "implementation": "compat-v5",
+    "classification": "CANDIDATE_ALTERNATIVE_NOT_ORIGINAL",
+    "run_only_after_primary_review": true
+  },
+  "preflight_holds": [
+    "Paper33Code32FeatureDefinition",
+    "ExactHistoricalFeatureEncodingAndPriorBConstruction",
+    "ExplicitVariantApproval",
+    "PrecommittedComparisonAndStopReasonRecording",
+    "CorpusRightsAndOutputReleaseReview",
+    "WrittenGoNoGoDecision"
+  ],
+  "reproducibility_outputs": [
+    "source_and_private_patch_sha256",
+    "environment_versions",
+    "exact_feature_order_and_missingness_summary",
+    "K_seed_iter_limit_and_prior_configuration",
+    "objective_trace_and_reason_for_stop",
+    "parameter_gamma_objective_state_alignment",
+    "runtime_and_exception_log",
+    "private_output_paths"
+  ],
+  "data_policy": "NEVER_COPY_OR_UPLOAD_OBJECT_ROWS_OR_MEMBERSHIP_PROBABILITIES_TO_PUBLIC_REPOSITORY"
+}
