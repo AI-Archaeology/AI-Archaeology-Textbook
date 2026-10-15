@@ -68,6 +68,8 @@
 
 **A6历史与修正返回状态比较：** [私有compat-v3和compat-v4的对照V1](a6-historical-vs-aligned-em-v1.qmd)。仅用虚构数据，尚未在本地执行。
 
+**A6停止条件审查：** [历史与候选停止判据、三个随机种子的虚构数据对照V1](a6-em-stopping-robustness-v1.qmd)，尚未经本地实际运行。
+
 ## 文件核验与出版准入清单
 
 - [ ] 官方存档/论文版本记录，具体文件大小、checksum、获取日期。
