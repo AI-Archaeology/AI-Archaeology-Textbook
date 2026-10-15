@@ -54,6 +54,8 @@
 
 **A6复现准备：** [2014年算法与现代Python兼容性审查V1](a6-original-algorithm-compatibility-v1.qmd)。已定位Python 2语法和旧pandas/NumPy接口，下一步只读检查固定仓库版本，不安装旧依赖。
 
+**A6受控复现准备：** [独立Python环境与最小编码冒烟测试V1](a6-controlled-reproduction-environment-v1.qmd)（未执行历史EM，不是数值复现）。
+
 ## 文件核验与出版准入清单
 
 - [ ] 官方存档/论文版本记录，具体文件大小、checksum、获取日期。
