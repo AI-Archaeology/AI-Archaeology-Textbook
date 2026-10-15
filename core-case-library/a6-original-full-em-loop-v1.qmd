@@ -55,6 +55,8 @@ downloads/private-review/a6-ivories/
 
 首次执行可能暴露新兼容性或数值异常。**如有FAIL请保留完整traceback；不要手动编辑原作者`aneic-core`。**
 
+**下一轮诊断：** [原作者EM停止条件及返回参数状态一致性审查V1](a6-em-convergence-return-state-v1.qmd)，通过只读运行轨迹核对最终E步、L与q的迭代相位。
+
 ## 五、后续研究准入
 
 - [ ] 固定作者Git版本不变，compat-v3只包含白名单补丁，补丁哈希记录完毕。
