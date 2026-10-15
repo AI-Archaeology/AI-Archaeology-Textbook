@@ -63,6 +63,8 @@
 - [ ] 如需发布教学派生CSV/图像集，保存源到目标映射、引用、许可与明确编写组批准。
 - [ ] 仅完成以上要求后，才可标记“开放教学数据子集／可复现”。
 
+**A6专题已扩展：** [论文与原始代码复现前审查](a6-method-audit-v1.qmd)以及第[5章](a6-ch05-data-features-v1.qmd)、[6章](a6-ch06-probabilistic-clustering-v1.qmd)、[10章](a6-ch10-stylistic-interpretation-v1.qmd)的三项无代码教学模块。模拟练习不构成模型结果复现。
+
 ## 下一步工作优先级
 
 **1. A6 Levantine ivories（特征表）**：最适合先完成受控文件核验，并转成不需大型训练环境的无代码练习。
