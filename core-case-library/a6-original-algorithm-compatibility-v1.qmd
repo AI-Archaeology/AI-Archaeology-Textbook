@@ -1,0 +1,74 @@
+# A6 原始算法兼容性审查 V1：复现前的静态检查 {.unnumbered}
+
+> **审查性质：固定Git版本的源码阅读和运行风险识别；尚未安装历史依赖、导入原始算法或执行EM聚类。** 本页不声称原论文概率、簇数、聚类归属或结果图已复现，也不公开162条真实象牙属性数据。
+
+## 为什么先做兼容性审查
+
+Gansell、van de Meent、Zairis与Wiggins（2014）的模型采用数值＋类别混合特征的概率聚类。本教材已经核验官方CSV（162行、34列；`Key`与`Site`之外有32项候选输入属性；1,931个空白值、约37.2492%）。但是**能读取数据不意味着能运行2014年的Python程序**。不同环境、输入列、随机初始化和交叉验证配置可能导致不同结果。
+
+论文：[JAS DOI](https://doi.org/10.1016/j.jas.2013.11.005)；[前一轮方法审查](a6-method-audit-v1.qmd)；[A6数据文件审查](a6-ivories-file-audit-v1.qmd)。
+
+## 本轮固定代码来源
+
+| 仓库 | 固定提交（commit） | 用途 |
+|---|---|---|
+| [aneic/aneic-core](https://github.com/aneic/aneic-core) | `43a394f3a2409f2918d38f9d3cfc6dd5472970c1` | `src/aneic/mfm.py`：混合特征模型、指示变量转换、EM |
+| [aneic/aneic-scripts](https://github.com/aneic/aneic-scripts) | `c45445a0e090853c6eb544bffe8042557e4db440` | 非交叉验证runner、CV runner、分析和结果处理 |
+
+**固定提交是用于本次审查的仓库版本，不等于已经证明其与论文出稿时运行环境完全相同。** 教材只托管静态审核说明与自行编写的只读核验脚本，不复制研究原始源代码或结果文件。
+
+## 原始代码已经确认的兼容性风险
+
+| 证据位置 | 具体发现 | 影响／审查决定 |
+|---|---|---|
+| `aneic-scripts/130317_01_mfm_sigma_1.0_a_2.0/run_mfm.py` | 使用Python 2风格的`print 'K: ...'` | Python 3直接解析该脚本会报语法错误；不得将其当作可运行的现代Python程序 |
+| 同一runner | `np.object`用作类别dtype判断；`np.float64`用于数值dtype | `np.object`在较新的NumPy中已删除；即便转换语法，也需核对dtype推断行为 |
+| `aneic-core/src/aneic/mfm.py` | `pd.core.categorical.Categorical.from_array`和`cat.levels`、`cat.labels` | 依赖旧版pandas内部API，更新后类别编码与缺失处理需做行为等价测试 |
+| `aneic-scripts/.../analysis_mfm.py`与另一CV runner | 使用`.ix[`索引 | pandas新版本移除`.ix`；须区分标签与位置索引，不能机械替换为`.loc`或`.iloc` |
+| 非CV runner | `work_dir=os.getcwd()`且`ac_path=.../aneic-core` | 强依赖历史工作目录结构；错误目录会使导入或CSV路径失败 |
+| 非CV runner | `K=[2,3,4,5,6,7,8,9,10]`、`max_iter=1000`、`min_restarts=100`、`max_restarts=500`、`a=2.0`、`sigma=1.0`、`seed=1` | 为一套历史运行方案；完整重跑可能耗时。并非已核验所有论文图表均来自同一参数运行 |
+| `130219_01_mfm_sigma_1.0_a_1.001_1_cv_5/run_mfm_cv.py` | 存在自由变量`NU`和`FOLD`以及5-fold CV配置 | 需要追溯原批处理入口与参数赋值；不能简单直接调用该脚本 |
+| 非CV runner的模型保存 | `pickle.dump(..., gzip.open(..., 'w'))` | Python 2时期的文本／二进制语义与Python 3不同；保存格式及反序列化安全应单独审查 |
+| 程序结果解释 | 原`analysis_mfm.py`有人工`oracle`分组，并与遗址标签比较 | 人工比较集与模型输出是不同证据层，不能把风格聚类当作作坊/族群身份 |
+
+上述是**固定源码的静态发现**，并非实际环境报错日志。已有事实不足以指定原作者当年所使用的Python、pandas和NumPy精确版本；不得据此编造版本锁定文件。
+
+## 已核实的运行输入与待解释差异
+
+先前只读R验收通过12/12，检查了`Key`为记录ID、`Site`不进入特征矩阵，以及12项候选数值特征、20项候选类别特征。**32个模型特征中的缺失率为37.2492%**。论文方法描述33项特征，和审查的非CV运行脚本`drop_feats=['Site']`之后的32列存在口径差异：只能将其保留为**待核**，不能为匹配论文字数擅自加入Site或移除其他列。
+
+CV实验、非CV参数拟合与后处理不是同一执行入口。应分别核对，不可把CV得到的留出指标与全样本模型目标函数视作同一评分。
+
+## Positron中的只读检查
+
+本项目提供 [Python 3标准库静态审查脚本](../audit-tools/a6_original_python_compatibility_v1.py)。它**不安装包、不import原作者模块、不运行任何聚类、也不会修改克隆下来的文件**，只核对两个仓库的commit和关键源码文件，并列出可能的兼容性阻碍。
+
+将两个仓库按固定commit克隆到被Git忽略的`downloads/private-workflow/a6-reproduction/`后，运行：
+
+```bash
+python3 audit-tools/a6_original_python_compatibility_v1.py \
+  downloads/private-workflow/a6-reproduction/aneic-core \
+  downloads/private-workflow/a6-reproduction/aneic-scripts
+```
+
+输出仅保存在`downloads/private-review/a6-ivories/`：
+
+- `A6_COMPAT_CHECKS_PRIVATE.csv`：版本、路径、已知方法入口的PASS/FAIL；
+- `A6_COMPAT_MARKERS_PRIVATE.csv`：静态语法与API兼容标记；
+- `A6_COMPAT_REPORT_PRIVATE.md`：总体风险总结。
+
+**注意：** PASS仅指“源码及静态设置检查”通过；即使全部PASS，Python 3运行兼容性依然可能被BLOCKED。脚本首次运行及其输出仍须在用户的Positron环境中验收。
+
+## 受控算法复现的三阶段准入条件
+
+| 后续阶段 | 前提与产出 | 当前 |
+|---|---|---|
+| I. 静态源码核验 | Git SHA、文件、语法/API阻碍与参数来源 | 文件和方法已初阅；新脚本待本地执行 |
+| II. 最小隔离环境试验 | 新建**独立**私有虚拟环境，保留原始源码只读；固定经过测试的依赖与兼容补丁差异 | **尚未批准执行** |
+| III. 受控数值实验 | 用少量K/迭代验证数据编码与EM收敛，再逐步跑原参数与CV；保存随机种子、日志、结果哈希及和论文的比较 | **尚未开始** |
+
+**不建议**为运行原脚本而降级或改动当前Positron主项目环境；不应未经审计直接加载来源不明的历史`pickle`文件。确认兼容修改对缺失值和类别编码的数学含义没有改变之后，才能把“代码能运行”推进到“模型结果可复现”。
+
+## 本轮结论
+
+**可以开始固定代码的只读本地审查；尚不具备直接宣称Python 3可运行、论文结果可重复或复现环境已建好的依据。** 公开网站只发布复现审查记录，不包含原始属性CSV、照片、模型权重或个体聚类结果。
