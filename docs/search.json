@@ -1704,7 +1704,7 @@
     "href": "datasets.html#核心ai考古学案例库正在核验",
     "title": "数据集目录",
     "section": "核心AI考古学案例库（正在核验）",
-    "text": "核心AI考古学案例库（正在核验）\n核心案例库：六项AI研究的数据与教学准入审查 V1 — 涵盖LiDAR炭窑识别、Tusayan陶器图像、Levantine象牙属性聚类、Evron石器光谱、Ithaca希腊铭文与Aeneas拉丁铭文。各例均有单独来源和许可档案、拟定学习成果、必做无代码评价与后续核验事项。\n重要： 这是论文/仓库级候选资料目录，不是已经托管开放数据的文件目录。六项研究的真实数据均未在本教材仓库中发布；目前仅可按来源链接访问原作者资源。机器学习案例与原有的非AI中国贸易陶瓷资料分开标注。\nA6第二阶段数据审查： Levantine ivories官方CSV结构与许可核验。此项仅托管审查记录与脚本，不提供原始属性数据下载。\nA6方法学与教学延伸： 方法/原代码审查V1 · 第5章特征练习 · 第6章聚类练习 · 第10章类型学解释练习。不托管真实数据。\nA6算法复现前检查： 原始Python兼容性审查V1；此页为静态检查与版本追踪，不是已复现模型或开放数据集。\nA6受控环境： 隔离Python环境及编码测试V1。工具不再分发真实CSV或作者原始代码。\nA6算法数学行为准备： 独立虚构数据EM测试V1，不托管真实研究观测或输出。\nA6原作者代码最小兼容试验： 私有工作副本及虚构对照V1（尚未经本地运行，不上传原作者源码）。\nA6原作者单次E步与M步测试方案： 私有兼容性副本V1，只测试虚构记录，不发布真实输入和输出。\nA6原始EM迭代： 完全虚构小样本受控循环诊断V1。不包含真实考古数据或历史结果。\nA6算法终止与返回状态审查： 只读EM迭代轨迹诊断V1，仍不涉及真实162件象牙的聚类实验。\nA6模型输出状态对照： 历史EM与状态对齐版的受控实验V1。不包含真实器物数据。",
+    "text": "核心AI考古学案例库（正在核验）\n核心案例库：六项AI研究的数据与教学准入审查 V1 — 涵盖LiDAR炭窑识别、Tusayan陶器图像、Levantine象牙属性聚类、Evron石器光谱、Ithaca希腊铭文与Aeneas拉丁铭文。各例均有单独来源和许可档案、拟定学习成果、必做无代码评价与后续核验事项。\n重要： 这是论文/仓库级候选资料目录，不是已经托管开放数据的文件目录。六项研究的真实数据均未在本教材仓库中发布；目前仅可按来源链接访问原作者资源。机器学习案例与原有的非AI中国贸易陶瓷资料分开标注。\nA6第二阶段数据审查： Levantine ivories官方CSV结构与许可核验。此项仅托管审查记录与脚本，不提供原始属性数据下载。\nA6方法学与教学延伸： 方法/原代码审查V1 · 第5章特征练习 · 第6章聚类练习 · 第10章类型学解释练习。不托管真实数据。\nA6算法复现前检查： 原始Python兼容性审查V1；此页为静态检查与版本追踪，不是已复现模型或开放数据集。\nA6受控环境： 隔离Python环境及编码测试V1。工具不再分发真实CSV或作者原始代码。\nA6算法数学行为准备： 独立虚构数据EM测试V1，不托管真实研究观测或输出。\nA6原作者代码最小兼容试验： 私有工作副本及虚构对照V1（尚未经本地运行，不上传原作者源码）。\nA6原作者单次E步与M步测试方案： 私有兼容性副本V1，只测试虚构记录，不发布真实输入和输出。\nA6原始EM迭代： 完全虚构小样本受控循环诊断V1。不包含真实考古数据或历史结果。\nA6算法终止与返回状态审查： 只读EM迭代轨迹诊断V1，仍不涉及真实162件象牙的聚类实验。\nA6模型输出状态对照： 历史EM与状态对齐版的受控实验V1。不包含真实器物数据。\nA6停止条件稳健性测试： EM停止判据比较V1，不进行真实数据聚类。",
     "crumbs": [
       "配套资源",
       "数据集目录"
@@ -1770,7 +1770,7 @@
     "href": "core-case-library/index.html#共通的学生学习路径与评分证据",
     "title": "AI考古学核心案例库：六例数据与教学准入审查 V1",
     "section": "共通的学生学习路径与评分证据",
-    "text": "共通的学生学习路径与评分证据\nLevel 1：论文证据审查（必做，无代码）。明确研究问题、原始观测单位、模型输入输出、传统比较基线、误差与推断边界。提交一页四栏证据表。\nLevel 2：经过审查的演示材料（必做，暂用自行虚构数据）。在尚未确认许可前，只使用显著标为虚构的混淆矩阵、缺失示例或残文，评估模型预测与考古证据之间的推论链。\nLevel 3：原始资料小型练习（选做、待准入）。先核验原仓库实际文件、版本/哈希、类别/ID、训练测试划分、再分发许可及遗址/文化资料敏感性；批准后才能构建有数据字典和出处的教学子集。\nLevel 4：研究复现（高级选做、尚未批准）。在软硬件环境、数据权限和评价协议审查后尝试运行原程序，不以“公开代码”替代复现成功证据。\nA6进展更新： 已直接读取固定commit的官方CSV，记录其162行×34列、1,931个空白单元格，并核对语料与图像分别授权。详细结果见A6第二阶段文件初审；仍需在Positron执行独立R脚本核验本地SHA-256，不能称为聚类复现通过。\nA6复现准备： 2014年算法与现代Python兼容性审查V1。已定位Python 2语法和旧pandas/NumPy接口，下一步只读检查固定仓库版本，不安装旧依赖。\nA6受控复现准备： 独立Python环境与最小编码冒烟测试V1（未执行历史EM，不是数值复现）。\nA6最小数学行为检查（新）： 完全虚构数据的EM数值基准V1。它不运行历史原算法，也不产出真实器物聚类结果。\nA6原始模块局部核验候选： 私有兼容副本和独立虚构概率对照V1。这比自编演示算法更接近原研究，但尚未执行完整E/M步骤。\nA6原作者E/M函数试验： E步与M步的私有兼容副本和虚构数值对照V1，测试准备尚待运行，不是历史聚类结果的复现。\nA6完整EM短程测试准备： 原作者em()循环的私有compat-v3诊断V1。尚未在Positron执行，不代表真实象牙聚类已复现。\nA6循环控制审查： EM收敛条件与返回状态一致性V1。本轮观察原作者私有兼容版的停止及输出语义，不使用真实器物数据。\nA6历史与修正返回状态比较： 私有compat-v3和compat-v4的对照V1。仅用虚构数据，尚未在本地执行。",
+    "text": "共通的学生学习路径与评分证据\nLevel 1：论文证据审查（必做，无代码）。明确研究问题、原始观测单位、模型输入输出、传统比较基线、误差与推断边界。提交一页四栏证据表。\nLevel 2：经过审查的演示材料（必做，暂用自行虚构数据）。在尚未确认许可前，只使用显著标为虚构的混淆矩阵、缺失示例或残文，评估模型预测与考古证据之间的推论链。\nLevel 3：原始资料小型练习（选做、待准入）。先核验原仓库实际文件、版本/哈希、类别/ID、训练测试划分、再分发许可及遗址/文化资料敏感性；批准后才能构建有数据字典和出处的教学子集。\nLevel 4：研究复现（高级选做、尚未批准）。在软硬件环境、数据权限和评价协议审查后尝试运行原程序，不以“公开代码”替代复现成功证据。\nA6进展更新： 已直接读取固定commit的官方CSV，记录其162行×34列、1,931个空白单元格，并核对语料与图像分别授权。详细结果见A6第二阶段文件初审；仍需在Positron执行独立R脚本核验本地SHA-256，不能称为聚类复现通过。\nA6复现准备： 2014年算法与现代Python兼容性审查V1。已定位Python 2语法和旧pandas/NumPy接口，下一步只读检查固定仓库版本，不安装旧依赖。\nA6受控复现准备： 独立Python环境与最小编码冒烟测试V1（未执行历史EM，不是数值复现）。\nA6最小数学行为检查（新）： 完全虚构数据的EM数值基准V1。它不运行历史原算法，也不产出真实器物聚类结果。\nA6原始模块局部核验候选： 私有兼容副本和独立虚构概率对照V1。这比自编演示算法更接近原研究，但尚未执行完整E/M步骤。\nA6原作者E/M函数试验： E步与M步的私有兼容副本和虚构数值对照V1，测试准备尚待运行，不是历史聚类结果的复现。\nA6完整EM短程测试准备： 原作者em()循环的私有compat-v3诊断V1。尚未在Positron执行，不代表真实象牙聚类已复现。\nA6循环控制审查： EM收敛条件与返回状态一致性V1。本轮观察原作者私有兼容版的停止及输出语义，不使用真实器物数据。\nA6历史与修正返回状态比较： 私有compat-v3和compat-v4的对照V1。仅用虚构数据，尚未在本地执行。\nA6停止条件审查： 历史与候选停止判据、三个随机种子的虚构数据对照V1，尚未经本地实际运行。",
     "crumbs": [
       "配套资源",
       "AI考古学核心案例库：六例数据与教学准入审查 V1"
@@ -2562,7 +2562,7 @@
     "href": "core-case-library/a6-historical-vs-aligned-em-v1.html#四positron执行",
     "title": "A6：历史EM返回方式与状态对齐修正版对照 V1",
     "section": "四、Positron执行",
-    "text": "四、Positron执行\n在教材项目根目录，继续使用已安装NumPy、pandas和SciPy的独立环境：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python \\\n  audit-tools/a6_historical_vs_aligned_em_v1.py\n该程序依赖先前已经通过验收的私有compat-v3。首次运行时，仅在被Git忽略的私有目录生成：\ndownloads/private-workflow/a6-reproduction/compat-v4/\n  src/aneic/mfm.py\n  A6_V3_TO_V4_PATCH_PRIVATE.patch\n\ndownloads/private-review/a6-ivories/\n  A6_HISTORICAL_VS_ALIGNED_CHECKS_PRIVATE.csv\n  A6_HISTORICAL_VS_ALIGNED_OBSERVATIONS_PRIVATE.csv\n  A6_HISTORICAL_VS_ALIGNED_REPORT_PRIVATE.json\n不要修改原作者的aneic-core或aneic-scripts；不要上传compat-v3/compat-v4源码副本、真实器物属性、私人报告或模型输出。若测试报错，保留完整traceback。",
+    "text": "四、Positron执行\n在教材项目根目录，继续使用已安装NumPy、pandas和SciPy的独立环境：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python \\\n  audit-tools/a6_historical_vs_aligned_em_v1.py\n该程序依赖先前已经通过验收的私有compat-v3。首次运行时，仅在被Git忽略的私有目录生成：\ndownloads/private-workflow/a6-reproduction/compat-v4/\n  src/aneic/mfm.py\n  A6_V3_TO_V4_PATCH_PRIVATE.patch\n\ndownloads/private-review/a6-ivories/\n  A6_HISTORICAL_VS_ALIGNED_CHECKS_PRIVATE.csv\n  A6_HISTORICAL_VS_ALIGNED_OBSERVATIONS_PRIVATE.csv\n  A6_HISTORICAL_VS_ALIGNED_REPORT_PRIVATE.json\n不要修改原作者的aneic-core或aneic-scripts；不要上传compat-v3/compat-v4源码副本、真实器物属性、私人报告或模型输出。若测试报错，保留完整traceback。\n后续停止判据对照： 历史与候选EM收敛规则的虚构数据诊断V1，只调整停止表达式，不改变上轮的返回状态对齐方式。",
     "crumbs": [
       "配套资源",
       "A6：历史EM返回方式与状态对齐修正版对照 V1"
@@ -2577,6 +2577,72 @@
     "crumbs": [
       "配套资源",
       "A6：历史EM返回方式与状态对齐修正版对照 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-em-stopping-robustness-v1.html",
+    "href": "core-case-library/a6-em-stopping-robustness-v1.html",
+    "title": "A6：EM停止判据与收敛稳健性对照 V1",
+    "section": "",
+    "text": "研究问题\n前两轮审查已经分别确认：原作者EM短程循环可在现代环境的私有兼容副本上运行；原返回方式的模型参数与后验概率存在迭代相位错位；仅对齐返回语句而不改变停止条件，可以修正这种输出不一致。\n剩下的重要问题在于停止判据本身。固定源码的原表达式是：\n其中 dL = (L_ - L[-1]) / abs(L[-1])。如果目标函数下降，dL为负，在eps为正数时也满足dL &lt; eps。因此，仅凭这个条件不能将所有停止都解释为“接近收敛”。此外，it &gt; max_iter会在超过上限而非等于上限时触发。",
+    "crumbs": [
+      "配套资源",
+      "A6：EM停止判据与收敛稳健性对照 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-em-stopping-robustness-v1.html#研究问题",
+    "href": "core-case-library/a6-em-stopping-robustness-v1.html#研究问题",
+    "title": "A6：EM停止判据与收敛稳健性对照 V1",
+    "section": "",
+    "text": "if it &gt; 1 and ((dL &lt; eps) or it &gt; max_iter):\n    break",
+    "crumbs": [
+      "配套资源",
+      "A6：EM停止判据与收敛稳健性对照 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-em-stopping-robustness-v1.html#本轮单一候选修正",
+    "href": "core-case-library/a6-em-stopping-robustness-v1.html#本轮单一候选修正",
+    "title": "A6：EM停止判据与收敛稳健性对照 V1",
+    "section": "本轮单一候选修正",
+    "text": "本轮单一候选修正\n\n\n\n\n\n\n\n\n控制版本\n停止判断\n说明\n\n\n\n\n历史版：私有compat-v4\nit &gt; 1 and ((dL &lt; eps) or it &gt; max_iter)\n保留原始比较语义\n\n\n候选版：私有compat-v5\nit &gt; 1 and (((0 &lt;= dL) and (dL &lt; eps)) or it &gt;= max_iter)\n仅将非负且足够小的相对改进视为容差停止；上限改为&gt;=\n\n\n\n兼容版 compat-v4 已经具备PR #23验收的状态对齐返回语句。新工具只在私有compat-v5中对停止判据做一处精确替换。Gaussian精度公式、先验参数、E/M函数、输入数据、返回语句与随机种子均不变。\n必须强调： 这一候选规则并非已经证明的最佳统计收敛判据。它也不会自动处理浮点噪声、目标函数大幅下降、MAP目标合法性或模型局部极值；如果出现下降，应在后续研究中决定如何报告或中止，而不能把“未判为收敛”当作“模型正常”。",
+    "crumbs": [
+      "配套资源",
+      "A6：EM停止判据与收敛稳健性对照 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-em-stopping-robustness-v1.html#检查范围",
+    "href": "core-case-library/a6-em-stopping-robustness-v1.html#检查范围",
+    "title": "A6：EM停止判据与收敛稳健性对照 V1",
+    "section": "检查范围",
+    "text": "检查范围\n新程序：停止条件与稳健性诊断工具。\n首先执行不依赖数据的布尔边界检查：dL=-0.02、小幅正增量、大幅正增量、以及it=max_iter。随后分别用种子17、23、41，固定K=2、Gaussian精度先验a=2,b=2，比较两个版本在虚构样本上的目标函数记录长度、有限性和共同计算轨迹。\n\n\n\n\n\n\n\n对照项目\n需要确认\n\n\n\n\n单行补丁与Git SHA\n作者原件未变、私有差异精确\n\n\n目标函数下降判别\n原规则可能停止；候选规则不把下降当作良性收敛\n\n\n上限边界\n&gt;与&gt;=产生的差异被显式识别\n\n\n多个随机种子\n同一种子的两套版本具有相同的初始过程和共同轨迹\n\n\n返回输出\n两者仍沿用已对齐的q/gamma/L状态语义\n\n\n数值稳定性\n后验归一化、目标函数有限；不把这些测试误称为整体收敛证明\n\n\n\n所有实际差异以OBSERVED记录。即使最后出现全部PASS，也只代表本轮比较的检查条件成立，不代表候选规则已经得到统计学认证，更不等于2014年论文结果被重复出来。",
+    "crumbs": [
+      "配套资源",
+      "A6：EM停止判据与收敛稳健性对照 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-em-stopping-robustness-v1.html#在positron执行",
+    "href": "core-case-library/a6-em-stopping-robustness-v1.html#在positron执行",
+    "title": "A6：EM停止判据与收敛稳健性对照 V1",
+    "section": "在Positron执行",
+    "text": "在Positron执行\n从教材根目录，使用既有独立环境（含NumPy、pandas、SciPy）：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python \\\n  audit-tools/a6_em_stopping_robustness_v1.py\n脚本使用已通过检验的私有compat-v4，并在downloads/private-workflow/a6-reproduction/compat-v5/创建独立工作副本、保存A6_V4_TO_V5_PATCH_PRIVATE.patch。不覆盖作者原始仓库和已有私有副本。\n输出仅保留在被Git忽略的私有路径：\ndownloads/private-review/a6-ivories/\n  A6_STOPPING_ROBUSTNESS_CHECKS_PRIVATE.csv\n  A6_STOPPING_ROBUSTNESS_OBSERVATIONS_PRIVATE.csv\n  A6_STOPPING_ROBUSTNESS_REPORT_PRIVATE.json\n首次运行结果未知，若报FAIL请保留traceback，不直接修改真实CSV或作者Git克隆。",
+    "crumbs": [
+      "配套资源",
+      "A6：EM停止判据与收敛稳健性对照 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-em-stopping-robustness-v1.html#下一阶段的准入标准",
+    "href": "core-case-library/a6-em-stopping-robustness-v1.html#下一阶段的准入标准",
+    "title": "A6：EM停止判据与收敛稳健性对照 V1",
+    "section": "下一阶段的准入标准",
+    "text": "下一阶段的准入标准\n完成本轮后，还需要在虚构数据上针对多次初始化、不同阈值、下降情形与更严格的独立目标函数监测制定实验方案；最终进入真实考古数据的实验之前，必须固定兼容补丁、训练配置、原始代码许可与模型结果记录格式。\n原论文：Gansell等（2014），Journal of Archaeological Science 44:194–205，DOI。",
+    "crumbs": [
+      "配套资源",
+      "A6：EM停止判据与收敛稳健性对照 V1"
     ]
   },
   {

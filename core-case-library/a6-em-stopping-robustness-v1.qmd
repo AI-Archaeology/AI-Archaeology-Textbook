@@ -1,0 +1,72 @@
+# A6：EM停止判据与收敛稳健性对照 V1 {.unnumbered}
+
+> **状态：审查方案和测试脚本已写入Draft PR，尚未经Positron本地执行。** 本轮仅使用8条完全虚构的记录，比较作者程序的历史停止表达式与一个明确标注为**候选方案**的判据；原作者固定Git源码不修改，真实162件象牙资料不参与实验。
+
+## 研究问题
+
+前两轮审查已经分别确认：原作者EM短程循环可在现代环境的私有兼容副本上运行；原返回方式的模型参数与后验概率存在迭代相位错位；仅对齐返回语句而不改变停止条件，可以修正这种输出不一致。
+
+剩下的重要问题在于停止判据本身。固定源码的原表达式是：
+
+```python
+if it > 1 and ((dL < eps) or it > max_iter):
+    break
+```
+
+其中 `dL = (L_ - L[-1]) / abs(L[-1])`。如果目标函数下降，`dL`为负，在`eps`为正数时也满足`dL < eps`。因此，仅凭这个条件不能将所有停止都解释为“接近收敛”。此外，`it > max_iter`会在超过上限而非等于上限时触发。
+
+## 本轮单一候选修正
+
+| 控制版本 | 停止判断 | 说明 |
+|---|---|---|
+| 历史版：私有`compat-v4` | `it > 1 and ((dL < eps) or it > max_iter)` | 保留原始比较语义 |
+| 候选版：私有`compat-v5` | `it > 1 and (((0 <= dL) and (dL < eps)) or it >= max_iter)` | 仅将**非负且足够小**的相对改进视为容差停止；上限改为`>=` |
+
+兼容版 `compat-v4` 已经具备PR #23验收的状态对齐返回语句。新工具只在私有`compat-v5`中对停止判据做**一处**精确替换。Gaussian精度公式、先验参数、E/M函数、输入数据、返回语句与随机种子均不变。
+
+**必须强调：** 这一候选规则并非已经证明的最佳统计收敛判据。它也不会自动处理浮点噪声、目标函数大幅下降、MAP目标合法性或模型局部极值；如果出现下降，应在后续研究中决定如何报告或中止，而不能把“未判为收敛”当作“模型正常”。
+
+## 检查范围
+
+新程序：[停止条件与稳健性诊断工具](../audit-tools/a6_em_stopping_robustness_v1.py)。
+
+首先执行不依赖数据的布尔边界检查：`dL=-0.02`、小幅正增量、大幅正增量、以及`it=max_iter`。随后分别用种子17、23、41，固定K=2、Gaussian精度先验`a=2,b=2`，比较两个版本在虚构样本上的目标函数记录长度、有限性和共同计算轨迹。
+
+| 对照项目 | 需要确认 |
+|---|---|
+| 单行补丁与Git SHA | 作者原件未变、私有差异精确 |
+| 目标函数下降判别 | 原规则可能停止；候选规则不把下降当作良性收敛 |
+| 上限边界 | `>`与`>=`产生的差异被显式识别 |
+| 多个随机种子 | 同一种子的两套版本具有相同的初始过程和共同轨迹 |
+| 返回输出 | 两者仍沿用已对齐的`q/gamma/L`状态语义 |
+| 数值稳定性 | 后验归一化、目标函数有限；不把这些测试误称为整体收敛证明 |
+
+所有实际差异以`OBSERVED`记录。即使最后出现全部PASS，也只代表本轮比较的检查条件成立，**不代表候选规则已经得到统计学认证，更不等于2014年论文结果被重复出来**。
+
+## 在Positron执行
+
+从教材根目录，使用既有独立环境（含NumPy、pandas、SciPy）：
+
+```bash
+downloads/private-workflow/a6-reproduction/.venv/bin/python \
+  audit-tools/a6_em_stopping_robustness_v1.py
+```
+
+脚本使用已通过检验的私有`compat-v4`，并在`downloads/private-workflow/a6-reproduction/compat-v5/`创建独立工作副本、保存`A6_V4_TO_V5_PATCH_PRIVATE.patch`。不覆盖作者原始仓库和已有私有副本。
+
+输出仅保留在被Git忽略的私有路径：
+
+```text
+downloads/private-review/a6-ivories/
+  A6_STOPPING_ROBUSTNESS_CHECKS_PRIVATE.csv
+  A6_STOPPING_ROBUSTNESS_OBSERVATIONS_PRIVATE.csv
+  A6_STOPPING_ROBUSTNESS_REPORT_PRIVATE.json
+```
+
+首次运行结果未知，若报FAIL请保留traceback，不直接修改真实CSV或作者Git克隆。
+
+## 下一阶段的准入标准
+
+完成本轮后，还需要在虚构数据上针对多次初始化、不同阈值、下降情形与更严格的独立目标函数监测制定实验方案；最终进入真实考古数据的实验之前，必须固定兼容补丁、训练配置、原始代码许可与模型结果记录格式。
+
+原论文：Gansell等（2014），*Journal of Archaeological Science* 44:194–205，[DOI](https://doi.org/10.1016/j.jas.2013.11.005)。

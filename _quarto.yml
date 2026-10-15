@@ -64,6 +64,7 @@ book:
         - core-case-library/a6-original-full-em-loop-v1.qmd
         - core-case-library/a6-em-convergence-return-state-v1.qmd
         - core-case-library/a6-historical-vs-aligned-em-v1.qmd
+        - core-case-library/a6-em-stopping-robustness-v1.qmd
         - core-case-library/a6-ch05-data-features-v1.qmd
         - core-case-library/a6-ch06-probabilistic-clustering-v1.qmd
         - core-case-library/a6-ch10-stylistic-interpretation-v1.qmd
