@@ -56,6 +56,8 @@
 
 **A6受控复现准备：** [独立Python环境与最小编码冒烟测试V1](a6-controlled-reproduction-environment-v1.qmd)（未执行历史EM，不是数值复现）。
 
+**A6最小数学行为检查（新）：** [完全虚构数据的EM数值基准V1](a6-minimal-em-behavior-v1.qmd)。它不运行历史原算法，也不产出真实器物聚类结果。
+
 ## 文件核验与出版准入清单
 
 - [ ] 官方存档/论文版本记录，具体文件大小、checksum、获取日期。
