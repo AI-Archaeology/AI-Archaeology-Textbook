@@ -59,6 +59,8 @@ python3 audit-tools/a6_original_python_compatibility_v1.py \
 
 **注意：** PASS仅指“源码及静态设置检查”通过；即使全部PASS，Python 3运行兼容性依然可能被BLOCKED。脚本首次运行及其输出仍须在用户的Positron环境中验收。
 
+**隔离环境下一阶段：** [A6独立venv及数据编码冒烟测试V1](a6-controlled-reproduction-environment-v1.qmd)。仅测试现代环境与虚构编码，不运行历史EM。
+
 ## 受控算法复现的三阶段准入条件
 
 | 后续阶段 | 前提与产出 | 当前 |
