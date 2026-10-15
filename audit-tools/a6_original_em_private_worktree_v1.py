@@ -128,7 +128,7 @@ def main():
 
     # FOUR COMPLETELY INVENTED observations, never a real site/object identifier.
     examples=pd.DataFrame({"x":[0.0,2.0,np.nan,1.0],
-                           "cat":pd.Series(["A","B","A",None],dtype="object")},
+                           "cat":["A","B","A",None]},
                           index=["toy-1","toy-2","toy-3","toy-4"])
     ind=module.get_indicator(examples["cat"])
     check("Historical get_indicator adapted: correct toy categories",
