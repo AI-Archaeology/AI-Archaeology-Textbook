@@ -86,3 +86,25 @@ main.content blockquote { border-left: 3px solid var(--ai-teal); color: var(--ai
     font-size: 1rem !important;
   }
 }
+/* A6 archive navigation: keep every Quarto Book page built, but hide internal
+   technical/teaching subpages from the automatic book sidebar. Links in the
+   three visible A6 entry pages, search, and original URLs remain available.
+   This CSS is used because book.chapters controls Quarto Book sidebar output. */
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-ivories-file-audit-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-method-audit-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-original-algorithm-compatibility-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-controlled-reproduction-environment-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-minimal-em-behavior-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-original-em-worktree-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-original-e-m-step-verification-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-original-full-em-loop-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-em-convergence-return-state-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-historical-vs-aligned-em-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-em-stopping-robustness-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-real-data-pilot-readiness-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-real-pilot-protocol-finalization-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-ch05-data-features-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-ch06-probabilistic-clustering-v1.html"]),
+#quarto-sidebar li.sidebar-item:has(> .sidebar-item-container > a.sidebar-link[href$="/a6-ch10-stylistic-interpretation-v1.html"]) {
+  display: none !important;
+}
