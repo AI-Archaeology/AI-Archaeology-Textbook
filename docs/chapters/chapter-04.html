@@ -582,14 +582,21 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#调查发掘与取样偏差" id="toc-调查发掘与取样偏差" class="nav-link" data-scroll-target="#调查发掘与取样偏差"><span class="header-section-number">4.2</span> 调查、发掘与取样偏差</a></li>
   <li><a href="#考古记录的历史差异与标准不一致" id="toc-考古记录的历史差异与标准不一致" class="nav-link" data-scroll-target="#考古记录的历史差异与标准不一致"><span class="header-section-number">4.3</span> 考古记录的历史差异与标准不一致</a></li>
   <li><a href="#缺失数据的机制处理偏差与数据质量评价" id="toc-缺失数据的机制处理偏差与数据质量评价" class="nav-link" data-scroll-target="#缺失数据的机制处理偏差与数据质量评价"><span class="header-section-number">4.4</span> 缺失数据的机制、处理偏差与数据质量评价</a></li>
-  <li><a href="#年代与空间位置的不确定性" id="toc-年代与空间位置的不确定性" class="nav-link" data-scroll-target="#年代与空间位置的不确定性"><span class="header-section-number">4.5</span> 年代与空间位置的不确定性</a></li>
+  <li><a href="#年代与空间位置的不确定性" id="toc-年代与空间位置的不确定性" class="nav-link" data-scroll-target="#年代与空间位置的不确定性"><span class="header-section-number">4.5</span> 年代与空间位置的不确定性</a>
+  <ul class="collapse">
+  <li><a href="#从田野形成过程到数据偏差证据不是直接复制的过去" id="toc-从田野形成过程到数据偏差证据不是直接复制的过去" class="nav-link" data-scroll-target="#从田野形成过程到数据偏差证据不是直接复制的过去"><span class="header-section-number">4.5.1</span> 从田野形成过程到数据偏差：证据不是直接复制的过去</a></li>
+  </ul></li>
   <li><a href="#数据偏差怎样影响ai模型" id="toc-数据偏差怎样影响ai模型" class="nav-link" data-scroll-target="#数据偏差怎样影响ai模型"><span class="header-section-number">4.6</span> 数据偏差怎样影响AI模型</a></li>
-  <li><a href="#空间自相关的直观理解邻近样本不等于独立样本详见14.3" id="toc-空间自相关的直观理解邻近样本不等于独立样本详见14.3" class="nav-link" data-scroll-target="#空间自相关的直观理解邻近样本不等于独立样本详见14.3"><span class="header-section-number">4.7</span> 空间自相关的直观理解：邻近样本不等于独立样本（详见14.3）</a></li>
+  <li><a href="#空间自相关的直观理解邻近样本不等于独立样本详见14.3" id="toc-空间自相关的直观理解邻近样本不等于独立样本详见14.3" class="nav-link" data-scroll-target="#空间自相关的直观理解邻近样本不等于独立样本详见14.3"><span class="header-section-number">4.7</span> 空间自相关的直观理解：邻近样本不等于独立样本（详见14.3）</a>
+  <ul class="collapse">
+  <li><a href="#当代ai实证研究为何重视外推验证" id="toc-当代ai实证研究为何重视外推验证" class="nav-link" data-scroll-target="#当代ai实证研究为何重视外推验证">当代AI实证研究为何重视外推验证？</a></li>
+  </ul></li>
   <li><a href="#数据代表性与考古推论的有效范围" id="toc-数据代表性与考古推论的有效范围" class="nav-link" data-scroll-target="#数据代表性与考古推论的有效范围"><span class="header-section-number">4.8</span> 数据代表性与考古推论的有效范围</a>
   <ul class="collapse">
   <li><a href="#教学案例三种缺失能否合并" id="toc-教学案例三种缺失能否合并" class="nav-link" data-scroll-target="#教学案例三种缺失能否合并">教学案例：三种“缺失”能否合并？</a></li>
   <li><a href="#何时用何时不用" id="toc-何时用何时不用" class="nav-link" data-scroll-target="#何时用何时不用">何时用、何时不用</a></li>
   <li><a href="#继续深入" id="toc-继续深入" class="nav-link" data-scroll-target="#继续深入">继续深入</a></li>
+  <li><a href="#本章来源核验与阅读路径" id="toc-本章来源核验与阅读路径" class="nav-link" data-scroll-target="#本章来源核验与阅读路径">本章来源核验与阅读路径</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/ZCJing2022/AI-Archaeology-Textbook/edit/main/chapters/chapter-04.qmd" class="toc-action"><i class="bi bi-github"></i>编辑该页面</a></li><li><a href="https://github.com/ZCJing2022/AI-Archaeology-Textbook/issues/new" class="toc-action"><i class="bi empty"></i>反馈问题</a></li></ul></div></nav>
@@ -718,6 +725,11 @@ ul.task-list li input[type="checkbox"] {
 <p>“出土年代为某年”“遗址坐标为某个精确数字”看起来明确，但不一定反映考古学证据的实际精度。地层关系通常提供的是<strong>相对先后</strong>；测年结果包含实验误差、校准和模型前提；一件器物的制作时间、使用时间和最终埋藏时间也可能不同。将它们都压缩成一个整数年份，可能造成虚假的确定性。</p>
 <p><strong>空间数据也有层级。</strong> 全站中心点、探方定位、器物三维坐标、遥感预测像元，是不同精度和不同含义的位置资料。若只有“在遗址北部发现”的旧记录，就不能把它处理成厘米级的准确坐标。历史地图配准误差、坐标转换、设备精度以及敏感遗址位置的公开限制，都应进入数据说明。</p>
 <p>研究者可以根据合适的方法把年代表示为区间或概率分布，把位置表示为合理的空间范围，或者明确标出某些数据仅能支持遗址级比较。<strong>显示更多小数位，不会提高原始资料精度。</strong></p>
+<section id="从田野形成过程到数据偏差证据不是直接复制的过去" class="level3" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="从田野形成过程到数据偏差证据不是直接复制的过去"><span class="header-section-number">4.5.1</span> 从田野形成过程到数据偏差：证据不是直接复制的过去</h3>
+<p>Renfrew与Bahn（2020）第2章区分自然形成过程与人类活动造成的形成过程，第3章讨论调查、发掘和取样方法；Carver与Hummler（版权页2025）第1章讨论遗址怎样形成，并在其田野调查和发掘章节说明如何取得与记录资料。它们提供了本章讨论<strong>保存、发现和取样</strong>的考古学方法基础，而非AI算法的性能证据。</p>
+<p>Chapman与Wylie（2016）导论及第1—3章进一步强调：物质遗存能对我们的解释提出独立约束，但它们成为证据依赖背景知识、田野操作、记录和相互比较的推理过程。因此，从统计相关性进入历史解释时，必须说明究竟是哪一项观察、哪种推论前提以及哪些竞争解释支持或削弱结论。</p>
+</section>
 </section>
 <section id="数据偏差怎样影响ai模型" class="level2" data-number="4.6">
 <h2 data-number="4.6" class="anchored" data-anchor-id="数据偏差怎样影响ai模型"><span class="header-section-number">4.6</span> 数据偏差怎样影响AI模型</h2>
@@ -732,6 +744,11 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>虚构例子：</strong> 在同一条河谷附近记录了20个相邻样点，发现其中大部分具有相似土壤和陶器保存状态。它们并不一定提供了20份与另一条河谷完全独立的环境证据。若随机挑选其中一些点训练模型，再用同一河谷的邻近点测试，模型也许得到很好成绩；但换到未见过的河谷后可能失效。</p>
 <p>这不等于邻近样本毫无价值，而是要求验证设计与研究问题对应。对于预测另一区域的遗址位置，可以考虑把空间块或独立调查区留作测试集；对于研究同一河谷内的局部变化，则要清楚说明推论范围。空间分块也不是万能方案：块大小、地理距离、样本量和区域差异都会影响结果。</p>
 <p>本节只建立直观认识；空间自相关的进一步方法讨论安排在<a href="../chapters/chapter-14.html">第14章</a>相关内容中。</p>
+<section id="当代ai实证研究为何重视外推验证" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="当代ai实证研究为何重视外推验证">当代AI实证研究为何重视外推验证？</h3>
+<p>Orengo等（2026）系统讨论了考古机器学习中的<strong>小样本、类别不均衡、背景多样性、特征表示与空间分散</strong>。论文举出形态近似却并非考古遗迹的对象、不同传感器和地形条件等作为误识别与跨区域转移困难的来源，说明仅靠内部测试成绩不足以证明方法可以推广到新资料。<a href="https://doi.org/10.1016/j.jas.2026.106571">原论文第2—3节</a>。</p>
+<p>Bickler（2021）同样提醒，考古资料形成缓慢、规模有限、保存与分类不一致，需要专家评价及独立田野核验。<a href="https://doi.org/10.1017/aap.2021.6">文章</a>。<strong>以上都是已发表作者针对考古机器学习提出的具体论证；它们不表示任何特定算法在全部地区都会失效。</strong></p>
+</section>
 </section>
 <section id="数据代表性与考古推论的有效范围" class="level2" data-number="4.8">
 <h2 data-number="4.8" class="anchored" data-anchor-id="数据代表性与考古推论的有效范围"><span class="header-section-number">4.8</span> 数据代表性与考古推论的有效范围</h2>
@@ -751,6 +768,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="继续深入" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="继续深入">继续深入</h3>
 <p><strong>入门：</strong> 返回第3章，复核观察单位、缺失状态及数据来源说明。<strong>进阶：</strong> 在第5—8章学习统计推断、训练与独立评价，在第14章进一步讨论空间资料的分析条件。<strong>研究实践：</strong> 对照真实论文的数据来源、取样、字段缺失和验证设计，逐项判断作者报告的预测结果可以推广到何种资料。</p>
+</section>
+<section id="本章来源核验与阅读路径" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="本章来源核验与阅读路径">本章来源核验与阅读路径</h3>
+<ul>
+<li>Renfrew, Colin, and Paul Bahn. 2020. <em>Archaeology: Theories, Methods and Practice</em>. 8th ed.&nbsp;Thames &amp; Hudson，第2章形成过程、第3章调查取样、第4章年代。</li>
+<li>Carver, Martin, and Madeleine Hummler. 2025. <em>Archaeological Investigation</em>. 2nd ed.&nbsp;Routledge，第1、4—6章。<a href="https://doi.org/10.4324/9781003185147">出版物DOI</a>。</li>
+<li>Chapman, Robert, and Alison Wylie. 2016. <em>Evidential Reasoning in Archaeology</em>. Bloomsbury Academic，导论与第1—3章。</li>
+<li>Bickler, Simon H. 2021. <a href="https://doi.org/10.1017/aap.2021.6">“Machine Learning Arrives in Archaeology.”</a> <em>Advances in Archaeological Practice</em> 9(2): 186–191。</li>
+<li>Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. <a href="https://doi.org/10.1016/j.jas.2026.106571">“Theory and Practice of Artificial Intelligence in Archaeology.”</a> <em>Journal of Archaeological Science</em> 190: 106571。</li>
+</ul>
 <blockquote class="blockquote">
 <p><strong>学术边界：</strong> 本章主要通过通用方法概念与明确标注的虚构情境解释考古资料的限制；真实遗址案例、相关理论原著和方法研究的完整引用仍待下一轮核验。它是依据锁定大纲完成的正文初稿，不是已通过终审的出版文本。</p>
 </blockquote>
