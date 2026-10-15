@@ -64,6 +64,8 @@ downloads/private-workflow/a6-reproduction/.venv/bin/python -m pip freeze \
   > downloads/private-review/a6-ivories/A6_ENV_PIP_FREEZE_PRIVATE.txt
 ```
 
+**后续完整循环诊断：** [原作者`em()`在虚构8条数据上的短程测试V1](a6-original-full-em-loop-v1.qmd)。需区分初始化及先验字典的语义修复与原始历史程序完全复现。
+
 ## 准入与限制
 
 - [ ] 原始 `aneic-core` commit仍固定且源文件没有被修改。
