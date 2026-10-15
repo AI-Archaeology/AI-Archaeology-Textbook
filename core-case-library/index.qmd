@@ -66,6 +66,8 @@
 
 **A6循环控制审查：** [EM收敛条件与返回状态一致性V1](a6-em-convergence-return-state-v1.qmd)。本轮观察原作者私有兼容版的停止及输出语义，不使用真实器物数据。
 
+**A6历史与修正返回状态比较：** [私有compat-v3和compat-v4的对照V1](a6-historical-vs-aligned-em-v1.qmd)。仅用虚构数据，尚未在本地执行。
+
 ## 文件核验与出版准入清单
 
 - [ ] 官方存档/论文版本记录，具体文件大小、checksum、获取日期。
