@@ -37,7 +37,7 @@ record("20 categorical attribute columns", ncol(raw)==34L, "position 15 through 
 is_missing <- function(x) is.na(x) | trimws(as.character(x)) == ""
 missing <- vapply(raw,function(x) sum(is_missing(x)),integer(1))
 record("Expected 1931 empty/NA cells", sum(missing)==1931L, paste("observed",sum(missing)))
-record("Only Key and Site complete", identical(which(missing==0L),1:2),paste("complete fields",paste(names(raw)[missing==0L],collapse=", ")))
+record("Only Key and Site complete", identical(unname(which(missing==0L)), 1:2),paste("complete fields",paste(names(raw)[missing==0L],collapse=", ")))
 bad_numeric <- vapply(raw[3:14],function(x) {
  values <- as.character(x)[!is_missing(x)]
  sum(is.na(suppressWarnings(as.numeric(values))))
