@@ -1,0 +1,73 @@
+# A6：历史EM返回方式与状态对齐修正版对照 V1 {.unnumbered}
+
+> **状态：已编写检查脚本，但尚未在Positron实际运行。** 本轮使用8条完全虚构的属性记录，对比两套原作者EM兼容工作副本。原作者2014年Git仓库保持不变，不访问真实162件象牙数据，也不声称论文的聚类结果已复现。
+
+## 一、为什么需要比较两种返回方式？
+
+[上一轮迭代状态审查](a6-em-convergence-return-state-v1.qmd)在虚构数据上报告16 PASS / 0 FAIL，并实际观测到一个明确的返回状态偏移：原作者的`em()`函数在满足停止条件之前先计算一次E步，再决定是否跳出循环。跳出时，返回的`gamma`属于最后一次求值，但`q`和`L`仍对应前一次被接受的参数状态。
+
+该次测试中，E步计算5次，但返回的`L`只记录4个值；第五次求得目标值−17.5112398548。需要明确：**这是一项在给定兼容副本与虚构数据下的源码行为观察，不是对原文发表的全部结果的错误判定。**
+
+## 二、只改变一行：保持停止条件原样
+
+| 实验 | 返回语句 | 意义 |
+|---|---|---|
+| 历史控制流程，私有`compat-v3` | `return q, g, L, g0` | 保留原代码返回方式，可能将旧参数与新成员概率组合 |
+| 状态对齐试验，私有`compat-v4` | `return q_, g, L + [L_], g0` | 返回最后一次E步使用的参数、同次成员概率和目标函数 |
+
+`compat-v4`只改变以上**一个返回语句**，并在私有目录保存单行补丁；其他语句完全一致，包括原始停止条件：
+
+```python
+if it > 1 and ((dL < eps) or it > max_iter):
+    break
+```
+
+因此，这是**返回输出语义的隔离比较**，并不是在这一轮同时调整收敛阈值或迭代次数。状态对齐不等于收敛，也不能自动证明MAP模型统计定义正确。
+
+## 三、实际比较什么？
+
+新脚本：[历史与状态对齐版EM对照程序](../audit-tools/a6_historical_vs_aligned_em_v1.py)。
+
+程序对两份私有兼容模块分别设置相同的`K=2`、随机种子17、`max_iter=3`、`eps=1e-8`及相同Gaussian精度先验（`a=2`，`b=2`，类别与簇先验为空），使用8条完全虚构记录。脚本暂时包装E步以记录每次调用、输入参数和目标值，结束后恢复运行时引用，不修改磁盘上的源代码。
+
+| 验证问题 | 应报告的区别 |
+|---|---|
+| 两组初始值与E步计算是否一致？ | 区分纯返回差异和模型轨迹变化 |
+| 历史`L`是否遗漏最后一次E步？ | 记录目标函数列表长度与最新求值 |
+| 历史`q`是否来自较早一次E步？ | 核对返回参数与每次E步输入 |
+| 对齐版`q`、`gamma`、`L`是否属于同一状态？ | 明确返回值的数学含义 |
+| 最后一步为何停止？ | 分别记录`dL < eps`与`it > max_iter`是否成立 |
+
+脚本使用**PASS/FAIL**表示上述比较的数值和状态关系是否按程序检查成立；使用**OBSERVED**记录两套返回值实际差异。即使全PASS，也不能写成“算法已收敛”或“真实数据结果已复现”。
+
+## 四、Positron执行
+
+在教材项目根目录，继续使用已安装NumPy、pandas和SciPy的独立环境：
+
+```bash
+downloads/private-workflow/a6-reproduction/.venv/bin/python \
+  audit-tools/a6_historical_vs_aligned_em_v1.py
+```
+
+该程序依赖先前已经通过验收的私有`compat-v3`。首次运行时，仅在被Git忽略的私有目录生成：
+
+```text
+downloads/private-workflow/a6-reproduction/compat-v4/
+  src/aneic/mfm.py
+  A6_V3_TO_V4_PATCH_PRIVATE.patch
+
+downloads/private-review/a6-ivories/
+  A6_HISTORICAL_VS_ALIGNED_CHECKS_PRIVATE.csv
+  A6_HISTORICAL_VS_ALIGNED_OBSERVATIONS_PRIVATE.csv
+  A6_HISTORICAL_VS_ALIGNED_REPORT_PRIVATE.json
+```
+
+不要修改原作者的`aneic-core`或`aneic-scripts`；不要上传compat-v3/compat-v4源码副本、真实器物属性、私人报告或模型输出。若测试报错，保留完整traceback。
+
+## 五、何时才能进入真实语料复现？
+
+本轮仅解决**返回状态对齐**。下一轮仍应独立验证停止条件对目标函数下降的处理、最大迭代次数边界、合适的收敛判据，以及作者原方法中随机重启与K值选择的可重复性。
+
+只有在实际数值验证与来源许可确认后，才考虑对经过核验的162条象牙属性开展小规模的真实数据实验。公开页面仅保存方法、代码审查与教学说明，不发布真实研究文件。
+
+原论文：Gansell等（2014），*Journal of Archaeological Science* 44:194–205，[DOI](https://doi.org/10.1016/j.jas.2013.11.005)。
