@@ -10,6 +10,8 @@
 
 **教学实施补充：** [真实论文小节与图表定位](real-data-reading-guide-v1.qmd) · [T3-A/T3-B/T11-A/T11-B四项评分量规](real-data-rubrics-v1.qmd)。
 
+**质量审查（拟修订）：** [教学质量审查V1](real-data-teaching-qa-v1.qmd) · [教师试评分与课堂试测包V1](real-data-pilot-pack-v1.qmd)。现有矩阵为设计覆盖；缺失机制与分箱应用需另补直接证据，尚未经过课堂实测。
+
 ## 全部10条成果的覆盖矩阵
 
 | 学习成果 | 层次 | 必做综合评价 | 真实论文阅读 | 补充检查 | 完成标准 |
