@@ -1704,7 +1704,7 @@
     "href": "datasets.html#核心ai考古学案例库正在核验",
     "title": "数据集目录",
     "section": "核心AI考古学案例库（正在核验）",
-    "text": "核心AI考古学案例库（正在核验）\n核心案例库：六项AI研究的数据与教学准入审查 V1 — 涵盖LiDAR炭窑识别、Tusayan陶器图像、Levantine象牙属性聚类、Evron石器光谱、Ithaca希腊铭文与Aeneas拉丁铭文。各例均有单独来源和许可档案、拟定学习成果、必做无代码评价与后续核验事项。\n重要： 这是论文/仓库级候选资料目录，不是已经托管开放数据的文件目录。六项研究的真实数据均未在本教材仓库中发布；目前仅可按来源链接访问原作者资源。机器学习案例与原有的非AI中国贸易陶瓷资料分开标注。\nA6第二阶段数据审查： Levantine ivories官方CSV结构与许可核验。此项仅托管审查记录与脚本，不提供原始属性数据下载。\nA6方法学与教学延伸： 方法/原代码审查V1 · 第5章特征练习 · 第6章聚类练习 · 第10章类型学解释练习。不托管真实数据。\nA6算法复现前检查： 原始Python兼容性审查V1；此页为静态检查与版本追踪，不是已复现模型或开放数据集。\nA6受控环境： 隔离Python环境及编码测试V1。工具不再分发真实CSV或作者原始代码。\nA6算法数学行为准备： 独立虚构数据EM测试V1，不托管真实研究观测或输出。\nA6原作者代码最小兼容试验： 私有工作副本及虚构对照V1（尚未经本地运行，不上传原作者源码）。\nA6原作者单次E步与M步测试方案： 私有兼容性副本V1，只测试虚构记录，不发布真实输入和输出。",
+    "text": "核心AI考古学案例库（正在核验）\n核心案例库：六项AI研究的数据与教学准入审查 V1 — 涵盖LiDAR炭窑识别、Tusayan陶器图像、Levantine象牙属性聚类、Evron石器光谱、Ithaca希腊铭文与Aeneas拉丁铭文。各例均有单独来源和许可档案、拟定学习成果、必做无代码评价与后续核验事项。\n重要： 这是论文/仓库级候选资料目录，不是已经托管开放数据的文件目录。六项研究的真实数据均未在本教材仓库中发布；目前仅可按来源链接访问原作者资源。机器学习案例与原有的非AI中国贸易陶瓷资料分开标注。\nA6第二阶段数据审查： Levantine ivories官方CSV结构与许可核验。此项仅托管审查记录与脚本，不提供原始属性数据下载。\nA6方法学与教学延伸： 方法/原代码审查V1 · 第5章特征练习 · 第6章聚类练习 · 第10章类型学解释练习。不托管真实数据。\nA6算法复现前检查： 原始Python兼容性审查V1；此页为静态检查与版本追踪，不是已复现模型或开放数据集。\nA6受控环境： 隔离Python环境及编码测试V1。工具不再分发真实CSV或作者原始代码。\nA6算法数学行为准备： 独立虚构数据EM测试V1，不托管真实研究观测或输出。\nA6原作者代码最小兼容试验： 私有工作副本及虚构对照V1（尚未经本地运行，不上传原作者源码）。\nA6原作者单次E步与M步测试方案： 私有兼容性副本V1，只测试虚构记录，不发布真实输入和输出。\nA6原始EM迭代： 完全虚构小样本受控循环诊断V1。不包含真实考古数据或历史结果。",
     "crumbs": [
       "配套资源",
       "数据集目录"
@@ -1770,7 +1770,7 @@
     "href": "core-case-library/index.html#共通的学生学习路径与评分证据",
     "title": "AI考古学核心案例库：六例数据与教学准入审查 V1",
     "section": "共通的学生学习路径与评分证据",
-    "text": "共通的学生学习路径与评分证据\nLevel 1：论文证据审查（必做，无代码）。明确研究问题、原始观测单位、模型输入输出、传统比较基线、误差与推断边界。提交一页四栏证据表。\nLevel 2：经过审查的演示材料（必做，暂用自行虚构数据）。在尚未确认许可前，只使用显著标为虚构的混淆矩阵、缺失示例或残文，评估模型预测与考古证据之间的推论链。\nLevel 3：原始资料小型练习（选做、待准入）。先核验原仓库实际文件、版本/哈希、类别/ID、训练测试划分、再分发许可及遗址/文化资料敏感性；批准后才能构建有数据字典和出处的教学子集。\nLevel 4：研究复现（高级选做、尚未批准）。在软硬件环境、数据权限和评价协议审查后尝试运行原程序，不以“公开代码”替代复现成功证据。\nA6进展更新： 已直接读取固定commit的官方CSV，记录其162行×34列、1,931个空白单元格，并核对语料与图像分别授权。详细结果见A6第二阶段文件初审；仍需在Positron执行独立R脚本核验本地SHA-256，不能称为聚类复现通过。\nA6复现准备： 2014年算法与现代Python兼容性审查V1。已定位Python 2语法和旧pandas/NumPy接口，下一步只读检查固定仓库版本，不安装旧依赖。\nA6受控复现准备： 独立Python环境与最小编码冒烟测试V1（未执行历史EM，不是数值复现）。\nA6最小数学行为检查（新）： 完全虚构数据的EM数值基准V1。它不运行历史原算法，也不产出真实器物聚类结果。\nA6原始模块局部核验候选： 私有兼容副本和独立虚构概率对照V1。这比自编演示算法更接近原研究，但尚未执行完整E/M步骤。\nA6原作者E/M函数试验： E步与M步的私有兼容副本和虚构数值对照V1，测试准备尚待运行，不是历史聚类结果的复现。",
+    "text": "共通的学生学习路径与评分证据\nLevel 1：论文证据审查（必做，无代码）。明确研究问题、原始观测单位、模型输入输出、传统比较基线、误差与推断边界。提交一页四栏证据表。\nLevel 2：经过审查的演示材料（必做，暂用自行虚构数据）。在尚未确认许可前，只使用显著标为虚构的混淆矩阵、缺失示例或残文，评估模型预测与考古证据之间的推论链。\nLevel 3：原始资料小型练习（选做、待准入）。先核验原仓库实际文件、版本/哈希、类别/ID、训练测试划分、再分发许可及遗址/文化资料敏感性；批准后才能构建有数据字典和出处的教学子集。\nLevel 4：研究复现（高级选做、尚未批准）。在软硬件环境、数据权限和评价协议审查后尝试运行原程序，不以“公开代码”替代复现成功证据。\nA6进展更新： 已直接读取固定commit的官方CSV，记录其162行×34列、1,931个空白单元格，并核对语料与图像分别授权。详细结果见A6第二阶段文件初审；仍需在Positron执行独立R脚本核验本地SHA-256，不能称为聚类复现通过。\nA6复现准备： 2014年算法与现代Python兼容性审查V1。已定位Python 2语法和旧pandas/NumPy接口，下一步只读检查固定仓库版本，不安装旧依赖。\nA6受控复现准备： 独立Python环境与最小编码冒烟测试V1（未执行历史EM，不是数值复现）。\nA6最小数学行为检查（新）： 完全虚构数据的EM数值基准V1。它不运行历史原算法，也不产出真实器物聚类结果。\nA6原始模块局部核验候选： 私有兼容副本和独立虚构概率对照V1。这比自编演示算法更接近原研究，但尚未执行完整E/M步骤。\nA6原作者E/M函数试验： E步与M步的私有兼容副本和虚构数值对照V1，测试准备尚待运行，不是历史聚类结果的复现。\nA6完整EM短程测试准备： 原作者em()循环的私有compat-v3诊断V1。尚未在Positron执行，不代表真实象牙聚类已复现。",
     "crumbs": [
       "配套资源",
       "AI考古学核心案例库：六例数据与教学准入审查 V1"
@@ -2397,7 +2397,7 @@
     "href": "core-case-library/a6-original-e-m-step-verification-v1.html#在positron执行",
     "title": "A6 原作者 E 步与 M 步兼容性检验 V1",
     "section": "在Positron执行",
-    "text": "在Positron执行\n沿用前次建立的独立Python环境；此轮 e_step() 会使用 scipy.special，因此需要在独立venv内部添加SciPy（不修改主项目环境）：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python -m pip install scipy\n随后从教材项目根目录运行：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python \\\n  audit-tools/a6_original_e_m_steps_v1.py\n脚本预设 compat-v1 已由PR #19的测试生成；如果不存在或补丁锚点不符，将停止并提示。首次测试是否能通过尚未知；保留完整traceback用于改进，不建议自行修改或重置原作者源码。\n输出位置均为Git忽略的私有文件：\ndownloads/private-workflow/a6-reproduction/compat-v2/\n  src/aneic/mfm.py\n  A6_V1_TO_V2_PATCH_PRIVATE.patch\n\ndownloads/private-review/a6-ivories/\n  A6_AUTHOR_E_M_TOY_CHECKS_PRIVATE.csv\n  A6_AUTHOR_E_M_TOY_REPORT_PRIVATE.json\n还可以在运行后记录本地实际依赖版本：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python -m pip freeze \\\n  &gt; downloads/private-review/a6-ivories/A6_ENV_PIP_FREEZE_PRIVATE.txt",
+    "text": "在Positron执行\n沿用前次建立的独立Python环境；此轮 e_step() 会使用 scipy.special，因此需要在独立venv内部添加SciPy（不修改主项目环境）：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python -m pip install scipy\n随后从教材项目根目录运行：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python \\\n  audit-tools/a6_original_e_m_steps_v1.py\n脚本预设 compat-v1 已由PR #19的测试生成；如果不存在或补丁锚点不符，将停止并提示。首次测试是否能通过尚未知；保留完整traceback用于改进，不建议自行修改或重置原作者源码。\n输出位置均为Git忽略的私有文件：\ndownloads/private-workflow/a6-reproduction/compat-v2/\n  src/aneic/mfm.py\n  A6_V1_TO_V2_PATCH_PRIVATE.patch\n\ndownloads/private-review/a6-ivories/\n  A6_AUTHOR_E_M_TOY_CHECKS_PRIVATE.csv\n  A6_AUTHOR_E_M_TOY_REPORT_PRIVATE.json\n还可以在运行后记录本地实际依赖版本：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python -m pip freeze \\\n  &gt; downloads/private-review/a6-ivories/A6_ENV_PIP_FREEZE_PRIVATE.txt\n后续完整循环诊断： 原作者em()在虚构8条数据上的短程测试V1。需区分初始化及先验字典的语义修复与原始历史程序完全复现。",
     "crumbs": [
       "配套资源",
       "A6 原作者 E 步与 M 步兼容性检验 V1"
@@ -2412,6 +2412,61 @@
     "crumbs": [
       "配套资源",
       "A6 原作者 E 步与 M 步兼容性检验 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-original-full-em-loop-v1.html",
+    "href": "core-case-library/a6-original-full-em-loop-v1.html",
+    "title": "A6 原作者完整EM循环：小规模虚构数据诊断 V1",
+    "section": "",
+    "text": "一、为什么在E/M函数通过之后，还需要单独审查EM循环？\nPR #20已在用户Positron中得到20 PASS / 0 FAIL：E步及M步能在四条虚构记录上与独立计算吻合，包括有限的Gaussian精度先验分支。但能够调用两个函数，并不证明作者用于循环迭代的em()控制流程正确。源码还有参数初始化和字典键名路径需要专门处理。\n固定原作者仓库aneic-core@43a394f3a2409f2918d38f9d3cfc6dd5472970c1，论文为Gansell等（2014），Journal of Archaeological Science 44:194–205，DOI。",
+    "crumbs": [
+      "配套资源",
+      "A6 原作者完整EM循环：小规模虚构数据诊断 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-original-full-em-loop-v1.html#二本轮私有compat-v3中的补丁和风险分类",
+    "href": "core-case-library/a6-original-full-em-loop-v1.html#二本轮私有compat-v3中的补丁和风险分类",
+    "title": "A6 原作者完整EM循环：小规模虚构数据诊断 V1",
+    "section": "二、本轮私有compat-v3中的补丁和风险分类",
+    "text": "二、本轮私有compat-v3中的补丁和风险分类\n\n\n\n\n\n\n\n\n原始em()代码\n私有补丁\n变更性质\n\n\n\n\n默认u含rho、z键\n用alpha、beta与m_step()参数保持一致\n参数语义修复，不只是兼容API\n\n\n两处传入u['rho']、u['z']\n明确传入u['alpha']、u['beta']\n先验参数传递修复\n\n\nif g0 is None and (not K is None)\n形式上简化为K is not None\n保留原逻辑条件\n\n\nelse: raise ValueError\n改为elif g0 is None: raise ValueError\n初始化逻辑修复：原代码可能拒绝已传入的g0或theta0\n\n\n原if it &gt; 1 and ((dL &lt; eps) or it &gt; max_iter):\n不修改\n保留原始停止与返回逻辑，下一步须审查迭代相位与收敛定义\n\n\n\n这一阶段最重要的区别是：让完整循环能够运行需要改变原程序的部分语义，因此compat-v3不能被宣称为2014年历史二进制环境的直接复现。 所有补丁仅保存在私有工作目录，保留精确diff。",
+    "crumbs": [
+      "配套资源",
+      "A6 原作者完整EM循环：小规模虚构数据诊断 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-original-full-em-loop-v1.html#三试验范围",
+    "href": "core-case-library/a6-original-full-em-loop-v1.html#三试验范围",
+    "title": "A6 原作者完整EM循环：小规模虚构数据诊断 V1",
+    "section": "三、试验范围",
+    "text": "三、试验范围\n新脚本：A6完整EM虚构小样本诊断工具。\n程序要求前期compat-v2已经通过核验，才创建私有compat-v3。它在自编8行、一个数值属性、一个A/B类别属性的数据上设置K=2、随机种子17、a=2、b=2、alpha=None、beta=None、max_iter=3。\n试验两次运行相同设置，用于核对有限数值目标函数、概率行和类别组归一化、Gaussian精度为正、同种子结果一致，以及作者停止条件在修补后仍是原始表达式。\n特别限制： max_iter=3只是向原程序传入的设置；原作者循环使用it &gt; max_iter，它不等于严格只迭代3次。本轮脚本会记录实际返回目标序列的长度。当前不把非下降、收敛性、输出参数与最终责任概率的相位对齐视为已经证明的事实；若失败，记录实际报错再决定修复。",
+    "crumbs": [
+      "配套资源",
+      "A6 原作者完整EM循环：小规模虚构数据诊断 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-original-full-em-loop-v1.html#四在positron运行",
+    "href": "core-case-library/a6-original-full-em-loop-v1.html#四在positron运行",
+    "title": "A6 原作者完整EM循环：小规模虚构数据诊断 V1",
+    "section": "四、在Positron运行",
+    "text": "四、在Positron运行\n从教材项目根目录，直接沿用此前的私有Python虚拟环境：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python \\\n  audit-tools/a6_original_full_em_toy_v1.py\n不必重新安装NumPy、pandas、SciPy。前期产生的compat-v2及两个原始固定Git仓库必须仍在私有目录，不要删除或移动。\n仅生成下列私有文件：\ndownloads/private-workflow/a6-reproduction/compat-v3/\n  src/aneic/mfm.py\n  A6_V2_TO_V3_PATCH_PRIVATE.patch\n\ndownloads/private-review/a6-ivories/\n  A6_AUTHOR_FULL_EM_TOY_CHECKS_PRIVATE.csv\n  A6_AUTHOR_FULL_EM_TOY_REPORT_PRIVATE.json\n首次执行可能暴露新兼容性或数值异常。如有FAIL请保留完整traceback；不要手动编辑原作者aneic-core。",
+    "crumbs": [
+      "配套资源",
+      "A6 原作者完整EM循环：小规模虚构数据诊断 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-original-full-em-loop-v1.html#五后续研究准入",
+    "href": "core-case-library/a6-original-full-em-loop-v1.html#五后续研究准入",
+    "title": "A6 原作者完整EM循环：小规模虚构数据诊断 V1",
+    "section": "五、后续研究准入",
+    "text": "五、后续研究准入\n\n固定作者Git版本不变，compat-v3只包含白名单补丁，补丁哈希记录完毕。\n小规模em()能够结束，概率、精度和类别参数有限。\n相同随机种子输出一致，实际目标序列长度有记录。\n审查max_iter与dL判断何时触发；尤其关注负dL是否被误当作收敛。\n独立验证返回的q、gamma、L是否来自同一迭代相位。\n再考虑随机重启、多K值、真实数据与原文结果比较，但这些均不属于本PR。\n\n目前状态： 程序和网页审查稿已创建；测试尚未实际运行。即使虚构小样本全部PASS，也仅能报告“原作者EM兼容副本的受控运行通过”，而不能称为完整论文复现。",
+    "crumbs": [
+      "配套资源",
+      "A6 原作者完整EM循环：小规模虚构数据诊断 V1"
     ]
   },
   {
