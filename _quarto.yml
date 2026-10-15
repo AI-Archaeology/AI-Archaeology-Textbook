@@ -54,6 +54,10 @@ book:
         - core-case-library/a4-tusayan-pottery.qmd
         - core-case-library/a6-ivories.qmd
         - core-case-library/a6-ivories-file-audit-v1.qmd
+        - core-case-library/a6-method-audit-v1.qmd
+        - core-case-library/a6-ch05-data-features-v1.qmd
+        - core-case-library/a6-ch06-probabilistic-clustering-v1.qmd
+        - core-case-library/a6-ch10-stylistic-interpretation-v1.qmd
         - core-case-library/a5-evron.qmd
         - core-case-library/a2-ithaca.qmd
         - core-case-library/a3-aeneas.qmd
