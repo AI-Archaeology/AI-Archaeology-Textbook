@@ -10,6 +10,63 @@ book:
   subtitle: "数据、案例与实践 | Data, Cases & Exercises"
   repo-url: https://github.com/ZCJing2022/AI-Archaeology-Textbook
   repo-actions: [edit, issue]
+  sidebar:
+    collapse-level: 1
+    search: true
+    contents:
+      - index.qmd
+      - section: "第一编 认识AI考古学"
+        contents:
+          - chapters/chapter-01.qmd
+          - chapters/chapter-02.qmd
+          - chapters/chapter-03.qmd
+          - chapters/chapter-04.qmd
+      - section: "第二编 方法基础：从统计到机器学习"
+        contents:
+          - chapters/chapter-05.qmd
+          - chapters/chapter-06.qmd
+          - chapters/chapter-07.qmd
+          - chapters/chapter-08.qmd
+      - section: "第三编 解决考古问题"
+        contents:
+          - chapters/chapter-09.qmd
+          - chapters/chapter-10.qmd
+          - chapters/chapter-11.qmd
+          - chapters/chapter-12.qmd
+          - chapters/chapter-13.qmd
+          - chapters/chapter-14.qmd
+          - chapters/chapter-15.qmd
+          - chapters/chapter-16.qmd
+          - chapters/chapter-17.qmd
+          - chapters/chapter-18.qmd
+          - chapters/chapter-19.qmd
+          - chapters/chapter-20.qmd
+      - section: "第四编 生成式AI与考古知识生产"
+        contents:
+          - chapters/chapter-21.qmd
+          - chapters/chapter-22.qmd
+      - section: "第五编 研究实践与学术责任"
+        contents:
+          - chapters/chapter-23.qmd
+          - chapters/chapter-24.qmd
+          - chapters/chapter-25.qmd
+      - section: "配套资源"
+        contents:
+          - datasets.qmd
+          - core-case-library/index.qmd
+          - core-case-library/a1-charcoal-hearths.qmd
+          - core-case-library/a4-tusayan-pottery.qmd
+          - core-case-library/a6-ivories.qmd
+          - core-case-library/a6-teaching-resources.qmd
+          - core-case-library/a6-reproducibility-archive.qmd
+          - core-case-library/a5-evron.qmd
+          - core-case-library/a2-ithaca.qmd
+          - core-case-library/a3-aeneas.qmd
+          - real-data-candidate-chinese-ceramics.qmd
+          - dataset-teaching-ceramics-01.qmd
+          - exercises.qmd
+          - data-policy.qmd
+          - references.qmd
   chapters:
     - index.qmd
     - part: "第一编 认识AI考古学"
@@ -54,6 +111,8 @@ book:
         - core-case-library/a1-charcoal-hearths.qmd
         - core-case-library/a4-tusayan-pottery.qmd
         - core-case-library/a6-ivories.qmd
+        - core-case-library/a6-teaching-resources.qmd
+        - core-case-library/a6-reproducibility-archive.qmd
         - core-case-library/a6-ivories-file-audit-v1.qmd
         - core-case-library/a6-method-audit-v1.qmd
         - core-case-library/a6-original-algorithm-compatibility-v1.qmd
