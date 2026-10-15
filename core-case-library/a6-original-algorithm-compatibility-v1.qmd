@@ -73,6 +73,8 @@ python3 audit-tools/a6_original_python_compatibility_v1.py \
 
 **后续最小测试：** [自编虚构数据EM数值基准V1](a6-minimal-em-behavior-v1.qmd)，应与真实原代码的兼容性和论文复现分开记录。
 
+**兼容性试验的后续步骤：** [作者原始模块的私有工作副本及局部数值行为核验V1](a6-original-em-worktree-v1.qmd)。
+
 ## 本轮结论
 
 **可以开始固定代码的只读本地审查；尚不具备直接宣称Python 3可运行、论文结果可重复或复现环境已建好的依据。** 公开网站只发布复现审查记录，不包含原始属性CSV、照片、模型权重或个体聚类结果。
