@@ -46,6 +46,8 @@
 
 **方法和教学后续：** [原论文方法—代码—输入特征对照V1](a6-method-audit-v1.qmd) · [第5章变量与缺失练习](a6-ch05-data-features-v1.qmd) · [第6章概率聚类练习](a6-ch06-probabilistic-clustering-v1.qmd) · [第10章风格解释练习](a6-ch10-stylistic-interpretation-v1.qmd)。前三章活动全部使用明确标为虚构的演示数据。
 
+**原始算法复现准备：** [A6 Python兼容性静态审查V1](a6-original-algorithm-compatibility-v1.qmd)，先审计源码依赖和旧接口，禁止将尚未运行的模型写成复现通过。
+
 ## 下一项明确核查工作
 
 私有下载data目录，记录commit SHA、实际CSV行列、字段字典、缺失、许可；检查原论文输入与当前仓库版本是否一致。
