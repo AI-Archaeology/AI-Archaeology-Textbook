@@ -52,6 +52,8 @@
 
 **A6进展更新：** 已直接读取固定commit的官方CSV，记录其162行×34列、1,931个空白单元格，并核对语料与图像分别授权。详细结果见[A6第二阶段文件初审](a6-ivories-file-audit-v1.qmd)；仍需在Positron执行独立R脚本核验本地SHA-256，不能称为聚类复现通过。
 
+**A6复现准备：** [2014年算法与现代Python兼容性审查V1](a6-original-algorithm-compatibility-v1.qmd)。已定位Python 2语法和旧pandas/NumPy接口，下一步只读检查固定仓库版本，不安装旧依赖。
+
 ## 文件核验与出版准入清单
 
 - [ ] 官方存档/论文版本记录，具体文件大小、checksum、获取日期。

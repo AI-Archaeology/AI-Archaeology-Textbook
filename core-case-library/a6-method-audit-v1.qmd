@@ -53,6 +53,8 @@ Gansell、van de Meent、Zairis与Wiggins的研究发表于*Journal of Archaeolo
 | 考古解释 | 软聚类与人工类型学及独立证据比较 | 尚需论文结果细读与独立评价 |
 | 数据公开 | CC BY-SA署名与相同方式共享；图像第三方限制 | 未批准公开任何实际数据子集或照片 |
 
+**原始Python兼容性下一阶段：** [固定commit代码的Python 2/NumPy/pandas兼容性审查V1](a6-original-algorithm-compatibility-v1.qmd)。两套代码执行入口和CV参数要求不同，暂不直接训练模型。
+
 ## 6. 下一轮可执行的工作
 
 请先运行[只读的A6方法输入对照脚本](../audit-tools/a6_ivories_method_inputs_v1.R)：确认本地文件32项输入的缺失率、变量类型及按Site区分的缺失结构，输出仅限私有汇总。之后再为原Python算法建立隔离环境与依赖测试，避免为了获得聚类结果而在现有Positron工程中全局安装旧版依赖。

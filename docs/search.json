@@ -1704,7 +1704,7 @@
     "href": "datasets.html#核心ai考古学案例库正在核验",
     "title": "数据集目录",
     "section": "核心AI考古学案例库（正在核验）",
-    "text": "核心AI考古学案例库（正在核验）\n核心案例库：六项AI研究的数据与教学准入审查 V1 — 涵盖LiDAR炭窑识别、Tusayan陶器图像、Levantine象牙属性聚类、Evron石器光谱、Ithaca希腊铭文与Aeneas拉丁铭文。各例均有单独来源和许可档案、拟定学习成果、必做无代码评价与后续核验事项。\n重要： 这是论文/仓库级候选资料目录，不是已经托管开放数据的文件目录。六项研究的真实数据均未在本教材仓库中发布；目前仅可按来源链接访问原作者资源。机器学习案例与原有的非AI中国贸易陶瓷资料分开标注。\nA6第二阶段数据审查： Levantine ivories官方CSV结构与许可核验。此项仅托管审查记录与脚本，不提供原始属性数据下载。\nA6方法学与教学延伸： 方法/原代码审查V1 · 第5章特征练习 · 第6章聚类练习 · 第10章类型学解释练习。不托管真实数据。",
+    "text": "核心AI考古学案例库（正在核验）\n核心案例库：六项AI研究的数据与教学准入审查 V1 — 涵盖LiDAR炭窑识别、Tusayan陶器图像、Levantine象牙属性聚类、Evron石器光谱、Ithaca希腊铭文与Aeneas拉丁铭文。各例均有单独来源和许可档案、拟定学习成果、必做无代码评价与后续核验事项。\n重要： 这是论文/仓库级候选资料目录，不是已经托管开放数据的文件目录。六项研究的真实数据均未在本教材仓库中发布；目前仅可按来源链接访问原作者资源。机器学习案例与原有的非AI中国贸易陶瓷资料分开标注。\nA6第二阶段数据审查： Levantine ivories官方CSV结构与许可核验。此项仅托管审查记录与脚本，不提供原始属性数据下载。\nA6方法学与教学延伸： 方法/原代码审查V1 · 第5章特征练习 · 第6章聚类练习 · 第10章类型学解释练习。不托管真实数据。\nA6算法复现前检查： 原始Python兼容性审查V1；此页为静态检查与版本追踪，不是已复现模型或开放数据集。",
     "crumbs": [
       "配套资源",
       "数据集目录"
@@ -1770,7 +1770,7 @@
     "href": "core-case-library/index.html#共通的学生学习路径与评分证据",
     "title": "AI考古学核心案例库：六例数据与教学准入审查 V1",
     "section": "共通的学生学习路径与评分证据",
-    "text": "共通的学生学习路径与评分证据\nLevel 1：论文证据审查（必做，无代码）。明确研究问题、原始观测单位、模型输入输出、传统比较基线、误差与推断边界。提交一页四栏证据表。\nLevel 2：经过审查的演示材料（必做，暂用自行虚构数据）。在尚未确认许可前，只使用显著标为虚构的混淆矩阵、缺失示例或残文，评估模型预测与考古证据之间的推论链。\nLevel 3：原始资料小型练习（选做、待准入）。先核验原仓库实际文件、版本/哈希、类别/ID、训练测试划分、再分发许可及遗址/文化资料敏感性；批准后才能构建有数据字典和出处的教学子集。\nLevel 4：研究复现（高级选做、尚未批准）。在软硬件环境、数据权限和评价协议审查后尝试运行原程序，不以“公开代码”替代复现成功证据。\nA6进展更新： 已直接读取固定commit的官方CSV，记录其162行×34列、1,931个空白单元格，并核对语料与图像分别授权。详细结果见A6第二阶段文件初审；仍需在Positron执行独立R脚本核验本地SHA-256，不能称为聚类复现通过。",
+    "text": "共通的学生学习路径与评分证据\nLevel 1：论文证据审查（必做，无代码）。明确研究问题、原始观测单位、模型输入输出、传统比较基线、误差与推断边界。提交一页四栏证据表。\nLevel 2：经过审查的演示材料（必做，暂用自行虚构数据）。在尚未确认许可前，只使用显著标为虚构的混淆矩阵、缺失示例或残文，评估模型预测与考古证据之间的推论链。\nLevel 3：原始资料小型练习（选做、待准入）。先核验原仓库实际文件、版本/哈希、类别/ID、训练测试划分、再分发许可及遗址/文化资料敏感性；批准后才能构建有数据字典和出处的教学子集。\nLevel 4：研究复现（高级选做、尚未批准）。在软硬件环境、数据权限和评价协议审查后尝试运行原程序，不以“公开代码”替代复现成功证据。\nA6进展更新： 已直接读取固定commit的官方CSV，记录其162行×34列、1,931个空白单元格，并核对语料与图像分别授权。详细结果见A6第二阶段文件初审；仍需在Positron执行独立R脚本核验本地SHA-256，不能称为聚类复现通过。\nA6复现准备： 2014年算法与现代Python兼容性审查V1。已定位Python 2语法和旧pandas/NumPy接口，下一步只读检查固定仓库版本，不安装旧依赖。",
     "crumbs": [
       "配套资源",
       "AI考古学核心案例库：六例数据与教学准入审查 V1"
@@ -1946,7 +1946,7 @@
     "href": "core-case-library/a6-ivories.html#本科教学设计不依赖私人或受限数据",
     "title": "A6｜Levantine ivories / 象牙风格聚类 — AI考古学核心案例准入档案 V1",
     "section": "本科教学设计（不依赖私人或受限数据）",
-    "text": "本科教学设计（不依赖私人或受限数据）\n建议使用章节： 第3–6、8、10、23章；最终以已锁定25章教材大纲为准。\n学生应能（候选学习成果）：\n\nA6-O1：能辨别监督分类与无监督聚类。\nA6-O2：能检查混合变量类型、缺失值和特征选择对分类的影响。\nA6-O3：能说明数据驱动聚类到社会身份解释之间的证据缺口。\n\n必做无代码评价（提议）： 阅读公开属性语料的字段说明和经过审阅的结构摘要，学生选3项特征提出聚类的可能变化及所需独立考古证据。\n选做进阶（先通过文件/许可审核）： 审核字段与许可后，用小样本混合变量表比较手工分组、简单聚类与原论文方法。\n对学习证据的最低要求： 学生提交一页证据判别表或短评，至少包含研究资料单位、AI输出与原始观察的区别、传统比较基线、两种误差或偏差来源、对考古结论所需的独立核验。评分由后续专门量规处理，本档案不宣称已试评分。\n第二阶段更新（官方文件已直接读取）： A6 CSV初步文件审查、许可分层和私有R复核说明。已在固定commit读取162行、34字段、1,931个空白单元格；独立的本地SHA-256核验尚未完成。此前初步准入档案的“尚未逐文件核验”是V1当时的状态，以上新页为较新进度。\n方法和教学后续： 原论文方法—代码—输入特征对照V1 · 第5章变量与缺失练习 · 第6章概率聚类练习 · 第10章风格解释练习。前三章活动全部使用明确标为虚构的演示数据。",
+    "text": "本科教学设计（不依赖私人或受限数据）\n建议使用章节： 第3–6、8、10、23章；最终以已锁定25章教材大纲为准。\n学生应能（候选学习成果）：\n\nA6-O1：能辨别监督分类与无监督聚类。\nA6-O2：能检查混合变量类型、缺失值和特征选择对分类的影响。\nA6-O3：能说明数据驱动聚类到社会身份解释之间的证据缺口。\n\n必做无代码评价（提议）： 阅读公开属性语料的字段说明和经过审阅的结构摘要，学生选3项特征提出聚类的可能变化及所需独立考古证据。\n选做进阶（先通过文件/许可审核）： 审核字段与许可后，用小样本混合变量表比较手工分组、简单聚类与原论文方法。\n对学习证据的最低要求： 学生提交一页证据判别表或短评，至少包含研究资料单位、AI输出与原始观察的区别、传统比较基线、两种误差或偏差来源、对考古结论所需的独立核验。评分由后续专门量规处理，本档案不宣称已试评分。\n第二阶段更新（官方文件已直接读取）： A6 CSV初步文件审查、许可分层和私有R复核说明。已在固定commit读取162行、34字段、1,931个空白单元格；独立的本地SHA-256核验尚未完成。此前初步准入档案的“尚未逐文件核验”是V1当时的状态，以上新页为较新进度。\n方法和教学后续： 原论文方法—代码—输入特征对照V1 · 第5章变量与缺失练习 · 第6章概率聚类练习 · 第10章风格解释练习。前三章活动全部使用明确标为虚构的演示数据。\n原始算法复现准备： A6 Python兼容性静态审查V1，先审计源码依赖和旧接口，禁止将尚未运行的模型写成复现通过。",
     "crumbs": [
       "配套资源",
       "A6｜Levantine ivories / 象牙风格聚类 — AI考古学核心案例准入档案 V1"
@@ -2078,7 +2078,7 @@
     "href": "core-case-library/a6-method-audit-v1.html#复现门槛目前尚未通过",
     "title": "A6 Levantine Ivories：论文方法、程序与复现条件审查 V1",
     "section": "5. 复现门槛（目前尚未通过）",
-    "text": "5. 复现门槛（目前尚未通过）\n\n\n\n\n\n\n\n\n验收阶段\n必需证据\n当前状态\n\n\n\n\n官方输入身份\nCSV固定commit、Git Blob及本地SHA-256\n已通过前轮文件级验收\n\n\n论文样本关系\n210→162筛选规则及来源记录\n论文文字已核，逐对象转换未复现\n\n\n输入特征一致\n对Site是否剔除、数值/类别列及空白率\n代码静态分析通过，脚本执行未验证\n\n\n运行环境\nPython版本、pandas/numpy等旧依赖、随机种子、硬编码路径\n未完成；旧print语法及np.object等不兼容现代Python\n\n\n模型复现\nEM收敛、K循环、随机重启、最佳目标值及结果文件\n未执行，不提供虚构性能数字\n\n\n验证稳定性\n不同随机种子、特征选择、缺失机制和K值敏感性\n未执行\n\n\n考古解释\n软聚类与人工类型学及独立证据比较\n尚需论文结果细读与独立评价\n\n\n数据公开\nCC BY-SA署名与相同方式共享；图像第三方限制\n未批准公开任何实际数据子集或照片",
+    "text": "5. 复现门槛（目前尚未通过）\n\n\n\n\n\n\n\n\n验收阶段\n必需证据\n当前状态\n\n\n\n\n官方输入身份\nCSV固定commit、Git Blob及本地SHA-256\n已通过前轮文件级验收\n\n\n论文样本关系\n210→162筛选规则及来源记录\n论文文字已核，逐对象转换未复现\n\n\n输入特征一致\n对Site是否剔除、数值/类别列及空白率\n代码静态分析通过，脚本执行未验证\n\n\n运行环境\nPython版本、pandas/numpy等旧依赖、随机种子、硬编码路径\n未完成；旧print语法及np.object等不兼容现代Python\n\n\n模型复现\nEM收敛、K循环、随机重启、最佳目标值及结果文件\n未执行，不提供虚构性能数字\n\n\n验证稳定性\n不同随机种子、特征选择、缺失机制和K值敏感性\n未执行\n\n\n考古解释\n软聚类与人工类型学及独立证据比较\n尚需论文结果细读与独立评价\n\n\n数据公开\nCC BY-SA署名与相同方式共享；图像第三方限制\n未批准公开任何实际数据子集或照片\n\n\n\n原始Python兼容性下一阶段： 固定commit代码的Python 2/NumPy/pandas兼容性审查V1。两套代码执行入口和CV参数要求不同，暂不直接训练模型。",
     "crumbs": [
       "配套资源",
       "A6 Levantine Ivories：论文方法、程序与复现条件审查 V1"
@@ -2093,6 +2093,83 @@
     "crumbs": [
       "配套资源",
       "A6 Levantine Ivories：论文方法、程序与复现条件审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-original-algorithm-compatibility-v1.html",
+    "href": "core-case-library/a6-original-algorithm-compatibility-v1.html",
+    "title": "A6 原始算法兼容性审查 V1：复现前的静态检查",
+    "section": "",
+    "text": "为什么先做兼容性审查\nGansell、van de Meent、Zairis与Wiggins（2014）的模型采用数值＋类别混合特征的概率聚类。本教材已经核验官方CSV（162行、34列；Key与Site之外有32项候选输入属性；1,931个空白值、约37.2492%）。但是能读取数据不意味着能运行2014年的Python程序。不同环境、输入列、随机初始化和交叉验证配置可能导致不同结果。\n论文：JAS DOI；前一轮方法审查；A6数据文件审查。",
+    "crumbs": [
+      "配套资源",
+      "A6 原始算法兼容性审查 V1：复现前的静态检查"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-original-algorithm-compatibility-v1.html#本轮固定代码来源",
+    "href": "core-case-library/a6-original-algorithm-compatibility-v1.html#本轮固定代码来源",
+    "title": "A6 原始算法兼容性审查 V1：复现前的静态检查",
+    "section": "本轮固定代码来源",
+    "text": "本轮固定代码来源\n\n\n\n仓库\n固定提交（commit）\n用途\n\n\n\n\naneic/aneic-core\n43a394f3a2409f2918d38f9d3cfc6dd5472970c1\nsrc/aneic/mfm.py：混合特征模型、指示变量转换、EM\n\n\naneic/aneic-scripts\nc45445a0e090853c6eb544bffe8042557e4db440\n非交叉验证runner、CV runner、分析和结果处理\n\n\n\n固定提交是用于本次审查的仓库版本，不等于已经证明其与论文出稿时运行环境完全相同。 教材只托管静态审核说明与自行编写的只读核验脚本，不复制研究原始源代码或结果文件。",
+    "crumbs": [
+      "配套资源",
+      "A6 原始算法兼容性审查 V1：复现前的静态检查"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-original-algorithm-compatibility-v1.html#原始代码已经确认的兼容性风险",
+    "href": "core-case-library/a6-original-algorithm-compatibility-v1.html#原始代码已经确认的兼容性风险",
+    "title": "A6 原始算法兼容性审查 V1：复现前的静态检查",
+    "section": "原始代码已经确认的兼容性风险",
+    "text": "原始代码已经确认的兼容性风险\n\n\n\n\n\n\n\n\n证据位置\n具体发现\n影响／审查决定\n\n\n\n\naneic-scripts/130317_01_mfm_sigma_1.0_a_2.0/run_mfm.py\n使用Python 2风格的print 'K: ...'\nPython 3直接解析该脚本会报语法错误；不得将其当作可运行的现代Python程序\n\n\n同一runner\nnp.object用作类别dtype判断；np.float64用于数值dtype\nnp.object在较新的NumPy中已删除；即便转换语法，也需核对dtype推断行为\n\n\naneic-core/src/aneic/mfm.py\npd.core.categorical.Categorical.from_array和cat.levels、cat.labels\n依赖旧版pandas内部API，更新后类别编码与缺失处理需做行为等价测试\n\n\naneic-scripts/.../analysis_mfm.py与另一CV runner\n使用.ix[索引\npandas新版本移除.ix；须区分标签与位置索引，不能机械替换为.loc或.iloc\n\n\n非CV runner\nwork_dir=os.getcwd()且ac_path=.../aneic-core\n强依赖历史工作目录结构；错误目录会使导入或CSV路径失败\n\n\n非CV runner\nK=[2,3,4,5,6,7,8,9,10]、max_iter=1000、min_restarts=100、max_restarts=500、a=2.0、sigma=1.0、seed=1\n为一套历史运行方案；完整重跑可能耗时。并非已核验所有论文图表均来自同一参数运行\n\n\n130219_01_mfm_sigma_1.0_a_1.001_1_cv_5/run_mfm_cv.py\n存在自由变量NU和FOLD以及5-fold CV配置\n需要追溯原批处理入口与参数赋值；不能简单直接调用该脚本\n\n\n非CV runner的模型保存\npickle.dump(..., gzip.open(..., 'w'))\nPython 2时期的文本／二进制语义与Python 3不同；保存格式及反序列化安全应单独审查\n\n\n程序结果解释\n原analysis_mfm.py有人工oracle分组，并与遗址标签比较\n人工比较集与模型输出是不同证据层，不能把风格聚类当作作坊/族群身份\n\n\n\n上述是固定源码的静态发现，并非实际环境报错日志。已有事实不足以指定原作者当年所使用的Python、pandas和NumPy精确版本；不得据此编造版本锁定文件。",
+    "crumbs": [
+      "配套资源",
+      "A6 原始算法兼容性审查 V1：复现前的静态检查"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-original-algorithm-compatibility-v1.html#已核实的运行输入与待解释差异",
+    "href": "core-case-library/a6-original-algorithm-compatibility-v1.html#已核实的运行输入与待解释差异",
+    "title": "A6 原始算法兼容性审查 V1：复现前的静态检查",
+    "section": "已核实的运行输入与待解释差异",
+    "text": "已核实的运行输入与待解释差异\n先前只读R验收通过12/12，检查了Key为记录ID、Site不进入特征矩阵，以及12项候选数值特征、20项候选类别特征。32个模型特征中的缺失率为37.2492%。论文方法描述33项特征，和审查的非CV运行脚本drop_feats=['Site']之后的32列存在口径差异：只能将其保留为待核，不能为匹配论文字数擅自加入Site或移除其他列。\nCV实验、非CV参数拟合与后处理不是同一执行入口。应分别核对，不可把CV得到的留出指标与全样本模型目标函数视作同一评分。",
+    "crumbs": [
+      "配套资源",
+      "A6 原始算法兼容性审查 V1：复现前的静态检查"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-original-algorithm-compatibility-v1.html#positron中的只读检查",
+    "href": "core-case-library/a6-original-algorithm-compatibility-v1.html#positron中的只读检查",
+    "title": "A6 原始算法兼容性审查 V1：复现前的静态检查",
+    "section": "Positron中的只读检查",
+    "text": "Positron中的只读检查\n本项目提供 Python 3标准库静态审查脚本。它不安装包、不import原作者模块、不运行任何聚类、也不会修改克隆下来的文件，只核对两个仓库的commit和关键源码文件，并列出可能的兼容性阻碍。\n将两个仓库按固定commit克隆到被Git忽略的downloads/private-workflow/a6-reproduction/后，运行：\npython3 audit-tools/a6_original_python_compatibility_v1.py \\\n  downloads/private-workflow/a6-reproduction/aneic-core \\\n  downloads/private-workflow/a6-reproduction/aneic-scripts\n输出仅保存在downloads/private-review/a6-ivories/：\n\nA6_COMPAT_CHECKS_PRIVATE.csv：版本、路径、已知方法入口的PASS/FAIL；\nA6_COMPAT_MARKERS_PRIVATE.csv：静态语法与API兼容标记；\nA6_COMPAT_REPORT_PRIVATE.md：总体风险总结。\n\n注意： PASS仅指“源码及静态设置检查”通过；即使全部PASS，Python 3运行兼容性依然可能被BLOCKED。脚本首次运行及其输出仍须在用户的Positron环境中验收。",
+    "crumbs": [
+      "配套资源",
+      "A6 原始算法兼容性审查 V1：复现前的静态检查"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-original-algorithm-compatibility-v1.html#受控算法复现的三阶段准入条件",
+    "href": "core-case-library/a6-original-algorithm-compatibility-v1.html#受控算法复现的三阶段准入条件",
+    "title": "A6 原始算法兼容性审查 V1：复现前的静态检查",
+    "section": "受控算法复现的三阶段准入条件",
+    "text": "受控算法复现的三阶段准入条件\n\n\n\n\n\n\n\n\n后续阶段\n前提与产出\n当前\n\n\n\n\nI. 静态源码核验\nGit SHA、文件、语法/API阻碍与参数来源\n文件和方法已初阅；新脚本待本地执行\n\n\nII. 最小隔离环境试验\n新建独立私有虚拟环境，保留原始源码只读；固定经过测试的依赖与兼容补丁差异\n尚未批准执行\n\n\nIII. 受控数值实验\n用少量K/迭代验证数据编码与EM收敛，再逐步跑原参数与CV；保存随机种子、日志、结果哈希及和论文的比较\n尚未开始\n\n\n\n不建议为运行原脚本而降级或改动当前Positron主项目环境；不应未经审计直接加载来源不明的历史pickle文件。确认兼容修改对缺失值和类别编码的数学含义没有改变之后，才能把“代码能运行”推进到“模型结果可复现”。",
+    "crumbs": [
+      "配套资源",
+      "A6 原始算法兼容性审查 V1：复现前的静态检查"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-original-algorithm-compatibility-v1.html#本轮结论",
+    "href": "core-case-library/a6-original-algorithm-compatibility-v1.html#本轮结论",
+    "title": "A6 原始算法兼容性审查 V1：复现前的静态检查",
+    "section": "本轮结论",
+    "text": "本轮结论\n可以开始固定代码的只读本地审查；尚不具备直接宣称Python 3可运行、论文结果可重复或复现环境已建好的依据。 公开网站只发布复现审查记录，不包含原始属性CSV、照片、模型权重或个体聚类结果。",
+    "crumbs": [
+      "配套资源",
+      "A6 原始算法兼容性审查 V1：复现前的静态检查"
     ]
   },
   {
