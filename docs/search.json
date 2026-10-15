@@ -1700,6 +1700,17 @@
     ]
   },
   {
+    "objectID": "datasets.html#核心ai考古学案例库正在核验",
+    "href": "datasets.html#核心ai考古学案例库正在核验",
+    "title": "数据集目录",
+    "section": "核心AI考古学案例库（正在核验）",
+    "text": "核心AI考古学案例库（正在核验）\n核心案例库：六项AI研究的数据与教学准入审查 V1 — 涵盖LiDAR炭窑识别、Tusayan陶器图像、Levantine象牙属性聚类、Evron石器光谱、Ithaca希腊铭文与Aeneas拉丁铭文。各例均有单独来源和许可档案、拟定学习成果、必做无代码评价与后续核验事项。\n重要： 这是论文/仓库级候选资料目录，不是已经托管开放数据的文件目录。六项研究的真实数据均未在本教材仓库中发布；目前仅可按来源链接访问原作者资源。机器学习案例与原有的非AI中国贸易陶瓷资料分开标注。",
+    "crumbs": [
+      "配套资源",
+      "数据集目录"
+    ]
+  },
+  {
     "objectID": "datasets.html#收录与发布要求",
     "href": "datasets.html#收录与发布要求",
     "title": "数据集目录",
@@ -1708,6 +1719,413 @@
     "crumbs": [
       "配套资源",
       "数据集目录"
+    ]
+  },
+  {
+    "objectID": "core-case-library/index.html",
+    "href": "core-case-library/index.html",
+    "title": "AI考古学核心案例库：六例数据与教学准入审查 V1",
+    "section": "",
+    "text": "本次准入判定规则\n状态是教学准入排程，不是学术排名。 所有六例仍为“真实数据公开再分发：未批准”。",
+    "crumbs": [
+      "配套资源",
+      "AI考古学核心案例库：六例数据与教学准入审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/index.html#本次准入判定规则",
+    "href": "core-case-library/index.html#本次准入判定规则",
+    "title": "AI考古学核心案例库：六例数据与教学准入审查 V1",
+    "section": "",
+    "text": "状态\n含义\n允许的教学活动\n尚不允许\n\n\n\n\nA-：优先私有技术试验\n特征数据和明确的语料许可证据已经定位，但尚未实际文件级核验\n论文阅读、结构摘要、经独立编写的模拟练习；准备受控下载与校验\n直接复制真实CSV到公开网站；宣称结果已复现\n\n\nB+：论文声明与存储库可核\n原论文明确公开数据与代码、仓库文件目录可见\n论文评价、数据来源评估、预制模拟练习\n未审查具体文件授权即托管或复现声明\n\n\nB：论文与开放资料入口可核\n部分数据、代码或下载文件清单存在，版权/具体结构/测试方案仍待审\n文献评议、输出审查、来源链练习\n整包复制、开放真实图像或铭文语料",
+    "crumbs": [
+      "配套资源",
+      "AI考古学核心案例库：六例数据与教学准入审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/index.html#六例总表",
+    "href": "core-case-library/index.html#六例总表",
+    "title": "AI考古学核心案例库：六例数据与教学准入审查 V1",
+    "section": "六例总表",
+    "text": "六例总表\n\n\n\n案例\n数据类型／AI方法\n外部可核证据\n初步级别\n教材教学功能\n\n\n\n\nA1 Charcoal hearths\nLiDAR图像／Mask R-CNN + DBSCAN\nZenodo方法存档、GeoJSON标注、模型存档、代码\nB\n检测、验证、遥感与位置伦理\n\n\nA4 Tusayan pottery\n陶片图像／CNN\nZenodo两份ZIP，约856 MB，未打开内容\nB\n图像分类与专家类型学\n\n\nA6 Levantine ivories\n混合属性CSV／概率聚类\nANEIC语料目录与CC BY-SA 3.0原声明\nA-\n无监督学习、缺失值、聚类解释\n\n\nA5 Evron Quarry\n拉曼/FTIR光谱／深度学习\nPNAS数据声明与GitHub光谱/处理数据目录\nB+\n科技测量、数据域偏移、行为推断\n\n\nA2 Ithaca\n古希腊铭文／深度网络\n官方代码、I.PHI处理流程、模型获取说明\nB\n残文复原、专家协作、年代推断\n\n\nA3 Aeneas\n拉丁铭文／生成式模型\n官方项目与LED下载说明，源库许可各异\nB\n生成与检索、来源追踪、数据许可",
+    "crumbs": [
+      "配套资源",
+      "AI考古学核心案例库：六例数据与教学准入审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/index.html#全书章节与学习成果对应表初拟",
+    "href": "core-case-library/index.html#全书章节与学习成果对应表初拟",
+    "title": "AI考古学核心案例库：六例数据与教学准入审查 V1",
+    "section": "全书章节与学习成果对应表（初拟）",
+    "text": "全书章节与学习成果对应表（初拟）\n\n\n\n\n\n\n\n\n\n教材教学主题／章节\n首选案例\n学生应能（评价动词）\n必做的直接评价证据\n\n\n\n\n第3–4章：记录单位与偏差\nA4、A6\n区分陶片、图像、属性记录和类型标签；判断缺失机制\n自制模拟数据字典及图像—器物关联图\n\n\n第5–6章：从统计到机器学习\nA6\n解释聚类和监督分类不同；判断特征/缺失导致的聚类不稳定\n类别/数值混合属性与两种特征选择的分析卡\n\n\n第7–8章：深度学习与评价\nA1、A4、A5\n计算或解释误报/漏检；制定防泄漏测试方案\n模拟混淆矩阵＋以地点/器物/实验样本分组的测试说明\n\n\n第9–10章：器物识别及类型学\nA4、A6\n比较专家分类与模型预测，说明分类意义的来源\n两例标签分歧审查与独立证据清单\n\n\n第11章：年代判断\nA2（与非AI的Real Data 01比较）\n比较模型日期预测与区间分配；说明前提差异\n三种年代结果的证据层级辨析\n\n\n第13章：遥感考古\nA1\n设计人工复查/野外核验；说明高置信度候选不等于遗址\n预测优先级及误检原因分析卡\n\n\n第15–16章：实验与材料\nA5\n识别实验标签与古代光谱的域差；质疑行为推断跳跃\n光谱预测—用火行为证据链\n\n\n第18章：古文字智能释读\nA2、A3\n区分残存字迹、算法补全、平行文献与专家判断\n模拟残文证据分级表\n\n\n第21–22章：生成式AI\nA3、A2\n核查生成候选的引用来源及错误风险\n生成文本溯源与可复核性审查\n\n\n第23–25章：开放研究与伦理\n六例＋有访问限制的其他候选\n判断可下载、可再分发、可复现、可公开的区别\n六例权限矩阵与位置/图像/语料风险说明\n\n\n\n说明： 以上为基于已锁定25章网站标题的教学归属建议，不改变原章节大纲。教学评价的最终课程权重、学时与必做资料必须经过编写组审查。",
+    "crumbs": [
+      "配套资源",
+      "AI考古学核心案例库：六例数据与教学准入审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/index.html#共通的学生学习路径与评分证据",
+    "href": "core-case-library/index.html#共通的学生学习路径与评分证据",
+    "title": "AI考古学核心案例库：六例数据与教学准入审查 V1",
+    "section": "共通的学生学习路径与评分证据",
+    "text": "共通的学生学习路径与评分证据\nLevel 1：论文证据审查（必做，无代码）。明确研究问题、原始观测单位、模型输入输出、传统比较基线、误差与推断边界。提交一页四栏证据表。\nLevel 2：经过审查的演示材料（必做，暂用自行虚构数据）。在尚未确认许可前，只使用显著标为虚构的混淆矩阵、缺失示例或残文，评估模型预测与考古证据之间的推论链。\nLevel 3：原始资料小型练习（选做、待准入）。先核验原仓库实际文件、版本/哈希、类别/ID、训练测试划分、再分发许可及遗址/文化资料敏感性；批准后才能构建有数据字典和出处的教学子集。\nLevel 4：研究复现（高级选做、尚未批准）。在软硬件环境、数据权限和评价协议审查后尝试运行原程序，不以“公开代码”替代复现成功证据。",
+    "crumbs": [
+      "配套资源",
+      "AI考古学核心案例库：六例数据与教学准入审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/index.html#文件核验与出版准入清单",
+    "href": "core-case-library/index.html#文件核验与出版准入清单",
+    "title": "AI考古学核心案例库：六例数据与教学准入审查 V1",
+    "section": "文件核验与出版准入清单",
+    "text": "文件核验与出版准入清单\n\n官方存档/论文版本记录，具体文件大小、checksum、获取日期。\n实际打开数据并生成不含敏感内容的结构审计：行列、变量、主键、缺失、样本层级。\n核查代码依赖、模型权重、训练/验证/测试切分与防数据泄漏策略。\n分别审查代码许可、数据许可、图像/铭文/空间信息第三方权利。\n完成敏感遗址位置、社区文化遗产权利与数据治理审查。\n制作无代码学习成果及可评分任务，教师检查概念和难度。\n如需发布教学派生CSV/图像集，保存源到目标映射、引用、许可与明确编写组批准。\n仅完成以上要求后，才可标记“开放教学数据子集／可复现”。",
+    "crumbs": [
+      "配套资源",
+      "AI考古学核心案例库：六例数据与教学准入审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/index.html#下一步工作优先级",
+    "href": "core-case-library/index.html#下一步工作优先级",
+    "title": "AI考古学核心案例库：六例数据与教学准入审查 V1",
+    "section": "下一步工作优先级",
+    "text": "下一步工作优先级\n1. A6 Levantine ivories（特征表）：最适合先完成受控文件核验，并转成不需大型训练环境的无代码练习。\n2. A1 Charcoal hearths（检测流程）：从Zenodo小型人工标注/瓦片元数据开始，避免下载大模型，优先设计误报、漏检、空间偏差及验证练习。\n3. A4 Tusayan pottery（图像分类）：在确认855MB图像压缩包许可及图像—陶片对应关系后，设计类别标签分歧教学。\n4. A5 Evron + A2 Ithaca + A3 Aeneas：分别开展光谱、古文字语料来源与许可、生成/检索模型的进一步独立核验。\n\n本轮外部核查资料\n\nCarter等Zenodo方法索引及人工标注GeoJSON。\nPawlowicz & Downum Zenodo补充资料。\nGansell等ANEIC项目和许可。\nStepka等PNAS论文与研究仓库。\nAssael等Ithaca与I.PHI。\nAssael等Aeneas/LED官方项目。\n\n\n本次仅公开核验结论、来源链接、教学构想与未决问题；没有托管任何真实研究数据、模型权重、古文字正文或敏感坐标。",
+    "crumbs": [
+      "配套资源",
+      "AI考古学核心案例库：六例数据与教学准入审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a1-charcoal-hearths.html",
+    "href": "core-case-library/a1-charcoal-hearths.html",
+    "title": "A1｜Pennsylvania charcoal hearths / 炭窑遗迹 — AI考古学核心案例准入档案 V1",
+    "section": "",
+    "text": "研究问题与方法",
+    "crumbs": [
+      "配套资源",
+      "A1｜Pennsylvania charcoal hearths / 炭窑遗迹 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a1-charcoal-hearths.html#研究问题与方法",
+    "href": "core-case-library/a1-charcoal-hearths.html#研究问题与方法",
+    "title": "A1｜Pennsylvania charcoal hearths / 炭窑遗迹 — AI考古学核心案例准入档案 V1",
+    "section": "",
+    "text": "论文：Carter, Blackadar & Conner (2021), Advances in Archaeological Practice 9(4), 257–271。DOI。\n考古学问题：能否从LiDAR衍生的地形图像辨认历史炭窑遗迹，并评价预测地点是否构成可验证的遗迹证据？\nAI方法：Mask R-CNN实例分割；DBSCAN空间聚类。\n观测/分析单位：影像瓦片；实例标注（炭窑候选）；空间聚类单元；实地核验的遗迹。\n非AI比较基线：人工判读LiDAR及已知遗迹调查记录；先评价训练标注和误检，不把DBSCAN的聚类当作遗迹证实。",
+    "crumbs": [
+      "配套资源",
+      "A1｜Pennsylvania charcoal hearths / 炭窑遗迹 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a1-charcoal-hearths.html#资料与代码的分级证据",
+    "href": "core-case-library/a1-charcoal-hearths.html#资料与代码的分级证据",
+    "title": "A1｜Pennsylvania charcoal hearths / 炭窑遗迹 — AI考古学核心案例准入档案 V1",
+    "section": "资料与代码的分级证据",
+    "text": "资料与代码的分级证据\n\n\n\n\n\n\n\n核查层次\n本轮证据与结论\n\n\n\n\n论文/题录\n论文引用和两份JOAD数据论文及Zenodo方法记录已核查。\n\n\n数据/代码入口\nZenodo方法记录10.5281/zenodo.4766351明确列出相关数据存档；GitHub jeffblackadar/charcoalhearths 已核实存在；模型Zenodo 4579946约1.9GB，人工标注GeoJSON 4593622约1.2MB。未逐文件下载或运行。\n\n\n实际文件完整下载与checksum\n未完成；不能宣称原作者数值/模型性能已复现。\n\n\n授权及再分发\nZenodo各独立存档的许可证需逐项读取，不可将整体项目推断为同一许可；检测结果和潜在考古地点经敏感性审查后方可重新发布。\n\n\n敏感性与研究伦理\n地形形态相似导致误报；已知遗迹标注不均；训练与测试的空间邻近性造成泄漏；地理坐标可能敏感；大模型不适合本科必做训练。\n\n\n教学准入决定\nB：教学阅读/核查可立即开发；真实数据子集须先审许可和坐标。\n\n\n\n\n可追溯外部链接\n\n方法与多个数据DOI\n标注GeoJSON\n模型文件\n代码仓库",
+    "crumbs": [
+      "配套资源",
+      "A1｜Pennsylvania charcoal hearths / 炭窑遗迹 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a1-charcoal-hearths.html#本科教学设计不依赖私人或受限数据",
+    "href": "core-case-library/a1-charcoal-hearths.html#本科教学设计不依赖私人或受限数据",
+    "title": "A1｜Pennsylvania charcoal hearths / 炭窑遗迹 — AI考古学核心案例准入档案 V1",
+    "section": "本科教学设计（不依赖私人或受限数据）",
+    "text": "本科教学设计（不依赖私人或受限数据）\n建议使用章节： 第4、7–8、13、23–25章；最终以已锁定25章教材大纲为准。\n学生应能（候选学习成果）：\n\nA1-O1：能区分影像瓦片、模型候选、人工标注与核实遗迹。\nA1-O2：能用TP/FP/FN解释精确率与召回率，说明为何须按空间分组评估。\nA1-O3：能提出对误报、遗址位置保护与野外复查的方案。\n\n必做无代码评价（提议）： 给出教材自制的模拟检测计数表与来自论文的任务背景，要求学生解释误报/漏检及验证优先级；原始地理数据无须下载。\n选做进阶（先通过文件/许可审核）： 许可和敏感性审核后仅使用少量瓦片与其脱敏注释，计算指标，不训练完整1.9GB模型。\n对学习证据的最低要求： 学生提交一页证据判别表或短评，至少包含研究资料单位、AI输出与原始观察的区别、传统比较基线、两种误差或偏差来源、对考古结论所需的独立核验。评分由后续专门量规处理，本档案不宣称已试评分。",
+    "crumbs": [
+      "配套资源",
+      "A1｜Pennsylvania charcoal hearths / 炭窑遗迹 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a1-charcoal-hearths.html#下一项明确核查工作",
+    "href": "core-case-library/a1-charcoal-hearths.html#下一项明确核查工作",
+    "title": "A1｜Pennsylvania charcoal hearths / 炭窑遗迹 — AI考古学核心案例准入档案 V1",
+    "section": "下一项明确核查工作",
+    "text": "下一项明确核查工作\n逐个检验Zenodo存档文件、许可、面积范围、标注单位与训练/测试空间划分；核对高分辨率位置敏感性。\n禁止当前阶段的发布动作： 不复制完整数据集、图像、光谱、铭文文本、遗址坐标或模型权重到公开教材仓库；不将“网页可下载”表述为“许可已批准再分发”；不将研究案例中的技术预测直接等同于已确认的考古历史事实。",
+    "crumbs": [
+      "配套资源",
+      "A1｜Pennsylvania charcoal hearths / 炭窑遗迹 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a4-tusayan-pottery.html",
+    "href": "core-case-library/a4-tusayan-pottery.html",
+    "title": "A4｜Tusayan White Ware / 陶器图像分类 — AI考古学核心案例准入档案 V1",
+    "section": "",
+    "text": "研究问题与方法",
+    "crumbs": [
+      "配套资源",
+      "A4｜Tusayan White Ware / 陶器图像分类 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a4-tusayan-pottery.html#研究问题与方法",
+    "href": "core-case-library/a4-tusayan-pottery.html#研究问题与方法",
+    "title": "A4｜Tusayan White Ware / 陶器图像分类 — AI考古学核心案例准入档案 V1",
+    "section": "",
+    "text": "论文：Pawlowicz & Downum (2021), Journal of Archaeological Science 130, 105375。DOI。\n考古学问题：CNN如何给陶片图像赋予既有类型学标签？模型、专家共识与考古类型概念出现分歧时怎样判定？\nAI方法：卷积神经网络CNN的图像分类，与专家分类及传统类型学基线比较。\n观测/分析单位：单幅陶片图像、对应器物/碎片（原始关联待核）、类型标签、训练/测试样本。\n非AI比较基线：人工陶器类型学、专家意见分歧及图像的可识别属性；若可取得混淆矩阵优先从预制结果入手。",
+    "crumbs": [
+      "配套资源",
+      "A4｜Tusayan White Ware / 陶器图像分类 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a4-tusayan-pottery.html#资料与代码的分级证据",
+    "href": "core-case-library/a4-tusayan-pottery.html#资料与代码的分级证据",
+    "title": "A4｜Tusayan White Ware / 陶器图像分类 — AI考古学核心案例准入档案 V1",
+    "section": "资料与代码的分级证据",
+    "text": "资料与代码的分级证据\n\n\n\n\n\n\n\n核查层次\n本轮证据与结论\n\n\n\n\n论文/题录\n论文DOI与期刊、Zenodo公开存档页面已核查。\n\n\n数据/代码入口\nZenodo 10.5281/zenodo.4625156列出两份文件、版本1.0和md5；网页可见，但约856MB资料尚未下载，内部图像、分割及标签结构未核验。\n\n\n实际文件完整下载与checksum\n未完成；不能宣称原作者数值/模型性能已复现。\n\n\n授权及再分发\nZenodo页面显示开放下载，但当前可读页面没有解析出具体许可名称；图像本身的第三方权利、原件所属社群的文化信息和可再分发条款仍须确认。\n\n\n敏感性与研究伦理\n同一陶片的多张图像进入训练与测试，造成数据泄漏；专家共识不等于客观真值；类型分布不平衡；文化遗产图像权利和算法偏差。\n\n\n教学准入决定\nB：论文及仓库文件清单可用于审查；真实图像再分发待核。\n\n\n\n\n可追溯外部链接\n\nZenodo数据附件",
+    "crumbs": [
+      "配套资源",
+      "A4｜Tusayan White Ware / 陶器图像分类 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a4-tusayan-pottery.html#本科教学设计不依赖私人或受限数据",
+    "href": "core-case-library/a4-tusayan-pottery.html#本科教学设计不依赖私人或受限数据",
+    "title": "A4｜Tusayan White Ware / 陶器图像分类 — AI考古学核心案例准入档案 V1",
+    "section": "本科教学设计（不依赖私人或受限数据）",
+    "text": "本科教学设计（不依赖私人或受限数据）\n建议使用章节： 第3、4、7–10、23章；最终以已锁定25章教材大纲为准。\n学生应能（候选学习成果）：\n\nA4-O1：能说明陶片、图像与类型标签三者不必一一对应。\nA4-O2：能区分专家意见、模型预测与分类正确性的依据。\nA4-O3：能检查类别不平衡、数据泄漏与模型泛化的风险。\n\n必做无代码评价（提议）： 从论文图表和自制模拟混淆矩阵判断哪些误分类需要专家再审，指出训练/测试切分原则。\n选做进阶（先通过文件/许可审核）： 获得图像许可并核对单片对应关系后，抽取可分发的小型图像子集或提供官方原址下载指引。\n对学习证据的最低要求： 学生提交一页证据判别表或短评，至少包含研究资料单位、AI输出与原始观察的区别、传统比较基线、两种误差或偏差来源、对考古结论所需的独立核验。评分由后续专门量规处理，本档案不宣称已试评分。",
+    "crumbs": [
+      "配套资源",
+      "A4｜Tusayan White Ware / 陶器图像分类 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a4-tusayan-pottery.html#下一项明确核查工作",
+    "href": "core-case-library/a4-tusayan-pottery.html#下一项明确核查工作",
+    "title": "A4｜Tusayan White Ware / 陶器图像分类 — AI考古学核心案例准入档案 V1",
+    "section": "下一项明确核查工作",
+    "text": "下一项明确核查工作\n获取元数据/许可、校验两个文件md5；只在私有工作区检查图像、标签、ID与划分，确认无同一陶片泄漏。\n禁止当前阶段的发布动作： 不复制完整数据集、图像、光谱、铭文文本、遗址坐标或模型权重到公开教材仓库；不将“网页可下载”表述为“许可已批准再分发”；不将研究案例中的技术预测直接等同于已确认的考古历史事实。",
+    "crumbs": [
+      "配套资源",
+      "A4｜Tusayan White Ware / 陶器图像分类 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-ivories.html",
+    "href": "core-case-library/a6-ivories.html",
+    "title": "A6｜Levantine ivories / 象牙风格聚类 — AI考古学核心案例准入档案 V1",
+    "section": "",
+    "text": "研究问题与方法",
+    "crumbs": [
+      "配套资源",
+      "A6｜Levantine ivories / 象牙风格聚类 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-ivories.html#研究问题与方法",
+    "href": "core-case-library/a6-ivories.html#研究问题与方法",
+    "title": "A6｜Levantine ivories / 象牙风格聚类 — AI考古学核心案例准入档案 V1",
+    "section": "",
+    "text": "论文：Gansell, van de Meent, Zairis & Wiggins (2014), Journal of Archaeological Science 44, 194–205。DOI。\n考古学问题：按多个器物属性构成的无监督聚类，是否可以直接解释为工匠群体、风格传统或生产作坊？\nAI方法：无监督概率聚类（最大似然/最大后验方法），不是深度学习。\n观测/分析单位：单条象牙器物或装饰品属性记录（字段对应及原物关联待文件级核验）；聚类结果是派生分析单位。\n非AI比较基线：传统风格类型学、人工多属性比较与简单交叉表；比较聚类与人工分类的对应，而不是默认聚类正确。",
+    "crumbs": [
+      "配套资源",
+      "A6｜Levantine ivories / 象牙风格聚类 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-ivories.html#资料与代码的分级证据",
+    "href": "core-case-library/a6-ivories.html#资料与代码的分级证据",
+    "title": "A6｜Levantine ivories / 象牙风格聚类 — AI考古学核心案例准入档案 V1",
+    "section": "资料与代码的分级证据",
+    "text": "资料与代码的分级证据\n\n\n\n\n\n\n\n核查层次\n本轮证据与结论\n\n\n\n\n论文/题录\n文章题录与原项目README署名一致，原始论文全文复核尚待执行。\n\n\n数据/代码入口\nGitHub aneic/aneic-core含data/docs/src；aneic/aneic-scripts存在。项目README明确CSV每行对应一个观察，数值与字符串列分别作连续、类别变量；仓库LICENSE.md明确语料与代码分别授权。\n\n\n实际文件完整下载与checksum\n未完成；不能宣称原作者数值/模型性能已复现。\n\n\n授权及再分发\naneic-core/LICENSE.md明确data目录语料版权Amy Gansell 2013，CC BY-SA 3.0 Unported；src代码MIT。应保持署名、相同方式共享及原始声明；还需判断照片/特殊字段有无第三方限制。\n\n\n敏感性与研究伦理\n聚类数、特征选择、缺失机制和先验设置影响类别；标签不能自动推断族群/作坊身份；对于本科生可计算成本较低但仍需验证环境。\n\n\n教学准入决定\nA-：六例中较有希望优先开展真实数据私有技术验收；发布教学子集仍需属性与许可逐项审查。\n\n\n\n\n可追溯外部链接\n\n属性语料及程序\n辅助脚本",
+    "crumbs": [
+      "配套资源",
+      "A6｜Levantine ivories / 象牙风格聚类 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-ivories.html#本科教学设计不依赖私人或受限数据",
+    "href": "core-case-library/a6-ivories.html#本科教学设计不依赖私人或受限数据",
+    "title": "A6｜Levantine ivories / 象牙风格聚类 — AI考古学核心案例准入档案 V1",
+    "section": "本科教学设计（不依赖私人或受限数据）",
+    "text": "本科教学设计（不依赖私人或受限数据）\n建议使用章节： 第3–6、8、10、23章；最终以已锁定25章教材大纲为准。\n学生应能（候选学习成果）：\n\nA6-O1：能辨别监督分类与无监督聚类。\nA6-O2：能检查混合变量类型、缺失值和特征选择对分类的影响。\nA6-O3：能说明数据驱动聚类到社会身份解释之间的证据缺口。\n\n必做无代码评价（提议）： 阅读公开属性语料的字段说明和经过审阅的结构摘要，学生选3项特征提出聚类的可能变化及所需独立考古证据。\n选做进阶（先通过文件/许可审核）： 审核字段与许可后，用小样本混合变量表比较手工分组、简单聚类与原论文方法。\n对学习证据的最低要求： 学生提交一页证据判别表或短评，至少包含研究资料单位、AI输出与原始观察的区别、传统比较基线、两种误差或偏差来源、对考古结论所需的独立核验。评分由后续专门量规处理，本档案不宣称已试评分。",
+    "crumbs": [
+      "配套资源",
+      "A6｜Levantine ivories / 象牙风格聚类 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-ivories.html#下一项明确核查工作",
+    "href": "core-case-library/a6-ivories.html#下一项明确核查工作",
+    "title": "A6｜Levantine ivories / 象牙风格聚类 — AI考古学核心案例准入档案 V1",
+    "section": "下一项明确核查工作",
+    "text": "下一项明确核查工作\n私有下载data目录，记录commit SHA、实际CSV行列、字段字典、缺失、许可；检查原论文输入与当前仓库版本是否一致。\n禁止当前阶段的发布动作： 不复制完整数据集、图像、光谱、铭文文本、遗址坐标或模型权重到公开教材仓库；不将“网页可下载”表述为“许可已批准再分发”；不将研究案例中的技术预测直接等同于已确认的考古历史事实。",
+    "crumbs": [
+      "配套资源",
+      "A6｜Levantine ivories / 象牙风格聚类 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a5-evron.html",
+    "href": "core-case-library/a5-evron.html",
+    "title": "A5｜Evron Quarry / 石器受热光谱 — AI考古学核心案例准入档案 V1",
+    "section": "",
+    "text": "研究问题与方法",
+    "crumbs": [
+      "配套资源",
+      "A5｜Evron Quarry / 石器受热光谱 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a5-evron.html#研究问题与方法",
+    "href": "core-case-library/a5-evron.html#研究问题与方法",
+    "title": "A5｜Evron Quarry / 石器受热光谱 — AI考古学核心案例准入档案 V1",
+    "section": "",
+    "text": "论文：Stepka et al. (2022), PNAS 119(25), e2123439119。DOI。\n考古学问题：模型能否从受控实验的光谱预测古代石器的热暴露？从受热证据到有意用火行为还需要哪些独立证据？\nAI方法：深度学习处理光谱信号；与实验基线和独立的考古上下文解释区别。\n观测/分析单位：光谱（同一样本可有重复测量）、受控加热实验样本、石器、预测温度/热暴露结果。\n非AI比较基线：实验加热温度标定、光谱判读、地层与燃烧遗存多证据交叉核验。",
+    "crumbs": [
+      "配套资源",
+      "A5｜Evron Quarry / 石器受热光谱 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a5-evron.html#资料与代码的分级证据",
+    "href": "core-case-library/a5-evron.html#资料与代码的分级证据",
+    "title": "A5｜Evron Quarry / 石器受热光谱 — AI考古学核心案例准入档案 V1",
+    "section": "资料与代码的分级证据",
+    "text": "资料与代码的分级证据\n\n\n\n\n\n\n\n核查层次\n本轮证据与结论\n\n\n\n\n论文/题录\nPNAS论文可读，其Data Availability Statement明确指向公共GitHub仓库。\n\n\n数据/代码入口\nGitHub fnatalio/Evron_Quarry 已核实存在，根目录列DL_code、FTIR_spectra.zip、Raman spectra Evron lithics、data_set_processed.zip；文件内容、标签以及训练测试分割尚未下载检查。\n\n\n实际文件完整下载与checksum\n未完成；不能宣称原作者数值/模型性能已复现。\n\n\n授权及再分发\nGitHub根目录目前未发现清晰的统一LICENSE（仓库元数据未列明）；有公开数据声明不等于可任意再分发。光谱数据及训练标签的著作权、引用方式、模型权重授权需进一步查。\n\n\n敏感性与研究伦理\n同一实验石料或同一器物多个光谱分散到训练/测试会泄漏；现代实验域与考古域不同；热暴露不自动表明人为生火或用火目的。\n\n\n教学准入决定\nB+：论文开放数据声明与仓库内容已核验；文件内部及权利仍待审。\n\n\n\n\n可追溯外部链接\n\nPNAS论文\n数据与深度学习代码",
+    "crumbs": [
+      "配套资源",
+      "A5｜Evron Quarry / 石器受热光谱 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a5-evron.html#本科教学设计不依赖私人或受限数据",
+    "href": "core-case-library/a5-evron.html#本科教学设计不依赖私人或受限数据",
+    "title": "A5｜Evron Quarry / 石器受热光谱 — AI考古学核心案例准入档案 V1",
+    "section": "本科教学设计（不依赖私人或受限数据）",
+    "text": "本科教学设计（不依赖私人或受限数据）\n建议使用章节： 第7–8、15–16、23章；最终以已锁定25章教材大纲为准。\n学生应能（候选学习成果）：\n\nA5-O1：能识别光谱输入、实验温度标签与模型预测值。\nA5-O2：能描述按实验样品而非单条光谱分组测试的理由。\nA5-O3：能区分热暴露分类/回归与人为用火的行为解释。\n\n必做无代码评价（提议）： 给出虚构光谱预测误差表，判断对比实验与考古样本的局限，列出至少两类可检验的补充用火证据。\n选做进阶（先通过文件/许可审核）： 在审查完整原数据与权利后，构建小型R/Python光谱分析演示；避免把训练现成深度网络作为本科必做。\n对学习证据的最低要求： 学生提交一页证据判别表或短评，至少包含研究资料单位、AI输出与原始观察的区别、传统比较基线、两种误差或偏差来源、对考古结论所需的独立核验。评分由后续专门量规处理，本档案不宣称已试评分。",
+    "crumbs": [
+      "配套资源",
+      "A5｜Evron Quarry / 石器受热光谱 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a5-evron.html#下一项明确核查工作",
+    "href": "core-case-library/a5-evron.html#下一项明确核查工作",
+    "title": "A5｜Evron Quarry / 石器受热光谱 — AI考古学核心案例准入档案 V1",
+    "section": "下一项明确核查工作",
+    "text": "下一项明确核查工作\n记录官方commit及文件大小/哈希，检查标签、实验样品分组、光谱与石器一对多关系；确定是否可将已处理的光谱作为只读课堂材料。\n禁止当前阶段的发布动作： 不复制完整数据集、图像、光谱、铭文文本、遗址坐标或模型权重到公开教材仓库；不将“网页可下载”表述为“许可已批准再分发”；不将研究案例中的技术预测直接等同于已确认的考古历史事实。",
+    "crumbs": [
+      "配套资源",
+      "A5｜Evron Quarry / 石器受热光谱 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a2-ithaca.html",
+    "href": "core-case-library/a2-ithaca.html",
+    "title": "A2｜Ithaca / 古希腊铭文复原 — AI考古学核心案例准入档案 V1",
+    "section": "",
+    "text": "研究问题与方法",
+    "crumbs": [
+      "配套资源",
+      "A2｜Ithaca / 古希腊铭文复原 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a2-ithaca.html#研究问题与方法",
+    "href": "core-case-library/a2-ithaca.html#研究问题与方法",
+    "title": "A2｜Ithaca / 古希腊铭文复原 — AI考古学核心案例准入档案 V1",
+    "section": "",
+    "text": "论文：Assael et al. (2022), Nature 603, 280–283。DOI。\n考古学问题：模型补全损毁铭文并推断其来源地与年代时，专家如何核实候选文字与解释的不确定性？\nAI方法：Transformer/深度神经网络，支持文本补全、地区与年代归属，强调专家协作。\n观测/分析单位：一条铭文文本及其出处/年代元数据；被遮挡的片段、候选字符与预测时间/地理位置；源库条目可能存在编纂修订。\n非AI比较基线：拓片/铭文释读、古文书学、平行文本比对、地层与年代学证据。",
+    "crumbs": [
+      "配套资源",
+      "A2｜Ithaca / 古希腊铭文复原 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a2-ithaca.html#资料与代码的分级证据",
+    "href": "core-case-library/a2-ithaca.html#资料与代码的分级证据",
+    "title": "A2｜Ithaca / 古希腊铭文复原 — AI考古学核心案例准入档案 V1",
+    "section": "资料与代码的分级证据",
+    "text": "资料与代码的分级证据\n\n\n\n\n\n\n\n核查层次\n本轮证据与结论\n\n\n\n\n论文/题录\nNature论文题录及官方Ithaca仓库的研究描述已核查。\n\n\n数据/代码入口\ngoogle-deepmind/ithaca 提供推断代码与checkpoint说明；sommerschield/iphi提供语料生成流程及train/validation/test细节；predictingthepast给出iphi.json下载命令；未实际下载语料或模型。\n\n\n实际文件完整下载与checksum\n未完成；不能宣称原作者数值/模型性能已复现。\n\n\n授权及再分发\n官方代码与I.PHI处理脚本标Apache 2.0，但PHI原始铭文文本的版权与再分发许可仍需单独核验；代码许可不能覆盖整个训练语料。\n\n\n敏感性与研究伦理\n不同铭文版本、同一文本相似片段跨训练/测试；高质量编辑史被当作客观训练真值；看似流畅的补全可能缺乏史料证据；年代预测非独立测年。\n\n\n教学准入决定\nB：论文与模型工具链可查；语料再分发许可未核实。\n\n\n\n\n可追溯外部链接\n\nIthaca官方仓库\nI.PHI处理与划分\nPHI原始语料",
+    "crumbs": [
+      "配套资源",
+      "A2｜Ithaca / 古希腊铭文复原 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a2-ithaca.html#本科教学设计不依赖私人或受限数据",
+    "href": "core-case-library/a2-ithaca.html#本科教学设计不依赖私人或受限数据",
+    "title": "A2｜Ithaca / 古希腊铭文复原 — AI考古学核心案例准入档案 V1",
+    "section": "本科教学设计（不依赖私人或受限数据）",
+    "text": "本科教学设计（不依赖私人或受限数据）\n建议使用章节： 第8、11、18、22–23章；最终以已锁定25章教材大纲为准。\n学生应能（候选学习成果）：\n\nA2-O1：能区分观察到的原文字母、缺损符号、模型候选和专家校订。\nA2-O2：能解释候选排名/注意力可视化不等于历史真实性。\nA2-O3：能提出按铭文、出处或文本族群分组核查的验证方式。\n\n必做无代码评价（提议）： 使用教师自制且标为虚构的刻文残损练习和真实论文方法说明，对照两个候选复原并给出独立证据要求；不复制PHI大语料。\n选做进阶（先通过文件/许可审核）： 在原平台访问与权限规则下运行官方演示示例，不要求下载或训练大型模型。\n对学习证据的最低要求： 学生提交一页证据判别表或短评，至少包含研究资料单位、AI输出与原始观察的区别、传统比较基线、两种误差或偏差来源、对考古结论所需的独立核验。评分由后续专门量规处理，本档案不宣称已试评分。",
+    "crumbs": [
+      "配套资源",
+      "A2｜Ithaca / 古希腊铭文复原 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a2-ithaca.html#下一项明确核查工作",
+    "href": "core-case-library/a2-ithaca.html#下一项明确核查工作",
+    "title": "A2｜Ithaca / 古希腊铭文复原 — AI考古学核心案例准入档案 V1",
+    "section": "下一项明确核查工作",
+    "text": "下一项明确核查工作\n核实PHI具体使用条款、I.PHI快照和拆分版本；检查官方示例是否可以经合法引用直接用于教学演示。\n禁止当前阶段的发布动作： 不复制完整数据集、图像、光谱、铭文文本、遗址坐标或模型权重到公开教材仓库；不将“网页可下载”表述为“许可已批准再分发”；不将研究案例中的技术预测直接等同于已确认的考古历史事实。",
+    "crumbs": [
+      "配套资源",
+      "A2｜Ithaca / 古希腊铭文复原 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a3-aeneas.html",
+    "href": "core-case-library/a3-aeneas.html",
+    "title": "A3｜Aeneas / 拉丁铭文生成式分析 — AI考古学核心案例准入档案 V1",
+    "section": "",
+    "text": "研究问题与方法",
+    "crumbs": [
+      "配套资源",
+      "A3｜Aeneas / 拉丁铭文生成式分析 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a3-aeneas.html#研究问题与方法",
+    "href": "core-case-library/a3-aeneas.html#研究问题与方法",
+    "title": "A3｜Aeneas / 拉丁铭文生成式分析 — AI考古学核心案例准入档案 V1",
+    "section": "",
+    "text": "论文：Assael et al. (2025), Nature 643, 141–147（精确卷期页码以出版页面复核为准）。DOI。\n考古学问题：当生成式模型检索平行文本、补全文字、提出年代与出处估计时，如何追溯引用源并防止模型把相似文本当作确定历史事实？\nAI方法：多模态/生成式神经网络，文本检索、修复、地理和年代估计；不同于不具来源的自由文本生成。\n观测/分析单位：一条铭文与数据库来源、文本片段、检索平行项及模型候选补全。可能有跨库重复记录及多版本文本，须逐条去重或保留版本映射而非静默删除。\n非AI比较基线：碑铭学传统转写、铭文语法/公式分析、独立平行例证与可定位的来源审查。",
+    "crumbs": [
+      "配套资源",
+      "A3｜Aeneas / 拉丁铭文生成式分析 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a3-aeneas.html#资料与代码的分级证据",
+    "href": "core-case-library/a3-aeneas.html#资料与代码的分级证据",
+    "title": "A3｜Aeneas / 拉丁铭文生成式分析 — AI考古学核心案例准入档案 V1",
+    "section": "资料与代码的分级证据",
+    "text": "资料与代码的分级证据\n\n\n\n\n\n\n\n核查层次\n本轮证据与结论\n\n\n\n\n论文/题录\nNature论文DOI、官方模型项目与LED说明已核查。\n\n\n数据/代码入口\ngoogle-deepmind/predictingthepast README可核到led.json、aeneas checkpoint、检索向量与示例命令。README具体列EDR CC BY 4.0、EDH CC BY-SA 4.0、EDCS_ETL CC BY 4.0，尚未逐一核对原平台的每个版本/条目。\n\n\n实际文件完整下载与checksum\n未完成；不能宣称原作者数值/模型性能已复现。\n\n\n授权及再分发\n代码Apache 2.0；LED整合来源许可有CC BY 4.0与CC BY-SA 4.0并存，必须检查逐源署名、ShareAlike义务、二次改动记录、第三方图像权利及分发兼容性，不能推定整个LED直接可重托管。\n\n\n敏感性与研究伦理\n跨库重复、文献编辑导致的数据泄漏、生成式模型编造平行证据；图像覆盖不一致；用生成相似度代替历史归属证据。\n\n\n教学准入决定\nB：代码与语料下载指令已核；底层多个语料的许可审查尚未结束。\n\n\n\n\n可追溯外部链接\n\nAeneas官方项目\n论文DOI",
+    "crumbs": [
+      "配套资源",
+      "A3｜Aeneas / 拉丁铭文生成式分析 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a3-aeneas.html#本科教学设计不依赖私人或受限数据",
+    "href": "core-case-library/a3-aeneas.html#本科教学设计不依赖私人或受限数据",
+    "title": "A3｜Aeneas / 拉丁铭文生成式分析 — AI考古学核心案例准入档案 V1",
+    "section": "本科教学设计（不依赖私人或受限数据）",
+    "text": "本科教学设计（不依赖私人或受限数据）\n建议使用章节： 第18、21–22、23–25章；最终以已锁定25章教材大纲为准。\n学生应能（候选学习成果）：\n\nA3-O1：能区分模型生成内容、实际文献证据与检索平行项。\nA3-O2：能追溯不同底层数据库和许可证。\nA3-O3：能提出专家复核协议，评价补全与日期/来源估计的界限。\n\n必做无代码评价（提议）： 以自行编造的残缺拉丁铭文演示和不含任何真实源文本的证据链卡片，学生逐项说明哪些可核、哪些只能假设。\n选做进阶（先通过文件/许可审核）： 在明确官方样例和模型输出许可后运行推断示例，保存版本及候选来源，不公开LED整合语料。\n对学习证据的最低要求： 学生提交一页证据判别表或短评，至少包含研究资料单位、AI输出与原始观察的区别、传统比较基线、两种误差或偏差来源、对考古结论所需的独立核验。评分由后续专门量规处理，本档案不宣称已试评分。",
+    "crumbs": [
+      "配套资源",
+      "A3｜Aeneas / 拉丁铭文生成式分析 — AI考古学核心案例准入档案 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a3-aeneas.html#下一项明确核查工作",
+    "href": "core-case-library/a3-aeneas.html#下一项明确核查工作",
+    "title": "A3｜Aeneas / 拉丁铭文生成式分析 — AI考古学核心案例准入档案 V1",
+    "section": "下一项明确核查工作",
+    "text": "下一项明确核查工作\n逐一核实EDR/EDH/EDCS_ETL的当期权利文件和LED处理记录；识别测试集泄漏及可公开的演示文本范围。\n禁止当前阶段的发布动作： 不复制完整数据集、图像、光谱、铭文文本、遗址坐标或模型权重到公开教材仓库；不将“网页可下载”表述为“许可已批准再分发”；不将研究案例中的技术预测直接等同于已确认的考古历史事实。",
+    "crumbs": [
+      "配套资源",
+      "A3｜Aeneas / 拉丁铭文生成式分析 — AI考古学核心案例准入档案 V1"
     ]
   },
   {
