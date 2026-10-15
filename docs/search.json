@@ -1704,7 +1704,7 @@
     "href": "datasets.html#核心ai考古学案例库正在核验",
     "title": "数据集目录",
     "section": "核心AI考古学案例库（正在核验）",
-    "text": "核心AI考古学案例库（正在核验）\n核心案例库：六项AI研究的数据与教学准入审查 V1 — 涵盖LiDAR炭窑识别、Tusayan陶器图像、Levantine象牙属性聚类、Evron石器光谱、Ithaca希腊铭文与Aeneas拉丁铭文。各例均有单独来源和许可档案、拟定学习成果、必做无代码评价与后续核验事项。\n重要： 这是论文/仓库级候选资料目录，不是已经托管开放数据的文件目录。六项研究的真实数据均未在本教材仓库中发布；目前仅可按来源链接访问原作者资源。机器学习案例与原有的非AI中国贸易陶瓷资料分开标注。\nA6第二阶段数据审查： Levantine ivories官方CSV结构与许可核验。此项仅托管审查记录与脚本，不提供原始属性数据下载。\nA6方法学与教学延伸： 方法/原代码审查V1 · 第5章特征练习 · 第6章聚类练习 · 第10章类型学解释练习。不托管真实数据。\nA6算法复现前检查： 原始Python兼容性审查V1；此页为静态检查与版本追踪，不是已复现模型或开放数据集。\nA6受控环境： 隔离Python环境及编码测试V1。工具不再分发真实CSV或作者原始代码。\nA6算法数学行为准备： 独立虚构数据EM测试V1，不托管真实研究观测或输出。\nA6原作者代码最小兼容试验： 私有工作副本及虚构对照V1（尚未经本地运行，不上传原作者源码）。\nA6原作者单次E步与M步测试方案： 私有兼容性副本V1，只测试虚构记录，不发布真实输入和输出。\nA6原始EM迭代： 完全虚构小样本受控循环诊断V1。不包含真实考古数据或历史结果。\nA6算法终止与返回状态审查： 只读EM迭代轨迹诊断V1，仍不涉及真实162件象牙的聚类实验。",
+    "text": "核心AI考古学案例库（正在核验）\n核心案例库：六项AI研究的数据与教学准入审查 V1 — 涵盖LiDAR炭窑识别、Tusayan陶器图像、Levantine象牙属性聚类、Evron石器光谱、Ithaca希腊铭文与Aeneas拉丁铭文。各例均有单独来源和许可档案、拟定学习成果、必做无代码评价与后续核验事项。\n重要： 这是论文/仓库级候选资料目录，不是已经托管开放数据的文件目录。六项研究的真实数据均未在本教材仓库中发布；目前仅可按来源链接访问原作者资源。机器学习案例与原有的非AI中国贸易陶瓷资料分开标注。\nA6第二阶段数据审查： Levantine ivories官方CSV结构与许可核验。此项仅托管审查记录与脚本，不提供原始属性数据下载。\nA6方法学与教学延伸： 方法/原代码审查V1 · 第5章特征练习 · 第6章聚类练习 · 第10章类型学解释练习。不托管真实数据。\nA6算法复现前检查： 原始Python兼容性审查V1；此页为静态检查与版本追踪，不是已复现模型或开放数据集。\nA6受控环境： 隔离Python环境及编码测试V1。工具不再分发真实CSV或作者原始代码。\nA6算法数学行为准备： 独立虚构数据EM测试V1，不托管真实研究观测或输出。\nA6原作者代码最小兼容试验： 私有工作副本及虚构对照V1（尚未经本地运行，不上传原作者源码）。\nA6原作者单次E步与M步测试方案： 私有兼容性副本V1，只测试虚构记录，不发布真实输入和输出。\nA6原始EM迭代： 完全虚构小样本受控循环诊断V1。不包含真实考古数据或历史结果。\nA6算法终止与返回状态审查： 只读EM迭代轨迹诊断V1，仍不涉及真实162件象牙的聚类实验。\nA6模型输出状态对照： 历史EM与状态对齐版的受控实验V1。不包含真实器物数据。",
     "crumbs": [
       "配套资源",
       "数据集目录"
@@ -1770,7 +1770,7 @@
     "href": "core-case-library/index.html#共通的学生学习路径与评分证据",
     "title": "AI考古学核心案例库：六例数据与教学准入审查 V1",
     "section": "共通的学生学习路径与评分证据",
-    "text": "共通的学生学习路径与评分证据\nLevel 1：论文证据审查（必做，无代码）。明确研究问题、原始观测单位、模型输入输出、传统比较基线、误差与推断边界。提交一页四栏证据表。\nLevel 2：经过审查的演示材料（必做，暂用自行虚构数据）。在尚未确认许可前，只使用显著标为虚构的混淆矩阵、缺失示例或残文，评估模型预测与考古证据之间的推论链。\nLevel 3：原始资料小型练习（选做、待准入）。先核验原仓库实际文件、版本/哈希、类别/ID、训练测试划分、再分发许可及遗址/文化资料敏感性；批准后才能构建有数据字典和出处的教学子集。\nLevel 4：研究复现（高级选做、尚未批准）。在软硬件环境、数据权限和评价协议审查后尝试运行原程序，不以“公开代码”替代复现成功证据。\nA6进展更新： 已直接读取固定commit的官方CSV，记录其162行×34列、1,931个空白单元格，并核对语料与图像分别授权。详细结果见A6第二阶段文件初审；仍需在Positron执行独立R脚本核验本地SHA-256，不能称为聚类复现通过。\nA6复现准备： 2014年算法与现代Python兼容性审查V1。已定位Python 2语法和旧pandas/NumPy接口，下一步只读检查固定仓库版本，不安装旧依赖。\nA6受控复现准备： 独立Python环境与最小编码冒烟测试V1（未执行历史EM，不是数值复现）。\nA6最小数学行为检查（新）： 完全虚构数据的EM数值基准V1。它不运行历史原算法，也不产出真实器物聚类结果。\nA6原始模块局部核验候选： 私有兼容副本和独立虚构概率对照V1。这比自编演示算法更接近原研究，但尚未执行完整E/M步骤。\nA6原作者E/M函数试验： E步与M步的私有兼容副本和虚构数值对照V1，测试准备尚待运行，不是历史聚类结果的复现。\nA6完整EM短程测试准备： 原作者em()循环的私有compat-v3诊断V1。尚未在Positron执行，不代表真实象牙聚类已复现。\nA6循环控制审查： EM收敛条件与返回状态一致性V1。本轮观察原作者私有兼容版的停止及输出语义，不使用真实器物数据。",
+    "text": "共通的学生学习路径与评分证据\nLevel 1：论文证据审查（必做，无代码）。明确研究问题、原始观测单位、模型输入输出、传统比较基线、误差与推断边界。提交一页四栏证据表。\nLevel 2：经过审查的演示材料（必做，暂用自行虚构数据）。在尚未确认许可前，只使用显著标为虚构的混淆矩阵、缺失示例或残文，评估模型预测与考古证据之间的推论链。\nLevel 3：原始资料小型练习（选做、待准入）。先核验原仓库实际文件、版本/哈希、类别/ID、训练测试划分、再分发许可及遗址/文化资料敏感性；批准后才能构建有数据字典和出处的教学子集。\nLevel 4：研究复现（高级选做、尚未批准）。在软硬件环境、数据权限和评价协议审查后尝试运行原程序，不以“公开代码”替代复现成功证据。\nA6进展更新： 已直接读取固定commit的官方CSV，记录其162行×34列、1,931个空白单元格，并核对语料与图像分别授权。详细结果见A6第二阶段文件初审；仍需在Positron执行独立R脚本核验本地SHA-256，不能称为聚类复现通过。\nA6复现准备： 2014年算法与现代Python兼容性审查V1。已定位Python 2语法和旧pandas/NumPy接口，下一步只读检查固定仓库版本，不安装旧依赖。\nA6受控复现准备： 独立Python环境与最小编码冒烟测试V1（未执行历史EM，不是数值复现）。\nA6最小数学行为检查（新）： 完全虚构数据的EM数值基准V1。它不运行历史原算法，也不产出真实器物聚类结果。\nA6原始模块局部核验候选： 私有兼容副本和独立虚构概率对照V1。这比自编演示算法更接近原研究，但尚未执行完整E/M步骤。\nA6原作者E/M函数试验： E步与M步的私有兼容副本和虚构数值对照V1，测试准备尚待运行，不是历史聚类结果的复现。\nA6完整EM短程测试准备： 原作者em()循环的私有compat-v3诊断V1。尚未在Positron执行，不代表真实象牙聚类已复现。\nA6循环控制审查： EM收敛条件与返回状态一致性V1。本轮观察原作者私有兼容版的停止及输出语义，不使用真实器物数据。\nA6历史与修正返回状态比较： 私有compat-v3和compat-v4的对照V1。仅用虚构数据，尚未在本地执行。",
     "crumbs": [
       "配套资源",
       "AI考古学核心案例库：六例数据与教学准入审查 V1"
@@ -2507,7 +2507,7 @@
     "href": "core-case-library/a6-em-convergence-return-state-v1.html#positron执行命令",
     "title": "A6：EM停止条件与返回状态一致性审查 V1",
     "section": "Positron执行命令",
-    "text": "Positron执行命令\n请在教材根目录运行：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python \\\n  audit-tools/a6_em_return_state_audit_v1.py\n现有虚拟环境中已装NumPy、pandas和SciPy。本脚本不会要求新增依赖。测试以相同的虚构8条对象、K=2、种子17、max_iter=3调用原作者私有兼容版完整em()，记录E/M调用次数、参数快照与目标函数。\n输出仅保存在被Git忽略的本地目录：\ndownloads/private-review/a6-ivories/\n  A6_EM_RETURN_STATE_CHECKS_PRIVATE.csv\n  A6_EM_RETURN_STATE_OBSERVATIONS_PRIVATE.csv\n  A6_EM_RETURN_STATE_REPORT_PRIVATE.json\n脚本将严格区分 PASS/FAIL 与 OBSERVED：PASS只表示追踪到的调用和独立一致性检查正确；若显示返回状态偏移，是需要研究的诊断发现，不能被PASS掩盖，也不应被误写成完整EM实验失败。",
+    "text": "Positron执行命令\n请在教材根目录运行：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python \\\n  audit-tools/a6_em_return_state_audit_v1.py\n现有虚拟环境中已装NumPy、pandas和SciPy。本脚本不会要求新增依赖。测试以相同的虚构8条对象、K=2、种子17、max_iter=3调用原作者私有兼容版完整em()，记录E/M调用次数、参数快照与目标函数。\n输出仅保存在被Git忽略的本地目录：\ndownloads/private-review/a6-ivories/\n  A6_EM_RETURN_STATE_CHECKS_PRIVATE.csv\n  A6_EM_RETURN_STATE_OBSERVATIONS_PRIVATE.csv\n  A6_EM_RETURN_STATE_REPORT_PRIVATE.json\n脚本将严格区分 PASS/FAIL 与 OBSERVED：PASS只表示追踪到的调用和独立一致性检查正确；若显示返回状态偏移，是需要研究的诊断发现，不能被PASS掩盖，也不应被误写成完整EM实验失败。\n返回状态对照试验： 历史EM输出与同状态对齐输出V1。只更改返回语句，不修改历史停止条件。",
     "crumbs": [
       "配套资源",
       "A6：EM停止条件与返回状态一致性审查 V1"
@@ -2522,6 +2522,61 @@
     "crumbs": [
       "配套资源",
       "A6：EM停止条件与返回状态一致性审查 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-historical-vs-aligned-em-v1.html",
+    "href": "core-case-library/a6-historical-vs-aligned-em-v1.html",
+    "title": "A6：历史EM返回方式与状态对齐修正版对照 V1",
+    "section": "",
+    "text": "一、为什么需要比较两种返回方式？\n上一轮迭代状态审查在虚构数据上报告16 PASS / 0 FAIL，并实际观测到一个明确的返回状态偏移：原作者的em()函数在满足停止条件之前先计算一次E步，再决定是否跳出循环。跳出时，返回的gamma属于最后一次求值，但q和L仍对应前一次被接受的参数状态。\n该次测试中，E步计算5次，但返回的L只记录4个值；第五次求得目标值−17.5112398548。需要明确：这是一项在给定兼容副本与虚构数据下的源码行为观察，不是对原文发表的全部结果的错误判定。",
+    "crumbs": [
+      "配套资源",
+      "A6：历史EM返回方式与状态对齐修正版对照 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-historical-vs-aligned-em-v1.html#二只改变一行保持停止条件原样",
+    "href": "core-case-library/a6-historical-vs-aligned-em-v1.html#二只改变一行保持停止条件原样",
+    "title": "A6：历史EM返回方式与状态对齐修正版对照 V1",
+    "section": "二、只改变一行：保持停止条件原样",
+    "text": "二、只改变一行：保持停止条件原样\n\n\n\n\n\n\n\n\n实验\n返回语句\n意义\n\n\n\n\n历史控制流程，私有compat-v3\nreturn q, g, L, g0\n保留原代码返回方式，可能将旧参数与新成员概率组合\n\n\n状态对齐试验，私有compat-v4\nreturn q_, g, L + [L_], g0\n返回最后一次E步使用的参数、同次成员概率和目标函数\n\n\n\ncompat-v4只改变以上一个返回语句，并在私有目录保存单行补丁；其他语句完全一致，包括原始停止条件：\nif it &gt; 1 and ((dL &lt; eps) or it &gt; max_iter):\n    break\n因此，这是返回输出语义的隔离比较，并不是在这一轮同时调整收敛阈值或迭代次数。状态对齐不等于收敛，也不能自动证明MAP模型统计定义正确。",
+    "crumbs": [
+      "配套资源",
+      "A6：历史EM返回方式与状态对齐修正版对照 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-historical-vs-aligned-em-v1.html#三实际比较什么",
+    "href": "core-case-library/a6-historical-vs-aligned-em-v1.html#三实际比较什么",
+    "title": "A6：历史EM返回方式与状态对齐修正版对照 V1",
+    "section": "三、实际比较什么？",
+    "text": "三、实际比较什么？\n新脚本：历史与状态对齐版EM对照程序。\n程序对两份私有兼容模块分别设置相同的K=2、随机种子17、max_iter=3、eps=1e-8及相同Gaussian精度先验（a=2，b=2，类别与簇先验为空），使用8条完全虚构记录。脚本暂时包装E步以记录每次调用、输入参数和目标值，结束后恢复运行时引用，不修改磁盘上的源代码。\n\n\n\n验证问题\n应报告的区别\n\n\n\n\n两组初始值与E步计算是否一致？\n区分纯返回差异和模型轨迹变化\n\n\n历史L是否遗漏最后一次E步？\n记录目标函数列表长度与最新求值\n\n\n历史q是否来自较早一次E步？\n核对返回参数与每次E步输入\n\n\n对齐版q、gamma、L是否属于同一状态？\n明确返回值的数学含义\n\n\n最后一步为何停止？\n分别记录dL &lt; eps与it &gt; max_iter是否成立\n\n\n\n脚本使用PASS/FAIL表示上述比较的数值和状态关系是否按程序检查成立；使用OBSERVED记录两套返回值实际差异。即使全PASS，也不能写成“算法已收敛”或“真实数据结果已复现”。",
+    "crumbs": [
+      "配套资源",
+      "A6：历史EM返回方式与状态对齐修正版对照 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-historical-vs-aligned-em-v1.html#四positron执行",
+    "href": "core-case-library/a6-historical-vs-aligned-em-v1.html#四positron执行",
+    "title": "A6：历史EM返回方式与状态对齐修正版对照 V1",
+    "section": "四、Positron执行",
+    "text": "四、Positron执行\n在教材项目根目录，继续使用已安装NumPy、pandas和SciPy的独立环境：\ndownloads/private-workflow/a6-reproduction/.venv/bin/python \\\n  audit-tools/a6_historical_vs_aligned_em_v1.py\n该程序依赖先前已经通过验收的私有compat-v3。首次运行时，仅在被Git忽略的私有目录生成：\ndownloads/private-workflow/a6-reproduction/compat-v4/\n  src/aneic/mfm.py\n  A6_V3_TO_V4_PATCH_PRIVATE.patch\n\ndownloads/private-review/a6-ivories/\n  A6_HISTORICAL_VS_ALIGNED_CHECKS_PRIVATE.csv\n  A6_HISTORICAL_VS_ALIGNED_OBSERVATIONS_PRIVATE.csv\n  A6_HISTORICAL_VS_ALIGNED_REPORT_PRIVATE.json\n不要修改原作者的aneic-core或aneic-scripts；不要上传compat-v3/compat-v4源码副本、真实器物属性、私人报告或模型输出。若测试报错，保留完整traceback。",
+    "crumbs": [
+      "配套资源",
+      "A6：历史EM返回方式与状态对齐修正版对照 V1"
+    ]
+  },
+  {
+    "objectID": "core-case-library/a6-historical-vs-aligned-em-v1.html#五何时才能进入真实语料复现",
+    "href": "core-case-library/a6-historical-vs-aligned-em-v1.html#五何时才能进入真实语料复现",
+    "title": "A6：历史EM返回方式与状态对齐修正版对照 V1",
+    "section": "五、何时才能进入真实语料复现？",
+    "text": "五、何时才能进入真实语料复现？\n本轮仅解决返回状态对齐。下一轮仍应独立验证停止条件对目标函数下降的处理、最大迭代次数边界、合适的收敛判据，以及作者原方法中随机重启与K值选择的可重复性。\n只有在实际数值验证与来源许可确认后，才考虑对经过核验的162条象牙属性开展小规模的真实数据实验。公开页面仅保存方法、代码审查与教学说明，不发布真实研究文件。\n原论文：Gansell等（2014），Journal of Archaeological Science 44:194–205，DOI。",
+    "crumbs": [
+      "配套资源",
+      "A6：历史EM返回方式与状态对齐修正版对照 V1"
     ]
   },
   {
