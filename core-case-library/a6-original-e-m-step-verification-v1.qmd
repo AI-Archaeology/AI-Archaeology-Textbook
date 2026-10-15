@@ -1,0 +1,76 @@
+# A6 原作者 E 步与 M 步兼容性检验 V1 {.unnumbered}
+
+> **待本地运行的实验方案**：首次直接调用兼容副本的原作者 `e_step()` 与 `m_step()`，但仅处理4条完全虚构的对象记录。**尚未运行完整 `em()`、历史K值搜索、随机重启、交叉验证，或真实162件象牙聚类。**
+
+## 研究复现的当前边界
+
+既有前期工作先后核验了官方CSV、32个模型候选属性、固定源码和现代环境。PR #19在现代Python环境中成功以17 PASS / 0 FAIL 验证了**原作者的局部类别编码和对数联合概率函数**。现在需要从局部函数推进到完整E步与M步的**单次函数计算**，并继续区分“旧版API修复”和“数学语义修复”。
+
+本研究源自Gansell等（2014）*Journal of Archaeological Science* 44:194–205，[DOI](https://doi.org/10.1016/j.jas.2013.11.005)。固定 `aneic-core` 提交为 `43a394f3a2409f2918d38f9d3cfc6dd5472970c1`；原始程序仍保存在私有克隆目录，原件不修改。
+
+## 本轮仅对compat-v1私有副本加三类最小修补
+
+| 需审查的原表达式 | 私有compat-v2替换 | 性质 |
+|---|---|---|
+| `.as_matrix()`（2处） | `.to_numpy()` | 现代pandas矩阵转换接口 |
+| `counts.sum(level=0)` | `counts.groupby(level=0).sum()` | 多层级类别计数汇总替代 |
+| `pi /= pi.sum(1)` | `pi /= pi.sum()` | **涉及数学语义**：原变量为一维Series，应使用总体质量归一化。此项不是单纯的API改名，必须与独立公式对照 |
+
+此前compat-v1仍只有四处旧pandas类别编码与多层级求和接口修补。新的compat-v2单独保存在私有目录；同时生成逐行补丁，不改动作者固定Git原件或旧的compat-v1。
+
+## 本轮实际对照的数学问题
+
+第一组以手动设定的两个簇、一个数值属性、一个二分类属性与两种缺失情形，调用原作者 `e_step()`。除验证后验概率逐行合计为1之外，还以独立正态密度与类别概率公式核对后验值、未加先验的观测对数似然。
+
+第二组使用同一套E步责任概率调用原作者 `m_step()`：独立核算混合权重、排除数值缺失后的加权均值、方差倒数、类别观测计数与类别概率在每个簇内的归一化。
+
+第三组只测试一个有限的Gaussian精度先验分支：`a=2`、`b=2`、`alpha=None`、`beta=None`。用对原作者公式的直接算术展开检查数值一致，并要求MAP目标为有限值。
+
+**注意：直接展开原作者精度更新公式并不能证明该公式在统计学上就是预期的正确后验估计。** 后续需要结合模型论文及更独立的理论推导检查。原脚本在这一阶段也不尝试改动初始化、收敛判定或者CV。
+
+## 在Positron执行
+
+沿用前次建立的独立Python环境；此轮 `e_step()` 会使用 `scipy.special`，因此需要在**独立venv内部**添加SciPy（不修改主项目环境）：
+
+```bash
+downloads/private-workflow/a6-reproduction/.venv/bin/python -m pip install scipy
+```
+
+随后从教材项目根目录运行：
+
+```bash
+downloads/private-workflow/a6-reproduction/.venv/bin/python \
+  audit-tools/a6_original_e_m_steps_v1.py
+```
+
+脚本预设 `compat-v1` 已由PR #19的测试生成；如果不存在或补丁锚点不符，将停止并提示。首次测试是否能通过**尚未知**；保留完整traceback用于改进，不建议自行修改或重置原作者源码。
+
+输出位置均为Git忽略的私有文件：
+
+```text
+downloads/private-workflow/a6-reproduction/compat-v2/
+  src/aneic/mfm.py
+  A6_V1_TO_V2_PATCH_PRIVATE.patch
+
+downloads/private-review/a6-ivories/
+  A6_AUTHOR_E_M_TOY_CHECKS_PRIVATE.csv
+  A6_AUTHOR_E_M_TOY_REPORT_PRIVATE.json
+```
+
+还可以在运行后记录本地实际依赖版本：
+
+```bash
+downloads/private-workflow/a6-reproduction/.venv/bin/python -m pip freeze \
+  > downloads/private-review/a6-ivories/A6_ENV_PIP_FREEZE_PRIVATE.txt
+```
+
+## 准入与限制
+
+- [ ] 原始 `aneic-core` commit仍固定且源文件没有被修改。
+- [ ] 兼容副本、补丁diff以及版本哈希均可核对。
+- [ ] E步：后验概率与独立公式对齐，缺失项的贡献正确处理。
+- [ ] M步：均值、精度、类别条件概率、混合权重符合测试公式。
+- [ ] MAP分支只声明有限的高斯精度先验测试，**不宣称完整MAP/Dirichlet先验均已核实**。
+- [ ] 如遇旧接口异常、数值不一致或NaN，应明确记录FAIL并停止后续真实数据测试。
+
+**下轮才考虑完整 `em()` 循环，且仍从虚构数据与少量迭代开始。** 本轮页面不含真实器物属性、作者原始源文件或模型输出。
