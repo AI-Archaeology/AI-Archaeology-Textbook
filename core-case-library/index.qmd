@@ -62,6 +62,8 @@
 
 **A6原作者E/M函数试验：** [E步与M步的私有兼容副本和虚构数值对照V1](a6-original-e-m-step-verification-v1.qmd)，测试准备尚待运行，不是历史聚类结果的复现。
 
+**A6完整EM短程测试准备：** [原作者`em()`循环的私有compat-v3诊断V1](a6-original-full-em-loop-v1.qmd)。尚未在Positron执行，不代表真实象牙聚类已复现。
+
 ## 文件核验与出版准入清单
 
 - [ ] 官方存档/论文版本记录，具体文件大小、checksum、获取日期。
