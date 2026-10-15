@@ -39,6 +39,8 @@
 
 **A6受控环境：** [隔离Python环境及编码测试V1](core-case-library/a6-controlled-reproduction-environment-v1.qmd)。工具不再分发真实CSV或作者原始代码。
 
+**A6算法数学行为准备：** [独立虚构数据EM测试V1](core-case-library/a6-minimal-em-behavior-v1.qmd)，不托管真实研究观测或输出。
+
 ## 收录与发布要求
 
 每个真实数据集须附：原始研究与出处、数据获取和转换流程、变量字典、版本、许可、敏感信息审核、抽样／保存／记录偏差、对应章节和可重复练习。许可与研究真实性未核实的资料不得标作已验证。
