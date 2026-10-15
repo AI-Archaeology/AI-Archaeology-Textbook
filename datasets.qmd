@@ -33,6 +33,8 @@
 
 **A6第二阶段数据审查：** [Levantine ivories官方CSV结构与许可核验](core-case-library/a6-ivories-file-audit-v1.qmd)。此项仅托管审查记录与脚本，不提供原始属性数据下载。
 
+**A6方法学与教学延伸：** [方法/原代码审查V1](core-case-library/a6-method-audit-v1.qmd) · [第5章特征练习](core-case-library/a6-ch05-data-features-v1.qmd) · [第6章聚类练习](core-case-library/a6-ch06-probabilistic-clustering-v1.qmd) · [第10章类型学解释练习](core-case-library/a6-ch10-stylistic-interpretation-v1.qmd)。不托管真实数据。
+
 ## 收录与发布要求
 
 每个真实数据集须附：原始研究与出处、数据获取和转换流程、变量字典、版本、许可、敏感信息审核、抽样／保存／记录偏差、对应章节和可重复练习。许可与研究真实性未核实的资料不得标作已验证。
