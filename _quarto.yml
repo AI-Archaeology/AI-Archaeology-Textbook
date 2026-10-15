@@ -66,6 +66,7 @@ book:
         - core-case-library/a6-historical-vs-aligned-em-v1.qmd
         - core-case-library/a6-em-stopping-robustness-v1.qmd
         - core-case-library/a6-real-data-pilot-readiness-v1.qmd
+        - core-case-library/a6-real-pilot-protocol-finalization-v1.qmd
         - core-case-library/a6-ch05-data-features-v1.qmd
         - core-case-library/a6-ch06-probabilistic-clustering-v1.qmd
         - core-case-library/a6-ch10-stylistic-interpretation-v1.qmd
