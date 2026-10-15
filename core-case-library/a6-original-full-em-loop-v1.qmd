@@ -1,0 +1,67 @@
+# A6 原作者完整EM循环：小规模虚构数据诊断 V1 {.unnumbered}
+
+> **待本地执行、尚未验收的试验。** 这一次调用作者原始模块的`em()`循环，但在独立私有兼容副本上、只用8条完全虚构记录、K=2、最多约数次迭代进行受控诊断。**不读取162条真实象牙资料；不运行原文K=2–10的随机重启、CV或任何论文结果比较。**
+
+## 一、为什么在E/M函数通过之后，还需要单独审查EM循环？
+
+PR #20已在用户Positron中得到20 PASS / 0 FAIL：E步及M步能在四条虚构记录上与独立计算吻合，包括有限的Gaussian精度先验分支。但能够调用两个函数，并不证明作者用于循环迭代的`em()`控制流程正确。源码还有参数初始化和字典键名路径需要专门处理。
+
+固定原作者仓库`aneic-core@43a394f3a2409f2918d38f9d3cfc6dd5472970c1`，论文为Gansell等（2014），*Journal of Archaeological Science* 44:194–205，[DOI](https://doi.org/10.1016/j.jas.2013.11.005)。
+
+## 二、本轮私有compat-v3中的补丁和风险分类
+
+| 原始`em()`代码 | 私有补丁 | 变更性质 |
+|---|---|---|
+| 默认`u`含`rho`、`z`键 | 用`alpha`、`beta`与`m_step()`参数保持一致 | **参数语义修复**，不只是兼容API |
+| 两处传入`u['rho']`、`u['z']` | 明确传入`u['alpha']`、`u['beta']` | 先验参数传递修复 |
+| `if g0 is None and (not K is None)` | 形式上简化为`K is not None` | 保留原逻辑条件 |
+| `else: raise ValueError` | 改为`elif g0 is None: raise ValueError` | **初始化逻辑修复**：原代码可能拒绝已传入的`g0`或`theta0` |
+| 原`if it > 1 and ((dL < eps) or it > max_iter):` | **不修改** | 保留原始停止与返回逻辑，下一步须审查迭代相位与收敛定义 |
+
+这一阶段最重要的区别是：**让完整循环能够运行需要改变原程序的部分语义，因此compat-v3不能被宣称为2014年历史二进制环境的直接复现。** 所有补丁仅保存在私有工作目录，保留精确diff。
+
+## 三、试验范围
+
+新脚本：[A6完整EM虚构小样本诊断工具](../audit-tools/a6_original_full_em_toy_v1.py)。
+
+程序要求前期compat-v2已经通过核验，才创建私有compat-v3。它在自编8行、一个数值属性、一个A/B类别属性的数据上设置`K=2`、随机种子`17`、`a=2`、`b=2`、`alpha=None`、`beta=None`、`max_iter=3`。
+
+试验两次运行相同设置，用于核对有限数值目标函数、概率行和类别组归一化、Gaussian精度为正、同种子结果一致，以及作者停止条件在修补后仍是原始表达式。
+
+**特别限制：** `max_iter=3`只是向原程序传入的设置；原作者循环使用`it > max_iter`，它不等于严格只迭代3次。本轮脚本会记录实际返回目标序列的长度。当前不把非下降、收敛性、输出参数与最终责任概率的相位对齐视为已经证明的事实；若失败，记录实际报错再决定修复。
+
+## 四、在Positron运行
+
+从教材项目根目录，直接沿用此前的私有Python虚拟环境：
+
+```bash
+downloads/private-workflow/a6-reproduction/.venv/bin/python \
+  audit-tools/a6_original_full_em_toy_v1.py
+```
+
+不必重新安装NumPy、pandas、SciPy。前期产生的compat-v2及两个原始固定Git仓库必须仍在私有目录，不要删除或移动。
+
+仅生成下列私有文件：
+
+```text
+downloads/private-workflow/a6-reproduction/compat-v3/
+  src/aneic/mfm.py
+  A6_V2_TO_V3_PATCH_PRIVATE.patch
+
+downloads/private-review/a6-ivories/
+  A6_AUTHOR_FULL_EM_TOY_CHECKS_PRIVATE.csv
+  A6_AUTHOR_FULL_EM_TOY_REPORT_PRIVATE.json
+```
+
+首次执行可能暴露新兼容性或数值异常。**如有FAIL请保留完整traceback；不要手动编辑原作者`aneic-core`。**
+
+## 五、后续研究准入
+
+- [ ] 固定作者Git版本不变，compat-v3只包含白名单补丁，补丁哈希记录完毕。
+- [ ] 小规模`em()`能够结束，概率、精度和类别参数有限。
+- [ ] 相同随机种子输出一致，实际目标序列长度有记录。
+- [ ] 审查`max_iter`与`dL`判断何时触发；尤其关注负`dL`是否被误当作收敛。
+- [ ] 独立验证返回的`q`、`gamma`、`L`是否来自同一迭代相位。
+- [ ] 再考虑随机重启、多K值、真实数据与原文结果比较，但这些均**不属于本PR**。
+
+**目前状态：** 程序和网页审查稿已创建；测试尚未实际运行。即使虚构小样本全部PASS，也仅能报告“原作者EM兼容副本的受控运行通过”，而不能称为完整论文复现。
