@@ -1,0 +1,76 @@
+# A6 受控复现环境 V1：隔离安装与数据编码冒烟测试 {.unnumbered}
+
+> **实施准备稿，非已运行的复现报告。** 本阶段只建立独立Python环境、核对已验证的官方CSV输入及一个**完全虚构**的类别编码/缺失值最小测试。不安装或修改作者2014年源代码，不执行EM，不发表新的聚类结果。
+
+## 一、已知事实与测试目标
+
+- 原研究：Gansell et al. 2014，*Journal of Archaeological Science* 44:194–205，[DOI](https://doi.org/10.1016/j.jas.2013.11.005)。
+- 固定ANEIC代码：[core](https://github.com/aneic/aneic-core) `43a394f3a2409f2918d38f9d3cfc6dd5472970c1`；[scripts](https://github.com/aneic/aneic-scripts) `c45445a0e090853c6eb544bffe8042557e4db440`。
+- 既有A6输入验收：官方CSV的Git Blob与本地文件一致，162行、34列，除`Key`与`Site`以外32个候选特征，1,931个空白单元格；12/12模型输入检查通过。
+- [静态兼容性审查](a6-original-algorithm-compatibility-v1.qmd)已经发现Python 2 `print`、pandas历史分类API、`.ix`及`np.object`等障碍；13项静态检查通过不意味着可运行原模型。
+
+本轮新脚本：[独立环境和数据编码烟雾测试](../audit-tools/a6_environment_smoke_v1.py)。采用Python标准库读取真实CSV的**结构**，现代NumPy/pandas仅验证虚构小表的编码及缺失语义。
+
+## 二、隔离环境策略
+
+**位置：** `downloads/private-workflow/a6-reproduction/.venv`，避免触及当前Positron解释器和R/Quarto项目的包。
+
+1. 使用Positron Terminal中的`python3`创建独立venv；不要将该环境设置为整个教材项目的默认解释器。
+2. 先在独立venv执行`python -m pip install numpy pandas`，记录实际安装版本、平台与Python版本；**这不是已经验证、可以直接复现2014年模型的锁定依赖文件**。
+3. 使用独立环境中的Python运行只读冒烟测试，不直接导入`aneic`包。
+4. 若测试失败，记录原始报错并停止。不得通过修改原始数据、全局降级Python或把缺失值填0来消除错误。
+5. 只有冒烟测试通过，才能进入后续**独立且可追踪的兼容补丁**实验；补丁放在私有工作副本，保留原仓库`git diff`，并附行为等价性测试。
+
+## 三、在Positron实际运行
+
+以下命令均从教材项目**根目录**执行。官方CSV继续保存在Git忽略的本地目录，不要用`git add -f`强制提交。
+
+```bash
+python3 -m venv downloads/private-workflow/a6-reproduction/.venv
+
+downloads/private-workflow/a6-reproduction/.venv/bin/python -m pip install numpy pandas
+
+downloads/private-workflow/a6-reproduction/.venv/bin/python \
+  audit-tools/a6_environment_smoke_v1.py \
+  downloads/official/levantine_corpus_gansell.csv
+```
+
+脚本逐项报告：虚拟环境隔离、官方CSV SHA-256、162×34行列、`Key`唯一、5个`Site`标签、1,931处特征缺失、12列数值可解析、虚构类别缺失保留和虚构数值缺失计算。
+
+**本轮尚未执行该脚本。** 预计产生如下私有报告：
+
+- `downloads/private-review/a6-ivories/A6_ENV_SMOKE_CHECKS_PRIVATE.csv`
+- `downloads/private-review/a6-ivories/A6_ENV_SMOKE_PRIVATE.json`
+
+通过之后，再记录一份**仅在本地保存**的环境依赖清单：
+
+```bash
+downloads/private-workflow/a6-reproduction/.venv/bin/python -m pip freeze \
+  > downloads/private-review/a6-ivories/A6_ENV_PIP_FREEZE_PRIVATE.txt
+```
+
+**请不要将冻结依赖清单视为已经证明2014年原算法可以运行。** 需要下一阶段实际兼容补丁和数值回归测试之后，才考虑公开受审定的独立环境说明。
+
+## 四、兼容补丁最小变更表（尚未实施）
+
+| 原代码问题 | 拟测试的独立修复 | 必须做的行为对照 |
+|---|---|---|
+| Python 2格式化`print` | 只修语法，不改输出内容与执行条件 | 检查参数日志、循环分支一致 |
+| `np.object`类型引用 | 根据实际dataframe类型改用明确类别dtype判断 | 12数值＋20类别字段集合完全一致 |
+| `pd.core.categorical.Categorical.from_array`及`levels/labels` | 使用现代pandas公开类别接口编写**单独测试副本** | 每种类别次序、one-hot编码、空白保持NaN不变 |
+| `.ix`标签/位置混用 | 逐行判断使用`.loc`还是`.iloc` | CV训练/测试ID及数组形状完全一致 |
+| 历史pickle/gzip保存方式 | 隔离工作副本中使用适当二进制写入 | 只对自己生成的结果测试读写；不加载未知pickle |
+| CV脚本`NU`／`FOLD` | 先追踪历史批处理参数来源 | 严格核对折叠、随机种子及所用目标函数 |
+| 非CV与CV结果 | 分别记录输入、设置、随机性、输出 | 不把全样本模型目标值和CV留出指标互换 |
+
+## 五、进入真正EM实验前的准入门槛
+
+- [ ] 独立venv与本机Python版本均有可审计记录。
+- [ ] 现代pandas读入和玩具编码检查全部通过，且不改动官方CSV。
+- [ ] 原作者代码固定SHA保持不变；任何修改仅发生在独立工作副本。
+- [ ] 原始数据行数、32项特征、缺失值位置和类别级别的对照结果一致。
+- [ ] 原始模型的数值更新、归一化、随机种子、日志与输出序列经过最小测试。
+- [ ] 实际执行的训练与CV入口已区别并记录。
+- [ ] 代码或数据再分发符合CC BY-SA及程序MIT条款，图像单独审查。
+
+**当前教学意义：** 第5章可讨论变量与缺失，第6章可讨论软聚类概率与输入格式，第10章可评价聚类与社会解释，但还不能用尚未实现的复现结果制作真实预测或论文性能表。
