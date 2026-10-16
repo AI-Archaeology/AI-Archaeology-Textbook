@@ -752,6 +752,7 @@ ul.task-list li input[type="checkbox"] {
 <p>考古地点通常不是在空间上完全随机、互不相关的。相邻地点可能共享地貌、交通、环境资源、年代背景与调查强度。这种<strong>空间自相关</strong>意味着：一个地点的测量结果往往与邻近地点有联系。</p>
 <p><strong>虚构例子：</strong> 在同一条河谷附近记录了20个相邻样点，发现其中大部分具有相似土壤和陶器保存状态。它们并不一定提供了20份与另一条河谷完全独立的环境证据。若随机挑选其中一些点训练模型，再用同一河谷的邻近点测试，模型也许得到很好成绩；但换到未见过的河谷后可能失效。</p>
 <p>这不等于邻近样本毫无价值，而是要求验证设计与研究问题对应。对于预测另一区域的遗址位置，可以考虑把空间块或独立调查区留作测试集；对于研究同一河谷内的局部变化，则要清楚说明推论范围。空间分块也不是万能方案：块大小、地理距离、样本量和区域差异都会影响结果。</p>
+<p><strong>一项真实的考古预测研究：</strong> Comer等（2023）在美国加利福尼亚州Fort Irwin，比较随机抽取像元与逐次留出一处已知遗址或一块标为非遗址的区域两种方式；后一方式仍评价留出区域中抽取像元的分类表现（第3节，5页）。随机像元方式的评价分数较高，作者主要从训练与测试资料间的空间自相关解释这一差异，并明确说明两种方案均未使用真正独立的数据（第5节，7—8页）。这提醒我们，<strong>评价分数须结合取样方式和研究任务理解</strong>；留出区域的像元分类成绩，不能直接证明在新地区发现完整遗址的能力。<a href="https://doi.org/10.1016/j.jasrep.2022.103824">原始论文</a>。</p>
 <p>本节只建立直观认识；空间自相关的进一步方法讨论安排在<a href="../chapters/chapter-14.html">第14章</a>相关内容中。</p>
 <section id="当代ai实证研究为何重视外推验证" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="当代ai实证研究为何重视外推验证">当代AI实证研究为何重视外推验证？</h3>
@@ -793,6 +794,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Bickler, Simon H. 2021. <a href="https://doi.org/10.1017/aap.2021.6">“Machine Learning Arrives in Archaeology.”</a> <em>Advances in Archaeological Practice</em> 9(2): 186–191.</li>
 <li>Carver, Martin, and Madeleine Hummler. 2025. <a href="https://doi.org/10.4324/9781003185147"><em>Archaeological Investigation</em>.</a> 2nd ed.&nbsp;Routledge.</li>
 <li>Chapman, Robert, and Alison Wylie. 2016. <em>Evidential Reasoning in Archaeology</em>. Bloomsbury Academic.</li>
+<li>Comer, Jacob A., Douglas C. Comer, Ioana A. Dumitru, Carey E. Priebe, and Jesse L. Patsolic. 2023. <a href="https://doi.org/10.1016/j.jasrep.2022.103824">“Sampling Methods for Archaeological Predictive Modeling: Spatial Autocorrelation and Model Performance.”</a> <em>Journal of Archaeological Science: Reports</em> 48: 103824.</li>
 <li>Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. <em>Deep Learning</em>. MIT Press.</li>
 <li>James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. <a href="https://doi.org/10.1007/978-3-031-38747-0"><em>An Introduction to Statistical Learning with Applications in Python</em>.</a> Springer.</li>
 <li>Murphy, Kevin P. 2023. <em>Probabilistic Machine Learning: Advanced Topics</em>. MIT Press.</li>

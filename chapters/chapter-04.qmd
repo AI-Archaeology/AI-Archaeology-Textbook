@@ -97,6 +97,8 @@ Chapman与Wylie（2016）导论及第1—3章进一步强调：物质遗存能�
 
 这不等于邻近样本毫无价值，而是要求验证设计与研究问题对应。对于预测另一区域的遗址位置，可以考虑把空间块或独立调查区留作测试集；对于研究同一河谷内的局部变化，则要清楚说明推论范围。空间分块也不是万能方案：块大小、地理距离、样本量和区域差异都会影响结果。
 
+**一项真实的考古预测研究：** Comer等（2023）在美国加利福尼亚州Fort Irwin，比较随机抽取像元与逐次留出一处已知遗址或一块标为非遗址的区域两种方式；后一方式仍评价留出区域中抽取像元的分类表现（第3节，5页）。随机像元方式的评价分数较高，作者主要从训练与测试资料间的空间自相关解释这一差异，并明确说明两种方案均未使用真正独立的数据（第5节，7—8页）。这提醒我们，**评价分数须结合取样方式和研究任务理解**；留出区域的像元分类成绩，不能直接证明在新地区发现完整遗址的能力。[原始论文](https://doi.org/10.1016/j.jasrep.2022.103824)。
+
 本节只建立直观认识；空间自相关的进一步方法讨论安排在[第14章](chapter-14.qmd)相关内容中。
 
 ### 当代AI实证研究为何重视外推验证？ {.unnumbered}
@@ -142,6 +144,7 @@ Bickler（2021）同样提醒，考古资料形成缓慢、规模有限、保存
 - Bickler, Simon H. 2021. [“Machine Learning Arrives in Archaeology.”](https://doi.org/10.1017/aap.2021.6) *Advances in Archaeological Practice* 9(2): 186–191.
 - Carver, Martin, and Madeleine Hummler. 2025. [*Archaeological Investigation*.](https://doi.org/10.4324/9781003185147) 2nd ed. Routledge.
 - Chapman, Robert, and Alison Wylie. 2016. *Evidential Reasoning in Archaeology*. Bloomsbury Academic.
+- Comer, Jacob A., Douglas C. Comer, Ioana A. Dumitru, Carey E. Priebe, and Jesse L. Patsolic. 2023. [“Sampling Methods for Archaeological Predictive Modeling: Spatial Autocorrelation and Model Performance.”](https://doi.org/10.1016/j.jasrep.2022.103824) *Journal of Archaeological Science: Reports* 48: 103824.
 - Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. *Deep Learning*. MIT Press.
 - James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. [*An Introduction to Statistical Learning with Applications in Python*.](https://doi.org/10.1007/978-3-031-38747-0) Springer.
 - Murphy, Kevin P. 2023. *Probabilistic Machine Learning: Advanced Topics*. MIT Press.
