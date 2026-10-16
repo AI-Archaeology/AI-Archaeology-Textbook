@@ -79,6 +79,14 @@ Lucas的*Archaeological Situations*（版权页2023）第3章“Making Records�
 
 从类型学到变量还有一道研究决定。例如“折沿”不是陶片天然附带的一组计算机字符：研究者需要制定判别标准、记录观察不确定性，并允许未能辨认的残片保持未知。一个类别定义即使被多人沿用，也可能需要因时期、地区和器物传统而审查其适用范围。
 
+### 变量、标签与输入特征并非同一个概念 {.unnumbered}
+
+统计学习教材（James等，2023，第2章）区分用于预测的**输入变量（predictors/features）**与需要估计的**响应变量或标签（response/target）**。考古调查记录中则还包括不应用作预测指标的**身份字段和情境关联字段**。例如，表中的`artifact_id`是追踪一条陶片记录的标识符；`fragment_part`是观察得到的陶片部位；`rim_diameter_cm`是仅在适用条件下测量的尺寸。如果模型的任务是预测专家所定陶片类型，该类型字段才可能成为监督学习的标签；若不预设类型而探索分组，则该标签不能被当作模型必须重现的“真相”。
+
+Murphy的*Probabilistic Machine Learning: An Introduction*（2022；所上传在线版更新于2024年）第1.5节讨论离散输入与文本预处理及缺失资料；Zhang等的*Dive into Deep Learning*第2.2节把读取、准备数据和张量转换分成不同步骤。对初学者而言，更重要的是**先描述记录意义和编码规则，再谈模型怎样读入数据**。
+
+**一个无需编程的检查：** 从现有18条虚构陶片记录中任取一行，分别圈出记录标识符、出土情境字段、描述性属性、可用数值和缺失状态。再解释为什么“给每行一个编号”并没有增加一项可以解释史前陶器差异的测量变量。不要改写原始CSV。
+
 ## 发掘单位、遗迹、器物与数据库结构
 
 考古记录具有层级：一个遗址内可能有多个发掘区；发掘区包含遗迹和层位；一个登记单位可能发现多件器物；一件器物又可能有多张照片与若干实验测量。把这些层级全部压成一张未经设计的宽表，容易造成重复计数和错误的对应关系。
@@ -178,6 +186,13 @@ Lucas的*Archaeological Situations*（版权页2023）第3章“Making Records�
 ### 继续深入 {.unnumbered}
 
 **入门：** 阅读[教学模拟数据说明](../dataset-teaching-ceramics-01.qmd)及其数据字典。**进阶：** 进入第4章的缺失与偏差、第5章的变量与统计推断以及第8章的评价设计。**研究实践：** 比较不同考古项目如何记录对象、采样、出处、版本及许可；必要时进一步学习CIDOC CRM与[FAIR原则原始论文](https://doi.org/10.1038/sdata.2016.18)。
+
+### 从记录表到机器学习输入的技术参考 {.unnumbered}
+
+- James, Gareth, et al. 2023. [*An Introduction to Statistical Learning with Applications in Python*.](https://doi.org/10.1007/978-3-031-38747-0) Springer，第2章输入与响应、分类和回归；更复杂的操作保留给第5章之后。
+- Murphy, Kevin P. 2022. *Probabilistic Machine Learning: An Introduction*. MIT Press，第1章1.5节与第3章混合分布。上传PDF标明2024年在线版本，原书版权年为2022。
+- Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. *Dive into Deep Learning*，所上传版第2.2节数据预处理。正式引文年份与版本需依所用版本版权记录进一步锁定。
+- Chollet, François, and Tomasz Kalinowski. 2026. *Deep Learning with R*. 3rd ed. Manning，第2章张量与第5章数据管理、泛化；作为使用R和Python环境的进阶路径，非本章先修要求。
 
 ### 有针对性的基础阅读 {.unnumbered}
 
