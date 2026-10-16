@@ -582,7 +582,10 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#从陶片到结论四个层次" id="toc-从陶片到结论四个层次" class="nav-link" data-scroll-target="#从陶片到结论四个层次"><span class="header-section-number">1.1.1</span> 从陶片到结论：四个层次</a></li>
   </ul></li>
-  <li><a href="#人工智能机器学习深度学习与大语言模型" id="toc-人工智能机器学习深度学习与大语言模型" class="nav-link" data-scroll-target="#人工智能机器学习深度学习与大语言模型"><span class="header-section-number">1.2</span> 人工智能、机器学习、深度学习与大语言模型</a></li>
+  <li><a href="#人工智能机器学习深度学习与大语言模型" id="toc-人工智能机器学习深度学习与大语言模型" class="nav-link" data-scroll-target="#人工智能机器学习深度学习与大语言模型"><span class="header-section-number">1.2</span> 人工智能、机器学习、深度学习与大语言模型</a>
+  <ul class="collapse">
+  <li><a href="#从能完成任务到能在新资料上使用ai方法的基本评价" id="toc-从能完成任务到能在新资料上使用ai方法的基本评价" class="nav-link" data-scroll-target="#从能完成任务到能在新资料上使用ai方法的基本评价">从“能完成任务”到“能在新资料上使用”：AI方法的基本评价</a></li>
+  </ul></li>
   <li><a href="#ai在考古研究中的主要用途识别分类探测预测检索与生成" id="toc-ai在考古研究中的主要用途识别分类探测预测检索与生成" class="nav-link" data-scroll-target="#ai在考古研究中的主要用途识别分类探测预测检索与生成"><span class="header-section-number">1.3</span> AI在考古研究中的主要用途：识别、分类、探测、预测、检索与生成</a></li>
   <li><a href="#两类方法与一类研究任务传统计算方法ai方法与考古学证据生产" id="toc-两类方法与一类研究任务传统计算方法ai方法与考古学证据生产" class="nav-link" data-scroll-target="#两类方法与一类研究任务传统计算方法ai方法与考古学证据生产"><span class="header-section-number">1.4</span> 两类方法与一类研究任务：传统计算方法、AI方法与考古学证据生产</a>
   <ul class="collapse">
@@ -596,6 +599,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#动手试试给一项ai陶片分类计划做研究审查" id="toc-动手试试给一项ai陶片分类计划做研究审查" class="nav-link" data-scroll-target="#动手试试给一项ai陶片分类计划做研究审查">动手试试：给一项“AI陶片分类”计划做研究审查</a></li>
   <li><a href="#何时用何时不用" id="toc-何时用何时不用" class="nav-link" data-scroll-target="#何时用何时不用">何时用、何时不用</a></li>
   <li><a href="#继续深入" id="toc-继续深入" class="nav-link" data-scroll-target="#继续深入">继续深入</a></li>
+  <li><a href="#ai与机器学习的基础读物已核对版本及相应章节" id="toc-ai与机器学习的基础读物已核对版本及相应章节" class="nav-link" data-scroll-target="#ai与机器学习的基础读物已核对版本及相应章节">AI与机器学习的基础读物（已核对版本及相应章节）</a></li>
   <li><a href="#已核对来源与进一步阅读" id="toc-已核对来源与进一步阅读" class="nav-link" data-scroll-target="#已核对来源与进一步阅读">已核对来源与进一步阅读</a></li>
   <li><a href="#核心概念与阅读的核验入口" id="toc-核心概念与阅读的核验入口" class="nav-link" data-scroll-target="#核心概念与阅读的核验入口">核心概念与阅读的核验入口</a></li>
   </ul></li>
@@ -694,6 +698,11 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>深度学习（deep learning, DL）</strong>是机器学习中的一类方法，通常使用多层神经网络。它特别适合处理复杂的图像、声音或文本等数据，但依然受到样本质量、计算资源和验证设计约束。训练数据少、照片条件不一致或类型定义不稳定时，复杂模型不一定优于简单方法。</p>
 <p><strong>大语言模型（large language model, LLM）</strong>是一类以语言处理为主要能力的模型。它们能够生成文字、总结材料、协助检索和整理表达；具有图像输入等能力的多模态模型还可处理其他媒介。不过，生成的文字可能混入不存在的引文、错误的年代或未经证实的解释。语言流畅不等于内容真实。</p>
 <p>这些概念之间的关系可以概括为：<strong>深度学习属于机器学习的重要组成部分，机器学习属于人工智能的重要组成部分；大语言模型通常依赖深度学习，但“语言生成”只是其特定应用能力。</strong></p>
+<section id="从能完成任务到能在新资料上使用ai方法的基本评价" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="从能完成任务到能在新资料上使用ai方法的基本评价">从“能完成任务”到“能在新资料上使用”：AI方法的基本评价</h3>
+<p>Russell与Norvig在<em>Artificial Intelligence: A Modern Approach</em>（第4版）中以<strong>智能体（agent）与任务环境</strong>组织整个AI领域：搜索、知识表示、概率推理、规划与机器学习都是广义AI体系中的不同路线，而非“AI就是深度学习”的同义表达。Chollet与Watson的<em>Deep Learning with Python</em>（第3版，2026）第1章进一步比较了传统程序和机器学习：前者由人写明规则，后者在设定任务、数据与评价方式后，从样本中学习可应用的关系。这只是理解两类典型工作的简化对比，不意味着机器学习系统不需要人为设计。</p>
+<p>以陶片分类为例，“<strong>训练</strong>”是根据一部分有标签记录调整模型；“<strong>预测</strong>”是向模型输入待判断的记录；“<strong>泛化</strong>”则是模型面对未参与训练、符合研究预期的新记录时，仍能保持有用表现。三者不能混淆。James等（2023）<em>An Introduction to Statistical Learning with Applications in Python</em>第2章区分预测精度与可解释性；Chollet与Watson（2026）第5章区分训练、验证、测试以及过拟合。这些是方法概念，不是声称考古模型已经达到某一性能。</p>
+<p><strong>入门时不必计算梯度或训练神经网络</strong>，但应知道：模型的良好表现必须针对清楚定义的任务和独立评价资料，之后才谈得上是否有助于解释过去。</p>
 <p>还应分清学习任务：</p>
 <ul>
 <li><strong>监督学习</strong>使用已有目标标签进行训练，如根据专家标注预测陶片器类。</li>
@@ -701,6 +710,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>生成式模型</strong>产生文字、图像或其他候选内容，产物应被看作待查的生成结果，而不是出土证据。</li>
 </ul>
 <p>这些算法的详细原理安排在第5—8章；本章先学会辨认任务及其证据责任。</p>
+</section>
 </section>
 <section id="ai在考古研究中的主要用途识别分类探测预测检索与生成" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="ai在考古研究中的主要用途识别分类探测预测检索与生成"><span class="header-section-number">1.3</span> AI在考古研究中的主要用途：识别、分类、探测、预测、检索与生成</h2>
@@ -868,6 +878,15 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>入门：</strong> 先阅读本书第3—4章，认识考古记录如何转成可计算数据，以及保存、调查与记录偏差如何影响结论。配套的<a href="../core-case-library/a6-teaching-resources.html">A6象牙风格聚类教学活动</a>可用于区分无监督分组和风格解释；该活动使用虚构数据，不要求运行原始模型。</p>
 <p><strong>进阶：</strong> 阅读第5—8章，进一步理解特征、标签、软聚类、模型评估和过拟合。学习时始终用一个考古问题比较传统统计与AI方法。</p>
 <p><strong>研究前沿：</strong> 从<a href="../core-case-library/index.html">六例AI考古学核心案例库</a>选一例，追踪论文、数据说明与复现审查，辨别“研究者报告的结果”“数据来源已核验”“算法已在虚构数据上测试”和“真实研究结果已被独立复现”四种不同证据状态。</p>
+</section>
+<section id="ai与机器学习的基础读物已核对版本及相应章节" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="ai与机器学习的基础读物已核对版本及相应章节">AI与机器学习的基础读物（已核对版本及相应章节）</h3>
+<ul>
+<li>Russell, Stuart, and Peter Norvig. <em>Artificial Intelligence: A Modern Approach</em>. 4th ed.&nbsp;Pearson，英文原书版权©2021；重点第1—2章AI的范围与智能体。中译本《人工智能：现代方法》第4版，人民邮电出版社，2023年首版。</li>
+<li>Chollet, François, and Matthew Watson. 2026. <em>Deep Learning with Python</em>. 3rd ed.&nbsp;Manning，第1章的程序与学习对比及第5章泛化和评价。注意上传文件名标为2025，PDF版权页为2026。</li>
+<li>James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. <a href="https://doi.org/10.1007/978-3-031-38747-0"><em>An Introduction to Statistical Learning with Applications in Python</em>.</a> Springer，第2章学习任务与预测—解释权衡；其Python实验并不是第一编必做练习。</li>
+<li>Bishop, Christopher M., and Hugh Bishop. 2024. <a href="https://doi.org/10.1007/978-3-031-45468-4"><em>Deep Learning: Foundations and Concepts</em>.</a> Springer，第1章深度学习导论，用作更高阶的概念参考。</li>
+</ul>
 </section>
 <section id="已核对来源与进一步阅读" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="已核对来源与进一步阅读">已核对来源与进一步阅读</h3>

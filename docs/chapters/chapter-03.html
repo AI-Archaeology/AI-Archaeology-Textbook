@@ -583,7 +583,10 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#为什么算法学习的是考古材料的代理表示而不是器物本身" id="toc-为什么算法学习的是考古材料的代理表示而不是器物本身" class="nav-link" data-scroll-target="#为什么算法学习的是考古材料的代理表示而不是器物本身">为什么算法学习的是考古材料的“代理表示”，而不是器物本身？</a></li>
   </ul></li>
-  <li><a href="#变量测量尺度与类型学概念的量化" id="toc-变量测量尺度与类型学概念的量化" class="nav-link" data-scroll-target="#变量测量尺度与类型学概念的量化"><span class="header-section-number">3.3</span> 变量、测量尺度与类型学概念的量化</a></li>
+  <li><a href="#变量测量尺度与类型学概念的量化" id="toc-变量测量尺度与类型学概念的量化" class="nav-link" data-scroll-target="#变量测量尺度与类型学概念的量化"><span class="header-section-number">3.3</span> 变量、测量尺度与类型学概念的量化</a>
+  <ul class="collapse">
+  <li><a href="#变量标签与输入特征并非同一个概念" id="toc-变量标签与输入特征并非同一个概念" class="nav-link" data-scroll-target="#变量标签与输入特征并非同一个概念">变量、标签与输入特征并非同一个概念</a></li>
+  </ul></li>
   <li><a href="#发掘单位遗迹器物与数据库结构" id="toc-发掘单位遗迹器物与数据库结构" class="nav-link" data-scroll-target="#发掘单位遗迹器物与数据库结构"><span class="header-section-number">3.4</span> 发掘单位、遗迹、器物与数据库结构</a></li>
   <li><a href="#数据清洗统一记录异常值数据合并与追溯" id="toc-数据清洗统一记录异常值数据合并与追溯" class="nav-link" data-scroll-target="#数据清洗统一记录异常值数据合并与追溯"><span class="header-section-number">3.5</span> 数据清洗：统一记录、异常值、数据合并与追溯</a></li>
   <li><a href="#描述统计与探索性分析分布集中趋势离散程度" id="toc-描述统计与探索性分析分布集中趋势离散程度" class="nav-link" data-scroll-target="#描述统计与探索性分析分布集中趋势离散程度"><span class="header-section-number">3.6</span> 描述统计与探索性分析：分布、集中趋势、离散程度</a></li>
@@ -594,6 +597,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#评价要点" id="toc-评价要点" class="nav-link" data-scroll-target="#评价要点">评价要点</a></li>
   <li><a href="#何时用何时不用" id="toc-何时用何时不用" class="nav-link" data-scroll-target="#何时用何时不用">何时用、何时不用</a></li>
   <li><a href="#继续深入" id="toc-继续深入" class="nav-link" data-scroll-target="#继续深入">继续深入</a></li>
+  <li><a href="#从记录表到机器学习输入的技术参考" id="toc-从记录表到机器学习输入的技术参考" class="nav-link" data-scroll-target="#从记录表到机器学习输入的技术参考">从记录表到机器学习输入的技术参考</a></li>
   <li><a href="#有针对性的基础阅读" id="toc-有针对性的基础阅读" class="nav-link" data-scroll-target="#有针对性的基础阅读">有针对性的基础阅读</a></li>
   </ul></li>
   </ul>
@@ -810,6 +814,12 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>最常见的四类测量尺度可以用直观方式区分：<strong>名义尺度</strong>区分类别但没有大小顺序，如口沿或底部；<strong>顺序尺度</strong>可以排序但相邻等级的间距未必相等，如自定义的低、中、高磨损等级；<strong>间隔尺度</strong>数值差值有意义但零点不表示“完全没有”，需结合具体测量系统；<strong>比率尺度</strong>具有有意义的零点，长度、质量通常属于此类。</p>
 <p>从类型学到变量还有一道研究决定。例如“折沿”不是陶片天然附带的一组计算机字符：研究者需要制定判别标准、记录观察不确定性，并允许未能辨认的残片保持未知。一个类别定义即使被多人沿用，也可能需要因时期、地区和器物传统而审查其适用范围。</p>
+<section id="变量标签与输入特征并非同一个概念" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="变量标签与输入特征并非同一个概念">变量、标签与输入特征并非同一个概念</h3>
+<p>统计学习教材（James等，2023，第2章）区分用于预测的<strong>输入变量（predictors/features）</strong>与需要估计的<strong>响应变量或标签（response/target）</strong>。考古调查记录中则还包括不应用作预测指标的<strong>身份字段和情境关联字段</strong>。例如，表中的<code>artifact_id</code>是追踪一条陶片记录的标识符；<code>fragment_part</code>是观察得到的陶片部位；<code>rim_diameter_cm</code>是仅在适用条件下测量的尺寸。如果模型的任务是预测专家所定陶片类型，该类型字段才可能成为监督学习的标签；若不预设类型而探索分组，则该标签不能被当作模型必须重现的“真相”。</p>
+<p>Murphy的<em>Probabilistic Machine Learning: An Introduction</em>（2022；所上传在线版更新于2024年）第1.5节讨论离散输入与文本预处理及缺失资料；Zhang等的<em>Dive into Deep Learning</em>第2.2节把读取、准备数据和张量转换分成不同步骤。对初学者而言，更重要的是<strong>先描述记录意义和编码规则，再谈模型怎样读入数据</strong>。</p>
+<p><strong>一个无需编程的检查：</strong> 从现有18条虚构陶片记录中任取一行，分别圈出记录标识符、出土情境字段、描述性属性、可用数值和缺失状态。再解释为什么“给每行一个编号”并没有增加一项可以解释史前陶器差异的测量变量。不要改写原始CSV。</p>
+</section>
 </section>
 <section id="发掘单位遗迹器物与数据库结构" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="发掘单位遗迹器物与数据库结构"><span class="header-section-number">3.4</span> 发掘单位、遗迹、器物与数据库结构</h2>
@@ -942,6 +952,15 @@ ul.task-list li input[type="checkbox"] {
 <section id="继续深入" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="继续深入">继续深入</h3>
 <p><strong>入门：</strong> 阅读<a href="../dataset-teaching-ceramics-01.html">教学模拟数据说明</a>及其数据字典。<strong>进阶：</strong> 进入第4章的缺失与偏差、第5章的变量与统计推断以及第8章的评价设计。<strong>研究实践：</strong> 比较不同考古项目如何记录对象、采样、出处、版本及许可；必要时进一步学习CIDOC CRM与<a href="https://doi.org/10.1038/sdata.2016.18">FAIR原则原始论文</a>。</p>
+</section>
+<section id="从记录表到机器学习输入的技术参考" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="从记录表到机器学习输入的技术参考">从记录表到机器学习输入的技术参考</h3>
+<ul>
+<li>James, Gareth, et al.&nbsp;2023. <a href="https://doi.org/10.1007/978-3-031-38747-0"><em>An Introduction to Statistical Learning with Applications in Python</em>.</a> Springer，第2章输入与响应、分类和回归；更复杂的操作保留给第5章之后。</li>
+<li>Murphy, Kevin P. 2022. <em>Probabilistic Machine Learning: An Introduction</em>. MIT Press，第1章1.5节与第3章混合分布。上传PDF标明2024年在线版本，原书版权年为2022。</li>
+<li>Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. <em>Dive into Deep Learning</em>，所上传版第2.2节数据预处理。正式引文年份与版本需依所用版本版权记录进一步锁定。</li>
+<li>Chollet, François, and Tomasz Kalinowski. 2026. <em>Deep Learning with R</em>. 3rd ed.&nbsp;Manning，第2章张量与第5章数据管理、泛化；作为使用R和Python环境的进阶路径，非本章先修要求。</li>
+</ul>
 </section>
 <section id="有针对性的基础阅读" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="有针对性的基础阅读">有针对性的基础阅读</h3>

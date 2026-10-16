@@ -581,7 +581,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#埋藏过程与保存偏差" id="toc-埋藏过程与保存偏差" class="nav-link" data-scroll-target="#埋藏过程与保存偏差"><span class="header-section-number">4.1</span> 埋藏过程与保存偏差</a></li>
   <li><a href="#调查发掘与取样偏差" id="toc-调查发掘与取样偏差" class="nav-link" data-scroll-target="#调查发掘与取样偏差"><span class="header-section-number">4.2</span> 调查、发掘与取样偏差</a></li>
   <li><a href="#考古记录的历史差异与标准不一致" id="toc-考古记录的历史差异与标准不一致" class="nav-link" data-scroll-target="#考古记录的历史差异与标准不一致"><span class="header-section-number">4.3</span> 考古记录的历史差异与标准不一致</a></li>
-  <li><a href="#缺失数据的机制处理偏差与数据质量评价" id="toc-缺失数据的机制处理偏差与数据质量评价" class="nav-link" data-scroll-target="#缺失数据的机制处理偏差与数据质量评价"><span class="header-section-number">4.4</span> 缺失数据的机制、处理偏差与数据质量评价</a></li>
+  <li><a href="#缺失数据的机制处理偏差与数据质量评价" id="toc-缺失数据的机制处理偏差与数据质量评价" class="nav-link" data-scroll-target="#缺失数据的机制处理偏差与数据质量评价"><span class="header-section-number">4.4</span> 缺失数据的机制、处理偏差与数据质量评价</a>
+  <ul class="collapse">
+  <li><a href="#不要混淆三种偏差也不要混淆训练成绩与泛化能力" id="toc-不要混淆三种偏差也不要混淆训练成绩与泛化能力" class="nav-link" data-scroll-target="#不要混淆三种偏差也不要混淆训练成绩与泛化能力">不要混淆三种“偏差”，也不要混淆训练成绩与泛化能力</a></li>
+  </ul></li>
   <li><a href="#年代与空间位置的不确定性" id="toc-年代与空间位置的不确定性" class="nav-link" data-scroll-target="#年代与空间位置的不确定性"><span class="header-section-number">4.5</span> 年代与空间位置的不确定性</a>
   <ul class="collapse">
   <li><a href="#从田野形成过程到数据偏差证据不是直接复制的过去" id="toc-从田野形成过程到数据偏差证据不是直接复制的过去" class="nav-link" data-scroll-target="#从田野形成过程到数据偏差证据不是直接复制的过去"><span class="header-section-number">4.5.1</span> 从田野形成过程到数据偏差：证据不是直接复制的过去</a></li>
@@ -596,6 +599,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#教学案例三种缺失能否合并" id="toc-教学案例三种缺失能否合并" class="nav-link" data-scroll-target="#教学案例三种缺失能否合并">教学案例：三种“缺失”能否合并？</a></li>
   <li><a href="#何时用何时不用" id="toc-何时用何时不用" class="nav-link" data-scroll-target="#何时用何时不用">何时用、何时不用</a></li>
   <li><a href="#继续深入" id="toc-继续深入" class="nav-link" data-scroll-target="#继续深入">继续深入</a></li>
+  <li><a href="#统计学习与模型验证的专门参考" id="toc-统计学习与模型验证的专门参考" class="nav-link" data-scroll-target="#统计学习与模型验证的专门参考">统计学习与模型验证的专门参考</a></li>
   <li><a href="#本章来源核验与阅读路径" id="toc-本章来源核验与阅读路径" class="nav-link" data-scroll-target="#本章来源核验与阅读路径">本章来源核验与阅读路径</a></li>
   </ul></li>
   </ul>
@@ -719,6 +723,11 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>常见处理方法包括保留缺失并报告比例、回查原始资料、在适合的前提下只分析有记录的样本，或采用统计插补。<strong>没有一种方法适用于所有缺失。</strong> 插补得到的是有条件的估计，不是重新发现的田野事实；只删除不完整记录也可能改变样本组成。</p>
 <p>一份最低限度的数据质量说明应包含记录总数、变量定义、各字段可用数量、缺失和不适用的区分、重复记录检查、异常值处理、来源版本以及限制性声明。进一步建模时，还需要测试结论对不同合理处理方案是否敏感。</p>
+<section id="不要混淆三种偏差也不要混淆训练成绩与泛化能力" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="不要混淆三种偏差也不要混淆训练成绩与泛化能力">不要混淆三种“偏差”，也不要混淆训练成绩与泛化能力</h3>
+<p>本章的<strong>保存与取样偏差</strong>指考古遗存进入研究样本之前的选择性损失；<strong>测量和标注偏差</strong>指资料记录及人为归类中的系统差异。统计学习中的<strong>偏差—方差权衡（bias–variance trade-off）</strong>又是另一层概念：模型过于简单可能无法捕捉重要关系，过于灵活则可能对现有训练数据拟合得很好、在新样本上表现很差。James等（2023）第2.2节和Goodfellow等（2016）第5.3—5.5节说明模型复杂度、过拟合和评价之间的关系。<strong>统计学意义的模型偏差，并不等于考古发掘样本的保存偏差</strong>，虽然两类问题可能同时发生。</p>
+<p>例如，陶片照片全部来自同一摄影台，即使模型在随机留出的图片上取得较高分数，也可能借助背景、光照或拍摄机构的特征作出判断。Prince（2023年出版的<em>Understanding Deep Learning</em>；上传版更新于2024年）第8章讨论性能测量及误差来源；Zhang等<em>Dive into Deep Learning</em>第3.6与4.6—4.7节则分别讨论泛化、测试集重复使用和环境分布变化。因此，<strong>模型是在已有照片上学得很好，还是能用于另一遗址或另一摄影流程，是两个不同的问题</strong>。</p>
+</section>
 </section>
 <section id="年代与空间位置的不确定性" class="level2" data-number="4.5">
 <h2 data-number="4.5" class="anchored" data-anchor-id="年代与空间位置的不确定性"><span class="header-section-number">4.5</span> 年代与空间位置的不确定性</h2>
@@ -768,6 +777,16 @@ ul.task-list li input[type="checkbox"] {
 <section id="继续深入" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="继续深入">继续深入</h3>
 <p><strong>入门：</strong> 返回第3章，复核观察单位、缺失状态及数据来源说明。<strong>进阶：</strong> 在第5—8章学习统计推断、训练与独立评价，在第14章进一步讨论空间资料的分析条件。<strong>研究实践：</strong> 对照真实论文的数据来源、取样、字段缺失和验证设计，逐项判断作者报告的预测结果可以推广到何种资料。</p>
+</section>
+<section id="统计学习与模型验证的专门参考" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="统计学习与模型验证的专门参考">统计学习与模型验证的专门参考</h3>
+<ul>
+<li>James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. <a href="https://doi.org/10.1007/978-3-031-38747-0"><em>An Introduction to Statistical Learning with Applications in Python</em>.</a> Springer，第2章偏差—方差和模型评价、第5章交叉验证。</li>
+<li>Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. <em>Deep Learning</em>. MIT Press，第5章泛化、模型容量、过拟合和训练/验证设置。</li>
+<li>Prince, Simon J. D. 2023（所上传PDF更新于2024-11-21）. <em>Understanding Deep Learning</em>. MIT Press，第8章性能评价；中文译本《理解深度学习》，张亚东、马壮译，清华大学出版社，2025。</li>
+<li>Murphy, Kevin P. 2023. <em>Probabilistic Machine Learning: Advanced Topics</em>. MIT Press，第3.11节缺失资料；上传PDF为2024年在线版本。有关缺失机制需要专门核对假设，不能将空白字段自动识别为MCAR、MAR或MNAR。</li>
+<li>Zhang, Aston, et al.&nbsp;<em>Dive into Deep Learning</em>，所上传版第3.6节、第4.6—4.7节泛化、测试集复用与分布变化。版本年份仍待锁定。</li>
+</ul>
 </section>
 <section id="本章来源核验与阅读路径" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="本章来源核验与阅读路径">本章来源核验与阅读路径</h3>
