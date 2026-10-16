@@ -4,6 +4,8 @@
 **审查性质：** 对少数关键来源落实到可回查页码/章段的**分层核验表**，配合实际读取CSV得出的描述统计与四章课堂题目的**教师桌面推演（desk walkthrough）**。没有真实学生试教、访谈或实验；不能称作正式课堂试评分。  
 **数据边界：** 全部18条陶片均为虚构；不读取/公开A6真实象牙记录；A6真实EM授权仍HOLD。
 
+**归档说明：** 前四节保留PR #36阶段的证据定位与教学检查记录，表内等级表示当时的核验范围；后续原文核读和已完成事项见第五节，不将早期状态作为当前总评。
+
 ## 一、可定位的论断—文献—证据表
 
 **分级：** A=在上传资料中直接可见支持该说法的正文（记录可定位版本及页）；B=仅查到相关章节/目录（不能声称细节论证已核）；C=仍需要考古个案论文全文或专项方法研究；X=需要更正或限制表达。**以下“页码”是书内印刷页而非PDF阅读器序号，除非明确写“PDF页面”。**
@@ -41,7 +43,7 @@
 | `coarse_inclusion_flag` | 1共5条、0共13条；**0指未记录到可见夹杂，不代表已证明不存在** |
 | `surface_unrecorded_flag` | 恰有一条1，与“未记录”一一对应（TC011） |
 
-这些是**源CSV逐行核读的结果**，并非从AI模型推断。新增`audit-tools/part1_teaching_ceramics_check_v1.py`为**标准库只读、可复核**的独立脚本；它要求用户在本地Positron实际执行，日志将作为正式脚本验收结果。在本轮提交阶段**尚未声称本地Python脚本PASS**。
+这些是**源CSV逐行核读的结果**，并非从AI模型推断。新增`audit-tools/part1_teaching_ceramics_check_v1.py`为**标准库只读、可复核**的独立脚本；它要求用户在本地Positron实际执行，日志将作为正式脚本验收结果。用户随后于2026-10-16在Positron运行该脚本，实际日志显示**19 PASS / 0 FAIL**，并成功渲染Quarto **64/64**。这属于虚构教学数据的技术验收，并不代表真实考古资料或模型通过验证。
 
 ## 三、四章练习的教师桌面试做
 
@@ -64,4 +66,16 @@
 4. 在`editorial-reviews/`保留测试与文献审读记录，不把`PASS`/ `HOLD`编辑术语混入教材正式参考文献。
 5. 第1—4章各自仍只有一个章末`参考文献`；第5章继续暂缓。
 
-**本轮闸门：** `FILE-LEVEL REVIEW: COMPLETE`；`INDEPENDENT SCRIPT EXECUTION: PENDING USER LOCAL RUN`；`TEACHER DESK WALKTHROUGH: COMPLETE (NO STUDENTS)`；`CLAIM-TO-SOURCE FULL-TEXT AUDIT: PARTIAL/HOLD`；`SCHOLARLY FINAL REVIEW: HOLD`；`A6 REAL-EM PILOT: HOLD`。
+**本轮闸门：** `FILE-LEVEL REVIEW: COMPLETE`；`INDEPENDENT SCRIPT EXECUTION: PASS (19/19, user local Positron log)`；`TEACHER DESK WALKTHROUGH: COMPLETE (NO STUDENTS)`；`CLAIM-TO-SOURCE FULL-TEXT AUDIT: PARTIAL/HOLD`；`SCHOLARLY FINAL REVIEW: HOLD`；`A6 REAL-EM PILOT: HOLD`。
+
+## 五、后续核验与技术验收状态
+
+本次归档对照的`main`为`e4f03a1af08359d086ebdc1fa3f7e71070804c25`。以下只衔接已有核验记录与已合并结果，本次没有重新审读这些原著或重跑脚本。
+
+| 项目 | 原阶段记录与后续状态 |
+|---|---|
+| Murphy缺失机制 | 第一节的B为当时仅定位目录的结果；本PR的[重点原文核验记录](part1-targeted-fulltext-verification-v1.md)第1节随后记录了上传PDF的§3.11、印刷页141—142（PDF第175—176页）核读，支持机制定义。早期B保留为核验历程，不能据此忽略后续原文记录，也不能将定义核验当作陶片缺失成因的实证。 |
+| 考古空间预测与中国遥感史 | [PR #41](https://github.com/AI-Archaeology/AI-Archaeology-Textbook/pull/41)已将Comer等（2023）与刘树人（1998）纳入第4章和第2章；[对应核验报告](https://github.com/AI-Archaeology/AI-Archaeology-Textbook/blob/e4f03a1af08359d086ebdc1fa3f7e71070804c25/editorial-reviews/part1-primary-archaeological-model-validation-history-v1.md)分别记录作者公开正文转录A2与官方PDF逐页核对A1。后续结果不等于Comer完成真正独立数据验证，也不支持全国“首次”的判断。 |
+| 虚构教学数据技术验收 | [PR #36](https://github.com/AI-Archaeology/AI-Archaeology-Textbook/pull/36)已合并，源脚本及`docs/audit-tools/`副本均已在基线中。第二节的19 PASS / 0 FAIL与64/64是当时用户日志的历史结果，保留原数字；它们不等于真实数据或学生学习效果已经验证。 |
+
+各报告的字母等级须与实际材料类型一同读取；摘要、书目或可辨认的文本片段不因标有A就升级为完整PDF核验。出版终审、真实学生试评与A6真实数据建模的既有边界保持不变。
