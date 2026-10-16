@@ -72,7 +72,7 @@ Ian Hodder的《Reading the Past》（1986）是理解这一理论讨论的一�
 
 **AI带来的重要变化，是部分特征和判别关系可以由模型从数据中学习；没有改变的，则是考古学家必须决定什么是合适的研究单位、标签和评价标准。**
 
-### 从真实案例认识“研究完成”和“复现完成”的区别
+### 象牙风格聚类：研究复现与考古解释
 
 本书的[A6黎凡特象牙风格聚类案例](../core-case-library/a6-ivories.qmd)使用混合数值和类别属性的概率聚类，属于无监督学习，而不是深度学习。目前教材已核验其固定版本数据结构，并在虚构数据上审查了原作者程序的数值行为；**尚未重新运行162条真实象牙属性的聚类研究**。
 
@@ -96,6 +96,12 @@ Ian Hodder的《Reading the Past》（1986）是理解这一理论讨论的一�
 
 本书将在第18章讨论古文字智能研究的证据评价，在第21—22章讨论生成式AI及其研究工作流程。第2章只要求学生认识一个历史事实：**新的语言交互方式扩大了计算工具的使用者范围，却没有取消考古研究对证据和可追溯性的要求。**
 
+### AI技术史的不同叙述方式：从单线年表转向多个研究传统 {.unnumbered}
+
+在通行的AI技术史之外，新近中文著作也采用不同方式组织历史。刘伟等（2025，第1章1.2—1.3节）以**推理、知识、学习**概括主要研究热点的变动，并以符号主义、连接主义和行为主义说明不同研究途径。尼克（2026，《人工智能简史》第3版）的作者前言则特别指出，当代大语言模型发展迅速，给“正在发生的技术史”划定截止时间带来困难；这部历史著作侧重人物、机构、路线争论及其时代情境，而不是为所有方法规定唯一、整齐的阶段界线。
+
+这两种视角可以与考古学的历史形成对照：**AI学科内部一种方法何时出现，与考古学在何时、为何、用何种资料采用该方法，是两项不同的历史问题。** 中国的考古遥感、GIS和数据科学采用史仍须以考古专业原始研究为据，而不能从一般AI史教材直接推导。
+
 ## 计算方法在中国考古学中的引入与发展：与类型学、地层学和科技考古传统的互动
 
 讨论中国考古学的计算转向，不能简单照搬欧美理论的发展顺序，也不宜将所有数字技术都视为近年引入的AI。
@@ -106,11 +112,11 @@ Ian Hodder的《Reading the Past》（1986）是理解这一理论讨论的一�
 
 同样，遗址调查和空间研究可以将田野记录、地形资料、遥感影像及GIS分析相结合。如果后续再使用AI寻找影像中的疑似遗迹，模型必须服从调查范围、地表可见度和已有考古资料的限制，不能把算法标出的地点直接当作考古发现。
 
-### 中文资料中的几条可核对线索
+### 中国考古学中的遥感、GIS与数据科学
 
 中国考古学中的数字与计算方法，并非只是在“机器学习进入考古学”之后才出现。至少可以从已经公开的中文出版资料中辨认出几条发展线索：
 
-- **遥感与调查技术：** 聂跃平、杨林（2009）发表《中国遥感技术在考古中的应用与发展》，回顾遥感考古史，并讨论大遗址探测、遥感与虚拟考古的实际应用及局限。[期刊条目与DOI](https://doi.org/10.11834/jrs.20090514)。这可以支持“遥感考古有自己的研究历史”，而不能据此声称它等同深度学习。
+- **遥感与调查技术：** 刘树人（1998，19—21页）在《我国遥感考古回顾及展望》中介绍了遥感勘察、图像处理和文物管理GIS等方法。这篇综述表明，**当时国内已公开讨论遥感考古的方法和实践**，但不足以确定全国首次应用的时间。[1998年期刊原文](https://doi.org/10.6046/gtzyyg.1998.02.03)。聂跃平、杨林（2009）后来发表《中国遥感技术在考古中的应用与发展》，回顾大遗址探测、遥感与虚拟考古的应用及局限。[期刊条目与DOI](https://doi.org/10.11834/jrs.20090514)。两者可供比较研究方法及其叙述，而不应把遥感考古等同于深度学习。
 - **考古GIS的研究与教学：** 中国社会科学院大学公布的学者著作目录列出刘建国的《考古与地理信息系统》（科学出版社，2007）和《考古测绘、遥感与GIS》（北京大学出版社，2008）。这些书目提供了可追溯的中文进一步阅读入口，但本章未逐页核对书中方法和案例。[机构书目记录](https://history.ucass.edu.cn/info/1246/3846.htm)。
 - **数据科学与旧石器考古：** 关莹、周振宇（2022）的《数据科学在旧石器考古学中的应用》将数理统计、计算机应用以及考古学基础数据与科学问题共同纳入讨论。它提示我们不能把“有统计”或“有编程”简单等同于现代AI。[《人类学学报》论文](https://doi.org/10.16359/j.1000-3193/AAS.2021.0009)。
 
@@ -118,7 +124,7 @@ Ian Hodder的《Reading the Past》（1986）是理解这一理论讨论的一�
 
 **这里应当避免写出未经核验的“中国第一”“最早应用”或具体机构的技术传播时间表。** 这些是有价值的专门学术史问题，但需要系统检索中国考古学文献、项目档案和出版记录才能准确回答。在当前本科教学初稿中，我们把重点放在方法怎样进入既有考古证据体系，以及本土资料标准、人才训练和学科问题如何影响技术选择。具体年代和代表性案例将在学术史专题核验后补充。
 
-### 从学科综述看：计算转向不是单一技术革命
+### 计算转向中的方法积累与发展
 
 Bellat等人（2025）对1997—2022年发表的**135篇考古机器学习论文**进行综述，并将研究任务、算法类别和评价方式纳入比较。综述指出，遗迹探测与器物分类是较常见的用途，聚类和其他无监督方法在其样本中相对少见；部分研究缺乏充分明确的方法要求。这一结论只适用于该综述的文献检索和筛选范围，**并非考古学全部研究的总体比例**。[论文与检索方法](https://doi.org/10.5334/jcaa.201)。
 
@@ -170,6 +176,7 @@ Nikita与Martinón-Torres（2026）回顾*Journal of Archaeological Science*不�
 
 ## 参考文献 {.unnumbered}
 
+- Bickler, Simon H. 2021. [“Machine Learning Arrives in Archaeology.”](https://doi.org/10.1017/aap.2021.6) *Advances in Archaeological Practice* 9(2): 186–191.
 - Bellat, Mathias, et al. 2025. [“Machine Learning Applications in Archaeological Practices: A Review.”](https://doi.org/10.5334/jcaa.201) *Journal of Computer Applications in Archaeology* 8(1): 282–321.
 - Binford, Lewis R. 1962. [“Archaeology as Anthropology.”](https://doi.org/10.2307/278380) *American Antiquity* 28(2): 217–225.
 - Bishop, Christopher M., and Hugh Bishop. 2024. [*Deep Learning: Foundations and Concepts*.](https://doi.org/10.1007/978-3-031-45468-4) Springer.
@@ -178,6 +185,7 @@ Nikita与Martinón-Torres（2026）回顾*Journal of Archaeological Science*不�
 - Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. *Deep Learning*. MIT Press.
 - Hodder, Ian. 1986. *Reading the Past: Current Approaches to Interpretation in Archaeology*. Cambridge University Press.
 - Nikita, Efthymia, and Marcos Martinón-Torres. 2026. [“Next Generation Archaeological Science: From the Past to the Future.”](https://doi.org/10.1016/j.jas.2026.106603) *Journal of Archaeological Science* 192: 106603.
+- Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
 - Russell, Stuart, and Peter Norvig. 2021. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson.
 - Theodoridis, Sergios. 2026. *Machine Learning: From the Classics to Deep Networks, Transformers, and Diffusion Models*. 3rd ed. Academic Press.
 - Urban, Patricia A., and Edward Schortman. 2019. *Archaeological Theory in Practice*. 2nd ed. Routledge.
@@ -185,4 +193,7 @@ Nikita与Martinón-Torres（2026）回顾*Journal of Archaeological Science*不�
 - 关莹、周振宇. 2022. [《数据科学在旧石器考古学中的应用》](https://doi.org/10.16359/j.1000-3193/AAS.2021.0009). 《人类学学报》41(1): 169–179.
 - 刘建国. 2007. 《考古与地理信息系统》. 科学出版社.
 - 刘建国. 2008. 《考古测绘、遥感与GIS》. 北京大学出版社.
+- 刘树人. 1998. [《我国遥感考古回顾及展望》](https://doi.org/10.6046/gtzyyg.1998.02.03). 《国土资源遥感》10(2): 18–23.
+- 刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.
+- 尼克. 2026. 《人工智能简史》. 第3版. 人民邮电出版社.
 - 聂跃平、杨林. 2009. [《中国遥感技术在考古中的应用与发展》](https://doi.org/10.11834/jrs.20090514). 《遥感学报》13(5): 940–962.

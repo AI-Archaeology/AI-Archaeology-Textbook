@@ -87,7 +87,7 @@
     "href": "chapters/chapter-01.html#人工智能机器学习深度学习与大语言模型",
     "title": "1  人工智能与考古学：机遇、能力与边界",
     "section": "1.2 人工智能、机器学习、深度学习与大语言模型",
-    "text": "1.2 人工智能、机器学习、深度学习与大语言模型\n这些名词在新闻和软件界面中经常混用，但含义不同。\n人工智能（artificial intelligence, AI）是一个宽泛领域，研究如何建立能够完成某些通常需要智能处理的任务的计算系统，例如识别图像、处理语言、推断类别或规划步骤。并不是所有AI系统都使用相同的算法，也不是所有数字工具都属于AI。\n机器学习（machine learning, ML）是AI的重要方法类别。与逐项手写全部判断规则不同，机器学习通常利用数据估计模型的规律或参数。例如，研究者可以用已分类的陶片训练模型，让它为未标注照片预测类型。模型能识别训练数据中的规律，不意味着它已经知道这些类型的考古学意义。\n深度学习（deep learning, DL）是机器学习中的一类方法，通常使用多层神经网络。它特别适合处理复杂的图像、声音或文本等数据，但依然受到样本质量、计算资源和验证设计约束。训练数据少、照片条件不一致或类型定义不稳定时，复杂模型不一定优于简单方法。\n大语言模型（large language model, LLM）通常是以大量文本等资料训练、用于处理和生成语言的深度学习模型。它们能够生成文字、总结材料、协助检索和整理表达；具有图像输入等能力的多模态模型还可处理其他媒介。不过，生成的文字可能混入不存在的引文、错误的年代或未经证实的解释。语言流畅不等于内容真实。\n这些概念之间的关系可以概括为：深度学习属于机器学习的重要组成部分，机器学习属于人工智能的重要组成部分；大语言模型通常依赖深度学习，但“语言生成”只是其特定应用能力。\n\n从“能完成任务”到“能在新资料上使用”：AI方法的基本评价\nRussell与Norvig在Artificial Intelligence: A Modern Approach（第4版）中以智能体（agent）与任务环境组织整个AI领域：搜索、知识表示、概率推理、规划与机器学习都是广义AI体系中的不同路线，而非“AI就是深度学习”的同义表达。Chollet与Watson的Deep Learning with Python（第3版，2026）第1章进一步比较了传统程序和机器学习：前者由人写明规则，后者在设定任务、数据与评价方式后，从样本中学习可应用的关系。这只是理解两类典型工作的简化对比，不意味着机器学习系统不需要人为设计。\n以陶片分类为例，“训练”是根据一部分有标签记录调整模型；“预测”是向模型输入待判断的记录；“泛化”则是模型面对未参与训练、符合研究预期的新记录时，仍能保持有用表现。三者不能混淆。James等（2023）An Introduction to Statistical Learning with Applications in Python第2章区分预测精度与可解释性；Chollet与Watson（2026）第5章区分训练、验证、测试以及过拟合。这些是方法概念，不是声称考古模型已经达到某一性能。\n入门时不必计算梯度或训练神经网络，但应知道：模型的良好表现必须针对清楚定义的任务和独立评价资料，之后才谈得上是否有助于解释过去。\n还应分清两种不同的分类维度：监督学习与无监督学习描述模型利用什么样的训练信号；生成式建模描述模型要学习或产生什么内容。它们并不互相排斥。例如，一种生成模型也可能在带标签的数据上接受训练。以下三类只为初学者提供直观认识，不能当作彼此排斥的算法目录：\n\n监督学习使用已有目标标签进行训练，如根据专家标注预测陶片器类。\n无监督学习尝试在没有预先指定目标类型的情况下寻找数据中的结构，如按多项器物属性聚类；得到的分组不一定对应传统类型学。\n生成式模型产生文字、图像或其他候选内容，产物应被看作待查的生成结果，而不是出土证据。\n\n这些算法的详细原理安排在第5—8章；本章先学会辨认任务及其证据责任。",
+    "text": "1.2 人工智能、机器学习、深度学习与大语言模型\n这些名词在新闻和软件界面中经常混用，但含义不同。\n人工智能（artificial intelligence, AI）是一个宽泛领域，研究如何建立能够完成某些通常需要智能处理的任务的计算系统，例如识别图像、处理语言、推断类别或规划步骤。并不是所有AI系统都使用相同的算法，也不是所有数字工具都属于AI。\n机器学习（machine learning, ML）是AI的重要方法类别。与逐项手写全部判断规则不同，机器学习通常利用数据估计模型的规律或参数。例如，研究者可以用已分类的陶片训练模型，让它为未标注照片预测类型。模型能识别训练数据中的规律，不意味着它已经知道这些类型的考古学意义。\n深度学习（deep learning, DL）是机器学习中的一类方法，通常使用多层神经网络。它特别适合处理复杂的图像、声音或文本等数据，但依然受到样本质量、计算资源和验证设计约束。训练数据少、照片条件不一致或类型定义不稳定时，复杂模型不一定优于简单方法。\n大语言模型（large language model, LLM）通常是以大量文本等资料训练、用于处理和生成语言的深度学习模型。它们能够生成文字、总结材料、协助检索和整理表达；具有图像输入等能力的多模态模型还可处理其他媒介。不过，生成的文字可能混入不存在的引文、错误的年代或未经证实的解释。语言流畅不等于内容真实。\n这些概念之间的关系可以概括为：深度学习属于机器学习的重要组成部分，机器学习属于人工智能的重要组成部分；大语言模型通常依赖深度学习，但“语言生成”只是其特定应用能力。\n\n从“能完成任务”到“能在新资料上使用”：AI方法的基本评价\nRussell与Norvig在Artificial Intelligence: A Modern Approach（第4版）中以智能体（agent）与任务环境组织整个AI领域：搜索、知识表示、概率推理、规划与机器学习都是广义AI体系中的不同路线，而非“AI就是深度学习”的同义表达。Chollet与Watson的Deep Learning with Python（第3版，2026）第1章进一步比较了传统程序和机器学习：前者由人写明规则，后者在设定任务、数据与评价方式后，从样本中学习可应用的关系。这只是理解两类典型工作的简化对比，不意味着机器学习系统不需要人为设计。\n以陶片分类为例，“训练”是根据一部分有标签记录调整模型；“预测”是向模型输入待判断的记录；“泛化”则是模型面对未参与训练、符合研究预期的新记录时，仍能保持有用表现。三者不能混淆。James等（2023）An Introduction to Statistical Learning with Applications in Python第2章区分预测精度与可解释性；Chollet与Watson（2026）第5章区分训练、验证、测试以及过拟合。这些是方法概念，不是声称考古模型已经达到某一性能。\n入门时不必计算梯度或训练神经网络，但应知道：模型的良好表现必须针对清楚定义的任务和独立评价资料，之后才谈得上是否有助于解释过去。\n还应分清两种不同的分类维度：监督学习与无监督学习描述模型利用什么样的训练信号；生成式建模描述模型要学习或产生什么内容。它们并不互相排斥。例如，一种生成模型也可能在带标签的数据上接受训练。以下三类只为初学者提供直观认识，不能当作彼此排斥的算法目录：\n\n监督学习使用已有目标标签进行训练，如根据专家标注预测陶片器类。\n无监督学习尝试在没有预先指定目标类型的情况下寻找数据中的结构，如按多项器物属性聚类；得到的分组不一定对应传统类型学。\n生成式模型产生文字、图像或其他候选内容，产物应被看作待查的生成结果，而不是出土证据。\n\n这些算法的详细原理安排在第5—8章；本章先学会辨认任务及其证据责任。\n\n\n为什么AI不仅仅是“让机器从数据中学习”？\n中文教材《人工智能基础》从推理、知识和学习三个相互联系的研究传统介绍人工智能，并区分符号主义、连接主义与强调环境交互的行为主义（刘伟等，2025，第1章1.2—1.3节）。《人工智能概论》则从机器学习、多模态、生成式AI、科学研究应用和伦理治理等主题组织入门教学（王栋、卢湖川主编，2025，第1—4、6、8章）。两种编排提醒我们：机器学习很重要，但它不是整个AI的全部；研究任务、知识表示、算法和人的判断可以共同组成一个系统。\n对于考古学，识别陶片纹饰可能主要需要图像分析，整理遗迹之间的关系还可能涉及数据库或知识表示，判断一个类型学结论则必须返回地层、年代和实物证据。本书不会要求初学者记住所有技术名称；理解为何选择某种方法、它需要何种证据更重要。",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>人工智能与考古学：机遇、能力与边界</span>"
@@ -109,7 +109,7 @@
     "href": "chapters/chapter-01.html#两类方法与一类研究任务传统计算方法ai方法与考古学证据生产",
     "title": "1  人工智能与考古学：机遇、能力与边界",
     "section": "1.4 两类方法与一类研究任务：传统计算方法、AI方法与考古学证据生产",
-    "text": "1.4 两类方法与一类研究任务：传统计算方法、AI方法与考古学证据生产\n考古学使用数字工具的历史比今天的AI热潮更长。频数统计、对应分析、GIS空间分析、贝叶斯年代建模、网络分析和基于主体的模拟等方法，长期用于描述考古资料、检验假说和探索复杂过程。它们在本书中属于传统统计／数字／计算考古方法；不因为运行在计算机上就自动变成AI。\n另一类是AI相关方法与应用领域：机器学习和深度学习是方法类别，计算机视觉和自然语言处理更多描述研究任务与应用领域，生成式模型则描述一类模型用途。它们并非同一分类层级。这一分类是为了教学生理解方法的主要性质，而不是划出所有技术都不会跨越的绝对界线：统计学习和机器学习具有交叉地带，具体研究中也可能组合使用多种工具。\n\n1.4.1 一个问题，三种研究路线\n继续以陶片类型为例：\n\n\n\n\n\n\n\n\n\n路线\n如何工作\n优点\n边界\n\n\n\n\n考古类型学与人工比较\n根据器形、制作和纹饰建立可说明的判别依据\n能结合器物观察与背景\n需要一致标准，人员判断可能不同\n\n\n统计与传统计算方法\n频率表、测量比较、排序、对应分析等\n可清楚描述分布和关系\n统计相关不自动解释历史机制\n\n\nAI方法\n从图像或属性中学习分类、相似性或预测关系\n可能有效处理大量复杂资料\n依赖训练集、编码方式与独立验证\n\n\n\n一种路线并不必然排斥另外两种。考古学家可以先用类型学提出有意义的变量，再通过统计方法认识其分布，最后在需要处理大量图像且具有可靠训练样本时尝试AI。这正是两类方法服务于同一类考古学知识生产任务的意思：选择依据应是研究问题与资料条件，而不是工具名称是否新颖。\n研究设计至少应问四个问题：我们究竟要知道什么？已有观察能提供什么？不采用AI时如何解决？增加AI之后能获得什么可独立核验的新信息？如果后两个问题说不清，复杂模型通常没有充分理由成为第一选择。\n\n\n研究实例：生成的史前图像为什么需要独立证据？\nMagnani与Clindaniel的一项已发表研究，以尼安德特人生活场景为对象，比较了生成式AI产生的文字、图像与相关考古研究文献。他们报告，生成内容与学术文献的对应程度较低，并存在过时的知识和文化时代错置问题（Magnani and Clindaniel 2025，线上发表；2026年卷期）。这是一项对特定研究设计、模型和提示条件所得结果的实证评价，不是“所有AI生成图像都错误”的普遍定律。研究论文及方法。\n这个案例让学生看到：生成图像首先是研究对象或待核查的表达，而不是从考古发掘直接获得的过去生活场景。 评价这类内容，需要返回骨骼、工具、环境资料及相关研究，而不能只判断它“看起来像史前”。",
+    "text": "1.4 两类方法与一类研究任务：传统计算方法、AI方法与考古学证据生产\n考古学使用数字工具的历史比今天的AI热潮更长。频数统计、对应分析、GIS空间分析、贝叶斯年代建模、网络分析和基于主体的模拟等方法，长期用于描述考古资料、检验假说和探索复杂过程。它们在本书中属于传统统计／数字／计算考古方法；不因为运行在计算机上就自动变成AI。\n另一类是AI相关方法与应用领域：机器学习和深度学习是方法类别，计算机视觉和自然语言处理更多描述研究任务与应用领域，生成式模型则描述一类模型用途。它们并非同一分类层级。这一分类是为了教学生理解方法的主要性质，而不是划出所有技术都不会跨越的绝对界线：统计学习和机器学习具有交叉地带，具体研究中也可能组合使用多种工具。\n\n1.4.1 一个问题，三种研究路线\n继续以陶片类型为例：\n\n\n\n\n\n\n\n\n\n路线\n如何工作\n优点\n边界\n\n\n\n\n考古类型学与人工比较\n根据器形、制作和纹饰建立可说明的判别依据\n能结合器物观察与背景\n需要一致标准，人员判断可能不同\n\n\n统计与传统计算方法\n频率表、测量比较、排序、对应分析等\n可清楚描述分布和关系\n统计相关不自动解释历史机制\n\n\nAI方法\n从图像或属性中学习分类、相似性或预测关系\n可能有效处理大量复杂资料\n依赖训练集、编码方式与独立验证\n\n\n\n一种路线并不必然排斥另外两种。考古学家可以先用类型学提出有意义的变量，再通过统计方法认识其分布，最后在需要处理大量图像且具有可靠训练样本时尝试AI。这正是两类方法服务于同一类考古学知识生产任务的意思：选择依据应是研究问题与资料条件，而不是工具名称是否新颖。\n研究设计至少应问四个问题：我们究竟要知道什么？已有观察能提供什么？不采用AI时如何解决？增加AI之后能获得什么可独立核验的新信息？如果后两个问题说不清，复杂模型通常没有充分理由成为第一选择。\n\n\n研究实例：生成的史前图像为什么需要独立证据？\nMagnani与Clindaniel的一项已发表研究，以尼安德特人生活场景为对象，比较了生成式AI产生的文字、图像与相关考古研究文献。他们报告，生成内容与学术文献的对应程度较低，并存在过时的知识和文化时代错置问题（Magnani and Clindaniel 2026；2025年12月18日先行在线发表）。这是一项对特定研究设计、模型和提示条件所得结果的实证评价，不是“所有AI生成图像都错误”的普遍定律。研究论文及方法。\n这个案例让学生看到：生成图像首先是研究对象或待核查的表达，而不是从考古发掘直接获得的过去生活场景。 评价这类内容，需要返回骨骼、工具、环境资料及相关研究，而不能只判断它“看起来像史前”。",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>人工智能与考古学：机遇、能力与边界</span>"
@@ -153,7 +153,7 @@
     "href": "chapters/chapter-01.html#参考文献",
     "title": "1  人工智能与考古学：机遇、能力与边界",
     "section": "参考文献",
-    "text": "参考文献\n\nBickler, Simon H. 2021. “Machine Learning Arrives in Archaeology.” Advances in Archaeological Practice 9(2): 186–191.\nBishop, Christopher M., and Hugh Bishop. 2024. Deep Learning: Foundations and Concepts. Springer.\nChapman, Robert, and Alison Wylie. 2016. Evidential Reasoning in Archaeology. Bloomsbury Academic.\nChollet, François, and Matthew Watson. 2026. Deep Learning with Python. 3rd ed. Manning.\nJames, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. An Introduction to Statistical Learning with Applications in Python. Springer.\nMagnani, Matthew, and Jon Clindaniel. 2026. “Artificial Intelligence and the Interpretation of the Past.” Advances in Archaeological Practice 14: 218–233 (online 2025).\nOrengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. “Theory and Practice of Artificial Intelligence in Archaeology.” Journal of Archaeological Science 190: 106571.\nRussell, Stuart, and Peter Norvig. 2021. Artificial Intelligence: A Modern Approach. 4th ed. Pearson. 中译本：《人工智能：现代方法》，第4版，人民邮电出版社，2023。",
+    "text": "参考文献\n\nBickler, Simon H. 2021. “Machine Learning Arrives in Archaeology.” Advances in Archaeological Practice 9(2): 186–191.\nBishop, Christopher M., and Hugh Bishop. 2024. Deep Learning: Foundations and Concepts. Springer.\nChapman, Robert, and Alison Wylie. 2016. Evidential Reasoning in Archaeology. Bloomsbury Academic.\nChollet, François, and Matthew Watson. 2026. Deep Learning with Python. 3rd ed. Manning.\nJames, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. An Introduction to Statistical Learning with Applications in Python. Springer.\nMagnani, Matthew, and Jon Clindaniel. 2026. “Artificial Intelligence and the Interpretation of the Past.” Advances in Archaeological Practice 14: 218–233 (online 2025).\nOrengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. “Theory and Practice of Artificial Intelligence in Archaeology.” Journal of Archaeological Science 190: 106571.\nRussell, Stuart, and Peter Norvig. 2021. Artificial Intelligence: A Modern Approach. 4th ed. Pearson. 中译本：《人工智能：现代方法》，第4版，人民邮电出版社，2023。\n刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.\n王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>人工智能与考古学：机遇、能力与边界</span>"
@@ -230,7 +230,7 @@
     "href": "chapters/chapter-02.html#机器学习与深度学习进入考古学",
     "title": "2  从计量考古到人工智能：考古学的计算转向",
     "section": "2.5 机器学习与深度学习进入考古学",
-    "text": "2.5 机器学习与深度学习进入考古学\n随着数字图像、地理资料、化学测量和标准化记录的增加，考古学出现了更多可供机器学习利用的数据。机器学习方法不是完全脱离统计学的全新世界，而是在特征、训练与预测等方面，形成了不同于传统描述和推断的一组计算工作方式。\n先看监督学习：假设一批陶片照片已由考古学家依据明确标准标注类别，模型通过这些例子学习照片与类别的关系，然后对尚未标注的照片提出预测。研究者应检查的是在未参与训练、且来源独立的器物上预测是否仍准确，而不仅是训练资料上的得分。\n再看无监督学习：如果考古学家不先给器物定义目标类型，而是输入多项形态或工艺属性，让算法探索若干相似性分组，得到的结果只是对已选变量的一种组织方式。它可能提示传统类型学未注意到的规律，也可能因为缺失值、字段编码或变量权重而出现并不稳健的分组。\n深度学习通常在图像、文字、光谱等复杂资料处理中发挥作用。相对于只输入少量人工量化属性的模型，它可能从大量图像中学习更复杂的特征。但训练图像的背景、比例尺、光照、保存情况和拍摄设备也可能被模型学习。如果同一器物的多张照片同时分布在训练集和测试集，模型表现可能被夸大。\nAI带来的重要变化，是部分特征和判别关系可以由模型从数据中学习；没有改变的，则是考古学家必须决定什么是合适的研究单位、标签和评价标准。\n\n2.5.1 从真实案例认识“研究完成”和“复现完成”的区别\n本书的A6黎凡特象牙风格聚类案例使用混合数值和类别属性的概率聚类，属于无监督学习，而不是深度学习。目前教材已核验其固定版本数据结构，并在虚构数据上审查了原作者程序的数值行为；尚未重新运行162条真实象牙属性的聚类研究。\n这一案例值得初学者注意的，不是某个未经核对的“最佳簇数”，而是研究程序如何从考古观察到变量、模型分组，再到风格与制作群体的解释。算法输出和历史解释之间仍需要独立证据。\n\n\nAI技术史与考古学技术采用史需要分别叙述\n从AI自身的发展看，Russell与Norvig（第4版）第1章提供了广义人工智能的历史框架；Goodfellow、Bengio与Courville（2016）第1章讨论深度学习的技术发展；Bishop与Bishop（2024）第1章把神经网络训练、模型复杂度与近年的应用联系起来。它们可以帮助辨认统计学习、神经网络、深度学习和生成模型在计算技术上的联系，却不能直接证明这些技术分别在何年首次进入考古学。\n相反，考古学的方法采用史必须根据考古学原始论文和学科综述来写。Bickler（2021）、Bellat等（2025）及Orengo等（2026）的考古学综述说明技术应用与研究资料、记录习惯和验证标准密切相关。不能把AI领域技术突破年份直接当作考古学采用该方法的年份，也不能把深度学习出现表述为旧有统计、GIS和类型学方法的终结。",
+    "text": "2.5 机器学习与深度学习进入考古学\n随着数字图像、地理资料、化学测量和标准化记录的增加，考古学出现了更多可供机器学习利用的数据。机器学习方法不是完全脱离统计学的全新世界，而是在特征、训练与预测等方面，形成了不同于传统描述和推断的一组计算工作方式。\n先看监督学习：假设一批陶片照片已由考古学家依据明确标准标注类别，模型通过这些例子学习照片与类别的关系，然后对尚未标注的照片提出预测。研究者应检查的是在未参与训练、且来源独立的器物上预测是否仍准确，而不仅是训练资料上的得分。\n再看无监督学习：如果考古学家不先给器物定义目标类型，而是输入多项形态或工艺属性，让算法探索若干相似性分组，得到的结果只是对已选变量的一种组织方式。它可能提示传统类型学未注意到的规律，也可能因为缺失值、字段编码或变量权重而出现并不稳健的分组。\n深度学习通常在图像、文字、光谱等复杂资料处理中发挥作用。相对于只输入少量人工量化属性的模型，它可能从大量图像中学习更复杂的特征。但训练图像的背景、比例尺、光照、保存情况和拍摄设备也可能被模型学习。如果同一器物的多张照片同时分布在训练集和测试集，模型表现可能被夸大。\nAI带来的重要变化，是部分特征和判别关系可以由模型从数据中学习；没有改变的，则是考古学家必须决定什么是合适的研究单位、标签和评价标准。\n\n2.5.1 象牙风格聚类：研究复现与考古解释\n本书的A6黎凡特象牙风格聚类案例使用混合数值和类别属性的概率聚类，属于无监督学习，而不是深度学习。目前教材已核验其固定版本数据结构，并在虚构数据上审查了原作者程序的数值行为；尚未重新运行162条真实象牙属性的聚类研究。\n这一案例值得初学者注意的，不是某个未经核对的“最佳簇数”，而是研究程序如何从考古观察到变量、模型分组，再到风格与制作群体的解释。算法输出和历史解释之间仍需要独立证据。\n\n\nAI技术史与考古学技术采用史需要分别叙述\n从AI自身的发展看，Russell与Norvig（第4版）第1章提供了广义人工智能的历史框架；Goodfellow、Bengio与Courville（2016）第1章讨论深度学习的技术发展；Bishop与Bishop（2024）第1章把神经网络训练、模型复杂度与近年的应用联系起来。它们可以帮助辨认统计学习、神经网络、深度学习和生成模型在计算技术上的联系，却不能直接证明这些技术分别在何年首次进入考古学。\n相反，考古学的方法采用史必须根据考古学原始论文和学科综述来写。Bickler（2021）、Bellat等（2025）及Orengo等（2026）的考古学综述说明技术应用与研究资料、记录习惯和验证标准密切相关。不能把AI领域技术突破年份直接当作考古学采用该方法的年份，也不能把深度学习出现表述为旧有统计、GIS和类型学方法的终结。",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>从计量考古到人工智能：考古学的计算转向</span>"
@@ -241,7 +241,7 @@
     "href": "chapters/chapter-02.html#大模型时代的考古研究",
     "title": "2  从计量考古到人工智能：考古学的计算转向",
     "section": "2.6 大模型时代的考古研究",
-    "text": "2.6 大模型时代的考古研究\n近年来，生成式AI和大语言模型带来了另一种不同的应用方式：研究者不仅可以让计算机处理已经组织好的变量，也可以通过自然语言提出问题、尝试检索材料、生成文字草稿，或要求系统协助整理复杂文献。\n例如，学生可能要求模型归纳某一遗址发掘报告中提及的陶器形态，并形成讨论提纲。得到的文字也许便于阅读，但如果没有返回准确的报告页码和原始图表，就不能判断其是否遗漏了反例、误解了器类，或编造了并不存在的出处。\n更复杂的系统可能把图像识别、资料库检索与语言生成连接起来，使研究者能够提出“寻找形态相近的器物，并显示各自出处”这样的任务。然而，系统把多个步骤连起来，不意味着各步骤都经过了学术核验。来源检索错误、OCR误读、图像匹配偏差和生成模型幻觉可能相互叠加。\n大模型能够帮助构思与组织研究过程，但不能代替对原始材料的判断。在处理未公开考古资料、遗址坐标、个人或社区敏感信息时，还必须明确权限和数据治理边界。\n本书将在第18章讨论古文字智能研究的证据评价，在第21—22章讨论生成式AI及其研究工作流程。第2章只要求学生认识一个历史事实：新的语言交互方式扩大了计算工具的使用者范围，却没有取消考古研究对证据和可追溯性的要求。",
+    "text": "2.6 大模型时代的考古研究\n近年来，生成式AI和大语言模型带来了另一种不同的应用方式：研究者不仅可以让计算机处理已经组织好的变量，也可以通过自然语言提出问题、尝试检索材料、生成文字草稿，或要求系统协助整理复杂文献。\n例如，学生可能要求模型归纳某一遗址发掘报告中提及的陶器形态，并形成讨论提纲。得到的文字也许便于阅读，但如果没有返回准确的报告页码和原始图表，就不能判断其是否遗漏了反例、误解了器类，或编造了并不存在的出处。\n更复杂的系统可能把图像识别、资料库检索与语言生成连接起来，使研究者能够提出“寻找形态相近的器物，并显示各自出处”这样的任务。然而，系统把多个步骤连起来，不意味着各步骤都经过了学术核验。来源检索错误、OCR误读、图像匹配偏差和生成模型幻觉可能相互叠加。\n大模型能够帮助构思与组织研究过程，但不能代替对原始材料的判断。在处理未公开考古资料、遗址坐标、个人或社区敏感信息时，还必须明确权限和数据治理边界。\n本书将在第18章讨论古文字智能研究的证据评价，在第21—22章讨论生成式AI及其研究工作流程。第2章只要求学生认识一个历史事实：新的语言交互方式扩大了计算工具的使用者范围，却没有取消考古研究对证据和可追溯性的要求。\n\nAI技术史的不同叙述方式：从单线年表转向多个研究传统\n在通行的AI技术史之外，新近中文著作也采用不同方式组织历史。刘伟等（2025，第1章1.2—1.3节）以推理、知识、学习概括主要研究热点的变动，并以符号主义、连接主义和行为主义说明不同研究途径。尼克（2026，《人工智能简史》第3版）的作者前言则特别指出，当代大语言模型发展迅速，给“正在发生的技术史”划定截止时间带来困难；这部历史著作侧重人物、机构、路线争论及其时代情境，而不是为所有方法规定唯一、整齐的阶段界线。\n这两种视角可以与考古学的历史形成对照：AI学科内部一种方法何时出现，与考古学在何时、为何、用何种资料采用该方法，是两项不同的历史问题。 中国的考古遥感、GIS和数据科学采用史仍须以考古专业原始研究为据，而不能从一般AI史教材直接推导。",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>从计量考古到人工智能：考古学的计算转向</span>"
@@ -252,7 +252,7 @@
     "href": "chapters/chapter-02.html#计算方法在中国考古学中的引入与发展与类型学地层学和科技考古传统的互动",
     "title": "2  从计量考古到人工智能：考古学的计算转向",
     "section": "2.7 计算方法在中国考古学中的引入与发展：与类型学、地层学和科技考古传统的互动",
-    "text": "2.7 计算方法在中国考古学中的引入与发展：与类型学、地层学和科技考古传统的互动\n讨论中国考古学的计算转向，不能简单照搬欧美理论的发展顺序，也不宜将所有数字技术都视为近年引入的AI。\n中国考古研究长期重视地层关系、器物类型、遗迹组合、年代序列和材料科学分析。这些基础工作为后来的计算提供了重要前提。只有在资料单位、类型标准、年代和来源能够被一致地记录时，不同地点的测量结果和数据库才真正具备可比性。\n以陶器研究为例，类型学首先确定应当观察哪些器形和制作特征；科技考古可以增加材质与工艺的测量；数据库能够保存器物与遗迹单位的关联；统计或机器学习则可能在明确问题与变量定义之后用于比较。这不是先有“落后人工方法”、再由“先进AI方法”取而代之的单向过程，而是多种不同证据与技术相互配合。\n同样，遗址调查和空间研究可以将田野记录、地形资料、遥感影像及GIS分析相结合。如果后续再使用AI寻找影像中的疑似遗迹，模型必须服从调查范围、地表可见度和已有考古资料的限制，不能把算法标出的地点直接当作考古发现。\n\n2.7.1 中文资料中的几条可核对线索\n中国考古学中的数字与计算方法，并非只是在“机器学习进入考古学”之后才出现。至少可以从已经公开的中文出版资料中辨认出几条发展线索：\n\n遥感与调查技术： 聂跃平、杨林（2009）发表《中国遥感技术在考古中的应用与发展》，回顾遥感考古史，并讨论大遗址探测、遥感与虚拟考古的实际应用及局限。期刊条目与DOI。这可以支持“遥感考古有自己的研究历史”，而不能据此声称它等同深度学习。\n考古GIS的研究与教学： 中国社会科学院大学公布的学者著作目录列出刘建国的《考古与地理信息系统》（科学出版社，2007）和《考古测绘、遥感与GIS》（北京大学出版社，2008）。这些书目提供了可追溯的中文进一步阅读入口，但本章未逐页核对书中方法和案例。机构书目记录。\n数据科学与旧石器考古： 关莹、周振宇（2022）的《数据科学在旧石器考古学中的应用》将数理统计、计算机应用以及考古学基础数据与科学问题共同纳入讨论。它提示我们不能把“有统计”或“有编程”简单等同于现代AI。《人类学学报》论文。\n\n上述资料证明这些方向有明确的公开中文研究记录，尚不足以重建全国范围技术传播的完整时间序列。不同机构的教学、田野记录、实验室测量和计算方法发展可能并不同步；后续学术史研究应扩大一手论文和机构档案的覆盖范围，而不从三篇（部）材料概括整个中国考古学。\n这里应当避免写出未经核验的“中国第一”“最早应用”或具体机构的技术传播时间表。 这些是有价值的专门学术史问题，但需要系统检索中国考古学文献、项目档案和出版记录才能准确回答。在当前本科教学初稿中，我们把重点放在方法怎样进入既有考古证据体系，以及本土资料标准、人才训练和学科问题如何影响技术选择。具体年代和代表性案例将在学术史专题核验后补充。\n\n\n2.7.2 从学科综述看：计算转向不是单一技术革命\nBellat等人（2025）对1997—2022年发表的135篇考古机器学习论文进行综述，并将研究任务、算法类别和评价方式纳入比较。综述指出，遗迹探测与器物分类是较常见的用途，聚类和其他无监督方法在其样本中相对少见；部分研究缺乏充分明确的方法要求。这一结论只适用于该综述的文献检索和筛选范围，并非考古学全部研究的总体比例。论文与检索方法。\nNikita与Martinón-Torres（2026）回顾Journal of Archaeological Science不同年代受引较多的论文，指出同位素、材料分析以及较近的计算、遥感、三维和既有数据再分析共同构成考古科学方法的发展。他们还提出透明、可重复、多证据互证与伦理协作的重要性。由于研究采用每个十年引用次数较高的论文进行回顾，这些趋势不能直接解释为同期所有考古论文的比例。综述论文。\n这两篇2025—2026年的研究为本章提供了一个更稳健的历史认识：AI在考古学中的扩展，发生于长期积累的调查、考古科学、统计与数字记录实践之中，而不是替代这些实践。",
+    "text": "2.7 计算方法在中国考古学中的引入与发展：与类型学、地层学和科技考古传统的互动\n讨论中国考古学的计算转向，不能简单照搬欧美理论的发展顺序，也不宜将所有数字技术都视为近年引入的AI。\n中国考古研究长期重视地层关系、器物类型、遗迹组合、年代序列和材料科学分析。这些基础工作为后来的计算提供了重要前提。只有在资料单位、类型标准、年代和来源能够被一致地记录时，不同地点的测量结果和数据库才真正具备可比性。\n以陶器研究为例，类型学首先确定应当观察哪些器形和制作特征；科技考古可以增加材质与工艺的测量；数据库能够保存器物与遗迹单位的关联；统计或机器学习则可能在明确问题与变量定义之后用于比较。这不是先有“落后人工方法”、再由“先进AI方法”取而代之的单向过程，而是多种不同证据与技术相互配合。\n同样，遗址调查和空间研究可以将田野记录、地形资料、遥感影像及GIS分析相结合。如果后续再使用AI寻找影像中的疑似遗迹，模型必须服从调查范围、地表可见度和已有考古资料的限制，不能把算法标出的地点直接当作考古发现。\n\n2.7.1 中国考古学中的遥感、GIS与数据科学\n中国考古学中的数字与计算方法，并非只是在“机器学习进入考古学”之后才出现。至少可以从已经公开的中文出版资料中辨认出几条发展线索：\n\n遥感与调查技术： 刘树人（1998，19—21页）在《我国遥感考古回顾及展望》中介绍了遥感勘察、图像处理和文物管理GIS等方法。这篇综述表明，当时国内已公开讨论遥感考古的方法和实践，但不足以确定全国首次应用的时间。1998年期刊原文。聂跃平、杨林（2009）后来发表《中国遥感技术在考古中的应用与发展》，回顾大遗址探测、遥感与虚拟考古的应用及局限。期刊条目与DOI。两者可供比较研究方法及其叙述，而不应把遥感考古等同于深度学习。\n考古GIS的研究与教学： 中国社会科学院大学公布的学者著作目录列出刘建国的《考古与地理信息系统》（科学出版社，2007）和《考古测绘、遥感与GIS》（北京大学出版社，2008）。这些书目提供了可追溯的中文进一步阅读入口，但本章未逐页核对书中方法和案例。机构书目记录。\n数据科学与旧石器考古： 关莹、周振宇（2022）的《数据科学在旧石器考古学中的应用》将数理统计、计算机应用以及考古学基础数据与科学问题共同纳入讨论。它提示我们不能把“有统计”或“有编程”简单等同于现代AI。《人类学学报》论文。\n\n上述资料证明这些方向有明确的公开中文研究记录，尚不足以重建全国范围技术传播的完整时间序列。不同机构的教学、田野记录、实验室测量和计算方法发展可能并不同步；后续学术史研究应扩大一手论文和机构档案的覆盖范围，而不从三篇（部）材料概括整个中国考古学。\n这里应当避免写出未经核验的“中国第一”“最早应用”或具体机构的技术传播时间表。 这些是有价值的专门学术史问题，但需要系统检索中国考古学文献、项目档案和出版记录才能准确回答。在当前本科教学初稿中，我们把重点放在方法怎样进入既有考古证据体系，以及本土资料标准、人才训练和学科问题如何影响技术选择。具体年代和代表性案例将在学术史专题核验后补充。\n\n\n2.7.2 计算转向中的方法积累与发展\nBellat等人（2025）对1997—2022年发表的135篇考古机器学习论文进行综述，并将研究任务、算法类别和评价方式纳入比较。综述指出，遗迹探测与器物分类是较常见的用途，聚类和其他无监督方法在其样本中相对少见；部分研究缺乏充分明确的方法要求。这一结论只适用于该综述的文献检索和筛选范围，并非考古学全部研究的总体比例。论文与检索方法。\nNikita与Martinón-Torres（2026）回顾Journal of Archaeological Science不同年代受引较多的论文，指出同位素、材料分析以及较近的计算、遥感、三维和既有数据再分析共同构成考古科学方法的发展。他们还提出透明、可重复、多证据互证与伦理协作的重要性。由于研究采用每个十年引用次数较高的论文进行回顾，这些趋势不能直接解释为同期所有考古论文的比例。综述论文。\n这两篇2025—2026年的研究为本章提供了一个更稳健的历史认识：AI在考古学中的扩展，发生于长期积累的调查、考古科学、统计与数字记录实践之中，而不是替代这些实践。",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>从计量考古到人工智能：考古学的计算转向</span>"
@@ -274,7 +274,7 @@
     "href": "chapters/chapter-02.html#参考文献",
     "title": "2  从计量考古到人工智能：考古学的计算转向",
     "section": "参考文献",
-    "text": "参考文献\n\nBellat, Mathias, et al. 2025. “Machine Learning Applications in Archaeological Practices: A Review.” Journal of Computer Applications in Archaeology 8(1): 282–321.\nBinford, Lewis R. 1962. “Archaeology as Anthropology.” American Antiquity 28(2): 217–225.\nBishop, Christopher M., and Hugh Bishop. 2024. Deep Learning: Foundations and Concepts. Springer.\nChapman, Robert. 2023. Archaeological Theory: The Basics. Routledge.\nClarke, David L. 1968. Analytical Archaeology. Methuen.\nGoodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. Deep Learning. MIT Press.\nHodder, Ian. 1986. Reading the Past: Current Approaches to Interpretation in Archaeology. Cambridge University Press.\nNikita, Efthymia, and Marcos Martinón-Torres. 2026. “Next Generation Archaeological Science: From the Past to the Future.” Journal of Archaeological Science 192: 106603.\nRussell, Stuart, and Peter Norvig. 2021. Artificial Intelligence: A Modern Approach. 4th ed. Pearson.\nTheodoridis, Sergios. 2026. Machine Learning: From the Classics to Deep Networks, Transformers, and Diffusion Models. 3rd ed. Academic Press.\nUrban, Patricia A., and Edward Schortman. 2019. Archaeological Theory in Practice. 2nd ed. Routledge.\nWheatley, David, and Mark Gillings. 2002. Spatial Technology and Archaeology: The Archaeological Applications of GIS. Taylor & Francis.\n关莹、周振宇. 2022. 《数据科学在旧石器考古学中的应用》. 《人类学学报》41(1): 169–179.\n刘建国. 2007. 《考古与地理信息系统》. 科学出版社.\n刘建国. 2008. 《考古测绘、遥感与GIS》. 北京大学出版社.\n聂跃平、杨林. 2009. 《中国遥感技术在考古中的应用与发展》. 《遥感学报》13(5): 940–962.",
+    "text": "参考文献\n\nBickler, Simon H. 2021. “Machine Learning Arrives in Archaeology.” Advances in Archaeological Practice 9(2): 186–191.\nBellat, Mathias, et al. 2025. “Machine Learning Applications in Archaeological Practices: A Review.” Journal of Computer Applications in Archaeology 8(1): 282–321.\nBinford, Lewis R. 1962. “Archaeology as Anthropology.” American Antiquity 28(2): 217–225.\nBishop, Christopher M., and Hugh Bishop. 2024. Deep Learning: Foundations and Concepts. Springer.\nChapman, Robert. 2023. Archaeological Theory: The Basics. Routledge.\nClarke, David L. 1968. Analytical Archaeology. Methuen.\nGoodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. Deep Learning. MIT Press.\nHodder, Ian. 1986. Reading the Past: Current Approaches to Interpretation in Archaeology. Cambridge University Press.\nNikita, Efthymia, and Marcos Martinón-Torres. 2026. “Next Generation Archaeological Science: From the Past to the Future.” Journal of Archaeological Science 192: 106603.\nOrengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. “Theory and Practice of Artificial Intelligence in Archaeology.” Journal of Archaeological Science 190: 106571.\nRussell, Stuart, and Peter Norvig. 2021. Artificial Intelligence: A Modern Approach. 4th ed. Pearson.\nTheodoridis, Sergios. 2026. Machine Learning: From the Classics to Deep Networks, Transformers, and Diffusion Models. 3rd ed. Academic Press.\nUrban, Patricia A., and Edward Schortman. 2019. Archaeological Theory in Practice. 2nd ed. Routledge.\nWheatley, David, and Mark Gillings. 2002. Spatial Technology and Archaeology: The Archaeological Applications of GIS. Taylor & Francis.\n关莹、周振宇. 2022. 《数据科学在旧石器考古学中的应用》. 《人类学学报》41(1): 169–179.\n刘建国. 2007. 《考古与地理信息系统》. 科学出版社.\n刘建国. 2008. 《考古测绘、遥感与GIS》. 北京大学出版社.\n刘树人. 1998. 《我国遥感考古回顾及展望》. 《国土资源遥感》10(2): 18–23.\n刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.\n尼克. 2026. 《人工智能简史》. 第3版. 人民邮电出版社.\n聂跃平、杨林. 2009. 《中国遥感技术在考古中的应用与发展》. 《遥感学报》13(5): 940–962.",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>从计量考古到人工智能：考古学的计算转向</span>"
@@ -318,7 +318,7 @@
     "href": "chapters/chapter-03.html#数据类型属性测量成分空间图像三维文本与年代",
     "title": "3  从考古资料到可计算数据",
     "section": "3.2 数据类型：属性、测量、成分、空间、图像、三维、文本与年代",
-    "text": "3.2 数据类型：属性、测量、成分、空间、图像、三维、文本与年代\n考古研究所称的“数据”并不限于电子表格。不同材料在计算前需要不同的记录和验证步骤。\n\n\n\n\n\n\n\n\n类型\n例子\n常见局限\n\n\n\n\n属性记录\n陶片部位、胎质、装饰或烧成特征\n分类标准可能不一致\n\n\n测量数据\n口径、厚度、重量\n仪器精度和残损影响读数\n\n\n成分／科学测量\n元素浓度、同位素比值、光谱\n需要检测方法、单位、误差和空白样\n\n\n空间数据\n坐标、遗迹边界、调查路线\n坐标系、定位误差和遗址保护限制\n\n\n图像数据\n器物照片、航片、显微图像\n光照、比例、角度和版权差异\n\n\n三维数据\n摄影测量网格、点云、三维模型\n孔洞、重建误差、尺度校准\n\n\n文本数据\n发掘日记、报告、铭文释文\n转录错误、异体字、断句与版本差异\n\n\n年代数据\n地层相对关系、测年结果与误差范围\n可能是区间或概率分布，不能一概写作确定年份\n\n\n\n不同数据类型可以围绕同一个考古对象建立关联。例如一件陶器可有器物编号、出土单位、照片、化学测量结果及一条修复记录；它们不应因文件格式不同就失去对应关系。\n数字化并不等于AI。 将照片存进数据库、绘制GIS地图、测量元素成分和建立三维模型，通常是数字记录、科学测量或传统计算任务；是否使用机器学习，需要进一步查看实际使用的方法。\n\n为什么算法学习的是考古材料的“代理表示”，而不是器物本身？\nOrengo、Berganzo-Besga与Lumbreras（2026）在对考古机器学习理论与实践的分析中，区分了实际考古对象和为计算构造的代理表示（proxies）。例如同一片陶片可以表现为颜色像素、轮廓、纹理、测量值或人工类别标签；这些可计算特征没有一个能够穷尽“陶片是什么”。论文强调，模型的学习结果会随考古学家怎样定义目标、怎样获取资料、怎样标注和取样而变化。论文第2—3节。\nLucas的Archaeological Situations（版权页2023）第3章“Making Records”也从考古实践本身讨论资料记录，并涉及数据轨迹与概念模型。两者的出发点不同，却共同提醒我们：资料形成过程需要被记录，不能把数字字段当作无须解释的直接事实。 这里是两部作品的教学性对读，并不是说它们使用了相同的理论术语。",
+    "text": "3.2 数据类型：属性、测量、成分、空间、图像、三维、文本与年代\n考古研究所称的“数据”并不限于电子表格。不同材料在计算前需要不同的记录和验证步骤。\n\n\n\n\n\n\n\n\n类型\n例子\n常见局限\n\n\n\n\n属性记录\n陶片部位、胎质、装饰或烧成特征\n分类标准可能不一致\n\n\n测量数据\n口径、厚度、重量\n仪器精度和残损影响读数\n\n\n成分／科学测量\n元素浓度、同位素比值、光谱\n需要检测方法、单位、误差和空白样\n\n\n空间数据\n坐标、遗迹边界、调查路线\n坐标系、定位误差和遗址保护限制\n\n\n图像数据\n器物照片、航片、显微图像\n光照、比例、角度和版权差异\n\n\n三维数据\n摄影测量网格、点云、三维模型\n孔洞、重建误差、尺度校准\n\n\n文本数据\n发掘日记、报告、铭文释文\n转录错误、异体字、断句与版本差异\n\n\n年代数据\n地层相对关系、测年结果与误差范围\n可能是区间或概率分布，不能一概写作确定年份\n\n\n\n不同数据类型可以围绕同一个考古对象建立关联。例如一件陶器可有器物编号、出土单位、照片、化学测量结果及一条修复记录；它们不应因文件格式不同就失去对应关系。\n数字化并不等于AI。 将照片存进数据库、绘制GIS地图、测量元素成分和建立三维模型，通常是数字记录、科学测量或传统计算任务；是否使用机器学习，需要进一步查看实际使用的方法。\n\n为什么算法学习的是考古材料的“代理表示”，而不是器物本身？\nOrengo、Berganzo-Besga与Lumbreras（2026）在对考古机器学习理论与实践的分析中，区分了实际考古对象和为计算构造的代理表示（proxies）。例如同一片陶片可以表现为颜色像素、轮廓、纹理、测量值或人工类别标签；这些可计算特征没有一个能够穷尽“陶片是什么”。论文强调，模型的学习结果会随考古学家怎样定义目标、怎样获取资料、怎样标注和取样而变化。论文第2—3节。\nLucas的Archaeological Situations（版权页2023）第3章“Making Records”也从考古实践本身讨论资料记录，并涉及数据轨迹与概念模型。两者的出发点不同，却共同提醒我们：资料形成过程需要被记录，不能把数字字段当作无须解释的直接事实。 这里是两部作品的教学性对读，并不是说它们使用了相同的理论术语。\n\n\n从研究问题到数据表：计算思维不等于编程熟练度\n《人工智能基础》（刘伟等，2025，第1章）把人工智能问题置于不同研究途径之间；面向本科教学的《人工智能概论》（王栋、卢湖川主编，2025，第2章）则将机器学习任务、算法模型与应用场景联系起来。借鉴这些教学思路，考古学的第一步应是把笼统的问题转成明确的观察单位、可解释的变量和可以核验的目标，而非先选一套软件。\n例如，把“用AI判断陶器生产组织”拆成“记录哪些陶片、依据什么属性形成类型、怎样比较作坊间可能的差异”，才有可能判断哪些工作适合描述统计、哪些工作可能需要预测模型。能提出这样的数据设计不以会写Python为前提；反过来，会执行模型也不保证变量具备考古学意义。",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
@@ -406,7 +406,7 @@
     "href": "chapters/chapter-03.html#参考文献",
     "title": "3  从考古资料到可计算数据",
     "section": "参考文献",
-    "text": "参考文献\n\nCarver, Martin, and Madeleine Hummler. 2025. Archaeological Investigation. 2nd ed. Routledge.\nChapman, Robert, and Alison Wylie. 2016. Evidential Reasoning in Archaeology. Bloomsbury Academic.\nChollet, François, and Tomasz Kalinowski. 2026. Deep Learning with R. 3rd ed. Manning.\nJames, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. An Introduction to Statistical Learning with Applications in Python. Springer.\nLucas, Gavin. 2023. Archaeological Situations: Archaeological Theory from the Inside Out. Routledge.\nMurphy, Kevin P. 2022. Probabilistic Machine Learning: An Introduction. MIT Press.\nOrengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. “Theory and Practice of Artificial Intelligence in Archaeology.” Journal of Archaeological Science 190: 106571.\nWilkinson, Mark D., et al. 2016. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” Scientific Data 3: 160018.\nZhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. Dive into Deep Learning. 电子教材，所用版本年份待核.",
+    "text": "参考文献\n\nCarver, Martin, and Madeleine Hummler. 2025. Archaeological Investigation. 2nd ed. Routledge.\nChapman, Robert, and Alison Wylie. 2016. Evidential Reasoning in Archaeology. Bloomsbury Academic.\nChollet, François, and Tomasz Kalinowski. 2026. Deep Learning with R. 3rd ed. Manning.\nJames, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. An Introduction to Statistical Learning with Applications in Python. Springer.\nLucas, Gavin. 2023. Archaeological Situations: Archaeological Theory from the Inside Out. Routledge.\nMurphy, Kevin P. 2022. Probabilistic Machine Learning: An Introduction. MIT Press.\nOrengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. “Theory and Practice of Artificial Intelligence in Archaeology.” Journal of Archaeological Science 190: 106571.\nWilkinson, Mark D., et al. 2016. “The FAIR Guiding Principles for Scientific Data Management and Stewardship.” Scientific Data 3: 160018.\nZhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. Dive into Deep Learning. 电子教材，所用版本年份待核.\n刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.\n王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>从考古资料到可计算数据</span>"
@@ -461,7 +461,7 @@
     "href": "chapters/chapter-04.html#缺失数据的机制处理偏差与数据质量评价",
     "title": "4  考古数据的局限：偏差、缺失与不确定性",
     "section": "4.4 缺失数据的机制、处理偏差与数据质量评价",
-    "text": "4.4 缺失数据的机制、处理偏差与数据质量评价\n在第3章的虚构陶片属性表中，非口沿碎片不能测量完整的口沿直径；这种空白与“口沿本来存在，但没有测量”并不相同。认识缺失的原因，比把空白格全部填满更重要。\n初学者首先要区分三种记录状态：不适用（例如腹片没有口沿直径）、未知或未记录（可能是没测、没保存或信息丢失），以及经过观察确认的零值或否定值。它们不能混用。在统计分析中，还常区分完全随机缺失（MCAR）、在给定已观察变量后与缺失值本身无关的缺失（MAR），以及在给定已观察信息后仍依赖未观察值的缺失（MNAR）。这些是关于缺失机制的条件性假设，不是观察一个空白格就能识别的类别。尤其要注意：“不适用”是一种记录语义或数据结构问题，不应直接归入这三种统计缺失机制。\n\n\n\n示例（均为虚构）\n缺失可能意味着\n不恰当处理\n\n\n\n\n腹片的口沿直径为空\n属性不适用\n统一填成0 cm\n\n\n口沿可见但未测直径\n记录遗漏\n当作口沿直径为0\n\n\n破损严重的纹饰不可辨\n保存状态影响观察\n默认归为“素面”\n\n\n某类样本没有测年\n抽样与经费可能影响结果\n当成随机代表全部样本\n\n\n\n常见处理方法包括保留缺失并报告比例、回查原始资料、在适合的前提下只分析有记录的样本，或采用统计插补。没有一种方法适用于所有缺失。 插补得到的是有条件的估计，不是重新发现的田野事实；只删除不完整记录也可能改变样本组成。\n一份最低限度的数据质量说明应包含记录总数、变量定义、各字段可用数量、缺失和不适用的区分、重复记录检查、异常值处理、来源版本以及限制性声明。进一步建模时，还需要测试结论对不同合理处理方案是否敏感。\n\n不要混淆三种“偏差”，也不要混淆训练成绩与泛化能力\n本章的保存与取样偏差指考古遗存进入研究样本之前的选择性损失；测量和标注偏差指资料记录及人为归类中的系统差异。统计学习中的偏差—方差权衡（bias–variance trade-off）又是另一层概念：模型过于简单可能无法捕捉重要关系，过于灵活则可能对现有训练数据拟合得很好、在新样本上表现很差。James等（2023）第2.2节和Goodfellow等（2016）第5.3—5.5节说明模型复杂度、过拟合和评价之间的关系。统计模型的偏差—方差问题，不等于考古发掘样本的保存偏差；它们作用于证据链的不同环节，也可能共同影响最终推论。\n例如，陶片照片全部来自同一摄影台，即使模型在随机留出的图片上取得较高分数，也可能借助背景、光照或拍摄机构的特征作出判断。Prince（2023年出版的Understanding Deep Learning；上传版更新于2024年）第8章讨论性能测量及误差来源；Zhang等Dive into Deep Learning第3.6与4.6—4.7节则分别讨论泛化、测试集重复使用和环境分布变化。因此，模型是在已有照片上学得很好，还是能用于另一遗址或另一摄影流程，是两个不同的问题。",
+    "text": "4.4 缺失数据的机制、处理偏差与数据质量评价\n在第3章的虚构陶片属性表中，非口沿碎片不能测量完整的口沿直径；这种空白与“口沿本来存在，但没有测量”并不相同。认识缺失的原因，比把空白格全部填满更重要。\n初学者首先要区分三种记录状态：不适用（例如腹片没有口沿直径）、未知或未记录（可能是没测、没保存或信息丢失），以及经过观察确认的零值或否定值。它们不能混用。在统计分析中，还常区分完全随机缺失（MCAR）、在给定已观察变量后与缺失值本身无关的缺失（MAR），以及在给定已观察信息后仍依赖未观察值的缺失（MNAR）。这些是关于缺失机制的条件性假设，不是观察一个空白格就能识别的类别。尤其要注意：“不适用”是一种记录语义或数据结构问题，不应直接归入这三种统计缺失机制。\n\n\n\n示例（均为虚构）\n缺失可能意味着\n不恰当处理\n\n\n\n\n腹片的口沿直径为空\n属性不适用\n统一填成0 cm\n\n\n口沿可见但未测直径\n记录遗漏\n当作口沿直径为0\n\n\n破损严重的纹饰不可辨\n保存状态影响观察\n默认归为“素面”\n\n\n某类样本没有测年\n抽样与经费可能影响结果\n当成随机代表全部样本\n\n\n\n常见处理方法包括保留缺失并报告比例、回查原始资料、在适合的前提下只分析有记录的样本，或采用统计插补。没有一种方法适用于所有缺失。 插补得到的是有条件的估计，不是重新发现的田野事实；只删除不完整记录也可能改变样本组成。\n一份最低限度的数据质量说明应包含记录总数、变量定义、各字段可用数量、缺失和不适用的区分、重复记录检查、异常值处理、来源版本以及限制性声明。进一步建模时，还需要测试结论对不同合理处理方案是否敏感。\n\n不要混淆三种“偏差”，也不要混淆训练成绩与泛化能力\n本章的保存与取样偏差指考古遗存进入研究样本之前的选择性损失；测量和标注偏差指资料记录及人为归类中的系统差异。统计学习中的偏差—方差权衡（bias–variance trade-off）又是另一层概念：模型过于简单可能无法捕捉重要关系，过于灵活则可能对现有训练数据拟合得很好、在新样本上表现很差。James等（2023）第2.2节和Goodfellow等（2016）第5.3—5.5节说明模型复杂度、过拟合和评价之间的关系。统计模型的偏差—方差问题，不等于考古发掘样本的保存偏差；它们作用于证据链的不同环节，也可能共同影响最终推论。\n例如，陶片照片全部来自同一摄影台，即使模型在随机留出的图片上取得较高分数，也可能借助背景、光照或拍摄机构的特征作出判断。Prince（2023）的Understanding Deep Learning第8章讨论模型性能、测试误差、偏差—方差等问题；其作者官方网站提供可配合阅读的第8章性能评估Notebook、交互图示和教学幻灯片。学生可先不写代码，通过图示比较模型在已有资料与新资料上的表现；Notebook留给有Python基础的读者进阶选做。这里的模型评价原理并不直接给出任何考古遗址的实证结果。Zhang等Dive into Deep Learning第3.6与4.6—4.7节则分别讨论泛化、测试集重复使用和环境分布变化。因此，模型是在已有照片上学得很好，还是能用于另一遗址或另一摄影流程，是两个不同的问题。",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>考古数据的局限：偏差、缺失与不确定性</span>"
@@ -494,7 +494,7 @@
     "href": "chapters/chapter-04.html#空间自相关的直观理解邻近样本不等于独立样本详见14.3",
     "title": "4  考古数据的局限：偏差、缺失与不确定性",
     "section": "4.7 空间自相关的直观理解：邻近样本不等于独立样本（详见14.3）",
-    "text": "4.7 空间自相关的直观理解：邻近样本不等于独立样本（详见14.3）\n考古地点通常不是在空间上完全随机、互不相关的。相邻地点可能共享地貌、交通、环境资源、年代背景与调查强度。这种空间自相关意味着：一个地点的测量结果往往与邻近地点有联系。\n虚构例子： 在同一条河谷附近记录了20个相邻样点，发现其中大部分具有相似土壤和陶器保存状态。它们并不一定提供了20份与另一条河谷完全独立的环境证据。若随机挑选其中一些点训练模型，再用同一河谷的邻近点测试，模型也许得到很好成绩；但换到未见过的河谷后可能失效。\n这不等于邻近样本毫无价值，而是要求验证设计与研究问题对应。对于预测另一区域的遗址位置，可以考虑把空间块或独立调查区留作测试集；对于研究同一河谷内的局部变化，则要清楚说明推论范围。空间分块也不是万能方案：块大小、地理距离、样本量和区域差异都会影响结果。\n本节只建立直观认识；空间自相关的进一步方法讨论安排在第14章相关内容中。\n\n当代AI实证研究为何重视外推验证？\nOrengo等（2026）系统讨论了考古机器学习中的小样本、类别不均衡、背景多样性、特征表示与空间分散。论文举出形态近似却并非考古遗迹的对象、不同传感器和地形条件等作为误识别与跨区域转移困难的来源，说明仅靠内部测试成绩不足以证明方法可以推广到新资料。原论文第2—3节。\nBickler（2021）同样提醒，考古资料形成缓慢、规模有限、保存与分类不一致，需要专家评价及独立田野核验。文章。以上都是已发表作者针对考古机器学习提出的具体论证；它们不表示任何特定算法在全部地区都会失效。",
+    "text": "4.7 空间自相关的直观理解：邻近样本不等于独立样本（详见14.3）\n考古地点通常不是在空间上完全随机、互不相关的。相邻地点可能共享地貌、交通、环境资源、年代背景与调查强度。这种空间自相关意味着：一个地点的测量结果往往与邻近地点有联系。\n虚构例子： 在同一条河谷附近记录了20个相邻样点，发现其中大部分具有相似土壤和陶器保存状态。它们并不一定提供了20份与另一条河谷完全独立的环境证据。若随机挑选其中一些点训练模型，再用同一河谷的邻近点测试，模型也许得到很好成绩；但换到未见过的河谷后可能失效。\n这不等于邻近样本毫无价值，而是要求验证设计与研究问题对应。对于预测另一区域的遗址位置，可以考虑把空间块或独立调查区留作测试集；对于研究同一河谷内的局部变化，则要清楚说明推论范围。空间分块也不是万能方案：块大小、地理距离、样本量和区域差异都会影响结果。\n一项真实的考古预测研究： Comer等（2023）在美国加利福尼亚州Fort Irwin，比较随机抽取像元与逐次留出一处已知遗址或一块标为非遗址的区域两种方式；后一方式仍评价留出区域中抽取像元的分类表现（第3节，5页）。随机像元方式的评价分数较高，作者主要从训练与测试资料间的空间自相关解释这一差异，并明确说明两种方案均未使用真正独立的数据（第5节，7—8页）。这提醒我们，评价分数须结合取样方式和研究任务理解；留出区域的像元分类成绩，不能直接证明在新地区发现完整遗址的能力。原始论文。\n本节只建立直观认识；空间自相关的进一步方法讨论安排在第14章相关内容中。\n\n当代AI实证研究为何重视外推验证？\nOrengo等（2026）系统讨论了考古机器学习中的小样本、类别不均衡、背景多样性、特征表示与空间分散。论文举出形态近似却并非考古遗迹的对象、不同传感器和地形条件等作为误识别与跨区域转移困难的来源，说明仅靠内部测试成绩不足以证明方法可以推广到新资料。原论文第2—3节。\nBickler（2021）同样提醒，考古资料形成缓慢、规模有限、保存与分类不一致，需要专家评价及独立田野核验。文章。以上都是已发表作者针对考古机器学习提出的具体论证；它们不表示任何特定算法在全部地区都会失效。\n\n\n可靠性不仅是一个模型分数\n《人工智能概论》将数据、算法和伦理治理分章讨论（王栋、卢湖川主编，2025，第8章），提醒学生模型能力与实际使用责任需要分别审查。马库斯在《驯服AI》（2026年中译本，第二章及前言）进一步批评流畅但不可靠的生成式回答，主张加强独立核查、责任机制与治理。这属于作者的批判性观点，不是考古领域模型错误率的实证统计。\n在考古应用中，应将这一观点转为可执行的审查问题：生成的遗址描述能否找到原始报告？模型预测是否提供可追溯的观察依据？若模型在某遗址失效，谁来检查、更正并说明传播范围？这些问题不能由一项总体准确率代替。",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>考古数据的局限：偏差、缺失与不确定性</span>"
@@ -516,7 +516,7 @@
     "href": "chapters/chapter-04.html#参考文献",
     "title": "4  考古数据的局限：偏差、缺失与不确定性",
     "section": "参考文献",
-    "text": "参考文献\n\nBickler, Simon H. 2021. “Machine Learning Arrives in Archaeology.” Advances in Archaeological Practice 9(2): 186–191.\nCarver, Martin, and Madeleine Hummler. 2025. Archaeological Investigation. 2nd ed. Routledge.\nChapman, Robert, and Alison Wylie. 2016. Evidential Reasoning in Archaeology. Bloomsbury Academic.\nGoodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. Deep Learning. MIT Press.\nJames, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. An Introduction to Statistical Learning with Applications in Python. Springer.\nMurphy, Kevin P. 2023. Probabilistic Machine Learning: Advanced Topics. MIT Press.\nOrengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. “Theory and Practice of Artificial Intelligence in Archaeology.” Journal of Archaeological Science 190: 106571.\nPrince, Simon J. D. 2023. Understanding Deep Learning. MIT Press. 中译本：《理解深度学习》，清华大学出版社，2025。\nRenfrew, Colin, and Paul Bahn. 2020. Archaeology: Theories, Methods and Practice. 8th ed. Thames & Hudson.\nZhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. Dive into Deep Learning. 电子教材，所用版本年份待核.",
+    "text": "参考文献\n\nBickler, Simon H. 2021. “Machine Learning Arrives in Archaeology.” Advances in Archaeological Practice 9(2): 186–191.\nCarver, Martin, and Madeleine Hummler. 2025. Archaeological Investigation. 2nd ed. Routledge.\nChapman, Robert, and Alison Wylie. 2016. Evidential Reasoning in Archaeology. Bloomsbury Academic.\nComer, Jacob A., Douglas C. Comer, Ioana A. Dumitru, Carey E. Priebe, and Jesse L. Patsolic. 2023. “Sampling Methods for Archaeological Predictive Modeling: Spatial Autocorrelation and Model Performance.” Journal of Archaeological Science: Reports 48: 103824.\nGoodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. Deep Learning. MIT Press.\nJames, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. An Introduction to Statistical Learning with Applications in Python. Springer.\nMurphy, Kevin P. 2023. Probabilistic Machine Learning: Advanced Topics. MIT Press.\nOrengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. “Theory and Practice of Artificial Intelligence in Archaeology.” Journal of Archaeological Science 190: 106571.\nPrince, Simon J. D. 2023. Understanding Deep Learning. MIT Press. 中译本：《理解深度学习》，清华大学出版社，2025。\nRenfrew, Colin, and Paul Bahn. 2020. Archaeology: Theories, Methods and Practice. 8th ed. Thames & Hudson.\nZhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. Dive into Deep Learning. 电子教材，所用版本年份待核.\n马库斯，盖瑞. 2026. 《驯服AI：创造可信的人工智能》. 中信出版集团. 原著 Taming Silicon Valley.\n王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.",
     "crumbs": [
       "第一编 认识AI考古学",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>考古数据的局限：偏差、缺失与不确定性</span>"
@@ -4199,12 +4199,309 @@
   {
     "objectID": "references.html",
     "href": "references.html",
-    "title": "参考资料",
+    "title": "参考资源导读",
     "section": "",
-    "text": "待核对的参考文献将在正式编写时逐项添加。",
+    "text": "按学习任务选择\n这里汇集可在线查阅的教材、教程、研究案例和数据资源，供阅读《AI考古学通论》时按需使用。可以先读研究问题与方法说明，再决定是否学习代码或下载资料。",
     "crumbs": [
-      "配套资源",
-      "参考资料"
+      "参考资源",
+      "参考资源导读"
+    ]
+  },
+  {
+    "objectID": "references.html#按学习任务选择",
+    "href": "references.html#按学习任务选择",
+    "title": "参考资源导读",
+    "section": "",
+    "text": "我想做什么\n从哪里开始\n\n\n\n\n了解考古学的基本方法、证据和研究伦理\n考古学开放阅读：入门教材、专题图书和调查发掘报告。\n\n\n整理资料、绘图，逐步学习编程\nR、Python与数字方法：基础教程、考古专题练习和软件文档。\n\n\n理解统计学习、深度学习和模型评价\n人工智能与统计学习：在线教材、数学补充与配套练习。\n\n\n查看AI如何处理具体考古问题\nAI考古研究案例：器物、影像、光谱和古代文本研究的论文与项目入口。\n\n\n查找年代、土地利用、社会比较和古DNA资料\n考古数据与比较研究：数据档案、分析代码与研究背景。",
+    "crumbs": [
+      "参考资源",
+      "参考资源导读"
+    ]
+  },
+  {
+    "objectID": "references.html#怎样开始",
+    "href": "references.html#怎样开始",
+    "title": "参考资源导读",
+    "section": "怎样开始",
+    "text": "怎样开始\n没有编程经验： 先选一部考古学入门读物，并从R或Python中选择一种语言。用小型表格练习读入、整理和绘图，理解每一行代表什么、每个变量怎样获得。\n已经掌握基础操作： 选择与自己的问题接近的专题，例如测年、空间、网络或文本分析。阅读示例数据的来源和结构，再尝试修改一个步骤并解释结果。\n准备阅读AI论文： 先明确研究对象、模型输入、预测任务和评价方法。阅读结果时，区分实际观察、模型预测与考古解释；运行了代码，也仍需判断输入资料和推论是否合适。\n这些资源适合不同阶段的学习，所标“入门”“进阶”是本书的选读建议。可以只阅读概念、图表和案例讨论，无需立即完成全部编程练习。",
+    "crumbs": [
+      "参考资源",
+      "参考资源导读"
+    ]
+  },
+  {
+    "objectID": "references.html#阅读获取与使用",
+    "href": "references.html#阅读获取与使用",
+    "title": "参考资源导读",
+    "section": "阅读、获取与使用",
+    "text": "阅读、获取与使用\n资源条目分别说明可以阅读的正文、配套代码和数据入口。论文可以免费阅读，并不意味着原始数据全部公开；作者提供了代码，也不意味着当前环境能够直接运行。需要动手时，先查看原站的安装说明、数据字典与版本信息。\n引用书籍、论文、数据和软件时，应分别记录对应出处。下载或改编材料前，查看该项材料自己的许可与使用条件；涉及遗址位置、古代人类遗存或社区资料时，同时遵守原数据提供方的相关要求。\n本站的配套数据与核心案例库提供与教材相联系的说明和活动；本栏目提供进一步阅读与访问原作者资源的入口。各章末尾的“参考文献”仍用于标明章内论述的出处。",
+    "crumbs": [
+      "参考资源",
+      "参考资源导读"
+    ]
+  },
+  {
+    "objectID": "reference-resources/archaeology.html",
+    "href": "reference-resources/archaeology.html",
+    "title": "考古学开放阅读",
+    "section": "",
+    "text": "入门教材与课堂活动\n先理解考古资料怎样产生、保存和解释，再阅读数字分析方法，会更容易判断技术能回答什么问题。这里选列可免费阅读的入门教材、课堂活动、专题著作和报告入口。",
+    "crumbs": [
+      "参考资源",
+      "考古学开放阅读"
+    ]
+  },
+  {
+    "objectID": "reference-resources/archaeology.html#入门教材与课堂活动",
+    "href": "reference-resources/archaeology.html#入门教材与课堂活动",
+    "title": "考古学开放阅读",
+    "section": "",
+    "text": "资源\n适合怎样使用\n阅读入口\n\n\n\n\nTraces: An Open Invitation to Archaeology（SACC项目）\n入门。 从考古学的问题、调查发掘与解释方法读起，并结合伦理和社区参与理解考古实践。\n在线教材；SACC出版说明另提供草稿PDF。\n\n\nDigging into Archaeology: A Brief OER Introduction to Archaeology with Activities（Amanda Wolcott Paskey、AnnMarie Beasley Cisneros，2020）\n入门。 通过简短说明和课堂活动练习考古资料、方法与推理。\n原出版方免费PDF；LibreTexts网页版。\n\n\nIntroduction to Archaeology: A Workbook（Ashley Lemke、Alanis Ramos、Brooke Troutman，2020）\n入门练习。 用问题、活动和阅读练习巩固课堂内容，适合与主教材配合。\nUTA机构库及免费PDF；网页版。\n\n\nKey Concepts in Public Archaeology（Gabriel Moshenska编，2017）\n专题阅读。 了解公众参与、考古教育、媒体传播与遗产实践中的基本问题。\nUCL Press图书页；UCL机构库全文。",
+    "crumbs": [
+      "参考资源",
+      "考古学开放阅读"
+    ]
+  },
+  {
+    "objectID": "reference-resources/archaeology.html#中文延伸阅读",
+    "href": "reference-resources/archaeology.html#中文延伸阅读",
+    "title": "考古学开放阅读",
+    "section": "中文延伸阅读",
+    "text": "中文延伸阅读\n宋殷《大数据时代的考古学：从考古统计学到考古数据科学》讲座纪要由北京大学考古文博学院发布，记录了2023年11月17日的讲座。可借此了解考古统计、探索性分析与预测问题的联系，作为进入数字方法学习的中文短篇阅读。",
+    "crumbs": [
+      "参考资源",
+      "考古学开放阅读"
+    ]
+  },
+  {
+    "objectID": "reference-resources/archaeology.html#专著与调查发掘报告",
+    "href": "reference-resources/archaeology.html#专著与调查发掘报告",
+    "title": "考古学开放阅读",
+    "section": "专著与调查发掘报告",
+    "text": "专著与调查发掘报告\n以下是按问题查找材料的目录。选定书目后，再查看该书的版本、下载格式和使用条件。\n\n\n\n资源集合\n适合查找什么\n访问入口\n\n\n\n\nArchaeopress Open Access／Access Archaeology\n按地区、时期和方法查找考古专著、专题论文集与调查报告。\nOpen Access目录；Access Archaeology系列，提供免费PDF入口。\n\n\nWessex Archaeology Open Library\n从调查、发掘与专业检测报告观察材料怎样组织成论证。\n图书与报告库，可阅读和下载。\n\n\nSFU Archaeology Press\n查找区域考古专著与研究报告，对照研究设计、材料与解释。\n官方图书目录，由单书页面进入PDF。\n\n\nLibreTexts Archaeology\n按教材主题寻找入门读物与教学活动。\n考古学书架，提供在线阅读。\n\n\nOAPEN Library\n按关键词查找考古学、人类学及相关领域的开放学术专著。\n图书库；研究者使用说明。\n\n\nOpen Book Publishers\n在考古、宗教、物质文化及相邻领域寻找专题阅读。\nArchaeology and Religion分类，由单书页面进入免费阅读与下载。\n\n\n\n数字考古导论与实践教材ODATE见R、Python与数字方法。返回参考资源导读。",
+    "crumbs": [
+      "参考资源",
+      "考古学开放阅读"
+    ]
+  },
+  {
+    "objectID": "reference-resources/programming.html",
+    "href": "reference-resources/programming.html",
+    "title": "R、Python与数字方法",
+    "section": "",
+    "text": "编程基础\n没有编程经验时，先选择R或Python中的一种，从读入小表格、整理变量和绘图开始。下列资源包括通用基础书、考古专题教程与软件文档，可按当前问题选用。标为“中文”或“法文”的条目使用相应语言，其余主要为英文。",
+    "crumbs": [
+      "参考资源",
+      "R、Python与数字方法"
+    ]
+  },
+  {
+    "objectID": "reference-resources/programming.html#编程基础",
+    "href": "reference-resources/programming.html#编程基础",
+    "title": "R、Python与数字方法",
+    "section": "",
+    "text": "资源\n适合怎样使用\n阅读与练习入口\n\n\n\n\nR for Data Science，第2版（Hadley Wickham、Mine Çetinkaya-Rundel、Garrett Grolemund）\nR入门。 学习数据导入、整理、变换、可视化与结果沟通，可配合考古数据表练习。\n作者在线书，免费HTML与章节代码。\n\n\n《R数据分析入门》（Lingxiao HE）\n中文，R入门。 熟悉R语法、读表、数据处理和绘图，再转向考古练习。\n免费在线书。\n\n\nThink Python，第3版（Allen B. Downey）\nPython入门。 从变量、函数和数据结构开始练习编程思维。\n作者在线书与Notebooks，含章节练习入口。\n\n\nAutomate the Boring Stuff with Python，第3版（Al Sweigart）\nPython入门。 通过文件、文本和电子表格等任务练习基础操作与批处理。\n作者在线书，免费HTML与配套文件。\n\n\nPython for Data Analysis，第3版（Wes McKinney，2022）\nPython基础后。 用NumPy与pandas清洗、重组和合并表格，为处理考古清单与数据库建立技能。\n作者开放HTML版及配套代码入口；PDF与EPUB为购买版本。\n\n\nIntroduction to Cultural Analytics & Python（Melanie Walsh）\n入门至进阶。 通过文本、网络和地图示例学习Python在人文材料分析中的应用。\n作者免费在线书。",
+    "crumbs": [
+      "参考资源",
+      "R、Python与数字方法"
+    ]
+  },
+  {
+    "objectID": "reference-resources/programming.html#数字考古与统计练习",
+    "href": "reference-resources/programming.html#数字考古与统计练习",
+    "title": "R、Python与数字方法",
+    "section": "数字考古与统计练习",
+    "text": "数字考古与统计练习\n\n\n\n资源\n适合怎样使用\n阅读与练习入口\n\n\n\n\nThe Open Digital Archaeology Textbook（ODATE）（Shawn Graham、Neha Gupta等）\n阅读入门至专题实践。 把数据整理、数字记录、分析与传播放回考古问题及研究流程中理解。\n免费在线书；配套笔记本目录。项目为持续修订的书稿。\n\n\nData Analysis and Visualization in R for Archaeologists（Carpentries Incubator）\nR入门。 从读入考古数据表开始，练习整理、统计摘要与图表；课程面向无编程经验者。\n免费课程；教学数据。\n\n\nStatistical Methods for Archaeological Data Analysis（SMADA）（Joe Roe）\nR入门至进阶。 将探索性分析、统计推断与可重复的考古数据工作流程连接起来。\n2023年存档课程与练习。\n\n\nR for Archaeologists（UCLA Digital Archaeology Lab，Bit by Bit教程）\nR入门。 用带说明的R Markdown文件练习数据管理、绘图、测年资料与模型比较。\n机构教程下载页介绍PDF资源指南、Rmd练习与CSV示例下载包。\n\n\nDAACS Open Academy: Introduction to R Programming for Historical Archaeologists\nR入门。 结合历史考古资料学习基础操作、数据处理与图表。\n2021年课程录像存档；课程代码与材料。\n\n\nIntroduction to Statistics Using R (for archaeologists)（Efthymia Nikita，2020）\n统计入门至进阶。 用考古科学实例理解统计方法的选择、操作与结果解释。\n作者存档免费PDF；练习数据。",
+    "crumbs": [
+      "参考资源",
+      "R、Python与数字方法"
+    ]
+  },
+  {
+    "objectID": "reference-resources/programming.html#空间网络与资料获取",
+    "href": "reference-resources/programming.html#空间网络与资料获取",
+    "title": "R、Python与数字方法",
+    "section": "空间、网络与资料获取",
+    "text": "空间、网络与资料获取\n\n\n\n资源\n适合怎样使用\n阅读与练习入口\n\n\n\n\nGeocomputation with R，第2版（Robin Lovelace、Jakub Nowosad、Jannes Muenchow）\nR进阶。 学习空间数据、坐标转换、空间运算与制图。\n免费在线书与代码。\n\n\nGeocomputation with Python，第1版（Michael Dorman、Anita Graser、Jakub Nowosad、Robin Lovelace，2025）\nPython进阶。 处理向量、栅格、几何关系、坐标系统与地图输出。\n免费在线书与代码。\n\n\nOnline Companion to Network Science in Archaeology（Matthew A. Peeples、Tom Brughmans，2023）\nR进阶。 练习构建、分析与展示考古网络，并检查资料与不确定性。\n免费配套教程、代码与数据。此处提供在线配套，纸本教材另行获取。\n\n\nExploring and Analyzing Network Data with Python（Programming Historian）\nPython进阶。 用历史人文资料练习NetworkX的网络指标与图形，再思考考古网络的构建。\n免费逐步教程与代码。\n\n\nOpen Context API Cookbook与Jupyter示例（Open Context、Eric Kansa）\nPython进阶。 学习从公开考古数据库取回记录、整理成表及绘制测量数据图形。\nAPI指南；作者Notebook与代码库。数据使用条件按具体项目查看。",
+    "crumbs": [
+      "参考资源",
+      "R、Python与数字方法"
+    ]
+  },
+  {
+    "objectID": "reference-resources/programming.html#专题方法与软件",
+    "href": "reference-resources/programming.html#专题方法与软件",
+    "title": "R、Python与数字方法",
+    "section": "专题方法与软件",
+    "text": "专题方法与软件\n\n\n\n资源\n适合怎样使用\n文档与材料入口\n\n\n\n\nCalibrating Radiocarbon Dates with R（Nicolas Frerebeau、Brice Lebrun，Programming Historian）\nR与基础统计知识后。 按完整示例练习校正碳十四年代、表达不确定性与报告结果。\n免费教程与代码。\n\n\nrcarbon（Andrew Bevan、Enrico Crema等）\nR专题。 在理解测年与抽样假设后，学习校正、汇总及比较多组碳十四年代。\n软件、手册与示例；方法论文（Crema与Bevan，2021）。\n\n\nIOSACal（Stefano Costa与贡献者）\nPython专题。 练习碳十四年代校正、图形表达与测定值比较。\n软件文档与示例。\n\n\ntesselle（Nicolas Frerebeau及项目贡献者）\nR专题。 按计数、组成与年代数据的特点查找相应分析工具。\n软件包与文档目录；使用说明。\n\n\nPyLithics（Palaeoanalytics项目）\nPython专题。 从二维石器线描图提取轮廓与几何测量，比较数字表示与实物特征。\n免费软件指南。它采用轮廓与几何测量方法，不使用训练后的机器学习模型。\n\n\nroadDB\nR专题。 按遗址、组合或对象层级查询ROAD数据库，生成可分析的数据表。\n作者教程；CRAN软件页。查询依赖远程数据库。\n\n\nQuantitative Methods in Archaeology Using R（David L. Carlson，2017）与 archdata\n进阶参考。 查阅较系统的考古统计方法，并用书中配套数据练习。\n出版社图书页：正文需购买或机构访问；archdata配套数据免费。",
+    "crumbs": [
+      "参考资源",
+      "R、Python与数字方法"
+    ]
+  },
+  {
+    "objectID": "reference-resources/programming.html#补充书稿与编程进阶",
+    "href": "reference-resources/programming.html#补充书稿与编程进阶",
+    "title": "R、Python与数字方法",
+    "section": "补充书稿与编程进阶",
+    "text": "补充书稿与编程进阶\n\n\n\n资源\n适合怎样使用\n阅读入口与状态\n\n\n\n\nAdvanced R，第2版（Hadley Wickham）\nR进阶。 理解函数、环境与对象系统，帮助编写更可靠的分析代码。\n作者免费在线书。\n\n\nHow To Do Archaeological Science Using R（Ben Marwick编）\nR专题查阅。 选读数据导入、测年、制图或模拟章节，观察代码与方法说明怎样配合。\n免费HTML草稿，为尚未完成的编辑文集。\n\n\nArchaeological Science with R（Ben Marwick）\nR入门补充。 选读数据采集、导入、整理及可重复研究的已写成部分。\n免费HTML书稿，部分后续章节仍未完成。\n\n\nR pour l’archéologue: Exploration, visualisation et analyse de données（Nicolas Frerebeau、Julie Gravier、Ben Marwick）\n法文，R入门至专题查阅。 补充学习数据整理、绘图与考古分析。\n免费在线书稿，仍在写作中。\n\n\n《R语言数据分析实战》（黄湘云）\n中文，R基础后。 补充数据整理、图表、统计与分析报告的具体做法。\n作者免费网页书稿；配套代码。书稿仍处于开发阶段。\n\n\nDigging with Python（Juan Palomeque-Gonzalez）\nPython专题演示。 通过遗产记录查询、表格关联与图像处理脚本，观察Python可承担的具体工作。\n作者代码与演示材料，主要为概念验证示例。",
+    "crumbs": [
+      "参考资源",
+      "R、Python与数字方法"
+    ]
+  },
+  {
+    "objectID": "reference-resources/programming.html#进一步查找",
+    "href": "reference-resources/programming.html#进一步查找",
+    "title": "R、Python与数字方法",
+    "section": "进一步查找",
+    "text": "进一步查找\n\n\n\n资源目录\n适合查找什么\n入口\n\n\n\n\nopen-archaeo（Zack Batist、Joe Roe）\n按考古问题与工具类型查找指南、软件与示例。\n资源目录；Guides分类。\n\n\n考古学R资源目录（ctv-archaeology）（Ben Marwick维护）\n按测年、遗物、空间分析等主题寻找R工具与公开研究代码。\n社区维护目录。\n\n\nMatthew Peeples: Data and Software\n查找年代、网络与空间分析等主题的脚本、教程和研究配套材料。\n作者目录；ASU计算考古工具介绍。\n\n\nBig Book of R（Oscar Baruffa）\n按主题寻找进一步的R教材。\n编者目录，同时收录免费与付费资源。\n\n\n\n统计学习与深度学习教材见人工智能与统计学习。返回参考资源导读。",
+    "crumbs": [
+      "参考资源",
+      "R、Python与数字方法"
+    ]
+  },
+  {
+    "objectID": "reference-resources/ai-learning.html",
+    "href": "reference-resources/ai-learning.html",
+    "title": "人工智能与统计学习",
+    "section": "",
+    "text": "基础阅读与练习\n这些教材可帮助理解模型的输入与输出、训练过程、误差和评价方法。初学者可以先读概念与图表，再结合R、Python与数字方法中的基础教程选做练习；具体考古研究的材料与结果见AI考古研究案例。\n统计学习的R版与Python版可按所学语言择一使用。Prince的教材可先选读第8章的性能评价，再按需要阅读其他章节。",
+    "crumbs": [
+      "参考资源",
+      "人工智能与统计学习"
+    ]
+  },
+  {
+    "objectID": "reference-resources/ai-learning.html#基础阅读与练习",
+    "href": "reference-resources/ai-learning.html#基础阅读与练习",
+    "title": "人工智能与统计学习",
+    "section": "",
+    "text": "资源\n适合怎样使用\n阅读与练习入口\n\n\n\n\nAn Introduction to Statistical Learning: with Applications in R，第2版（James、Witten、Hastie、Tibshirani，2021）\n入门。 用R实例理解回归、分类、重抽样和模型评价，适合已掌握基本R操作的读者。\n官网与免费PDF；R实验、数据与教学材料。\n\n\nAn Introduction to Statistical Learning: with Applications in Python（James、Witten、Hastie、Tibshirani、Taylor，2023）\n入门。 通过Python实验学习统计学习与模型评价，与R版构成两条语言路线。\n官网与免费PDF；Python Notebooks与数据。\n\n\nUnderstanding Deep Learning（Simon J. D. Prince，2023）\n入门至进阶。 结合图示理解深度学习、训练与性能评价。第8章的示例有助于理解训练表现与新资料上的表现为何可能不同。\n作者教学网站与完整PDF；第8章Notebooks。\n\n\nDive into Deep Learning／《动手学深度学习》（Aston Zhang、Zachary C. Lipton、Mu Li、Alexander J. Smola）\n进阶。 将数学说明与代码练习结合，适合已有Python基础的读者学习神经网络。\n官方英文在线教材与中文在线教材；英文项目代码。\n\n\nNeural Networks and Deep Learning（Michael A. Nielsen，2015）\n概念补充。 通过手写数字识别等例子理解神经网络与反向传播。\n作者在线书；配套代码。原代码使用Python 2.6／2.7，阅读概念与运行旧代码需要分别安排。",
+    "crumbs": [
+      "参考资源",
+      "人工智能与统计学习"
+    ]
+  },
+  {
+    "objectID": "reference-resources/ai-learning.html#数学补充与概率方法",
+    "href": "reference-resources/ai-learning.html#数学补充与概率方法",
+    "title": "人工智能与统计学习",
+    "section": "数学补充与概率方法",
+    "text": "数学补充与概率方法\n这些读物适合遇到具体概念时查阅。可以从当前研究中需要的线性代数、概率或优化章节读起。\n\n\n\n资源\n适合怎样使用\n阅读入口\n\n\n\n\nMathematics for Machine Learning（Marc Peter Deisenroth、A. Aldo Faisal、Cheng Soon Ong，2020）\n数学补充。 学习机器学习所需的线性代数、微积分、概率和优化基础。\n作者网站提供免费PDF、练习与部分Jupyter教程。\n\n\nProbabilistic Machine Learning: An Introduction（Kevin P. Murphy，2022）\n进阶。 从概率与统计的角度理解机器学习，补充模型假设及不确定性的相关知识。\n第一卷作者页：主书草稿PDF、图例代码及教学资源。\n\n\nProbabilistic Machine Learning: Advanced Topics（Kevin P. Murphy，2023）\n进阶专题。 查阅概率推断、生成模型等较复杂的问题。\n第二卷作者页：主书草稿PDF、补充材料与图例代码。",
+    "crumbs": [
+      "参考资源",
+      "人工智能与统计学习"
+    ]
+  },
+  {
+    "objectID": "reference-resources/ai-learning.html#进阶专题",
+    "href": "reference-resources/ai-learning.html#进阶专题",
+    "title": "人工智能与统计学习",
+    "section": "进阶专题",
+    "text": "进阶专题\n\n\n\n资源\n适合怎样使用\n阅读入口\n\n\n\n\nDeep Learning（Ian Goodfellow、Yoshua Bengio、Aaron Courville，2016）\n深度学习理论。 查阅神经网络训练、正则化和优化的系统说明。\n作者网站提供完整免费HTML；官网不提供PDF版本。\n\n\nFoundations of Machine Learning，第2版（Mehryar Mohri、Afshin Rostamizadeh、Ameet Talwalkar，2018）\n学习理论。 进一步理解泛化与学习算法的理论条件，需要较好的数学基础。\n作者书籍页链接官方PDF、HTML及讲义。\n\n\nReinforcement Learning: An Introduction，第2版（Richard S. Sutton、Andrew G. Barto，2018）\n强化学习。 了解通过行动与反馈进行学习的基本框架。\n作者第二版页面提供书籍及配套资料入口。\n\n\nMachine Learning Systems（Vijay Janapa Reddi及项目贡献者）\n系统实践。 了解机器学习系统的构建、优化与部署，适合技术实践的延伸阅读。\n项目网站提供两卷的在线阅读、PDF、EPUB与相关实践入口。\n\n\n\n返回参考资源导读。",
+    "crumbs": [
+      "参考资源",
+      "人工智能与统计学习"
+    ]
+  },
+  {
+    "objectID": "reference-resources/ai-cases.html",
+    "href": "reference-resources/ai-cases.html",
+    "title": "AI考古研究案例",
+    "section": "",
+    "text": "教材中的核心案例\n阅读这些研究时，可以依次辨认考古材料、数据表示、模型预测与研究解释，特别留意训练资料怎样取得、评价使用了哪些资料，以及结果适用于什么范围。Bickler（2021）的综述可作为了解考古机器学习用途与方法问题的起点。\n各条目分别提供论文、项目与资料入口。可阅读论文或取得代码的研究，其训练资料仍可能有访问限制；下面的说明可帮助选择适合阅读或动手练习的资源。\n这些案例已有本站导读，可从内部案例页了解研究背景，再访问原作者资源。",
+    "crumbs": [
+      "参考资源",
+      "AI考古研究案例"
+    ]
+  },
+  {
+    "objectID": "reference-resources/ai-cases.html#教材中的核心案例",
+    "href": "reference-resources/ai-cases.html#教材中的核心案例",
+    "title": "AI考古研究案例",
+    "section": "",
+    "text": "案例\n适合关注的问题\n原论文与作者资源\n\n\n\n\n宾夕法尼亚木炭窑址（Carter等，2021）\n从LiDAR地形图、人工标注到目标检测的研究流程。\n原论文；配套数据论文串联影像、标注、模型与结果存档；作者代码。\n\n\nTusayan White Ware陶片（Pawlowicz与Downum，2021）\n图像分类与专家类型判断的关系。\n原论文；Zenodo存档提供图像、补充材料与Notebook。\n\n\n象牙雕刻风格聚类（Gansell等，2014）\n怎样用类别和数值特征比较风格，怎样解释模型得到的分组。\n原论文；ANEIC项目提供特征表与代码；照片的使用条件另行说明。\n\n\nEvron Quarry石器受热研究（Stepka等，2022）\n光谱预测如何与石器受热及用火证据联系起来。\n原论文；作者仓库提供光谱与分析代码。\n\n\nIthaca希腊铭文研究（Assael等，2022）\n缺文复原、断代与地域预测怎样辅助铭文研究。\n原论文；官方模型与代码；I.PHI语料处理项目。\n\n\nAeneas拉丁铭文研究（Assael等，2025）\n类例检索、缺文复原与铭文语境研究。\n原论文；官方项目仓库提供语料和模型入口，各底层数据库的许可须分别查看。",
+    "crumbs": [
+      "参考资源",
+      "AI考古研究案例"
+    ]
+  },
+  {
+    "objectID": "reference-resources/ai-cases.html#遥感与景观调查",
+    "href": "reference-resources/ai-cases.html#遥感与景观调查",
+    "title": "AI考古研究案例",
+    "section": "遥感与景观调查",
+    "text": "遥感与景观调查\n\n\n\n研究\n适合关注的问题\n论文与资料入口\n\n\n\n\n美国东南部贝壳环（Davis等，2021）\nLiDAR目标检测怎样与卫星资料结合，用于评估候选贝壳环。\n原论文；作者公开全文；论文所列训练数据与模型存档。使用原模型包需ArcGIS Pro许可。\n\n\nCholistan遗址土丘（Orengo等，2020）\n多时相、多传感器卫星数据与随机森林怎样用于区域调查。\n原论文；作者代码。训练标注通过Earth Engine资产调用，使用时需另行确认其访问权限。\n\n\n安第斯AI辅助调查（Zimmer-Dauphinee等，2024）\n怎样比较模型识别与专家遥感判读。\n原论文；作者材料提供标注、场景信息与模型，未附原始卫星影像。\n\n\n坎儿井与地下输水系统（Buławka等，2024）\n历史卫星影像上的井口排列如何用于目标检测。\n原论文；作者机构介绍与论文入口。适合作为论文阅读资源。\n\n\n纳斯卡地画（Sakai等，2024）\nAI筛选候选目标怎样与实地调查结合。\n原论文及数据声明。非限制材料可公开查阅；精确地点及部分训练资料须获主管机构等许可。\n\n\n北圣胡安区域调查（Field与Dean，2026）\n计算机视觉怎样应用于区域LiDAR调查。\n原论文；作者代码；公共LiDAR入口。训练地点和预测地点不公开。\n\n\nBozburun古代梯田（Peker，2026）\n怎样融合正射影像与地形数据识别梯田。\n原论文；代码存档。研究影像、地形数据与模型权重各有申请条件。",
+    "crumbs": [
+      "参考资源",
+      "AI考古研究案例"
+    ]
+  },
+  {
+    "objectID": "reference-resources/ai-cases.html#器物识别与墓地研究",
+    "href": "reference-resources/ai-cases.html#器物识别与墓地研究",
+    "title": "AI考古研究案例",
+    "section": "器物识别与墓地研究",
+    "text": "器物识别与墓地研究\n\n\n\n研究\n适合关注的问题\n论文与资料入口\n\n\n\n\n微小石屑识别（Eberl等，2023）\n怎样根据颗粒的测量特征识别微小石屑。\n原论文与补充表；作者数据与代码。\n\n\nTamir匈奴墓地（Alcouffe等，2026）\n墓葬资料、遗传亲缘与分类、聚类方法怎样共同参与墓地组织研究。\n原论文；补充材料；考古目录。目录可用于了解考古背景，不宜直接当作完整模型输入表。\n\n\n\n测年、土地利用、社会比较与古DNA研究的资料入口见考古数据与比较研究。返回参考资源导读。",
+    "crumbs": [
+      "参考资源",
+      "AI考古研究案例"
+    ]
+  },
+  {
+    "objectID": "reference-resources/archaeological-data.html",
+    "href": "reference-resources/archaeological-data.html",
+    "title": "考古数据与比较研究",
+    "section": "",
+    "text": "测年与人口研究\n这些资源展示考古资料怎样被汇总、编码并用于跨地区或跨时期研究。使用数据前，先查看样本如何进入数据库、每个字段表示什么、缺失值怎样处理，以及数据版本与原论文是否对应。研究中的测年频数、房屋面积、专家判断或遗传相似性，都需要结合其取得方式和考古背景解释。\n可以先阅读论文中的研究问题、图表和资料说明，再选择适合自己方法基础的数据。以下分别列出论文和资料入口，获取方式以原站说明为准。",
+    "crumbs": [
+      "参考资源",
+      "考古数据与比较研究"
+    ]
+  },
+  {
+    "objectID": "reference-resources/archaeological-data.html#测年与人口研究",
+    "href": "reference-resources/archaeological-data.html#测年与人口研究",
+    "title": "考古数据与比较研究",
+    "section": "",
+    "text": "资源\n适合关注的问题\n论文与资料入口\n\n\n\n\n英国与爱尔兰放射性碳测年研究（Bevan等，2017）\n测年资料怎样用于讨论人口、食物生产与气候的关系，以及测年频数怎样受抽样影响。\n原论文；UCL数据与分析存档；2018年更正（资料来源致谢）。\n\n\np3k14c（Bird等，2022）\n跨数据库测年资料的整合、清洗与抽样偏差。\n数据论文；tDAR数据集合；R包与数据入口。公开版中部分坐标经过模糊化；含敏感地点信息的若干数据版本需申请访问。\n\n\n测年记录与人口增长（Zahid等，2016）\n利用测年记录推断人口增长时所依赖的统计假设。\n公开论文与更正。此项供论文阅读。",
+    "crumbs": [
+      "参考资源",
+      "考古数据与比较研究"
+    ]
+  },
+  {
+    "objectID": "reference-resources/archaeological-data.html#土地利用与景观",
+    "href": "reference-resources/archaeological-data.html#土地利用与景观",
+    "title": "考古数据与比较研究",
+    "section": "土地利用与景观",
+    "text": "土地利用与景观\n\n\n\n资源\n适合关注的问题\n论文与资料入口\n\n\n\n\nArchaeoGLOBE（Stephens等，2019）\n全球土地利用知识怎样通过专家调查汇总与比较，怎样理解地区间资料覆盖的差异。\n原论文；发表数据存档；作者R分析项目。资料来自专家调查，使用时须理解其汇总单位。\n\n\n亚马孙土方工程分布研究（Peripato等，2023）\n怎样将LiDAR观察与区域空间预测对应起来，区分已观察到的遗迹和模型外推。\n原论文；Zenodo存档与作者代码提供分析资料、R代码和预测栅格。\n\n\n亚马孙西南部景观调查（Pärssinen等，2026）\nLiDAR景观调查与区域外推之间的联系。\n原论文及补充材料可用于阅读调查结果与测年背景；原始LiDAR数据限制访问。",
+    "crumbs": [
+      "参考资源",
+      "考古数据与比较研究"
+    ]
+  },
+  {
+    "objectID": "reference-resources/archaeological-data.html#社会比较与生业",
+    "href": "reference-resources/archaeological-data.html#社会比较与生业",
+    "title": "考古数据与比较研究",
+    "section": "社会比较与生业",
+    "text": "社会比较与生业\n\n\n\n资源\n适合关注的问题\n论文与资料入口\n\n\n\n\nSeshat与社会复杂性研究（Turchin等，2018）\n历史与考古资料怎样编码为比较变量，数据版本怎样影响研究对照。\n原论文；Seshat官方数据入口。使用时区分论文对应资料与不同年份的数据库快照。\n\n\n房屋规模与财富差异（Kohler等，2017）\n怎样使用房屋面积分布作为财富差异的代理指标，及其解释范围。\n原论文与补充数据表2；2018年更正。\n\n\n乳品利用与乳糖酶持续性（Evershed等，2022）\n器物残留、环境与遗传资料怎样联合分析。\n原论文；作者资料仓库提供考古汇总表等材料。现代UK Biobank数据另有申请条件。",
+    "crumbs": [
+      "参考资源",
+      "考古数据与比较研究"
+    ]
+  },
+  {
+    "objectID": "reference-resources/archaeological-data.html#古dna与人口流动",
+    "href": "reference-resources/archaeological-data.html#古dna与人口流动",
+    "title": "考古数据与比较研究",
+    "section": "古DNA与人口流动",
+    "text": "古DNA与人口流动\n这组研究适合进阶阅读。可以先阅读考古取样背景与结论的论证过程；序列、处理后的基因型和统计汇总资料属于不同分析阶段，需要相应的基因组学基础。\n\n\n\n资源\n适合关注的问题\n论文与资料入口\n\n\n\n\n维京世界的古基因组研究（Margaryan等，2020）\n考古取样与古基因组比较怎样结合。\n原论文；ENA序列存档PRJEB37976。\n\n\nSouthern Arc研究（Lazaridis等，2022）\n怎样比较西亚与东南欧古代人群资料。\n原论文；处理后的基因型；ENA比对序列PRJEB54831。\n\n\n南亚与中亚人群形成研究（Narasimhan等，2019）\n古基因组资料怎样与考古背景共同参与人群历史研究。\n原论文；ENA序列存档PRJEB32466。\n\n\n丹麦新石器时代综合研究（Allentoft等，2024）\n古DNA、同位素与花粉资料怎样用于综合研究。\n原论文；ENA序列存档PRJEB64656；处理后的基因型；同祖片段（IBD）汇总资料。\n\n\n古基因组与人口流动（Schmid与Schiffels，2023）\n遗传相似性怎样用于时空建模。\n原论文；研究存档；mobest方法文档。主数据另取AADR，完整分析的计算要求较高。\n\n\n\n铭文语料、器物图像与相关模型见AI考古研究案例；测年与空间分析的工具见R、Python与数字方法。返回参考资源导读。",
+    "crumbs": [
+      "参考资源",
+      "考古数据与比较研究"
     ]
   }
 ]

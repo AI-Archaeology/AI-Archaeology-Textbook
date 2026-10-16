@@ -8,7 +8,7 @@ project:
 book:
   title: "AI考古学通论"
   subtitle: "数据、案例与实践 | Data, Cases & Exercises"
-  repo-url: https://github.com/ZCJing2022/AI-Archaeology-Textbook
+  repo-url: https://github.com/AI-Archaeology/AI-Archaeology-Textbook
   repo-actions: [edit, issue]
   # Quarto Book derives its navigation from chapters; keep all pages in the book.
   # A6 archival entries are visually suppressed by styles.css but remain rendered/linkable.
@@ -91,7 +91,14 @@ book:
         - dataset-teaching-ceramics-01.qmd
         - exercises.qmd
         - data-policy.qmd
+    - part: "参考资源"
+      chapters:
         - references.qmd
+        - reference-resources/archaeology.qmd
+        - reference-resources/programming.qmd
+        - reference-resources/ai-learning.qmd
+        - reference-resources/ai-cases.qmd
+        - reference-resources/archaeological-data.qmd
 
 format:
   html:

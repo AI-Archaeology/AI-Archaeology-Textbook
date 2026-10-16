@@ -58,6 +58,12 @@ Orengo、Berganzo-Besga与Lumbreras（2026）在对考古机器学习理论与�
 
 Lucas的*Archaeological Situations*（版权页2023）第3章“Making Records”也从考古实践本身讨论资料记录，并涉及数据轨迹与概念模型。两者的出发点不同，却共同提醒我们：**资料形成过程需要被记录，不能把数字字段当作无须解释的直接事实。** 这里是两部作品的教学性对读，并不是说它们使用了相同的理论术语。
 
+### 从研究问题到数据表：计算思维不等于编程熟练度 {.unnumbered}
+
+《人工智能基础》（刘伟等，2025，第1章）把人工智能问题置于不同研究途径之间；面向本科教学的《人工智能概论》（王栋、卢湖川主编，2025，第2章）则将机器学习任务、算法模型与应用场景联系起来。借鉴这些教学思路，考古学的第一步应是把笼统的问题转成**明确的观察单位、可解释的变量和可以核验的目标**，而非先选一套软件。
+
+例如，把“用AI判断陶器生产组织”拆成“记录哪些陶片、依据什么属性形成类型、怎样比较作坊间可能的差异”，才有可能判断哪些工作适合描述统计、哪些工作可能需要预测模型。**能提出这样的数据设计不以会写Python为前提**；反过来，会执行模型也不保证变量具备考古学意义。
+
 ## 变量、测量尺度与类型学概念的量化
 
 **变量**是针对观察单位定义的可记录属性。一列可以表示陶片部位，另一列表示口沿直径；但是只有在定义明确、记录规则相同的前提下，不同记录的数值才适合比较。
@@ -200,3 +206,5 @@ Murphy的*Probabilistic Machine Learning: An Introduction*（2022；所上传在
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
 - Wilkinson, Mark D., et al. 2016. [“The FAIR Guiding Principles for Scientific Data Management and Stewardship.”](https://doi.org/10.1038/sdata.2016.18) *Scientific Data* 3: 160018.
 - Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. *Dive into Deep Learning*. 电子教材，所用版本年份待核.
+- 刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.
+- 王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.

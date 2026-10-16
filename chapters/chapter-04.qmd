@@ -63,7 +63,7 @@
 
 本章的**保存与取样偏差**指考古遗存进入研究样本之前的选择性损失；**测量和标注偏差**指资料记录及人为归类中的系统差异。统计学习中的**偏差—方差权衡（bias–variance trade-off）**又是另一层概念：模型过于简单可能无法捕捉重要关系，过于灵活则可能对现有训练数据拟合得很好、在新样本上表现很差。James等（2023）第2.2节和Goodfellow等（2016）第5.3—5.5节说明模型复杂度、过拟合和评价之间的关系。**统计模型的偏差—方差问题，不等于考古发掘样本的保存偏差**；它们作用于证据链的不同环节，也可能共同影响最终推论。
 
-例如，陶片照片全部来自同一摄影台，即使模型在随机留出的图片上取得较高分数，也可能借助背景、光照或拍摄机构的特征作出判断。Prince（2023年出版的*Understanding Deep Learning*；上传版更新于2024年）第8章讨论性能测量及误差来源；Zhang等*Dive into Deep Learning*第3.6与4.6—4.7节则分别讨论泛化、测试集重复使用和环境分布变化。因此，**模型是在已有照片上学得很好，还是能用于另一遗址或另一摄影流程，是两个不同的问题**。
+例如，陶片照片全部来自同一摄影台，即使模型在随机留出的图片上取得较高分数，也可能借助背景、光照或拍摄机构的特征作出判断。Prince（2023）的*Understanding Deep Learning*第8章讨论模型性能、测试误差、偏差—方差等问题；其[作者官方网站](https://udlbook.github.io/udlbook/)提供可配合阅读的[第8章性能评估Notebook](https://github.com/udlbook/udlbook/tree/main/Notebooks/Chap08)、交互图示和教学幻灯片。学生可先不写代码，通过图示比较模型在已有资料与新资料上的表现；Notebook留给有Python基础的读者进阶选做。这里的模型评价原理并不直接给出任何考古遗址的实证结果。Zhang等*Dive into Deep Learning*第3.6与4.6—4.7节则分别讨论泛化、测试集重复使用和环境分布变化。因此，**模型是在已有照片上学得很好，还是能用于另一遗址或另一摄影流程，是两个不同的问题**。
 
 ## 年代与空间位置的不确定性
 
@@ -97,6 +97,8 @@ Chapman与Wylie（2016）导论及第1—3章进一步强调：物质遗存能�
 
 这不等于邻近样本毫无价值，而是要求验证设计与研究问题对应。对于预测另一区域的遗址位置，可以考虑把空间块或独立调查区留作测试集；对于研究同一河谷内的局部变化，则要清楚说明推论范围。空间分块也不是万能方案：块大小、地理距离、样本量和区域差异都会影响结果。
 
+**一项真实的考古预测研究：** Comer等（2023）在美国加利福尼亚州Fort Irwin，比较随机抽取像元与逐次留出一处已知遗址或一块标为非遗址的区域两种方式；后一方式仍评价留出区域中抽取像元的分类表现（第3节，5页）。随机像元方式的评价分数较高，作者主要从训练与测试资料间的空间自相关解释这一差异，并明确说明两种方案均未使用真正独立的数据（第5节，7—8页）。这提醒我们，**评价分数须结合取样方式和研究任务理解**；留出区域的像元分类成绩，不能直接证明在新地区发现完整遗址的能力。[原始论文](https://doi.org/10.1016/j.jasrep.2022.103824)。
+
 本节只建立直观认识；空间自相关的进一步方法讨论安排在[第14章](chapter-14.qmd)相关内容中。
 
 ### 当代AI实证研究为何重视外推验证？ {.unnumbered}
@@ -104,6 +106,12 @@ Chapman与Wylie（2016）导论及第1—3章进一步强调：物质遗存能�
 Orengo等（2026）系统讨论了考古机器学习中的**小样本、类别不均衡、背景多样性、特征表示与空间分散**。论文举出形态近似却并非考古遗迹的对象、不同传感器和地形条件等作为误识别与跨区域转移困难的来源，说明仅靠内部测试成绩不足以证明方法可以推广到新资料。[原论文第2—3节](https://doi.org/10.1016/j.jas.2026.106571)。
 
 Bickler（2021）同样提醒，考古资料形成缓慢、规模有限、保存与分类不一致，需要专家评价及独立田野核验。[文章](https://doi.org/10.1017/aap.2021.6)。**以上都是已发表作者针对考古机器学习提出的具体论证；它们不表示任何特定算法在全部地区都会失效。**
+
+### 可靠性不仅是一个模型分数 {.unnumbered}
+
+《人工智能概论》将数据、算法和伦理治理分章讨论（王栋、卢湖川主编，2025，第8章），提醒学生模型能力与实际使用责任需要分别审查。马库斯在《驯服AI》（2026年中译本，第二章及前言）进一步批评流畅但不可靠的生成式回答，主张加强独立核查、责任机制与治理。**这属于作者的批判性观点，不是考古领域模型错误率的实证统计。**
+
+在考古应用中，应将这一观点转为可执行的审查问题：生成的遗址描述能否找到原始报告？模型预测是否提供可追溯的观察依据？若模型在某遗址失效，谁来检查、更正并说明传播范围？这些问题不能由一项总体准确率代替。
 
 ## 数据代表性与考古推论的有效范围
 
@@ -136,10 +144,13 @@ Bickler（2021）同样提醒，考古资料形成缓慢、规模有限、保存
 - Bickler, Simon H. 2021. [“Machine Learning Arrives in Archaeology.”](https://doi.org/10.1017/aap.2021.6) *Advances in Archaeological Practice* 9(2): 186–191.
 - Carver, Martin, and Madeleine Hummler. 2025. [*Archaeological Investigation*.](https://doi.org/10.4324/9781003185147) 2nd ed. Routledge.
 - Chapman, Robert, and Alison Wylie. 2016. *Evidential Reasoning in Archaeology*. Bloomsbury Academic.
+- Comer, Jacob A., Douglas C. Comer, Ioana A. Dumitru, Carey E. Priebe, and Jesse L. Patsolic. 2023. [“Sampling Methods for Archaeological Predictive Modeling: Spatial Autocorrelation and Model Performance.”](https://doi.org/10.1016/j.jasrep.2022.103824) *Journal of Archaeological Science: Reports* 48: 103824.
 - Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. *Deep Learning*. MIT Press.
 - James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. [*An Introduction to Statistical Learning with Applications in Python*.](https://doi.org/10.1007/978-3-031-38747-0) Springer.
 - Murphy, Kevin P. 2023. *Probabilistic Machine Learning: Advanced Topics*. MIT Press.
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
-- Prince, Simon J. D. 2023. *Understanding Deep Learning*. MIT Press. 中译本：《理解深度学习》，清华大学出版社，2025。
+- Prince, Simon J. D. 2023. [*Understanding Deep Learning*.](https://udlbook.github.io/udlbook/) MIT Press. 中译本：《理解深度学习》，清华大学出版社，2025。
 - Renfrew, Colin, and Paul Bahn. 2020. *Archaeology: Theories, Methods and Practice*. 8th ed. Thames & Hudson.
 - Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. *Dive into Deep Learning*. 电子教材，所用版本年份待核.
+- 马库斯，盖瑞. 2026. 《驯服AI：创造可信的人工智能》. 中信出版集团. 原著 *Taming Silicon Valley*.
+- 王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.

@@ -1,0 +1,44 @@
+---
+number-sections: false
+toc-depth: 2
+---
+
+# AI考古研究案例 {.unnumbered}
+
+阅读这些研究时，可以依次辨认考古材料、数据表示、模型预测与研究解释，特别留意训练资料怎样取得、评价使用了哪些资料，以及结果适用于什么范围。[Bickler（2021）的综述](https://doi.org/10.1017/aap.2021.6)可作为了解考古机器学习用途与方法问题的起点。
+
+各条目分别提供论文、项目与资料入口。可阅读论文或取得代码的研究，其训练资料仍可能有访问限制；下面的说明可帮助选择适合阅读或动手练习的资源。
+
+## 教材中的核心案例
+
+这些案例已有本站导读，可从内部案例页了解研究背景，再访问原作者资源。
+
+| 案例 | 适合关注的问题 | 原论文与作者资源 |
+|---|---|---|
+| [宾夕法尼亚木炭窑址](../core-case-library/a1-charcoal-hearths.qmd)（Carter等，2021） | 从LiDAR地形图、人工标注到目标检测的研究流程。 | [原论文](https://doi.org/10.1017/aap.2021.17)；[配套数据论文](https://doi.org/10.5334/joad.81)串联影像、标注、模型与结果存档；[作者代码](https://github.com/jeffblackadar/charcoalhearths)。 |
+| [Tusayan White Ware陶片](../core-case-library/a4-tusayan-pottery.qmd)（Pawlowicz与Downum，2021） | 图像分类与专家类型判断的关系。 | [原论文](https://doi.org/10.1016/j.jas.2021.105375)；[Zenodo存档](https://zenodo.org/records/4625156)提供图像、补充材料与Notebook。 |
+| [象牙雕刻风格聚类](../core-case-library/a6-ivories.qmd)（Gansell等，2014） | 怎样用类别和数值特征比较风格，怎样解释模型得到的分组。 | [原论文](https://doi.org/10.1016/j.jas.2013.11.005)；[ANEIC项目](https://aneic.github.io/)提供特征表与代码；照片的使用条件另行说明。 |
+| [Evron Quarry石器受热研究](../core-case-library/a5-evron.qmd)（Stepka等，2022） | 光谱预测如何与石器受热及用火证据联系起来。 | [原论文](https://doi.org/10.1073/pnas.2123439119)；[作者仓库](https://github.com/fnatalio/Evron_Quarry)提供光谱与分析代码。 |
+| [Ithaca希腊铭文研究](../core-case-library/a2-ithaca.qmd)（Assael等，2022） | 缺文复原、断代与地域预测怎样辅助铭文研究。 | [原论文](https://doi.org/10.1038/s41586-022-04448-z)；[官方模型与代码](https://github.com/google-deepmind/ithaca)；[I.PHI语料处理项目](https://github.com/sommerschield/iphi)。 |
+| [Aeneas拉丁铭文研究](../core-case-library/a3-aeneas.qmd)（Assael等，2025） | 类例检索、缺文复原与铭文语境研究。 | [原论文](https://doi.org/10.1038/s41586-025-09292-5)；[官方项目仓库](https://github.com/google-deepmind/predictingthepast)提供语料和模型入口，各底层数据库的许可须分别查看。 |
+
+## 遥感与景观调查
+
+| 研究 | 适合关注的问题 | 论文与资料入口 |
+|---|---|---|
+| **美国东南部贝壳环**（Davis等，2021） | LiDAR目标检测怎样与卫星资料结合，用于评估候选贝壳环。 | [原论文](https://doi.org/10.1016/j.jas.2021.105433)；[作者公开全文](https://d-davis.github.io/publications/Davis_etal_2021_JAS.pdf)；[论文所列训练数据与模型存档](https://doi.org/10.26207/ry6k-q463)。使用原模型包需ArcGIS Pro许可。 |
+| **Cholistan遗址土丘**（Orengo等，2020） | 多时相、多传感器卫星数据与随机森林怎样用于区域调查。 | [原论文](https://doi.org/10.1073/pnas.2005583117)；[作者代码](https://github.com/horengo/Orengo_et_al_2020_PNAS)。训练标注通过Earth Engine资产调用，使用时需另行确认其访问权限。 |
+| **安第斯AI辅助调查**（Zimmer-Dauphinee等，2024） | 怎样比较模型识别与专家遥感判读。 | [原论文](https://doi.org/10.15184/aqy.2023.175)；[作者材料](https://github.com/geopacha/Antiquity_2023/tree/main/Eyes%20of%20The%20Machine)提供标注、场景信息与模型，未附原始卫星影像。 |
+| **坎儿井与地下输水系统**（Buławka等，2024） | 历史卫星影像上的井口排列如何用于目标检测。 | [原论文](https://doi.org/10.1016/j.jas.2024.106053)；[作者机构介绍与论文入口](https://giap.icac.cat/2024/09/09/a-universal-model-for-detection-of-qanats-using-hexagon-and-corona-images/)。适合作为论文阅读资源。 |
+| **纳斯卡地画**（Sakai等，2024） | AI筛选候选目标怎样与实地调查结合。 | [原论文及数据声明](https://pmc.ncbi.nlm.nih.gov/articles/PMC11459208/)。非限制材料可公开查阅；精确地点及部分训练资料须获主管机构等许可。 |
+| **北圣胡安区域调查**（Field与Dean，2026） | 计算机视觉怎样应用于区域LiDAR调查。 | [原论文](https://doi.org/10.1017/aaq.2026.10223)；[作者代码](https://github.com/sfield2/NSJ_computervision)；[公共LiDAR入口](https://apps.nationalmap.gov/lidar-explorer/)。训练地点和预测地点不公开。 |
+| **Bozburun古代梯田**（Peker，2026） | 怎样融合正射影像与地形数据识别梯田。 | [原论文](https://doi.org/10.1017/aap.2025.10142)；[代码存档](https://doi.org/10.5281/zenodo.16905405)。研究影像、地形数据与模型权重各有申请条件。 |
+
+## 器物识别与墓地研究
+
+| 研究 | 适合关注的问题 | 论文与资料入口 |
+|---|---|---|
+| **微小石屑识别**（Eberl等，2023） | 怎样根据颗粒的测量特征识别微小石屑。 | [原论文与补充表](https://doi.org/10.1017/aap.2022.35)；[作者数据与代码](https://github.com/vanderbilt-data-science/ancient-artifacts)。 |
+| **Tamir匈奴墓地**（Alcouffe等，2026） | 墓葬资料、遗传亲缘与分类、聚类方法怎样共同参与墓地组织研究。 | [原论文](https://doi.org/10.15184/aqy.2026.10360)；[补充材料](https://doi.org/10.15184/aqy.2026.10360.sm001)；[考古目录](https://zenodo.org/records/17988975)。目录可用于了解考古背景，不宜直接当作完整模型输入表。 |
+
+测年、土地利用、社会比较与古DNA研究的资料入口见[考古数据与比较研究](archaeological-data.qmd)。返回[参考资源导读](../references.qmd)。

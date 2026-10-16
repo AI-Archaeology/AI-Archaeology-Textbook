@@ -2,6 +2,8 @@
 
 **日期：** 2026-10-16。**范围：** 只核对能实际访问的原文段落及正规出版入口。不新建第5章，不复制受版权保护的PDF到仓库。本文为内部编辑资料，不加入Quarto导航。
 
+**归档说明：** 第1—4节保留PR #37原阶段的核验记录；后续完成情况见第5节。原有A/B/C标签按各条所写的实际阅读范围解释，不与后续报告的A1/A2直接互换。
+
 ## 1. 统计缺失机制：Murphy（2023）已核读原文，状态A
 
 **原文：** Kevin P. Murphy, *Probabilistic Machine Learning: Advanced Topics* (MIT Press, copyright 2023), **§3.11 “Missing data,” 印刷页141–142**；已读取用户上传的**2024-06-26在线版本**对应PDF第175—176页。
@@ -49,6 +51,16 @@ Murphy在第141页首先引入原始数据向量的已观察部分、未观察�
 3. **中国研究史：仍为HOLD**：待真正全文通读上述中文原始论文与刘建国著作相关章节，再考虑增加具体史实段落，尤其避免“最早”“首次”判断。
 4. **核验类别：** Murphy机制定义 A；Roberts/Valavi方法性论证 A（非考古实证）；聂/杨、关/周的期刊摘要 A、全文细节 B；刘建国书目与目录 B；中国计算方法采用年表 C。
 5. **技术验收已由用户日志证实：** `python3 audit-tools/part1_teaching_ceramics_check_v1.py` 输出 **19 PASS / 0 FAIL**，Quarto成功 **64/64**；原始虚构CSV未修改，测试不涉及真实数据。
-6. **尚待Git收尾：** Quarto的 `project.resources` 正常将新脚本复制到 `docs/audit-tools/part1_teaching_ceramics_check_v1.py`，用户本地该文件目前是untracked；在本分支提交并推送该**公开、只读**脚本副本后再合并PR #36。
+6. **Git收尾的历史记录（现已完成）：** 原记录曾将`docs/audit-tools/part1_teaching_ceramics_check_v1.py`列为untracked，要求提交该公开、只读脚本副本后再合并PR #36。后续完成情况见第5节，此项不再作为当前待办。
 
 **出版终审：HOLD。真实学生试评：HOLD。A6真实数据建模：HOLD。**
+
+## 5. 后续状态与证据分层
+
+本次以`main`提交`e4f03a1af08359d086ebdc1fa3f7e71070804c25`作归档对照：
+
+- **PR #36技术收尾已完成。** [PR #36](https://github.com/AI-Archaeology/AI-Archaeology-Textbook/pull/36)已合并；基线中的源脚本与`docs/audit-tools/part1_teaching_ceramics_check_v1.py`副本具有相同Git blob `edd331ba3e3ef843f68f6212bfafecf90f31f6b5`。原记录的19 PASS / 0 FAIL及64/64对应当时用户运行日志，本次未重跑，不用后续网站页数替换该历史结果。
+- **Murphy的两个状态属于先后阶段。** [早期证据表](part1-evidence-locator-dataset-teacher-dryrun-v1.md)的B表示目录定位；本文件第1节记载随后核读2024-06-26在线版上传PDF的指定页。后者支持MCAR/MAR/MNAR的定义，不代表全文所有论证或实际考古缺失机制均已验证。
+- **考古实证与遥感史已有后续补证。** [PR #41核验报告](https://github.com/AI-Archaeology/AI-Archaeology-Textbook/blob/e4f03a1af08359d086ebdc1fa3f7e71070804c25/editorial-reviews/part1-primary-archaeological-model-validation-history-v1.md)记录Comer原文转录A2、机构摘要/书目B/C及刘树人官方PDF核对A1；两文已分别进入第4、2章。具体完成情况及独立性限制见[空间预测与方法史记录](part1-spatial-prediction-chinese-gis-history-evidence-v2.md)第六节。
+- **原等级不跨材料升级。** 第3节对聂跃平／杨林、关莹／周振宇标注的A仅指官方摘要、书目或PDF首页；第2节仅记载对Roberts、Valavi公开全文中所列相关段落的阅读，仍是跨学科方法依据。这些状态不自动成为完整PDF逐页核验或考古实证验证。
+- **其余待核保持明确。** 刘岩的原刊信息与清晰文本、上述中文论文的具体正文论证、刘建国专著案例及全国技术采用年表仍待补证。本次状态更新不新增这些内容的学术核验结论。

@@ -1,0 +1,41 @@
+---
+number-sections: false
+toc-depth: 2
+---
+
+# 人工智能与统计学习 {.unnumbered}
+
+这些教材可帮助理解模型的输入与输出、训练过程、误差和评价方法。初学者可以先读概念与图表，再结合[R、Python与数字方法](programming.qmd)中的基础教程选做练习；具体考古研究的材料与结果见[AI考古研究案例](ai-cases.qmd)。
+
+## 基础阅读与练习
+
+统计学习的R版与Python版可按所学语言择一使用。Prince的教材可先选读第8章的性能评价，再按需要阅读其他章节。
+
+| 资源 | 适合怎样使用 | 阅读与练习入口 |
+|---|---|---|
+| **An Introduction to Statistical Learning: with Applications in R**，第2版（James、Witten、Hastie、Tibshirani，2021） | **入门。** 用R实例理解回归、分类、重抽样和模型评价，适合已掌握基本R操作的读者。 | [官网与免费PDF](https://www.statlearning.com/)；[R实验、数据与教学材料](https://www.statlearning.com/resources-second-edition)。 |
+| **An Introduction to Statistical Learning: with Applications in Python**（James、Witten、Hastie、Tibshirani、Taylor，2023） | **入门。** 通过Python实验学习统计学习与模型评价，与R版构成两条语言路线。 | [官网与免费PDF](https://www.statlearning.com/)；[Python Notebooks与数据](https://www.statlearning.com/resources-python)。 |
+| **Understanding Deep Learning**（Simon J. D. Prince，2023） | **入门至进阶。** 结合图示理解深度学习、训练与性能评价。第8章的示例有助于理解训练表现与新资料上的表现为何可能不同。 | [作者教学网站与完整PDF](https://udlbook.github.io/udlbook/)；[第8章Notebooks](https://github.com/udlbook/udlbook/tree/main/Notebooks/Chap08)。 |
+| **Dive into Deep Learning／《动手学深度学习》**（Aston Zhang、Zachary C. Lipton、Mu Li、Alexander J. Smola） | **进阶。** 将数学说明与代码练习结合，适合已有Python基础的读者学习神经网络。 | 官方[英文在线教材](https://d2l.ai/)与[中文在线教材](https://zh.d2l.ai/)；[英文项目代码](https://github.com/d2l-ai/d2l-en)。 |
+| **Neural Networks and Deep Learning**（Michael A. Nielsen，2015） | **概念补充。** 通过手写数字识别等例子理解神经网络与反向传播。 | [作者在线书](https://neuralnetworksanddeeplearning.com/)；[配套代码](https://github.com/mnielsen/neural-networks-and-deep-learning)。原代码使用Python 2.6／2.7，阅读概念与运行旧代码需要分别安排。 |
+
+## 数学补充与概率方法
+
+这些读物适合遇到具体概念时查阅。可以从当前研究中需要的线性代数、概率或优化章节读起。
+
+| 资源 | 适合怎样使用 | 阅读入口 |
+|---|---|---|
+| **Mathematics for Machine Learning**（Marc Peter Deisenroth、A. Aldo Faisal、Cheng Soon Ong，2020） | **数学补充。** 学习机器学习所需的线性代数、微积分、概率和优化基础。 | [作者网站](https://mml-book.com/)提供免费PDF、练习与部分Jupyter教程。 |
+| **Probabilistic Machine Learning: An Introduction**（Kevin P. Murphy，2022） | **进阶。** 从概率与统计的角度理解机器学习，补充模型假设及不确定性的相关知识。 | [第一卷作者页](https://probml.github.io/pml-book/book1.html)：主书草稿PDF、图例代码及教学资源。 |
+| **Probabilistic Machine Learning: Advanced Topics**（Kevin P. Murphy，2023） | **进阶专题。** 查阅概率推断、生成模型等较复杂的问题。 | [第二卷作者页](https://probml.github.io/pml-book/book2.html)：主书草稿PDF、补充材料与图例代码。 |
+
+## 进阶专题
+
+| 资源 | 适合怎样使用 | 阅读入口 |
+|---|---|---|
+| **Deep Learning**（Ian Goodfellow、Yoshua Bengio、Aaron Courville，2016） | **深度学习理论。** 查阅神经网络训练、正则化和优化的系统说明。 | [作者网站](https://www.deeplearningbook.org/)提供完整免费HTML；官网不提供PDF版本。 |
+| **Foundations of Machine Learning**，第2版（Mehryar Mohri、Afshin Rostamizadeh、Ameet Talwalkar，2018） | **学习理论。** 进一步理解泛化与学习算法的理论条件，需要较好的数学基础。 | [作者书籍页](https://cs.nyu.edu/~mohri/mlbook/)链接官方PDF、HTML及讲义。 |
+| **Reinforcement Learning: An Introduction**，第2版（Richard S. Sutton、Andrew G. Barto，2018） | **强化学习。** 了解通过行动与反馈进行学习的基本框架。 | [作者第二版页面](https://incompleteideas.net/book/the-book-2nd.html)提供书籍及配套资料入口。 |
+| **Machine Learning Systems**（Vijay Janapa Reddi及项目贡献者） | **系统实践。** 了解机器学习系统的构建、优化与部署，适合技术实践的延伸阅读。 | [项目网站](https://mlsysbook.ai/)提供两卷的在线阅读、PDF、EPUB与相关实践入口。 |
+
+返回[参考资源导读](../references.qmd)。
