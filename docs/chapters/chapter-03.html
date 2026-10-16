@@ -815,7 +815,7 @@ ul.task-list li input[type="checkbox"] {
 <p>从类型学到变量还有一道研究决定。例如“折沿”不是陶片天然附带的一组计算机字符：研究者需要制定判别标准、记录观察不确定性，并允许未能辨认的残片保持未知。一个类别定义即使被多人沿用，也可能需要因时期、地区和器物传统而审查其适用范围。</p>
 <section id="变量标签与输入特征并非同一个概念" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="变量标签与输入特征并非同一个概念">变量、标签与输入特征并非同一个概念</h3>
-<p>统计学习教材（James等，2023，第2章）区分用于预测的<strong>输入变量（predictors/features）</strong>与需要估计的<strong>响应变量或标签（response/target）</strong>。考古调查记录中则还包括不应用作预测指标的<strong>身份字段和情境关联字段</strong>。例如，表中的<code>artifact_id</code>是追踪一条陶片记录的标识符；<code>fragment_part</code>是观察得到的陶片部位；<code>rim_diameter_cm</code>是仅在适用条件下测量的尺寸。如果模型的任务是预测专家所定陶片类型，该类型字段才可能成为监督学习的标签；若不预设类型而探索分组，则该标签不能被当作模型必须重现的“真相”。</p>
+<p>统计学习教材（James等，2023，第2章）区分用于预测的<strong>输入变量（predictors/features）</strong>与需要估计的<strong>响应变量或标签（response/target）</strong>。考古调查记录中则还包括不应用作预测指标的<strong>身份字段和情境关联字段</strong>。例如，表中的<code>artifact_id</code>是追踪一条陶片记录的标识符；<code>fragment_part</code>是观察得到的陶片部位；<code>rim_diameter_cm</code>是仅在适用条件下测量的尺寸。如果模型的任务是预测专家所定陶片类型，该类型字段才可能成为监督学习的标签；若不预设类型而探索分组，则不能把事后看到的专家类别偷偷作为模型输入，再宣称算法独立发现了同样的分组。<strong>同一字段可以在不同研究设计中扮演不同角色，其角色必须在分析前说明。</strong></p>
 <p>Murphy的<em>Probabilistic Machine Learning: An Introduction</em>（2022；所上传在线版更新于2024年）第1.5节讨论离散输入与文本预处理及缺失资料；Zhang等的<em>Dive into Deep Learning</em>第2.2节把读取、准备数据和张量转换分成不同步骤。对初学者而言，更重要的是<strong>先描述记录意义和编码规则，再谈模型怎样读入数据</strong>。</p>
 <p><strong>一个无需编程的检查：</strong> 从现有18条虚构陶片记录中任取一行，分别圈出记录标识符、出土情境字段、描述性属性、可用数值和缺失状态。再解释为什么“给每行一个编号”并没有增加一项可以解释史前陶器差异的测量变量。不要改写原始CSV。</p>
 </section>
@@ -927,7 +927,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="元数据本体与共享标准包括cidoc-crmfair原则" class="level2" data-number="3.8">
 <h2 data-number="3.8" class="anchored" data-anchor-id="元数据本体与共享标准包括cidoc-crmfair原则"><span class="header-section-number">3.8</span> 元数据、本体与共享标准（包括CIDOC CRM、FAIR原则）</h2>
-<p>数据字典回答“这一列是什么意思”，<strong>元数据（metadata）</strong>则帮助他人了解整份资料：由谁在何时记录、使用了什么方法、适用于什么对象、采用何种坐标系和测量单位、经历哪些修改、是否存在使用与访问限制。</p>
+<p>数据字典回答“这一列是什么意思”，<strong>元数据（metadata）</strong>则帮助他人了解整份资料及其记录条件：由谁在何时记录、使用了什么方法、适用于什么对象、采用何种坐标系和测量单位、经历哪些修改、是否存在使用与访问限制。</p>
 <p>本章的教学数据附有<a href="../data/teaching-ceramics-01/data_dictionary.csv">数据字典</a>和<a href="../data/teaching-ceramics-01/provenance.md">来源说明</a>。这是必要的教学示范；真实考古研究还应说明采样范围、字段定义变动、器物—照片关系、年代基础、公开许可及文化遗产敏感性。</p>
 <p><strong>本体（ontology）</strong>进一步强调概念及概念之间的关系。例如“器物由某次发掘记录”“测量由某人实施”“一张照片记录某器物”等关系，比只储存散乱字段更利于不同机构理解彼此的数据。文化遗产领域的<a href="https://cidoc-crm.org/">CIDOC CRM</a>提供一种形式化的概念模型，用于描述文化遗产信息的实体与关系；它不是“一个可以直接下载全部文物数据的数据库”。</p>
 <p><strong>FAIR原则</strong>强调资料应具有可发现性（Findable）、可获取性（Accessible）、可互操作性（Interoperable）和可重用性（Reusable）。它们不意味着所有资料都必须无限制公开：敏感遗址位置、未获授权的图像或涉及社区权益的记录，可能需要明确访问条件。规范说明、永久标识、数据字典和许可可以帮助合法研究者理解和复核资料，同时遵守限制。</p>
