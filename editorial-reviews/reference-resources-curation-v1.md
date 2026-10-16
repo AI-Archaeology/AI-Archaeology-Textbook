@@ -204,7 +204,7 @@ M1指`AI_Archaeology_Case_Studies_Open_Data(1).md` Part I，M2指`Case Studies.m
 
 ## 六、技术验证与后续流程
 
-已完成源文件静态检查：
+首轮参考资源提交`fffa29b8`已完成以下源文件静态检查；组织迁移后的链接修订见第八节：
 
 | 检查项 | 结果 |
 |---|---|
@@ -232,3 +232,43 @@ M1指`AI_Archaeology_Case_Studies_Open_Data(1).md` Part I，M2指`Case Studies.m
 - Archaeopress部分页面、OAPEN库主页等出现抓取限制，已用相应机构官方介绍或官方检索记录确认资源性质；不将单次抓取失败写成网站失效。
 - SFU仅抽查了目录与单书PDF入口；Pressbooks练习册直接访问受限，免费版本依据UTA机构库记录。各集合的每本书仍须按自身版本与许可使用。
 - 原作者代码的存在与数据记录的公开不构成当前环境可复现的证明。本轮不改变现有核心案例的复现状态、审核状态或使用条件。
+
+
+## 八、组织仓库迁移与链接修订（2026-10-16）
+
+作者将仓库转移至GitHub组织AI-Archaeology，后续开发使用以下地址：
+
+- 仓库：https://github.com/AI-Archaeology/AI-Archaeology-Textbook
+- 网站：https://ai-archaeology.github.io/AI-Archaeology-Textbook/
+- 本PR：https://github.com/AI-Archaeology/AI-Archaeology-Textbook/pull/42
+
+转移后核对：`main`仍为`1bdf01d5f3a17e7e6fdf454cee6938143c57f411`；PR #42仍为打开的Draft，转移前的资源提交`fffa29b8ec6c2704b43ec5ce7cd3b6fc5a9c0903`完整保留。新网站的`index.html`与`references.html`均返回HTTP 200，实际内容与当前`main`的对应`docs/`文件Git blob一致。新资源栏目尚未合并发布。
+
+### 当前链接审计
+
+按资源提交的完整树清单检查83个源文件，范围为所有QMD及非`docs/`、非`editorial-reviews/`的Markdown/YAML文件。三个根文件包含当前仓库旧地址；其余80个文件逐一读取并核对Git blob SHA后，用`rg -n -i`检索旧仓库地址和旧Pages地址，额外命中为零。GitHub代码搜索在刚迁移后返回零条，未以该搜索结果代替实际文件检查。
+
+| 文件 | 本次修订 |
+|---|---|
+| `_quarto.yml` | `book.repo-url`改为组织仓库地址，供重新渲染时生成正确的仓库与编辑入口。 |
+| `index.qmd` | “开放与反馈”中的GitHub与Issues链接改用组织地址。 |
+| `README.md` | 更新推送目标，补上组织仓库和新网站链接。 |
+| 本报告 | 记录迁移、线上检查、源文件审计及本地同步要求。 |
+
+本次链接修订涉及上表4个文件，计入现有PR #42后累计改动10个文件。参考资源分类、章节正文与原有审核记录均未因迁移重写。YAML与首轮提交比较，仅新增仓库地址这一处配置变化，全书配置页面总数仍为69，其中“参考资源”栏目为6页。
+
+### 本地同步与生成文件
+
+补丁已在首轮资源提交对应文件的副本上通过`git apply --check`，应用后逐文件内容与准备稿一致。这一检查不替代本地Quarto渲染和页面预览。
+
+本地现有项目使用`git remote set-url origin https://github.com/AI-Archaeology/AI-Archaeology-Textbook.git`更新远端地址，然后获取并快进拉取原资源分支，再完整渲染、预览和提交`docs/`。源文件中的地址修订须经本地渲染和生成文件提交后才能反映到线上。
+
+GitHub官方[仓库转移说明](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository)区分仓库重定向与Pages站点：旧仓库位置的Git操作及仓库链接会重定向，关联的Pages网址不自动获得这种重定向。后续教材与教学通知使用上列新网站地址。本PR继续保持Draft，等待本地生成文件及远端HTML验证。
+
+补丁准备阶段的写入记录：通过当前GitHub连接创建组织仓库的Git tree时，GitHub返回`403: Resource not accessible by integration`。源文件修改与本地检查已完成，但该次写入未成功，当时远端PR仍停留在`fffa29b8`。
+
+### 组织安装确认与续作
+
+作者随后在AI-Archaeology组织安装了由OpenAI开发的ChatGPT Codex Connector，并选择仅授权AI-Archaeology-Textbook。2026-10-16续作时，通过当前连接读取组织安装记录与该安装的仓库清单，确认安装ID为`172224741`，授权方式为`selected`，清单中仅包含`AI-Archaeology/AI-Archaeology-Textbook`，与作者提供的配置截图一致。
+
+本次链接修订继续提交到既有分支`feature/reference-resources-guide-v1`，提交前已核对PR #42仍为打开的Draft、头提交仍为`fffa29b8ec6c2704b43ec5ce7cd3b6fc5a9c0903`，并核对补丁基准文件与该提交一致。组织安装确认与实际提交成功分别记录；写入、提交及远端文件复核结果见PR #42的提交历史和说明。本轮不代替作者的本地完整渲染、预览以及随后生成HTML的远端验证。
