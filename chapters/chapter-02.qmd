@@ -166,25 +166,23 @@ Nikita与Martinón-Torres（2026）回顾*Journal of Archaeological Science*不�
 
 **研究实践：** 结合[核心案例库](../core-case-library/index.qmd)，为一篇使用AI的研究制作来源、输入、算法、输出和考古解释的证据链。对任何尚未核实的具体中国学术史案例，另设“待核”而非编造年代和代表人物。
 
-**AI方法史的补充读物（与考古学专门研究史分开使用）：**
+> **资料说明：** 国际AI技术发展的著作不直接证明某种方法在中国考古学中的首次使用；本文对中国方法史的概述仍需更多原始文献支持。此章为待学术审定的教材初稿。
 
-- Russell, Stuart, and Peter Norvig. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson，英文版版权©2021，第1章；中文第四版2023年首次印行。用于AI总体发展史，不用于证明中国考古学具体技术采用年份。
-- Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. *Deep Learning*. MIT Press，第1章及第5章；用于神经网络和统计学习的发展背景。
-- Bishop, Christopher M., and Hugh Bishop. 2024. [*Deep Learning: Foundations and Concepts*.](https://doi.org/10.1007/978-3-031-45468-4) Springer，第1章；用于技术概念与历史概览。
-- Theodoridis, Sergios. 2026. *Machine Learning: From the Classics to Deep Networks, Transformers, and Diffusion Models*. 3rd ed. Academic Press，第1章技术史与机器学习任务。上传文件名为2025，版权页为2026。
+## 参考文献 {.unnumbered}
 
-**本轮新补充的综述文献：**
-
-- Bellat, Mathias, et al. 2025. [“Machine Learning Applications in Archaeological Practices: A Review.”](https://doi.org/10.5334/jcaa.201) *Journal of Computer Applications in Archaeology* 8(1): 282–321。注意135篇是该论文明确的纳入样本。
-- Nikita, Efthymia, and Marcos Martinón-Torres. 2026. [“Next Generation Archaeological Science: From the Past to the Future.”](https://doi.org/10.1016/j.jas.2026.106603) *Journal of Archaeological Science* 192: 106603。注意以高被引论文描绘趋势所固有的选择偏差。
-- Chapman, Robert. 2023. *Archaeological Theory: The Basics*. Routledge，尤其第1章；Johnson、Urban与Schortman等作品可作为比较考古学理论教学的进一步阅读。
-- Urban, Patricia A., and Edward Schortman. 2019. *Archaeological Theory in Practice*. 2nd ed. Routledge，尤其第3—4章，说明文化史、过程考古学取向如何与实际项目相互塑造。
-
-**已核对的基础书目和出版入口：**
-
+- Bellat, Mathias, et al. 2025. [“Machine Learning Applications in Archaeological Practices: A Review.”](https://doi.org/10.5334/jcaa.201) *Journal of Computer Applications in Archaeology* 8(1): 282–321.
 - Binford, Lewis R. 1962. [“Archaeology as Anthropology.”](https://doi.org/10.2307/278380) *American Antiquity* 28(2): 217–225.
-- Clarke, David L. 1968. [*Analytical Archaeology*.](https://books.google.com/books/about/Analytical_Archaeology.html?id=fSgh0gEACAAJ) Methuen.
-- Hodder, Ian. 1986. [*Reading the Past: Current Approaches to Interpretation in Archaeology*.](https://philpapers.org/rec/HODRTP-2) Cambridge University Press.
-- Wheatley, David, and Mark Gillings. 2002. [*Spatial Technology and Archaeology: The Archaeological Applications of GIS*.](https://www.routledge.com/Spatial-Technology-and-Archaeology-The-Archaeological-Applications-of-/Gillings-Wheatley/p/book/9780415246392) Taylor & Francis.
-
-> **学术审定边界：** 上述出版信息及部分方法概述已有可核对的出版入口，但本文并未逐页核对这些著作的全部论证，不应把教学概述理解为这些作者的原文引述。中国考古学计算方法发展的具体研究史和一手案例仍待专门文献核查；本章尚属待审初稿。
+- Bishop, Christopher M., and Hugh Bishop. 2024. [*Deep Learning: Foundations and Concepts*.](https://doi.org/10.1007/978-3-031-45468-4) Springer.
+- Chapman, Robert. 2023. *Archaeological Theory: The Basics*. Routledge.
+- Clarke, David L. 1968. *Analytical Archaeology*. Methuen.
+- Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. *Deep Learning*. MIT Press.
+- Hodder, Ian. 1986. *Reading the Past: Current Approaches to Interpretation in Archaeology*. Cambridge University Press.
+- Nikita, Efthymia, and Marcos Martinón-Torres. 2026. [“Next Generation Archaeological Science: From the Past to the Future.”](https://doi.org/10.1016/j.jas.2026.106603) *Journal of Archaeological Science* 192: 106603.
+- Russell, Stuart, and Peter Norvig. 2021. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson.
+- Theodoridis, Sergios. 2026. *Machine Learning: From the Classics to Deep Networks, Transformers, and Diffusion Models*. 3rd ed. Academic Press.
+- Urban, Patricia A., and Edward Schortman. 2019. *Archaeological Theory in Practice*. 2nd ed. Routledge.
+- Wheatley, David, and Mark Gillings. 2002. *Spatial Technology and Archaeology: The Archaeological Applications of GIS*. Taylor & Francis.
+- 关莹、周振宇. 2022. [《数据科学在旧石器考古学中的应用》](https://doi.org/10.16359/j.1000-3193/AAS.2021.0009). 《人类学学报》41(1): 169–179.
+- 刘建国. 2007. 《考古与地理信息系统》. 科学出版社.
+- 刘建国. 2008. 《考古测绘、遥感与GIS》. 北京大学出版社.
+- 聂跃平、杨林. 2009. [《中国遥感技术在考古中的应用与发展》](https://doi.org/10.11834/jrs.20090514). 《遥感学报》13(5): 940–962.
