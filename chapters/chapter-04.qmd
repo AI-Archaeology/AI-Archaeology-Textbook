@@ -59,6 +59,12 @@
 
 一份最低限度的数据质量说明应包含记录总数、变量定义、各字段可用数量、缺失和不适用的区分、重复记录检查、异常值处理、来源版本以及限制性声明。进一步建模时，还需要测试结论对不同合理处理方案是否敏感。
 
+### 不要混淆三种“偏差”，也不要混淆训练成绩与泛化能力 {.unnumbered}
+
+本章的**保存与取样偏差**指考古遗存进入研究样本之前的选择性损失；**测量和标注偏差**指资料记录及人为归类中的系统差异。统计学习中的**偏差—方差权衡（bias–variance trade-off）**又是另一层概念：模型过于简单可能无法捕捉重要关系，过于灵活则可能对现有训练数据拟合得很好、在新样本上表现很差。James等（2023）第2.2节和Goodfellow等（2016）第5.3—5.5节说明模型复杂度、过拟合和评价之间的关系。**统计学意义的模型偏差，并不等于考古发掘样本的保存偏差**，虽然两类问题可能同时发生。
+
+例如，陶片照片全部来自同一摄影台，即使模型在随机留出的图片上取得较高分数，也可能借助背景、光照或拍摄机构的特征作出判断。Prince（2023年出版的*Understanding Deep Learning*；上传版更新于2024年）第8章讨论性能测量及误差来源；Zhang等*Dive into Deep Learning*第3.6与4.6—4.7节则分别讨论泛化、测试集重复使用和环境分布变化。因此，**模型是在已有照片上学得很好，还是能用于另一遗址或另一摄影流程，是两个不同的问题**。
+
 ## 年代与空间位置的不确定性
 
 “出土年代为某年”“遗址坐标为某个精确数字”看起来明确，但不一定反映考古学证据的实际精度。地层关系通常提供的是**相对先后**；测年结果包含实验误差、校准和模型前提；一件器物的制作时间、使用时间和最终埋藏时间也可能不同。将它们都压缩成一个整数年份，可能造成虚假的确定性。
@@ -123,12 +129,17 @@ Bickler（2021）同样提醒，考古资料形成缓慢、规模有限、保存
 
 **入门：** 返回第3章，复核观察单位、缺失状态及数据来源说明。**进阶：** 在第5—8章学习统计推断、训练与独立评价，在第14章进一步讨论空间资料的分析条件。**研究实践：** 对照真实论文的数据来源、取样、字段缺失和验证设计，逐项判断作者报告的预测结果可以推广到何种资料。
 
-### 本章来源核验与阅读路径 {.unnumbered}
+> **资料说明：** 本章涉及的数字情境均为虚构教学示例。考古资料的保存偏差与统计模型偏差是不同概念，缺失机制不能凭单个空白格直接确定。本章仍待全面学术审定。
 
-- Renfrew, Colin, and Paul Bahn. 2020. *Archaeology: Theories, Methods and Practice*. 8th ed. Thames & Hudson，第2章形成过程、第3章调查取样、第4章年代。
-- Carver, Martin, and Madeleine Hummler. 2025. *Archaeological Investigation*. 2nd ed. Routledge，第1、4—6章。[出版物DOI](https://doi.org/10.4324/9781003185147)。
-- Chapman, Robert, and Alison Wylie. 2016. *Evidential Reasoning in Archaeology*. Bloomsbury Academic，导论与第1—3章。
-- Bickler, Simon H. 2021. [“Machine Learning Arrives in Archaeology.”](https://doi.org/10.1017/aap.2021.6) *Advances in Archaeological Practice* 9(2): 186–191。
-- Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571。
+## 参考文献 {.unnumbered}
 
-> **学术边界：** 本章主要通过通用方法概念与明确标注的虚构情境解释考古资料的限制；真实遗址案例、相关理论原著和方法研究的完整引用仍待下一轮核验。它是依据锁定大纲完成的正文初稿，不是已通过终审的出版文本。
+- Bickler, Simon H. 2021. [“Machine Learning Arrives in Archaeology.”](https://doi.org/10.1017/aap.2021.6) *Advances in Archaeological Practice* 9(2): 186–191.
+- Carver, Martin, and Madeleine Hummler. 2025. [*Archaeological Investigation*.](https://doi.org/10.4324/9781003185147) 2nd ed. Routledge.
+- Chapman, Robert, and Alison Wylie. 2016. *Evidential Reasoning in Archaeology*. Bloomsbury Academic.
+- Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. *Deep Learning*. MIT Press.
+- James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. [*An Introduction to Statistical Learning with Applications in Python*.](https://doi.org/10.1007/978-3-031-38747-0) Springer.
+- Murphy, Kevin P. 2023. *Probabilistic Machine Learning: Advanced Topics*. MIT Press.
+- Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
+- Prince, Simon J. D. 2023. *Understanding Deep Learning*. MIT Press. 中译本：《理解深度学习》，清华大学出版社，2025。
+- Renfrew, Colin, and Paul Bahn. 2020. *Archaeology: Theories, Methods and Practice*. 8th ed. Thames & Hudson.
+- Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. *Dive into Deep Learning*. 电子教材，所用版本年份待核.

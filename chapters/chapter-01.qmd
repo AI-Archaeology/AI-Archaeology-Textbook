@@ -49,6 +49,14 @@
 
 这些概念之间的关系可以概括为：**深度学习属于机器学习的重要组成部分，机器学习属于人工智能的重要组成部分；大语言模型通常依赖深度学习，但“语言生成”只是其特定应用能力。**
 
+### 从“能完成任务”到“能在新资料上使用”：AI方法的基本评价 {.unnumbered}
+
+Russell与Norvig在*Artificial Intelligence: A Modern Approach*（第4版）中以**智能体（agent）与任务环境**组织整个AI领域：搜索、知识表示、概率推理、规划与机器学习都是广义AI体系中的不同路线，而非“AI就是深度学习”的同义表达。Chollet与Watson的*Deep Learning with Python*（第3版，2026）第1章进一步比较了传统程序和机器学习：前者由人写明规则，后者在设定任务、数据与评价方式后，从样本中学习可应用的关系。这只是理解两类典型工作的简化对比，不意味着机器学习系统不需要人为设计。
+
+以陶片分类为例，“**训练**”是根据一部分有标签记录调整模型；“**预测**”是向模型输入待判断的记录；“**泛化**”则是模型面对未参与训练、符合研究预期的新记录时，仍能保持有用表现。三者不能混淆。James等（2023）*An Introduction to Statistical Learning with Applications in Python*第2章区分预测精度与可解释性；Chollet与Watson（2026）第5章区分训练、验证、测试以及过拟合。这些是方法概念，不是声称考古模型已经达到某一性能。
+
+**入门时不必计算梯度或训练神经网络**，但应知道：模型的良好表现必须针对清楚定义的任务和独立评价资料，之后才谈得上是否有助于解释过去。
+
 还应分清学习任务：
 
 - **监督学习**使用已有目标标签进行训练，如根据专家标注预测陶片器类。
@@ -166,17 +174,17 @@ Magnani与Clindaniel的一项已发表研究，以尼安德特人生活场景为
 
 **研究前沿：** 从[六例AI考古学核心案例库](../core-case-library/index.qmd)选一例，追踪论文、数据说明与复现审查，辨别“研究者报告的结果”“数据来源已核验”“算法已在虚构数据上测试”和“真实研究结果已被独立复现”四种不同证据状态。
 
-### 已核对来源与进一步阅读 {.unnumbered}
+本章的六类AI用途是为教学组织的任务类别，并不是互斥、穷尽或依历史出现顺序排列的算法分类。对于具体论文的考古学结论，需要分别核查原始观察、模型评价和独立证据。
 
-- Bickler, Simon H. 2021. [“Machine Learning Arrives in Archaeology.”](https://doi.org/10.1017/aap.2021.6) *Advances in Archaeological Practice* 9(2): 186–191。用于了解机器学习处理考古图像、空间和文本资料的用途及小样本风险。
-- Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571。用于认识训练资料、代理指标与考古解释的关系。
-- Magnani, Matthew, and Jon Clindaniel. 2025（线上发表；2026年卷期）. [“Artificial Intelligence and the Interpretation of the Past.”](https://doi.org/10.1017/aap.2025.10110) *Advances in Archaeological Practice* 14: 218–233。用于理解生成式历史再现的具体评价。
-- Chapman, Robert, and Alison Wylie. 2016. *Evidential Reasoning in Archaeology*. Bloomsbury Academic。尤其参阅导论“物质证据的悖论”及第1章，理解考古资料如何成为有根据的论证。
+> **资料说明：** 陶片分类活动中的数字均为虚构教学设定；A6案例与明确注明出处的Magnani—Clindaniel研究属于真实文献介绍。本章仍为待学术审定的教材初稿。
 
-### 核心概念与阅读的核验入口 {.unnumbered}
+## 参考文献 {.unnumbered}
 
-本章以方法边界和证据判断为主，并不将某一历史研究的量化结果当作入门结论。要理解统计与计算方法进入考古学的学术背景，可接着阅读[第2章](chapter-02.qmd)。其中列出并核对了Binford（1962）、Clarke（1968）、Hodder（1986）与Wheatley和Gillings（2002）的基础书目及出版入口。这些读物分别帮助理解明确问题与假说、分析单位、解释情境以及GIS在考古学中的方法作用，**并非**都属于AI研究成果。
-
-本章的六类AI用途是为教学组织的**任务类别**，并不是声称各类算法在历史上出现的严格顺序，也不代表模型在这些用途中的可靠性已经得到普遍证明。对特定论文的实证成效，应逐一核对原文、数据、评价设计与许可。
-
-> **编写与核验说明：** 本章为遵循2026年10月13日锁定教材大纲的教学正文初稿，本章陶片课堂情境中的数字均为虚构教学设定；A6案例与明确注明出处的Magnani—Clindaniel研究属于真实文献介绍，不能与模拟数据混同。本章尚待术语、教材编辑和参考文献的最终审定；不以虚构教学数值冒充真实考古研究结果。
+- Bickler, Simon H. 2021. [“Machine Learning Arrives in Archaeology.”](https://doi.org/10.1017/aap.2021.6) *Advances in Archaeological Practice* 9(2): 186–191.
+- Bishop, Christopher M., and Hugh Bishop. 2024. [*Deep Learning: Foundations and Concepts*.](https://doi.org/10.1007/978-3-031-45468-4) Springer.
+- Chapman, Robert, and Alison Wylie. 2016. *Evidential Reasoning in Archaeology*. Bloomsbury Academic.
+- Chollet, François, and Matthew Watson. 2026. *Deep Learning with Python*. 3rd ed. Manning.
+- James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. [*An Introduction to Statistical Learning with Applications in Python*.](https://doi.org/10.1007/978-3-031-38747-0) Springer.
+- Magnani, Matthew, and Jon Clindaniel. 2026. [“Artificial Intelligence and the Interpretation of the Past.”](https://doi.org/10.1017/aap.2025.10110) *Advances in Archaeological Practice* 14: 218–233 (online 2025).
+- Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
+- Russell, Stuart, and Peter Norvig. 2021. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson. 中译本：《人工智能：现代方法》，第4版，人民邮电出版社，2023。
