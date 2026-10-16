@@ -65,6 +65,12 @@ Russell与Norvig在*Artificial Intelligence: A Modern Approach*（第4版）中�
 
 这些算法的详细原理安排在第5—8章；本章先学会辨认任务及其证据责任。
 
+### 为什么AI不仅仅是“让机器从数据中学习”？ {.unnumbered}
+
+中文教材《人工智能基础》从**推理、知识和学习**三个相互联系的研究传统介绍人工智能，并区分符号主义、连接主义与强调环境交互的行为主义（刘伟等，2025，第1章1.2—1.3节）。《人工智能概论》则从机器学习、多模态、生成式AI、科学研究应用和伦理治理等主题组织入门教学（王栋、卢湖川主编，2025，第1—4、6、8章）。两种编排提醒我们：**机器学习很重要，但它不是整个AI的全部；研究任务、知识表示、算法和人的判断可以共同组成一个系统。**
+
+对于考古学，识别陶片纹饰可能主要需要图像分析，整理遗迹之间的关系还可能涉及数据库或知识表示，判断一个类型学结论则必须返回地层、年代和实物证据。本书不会要求初学者记住所有技术名称；理解**为何选择某种方法、它需要何种证据**更重要。
+
 ## AI在考古研究中的主要用途：识别、分类、探测、预测、检索与生成
 
 “使用AI”并不是一个足够明确的研究计划。首先要说明究竟希望系统完成什么工作，输出又如何用于考古研究。
@@ -188,3 +194,5 @@ Magnani与Clindaniel的一项已发表研究，以尼安德特人生活场景为
 - Magnani, Matthew, and Jon Clindaniel. 2026. [“Artificial Intelligence and the Interpretation of the Past.”](https://doi.org/10.1017/aap.2025.10110) *Advances in Archaeological Practice* 14: 218–233 (online 2025).
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
 - Russell, Stuart, and Peter Norvig. 2021. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson. 中译本：《人工智能：现代方法》，第4版，人民邮电出版社，2023。
+- 刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.
+- 王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.
