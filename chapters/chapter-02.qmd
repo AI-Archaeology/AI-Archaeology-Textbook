@@ -78,6 +78,12 @@ Ian Hodder的《Reading the Past》（1986）是理解这一理论讨论的一�
 
 这一案例值得初学者注意的，不是某个未经核对的“最佳簇数”，而是研究程序如何从考古观察到变量、模型分组，再到风格与制作群体的解释。算法输出和历史解释之间仍需要独立证据。
 
+### AI技术史与考古学技术采用史需要分别叙述 {.unnumbered}
+
+从AI自身的发展看，Russell与Norvig（第4版）第1章提供了广义人工智能的历史框架；Goodfellow、Bengio与Courville（2016）第1章讨论深度学习的技术发展；Bishop与Bishop（2024）第1章把神经网络训练、模型复杂度与近年的应用联系起来。它们可以帮助辨认**统计学习、神经网络、深度学习和生成模型**在计算技术上的联系，却不能直接证明这些技术分别在何年首次进入考古学。
+
+相反，考古学的方法采用史必须根据**考古学原始论文和学科综述**来写。Bickler（2021）、Bellat等（2025）及Orengo等（2026）的考古学综述说明技术应用与研究资料、记录习惯和验证标准密切相关。不能把AI领域技术突破年份直接当作考古学采用该方法的年份，也不能把深度学习出现表述为旧有统计、GIS和类型学方法的终结。
+
 ## 大模型时代的考古研究
 
 近年来，生成式AI和大语言模型带来了另一种不同的应用方式：研究者不仅可以让计算机处理已经组织好的变量，也可以通过自然语言提出问题、尝试检索材料、生成文字草稿，或要求系统协助整理复杂文献。
@@ -159,6 +165,13 @@ Nikita与Martinón-Torres（2026）回顾*Journal of Archaeological Science*不�
 **进阶：** 对照Binford（1962）、Clarke（1968）及Hodder（1986），比较研究问题、分析单位与历史解释的不同关注点；用Wheatley与Gillings（2002）进一步理解空间技术与考古解释的关系。
 
 **研究实践：** 结合[核心案例库](../core-case-library/index.qmd)，为一篇使用AI的研究制作来源、输入、算法、输出和考古解释的证据链。对任何尚未核实的具体中国学术史案例，另设“待核”而非编造年代和代表人物。
+
+**AI方法史的补充读物（与考古学专门研究史分开使用）：**
+
+- Russell, Stuart, and Peter Norvig. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson，英文版版权©2021，第1章；中文第四版2023年首次印行。用于AI总体发展史，不用于证明中国考古学具体技术采用年份。
+- Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. *Deep Learning*. MIT Press，第1章及第5章；用于神经网络和统计学习的发展背景。
+- Bishop, Christopher M., and Hugh Bishop. 2024. [*Deep Learning: Foundations and Concepts*.](https://doi.org/10.1007/978-3-031-45468-4) Springer，第1章；用于技术概念与历史概览。
+- Theodoridis, Sergios. 2026. *Machine Learning: From the Classics to Deep Networks, Transformers, and Diffusion Models*. 3rd ed. Academic Press，第1章技术史与机器学习任务。上传文件名为2025，版权页为2026。
 
 **本轮新补充的综述文献：**
 
