@@ -1,0 +1,74 @@
+---
+number-sections: false
+toc-depth: 2
+---
+
+# R、Python与数字方法 {.unnumbered}
+
+没有编程经验时，先选择R或Python中的一种，从读入小表格、整理变量和绘图开始。下列资源包括通用基础书、考古专题教程与软件文档，可按当前问题选用。标为“中文”或“法文”的条目使用相应语言，其余主要为英文。
+
+## 编程基础
+
+| 资源 | 适合怎样使用 | 阅读与练习入口 |
+|---|---|---|
+| **R for Data Science**，第2版（Hadley Wickham、Mine Çetinkaya-Rundel、Garrett Grolemund） | **R入门。** 学习数据导入、整理、变换、可视化与结果沟通，可配合考古数据表练习。 | [作者在线书](https://r4ds.hadley.nz/)，免费HTML与章节代码。 |
+| **《R数据分析入门》**（Lingxiao HE） | **中文，R入门。** 熟悉R语法、读表、数据处理和绘图，再转向考古练习。 | [免费在线书](https://bookdown.org/lhe/a-quick-start-on-data-analysis-in-r/)。 |
+| **Think Python**，第3版（Allen B. Downey） | **Python入门。** 从变量、函数和数据结构开始练习编程思维。 | [作者在线书与Notebooks](https://allendowney.github.io/ThinkPython/)，含章节练习入口。 |
+| **Automate the Boring Stuff with Python**，第3版（Al Sweigart） | **Python入门。** 通过文件、文本和电子表格等任务练习基础操作与批处理。 | [作者在线书](https://automatetheboringstuff.com/)，免费HTML与配套文件。 |
+| **Python for Data Analysis**，第3版（Wes McKinney，2022） | **Python基础后。** 用NumPy与pandas清洗、重组和合并表格，为处理考古清单与数据库建立技能。 | [作者开放HTML版](https://wesmckinney.com/book/)及配套代码入口；PDF与EPUB为购买版本。 |
+| **Introduction to Cultural Analytics & Python**（Melanie Walsh） | **入门至进阶。** 通过文本、网络和地图示例学习Python在人文材料分析中的应用。 | [作者免费在线书](https://melaniewalsh.github.io/Intro-Cultural-Analytics/welcome.html)。 |
+
+## 数字考古与统计练习
+
+| 资源 | 适合怎样使用 | 阅读与练习入口 |
+|---|---|---|
+| **The Open Digital Archaeology Textbook（ODATE）**（Shawn Graham、Neha Gupta等） | **阅读入门至专题实践。** 把数据整理、数字记录、分析与传播放回考古问题及研究流程中理解。 | [免费在线书](https://o-date.github.io/draft/book/)；[配套笔记本目录](https://o-date.github.io/support/notebooks-toc/)。项目为持续修订的书稿。 |
+| **Data Analysis and Visualization in R for Archaeologists**（Carpentries Incubator） | **R入门。** 从读入考古数据表开始，练习整理、统计摘要与图表；课程面向无编程经验者。 | [免费课程](https://carpentries-incubator.github.io/R-archaeology-lesson/)；[教学数据](https://doi.org/10.5281/zenodo.6478180)。 |
+| **Statistical Methods for Archaeological Data Analysis（SMADA）**（Joe Roe） | **R入门至进阶。** 将探索性分析、统计推断与可重复的考古数据工作流程连接起来。 | [2023年存档课程与练习](https://smada.joeroe.io/)。 |
+| **R for Archaeologists**（UCLA Digital Archaeology Lab，Bit by Bit教程） | **R入门。** 用带说明的R Markdown文件练习数据管理、绘图、测年资料与模型比较。 | [机构教程下载页](https://dal.ucla.edu/blog/2024/11/22/r-for-archaeologists/)介绍PDF资源指南、Rmd练习与CSV示例下载包。 |
+| **DAACS Open Academy: Introduction to R Programming for Historical Archaeologists** | **R入门。** 结合历史考古资料学习基础操作、数据处理与图表。 | [2021年课程录像存档](https://www.daacs.org/research/playlists/doa-archives/doa-fall-2021/)；[课程代码与材料](https://github.com/DAACS-Research-Consortium/DAACS-Open-Academy)。 |
+| **Introduction to Statistics Using R (for archaeologists)**（Efthymia Nikita，2020） | **统计入门至进阶。** 用考古科学实例理解统计方法的选择、操作与结果解释。 | [作者存档免费PDF](https://zenodo.org/records/6990414)；[练习数据](https://zenodo.org/records/3837331)。 |
+
+## 空间、网络与资料获取
+
+| 资源 | 适合怎样使用 | 阅读与练习入口 |
+|---|---|---|
+| **Geocomputation with R**，第2版（Robin Lovelace、Jakub Nowosad、Jannes Muenchow） | **R进阶。** 学习空间数据、坐标转换、空间运算与制图。 | [免费在线书与代码](https://r.geocompx.org/)。 |
+| **Geocomputation with Python**，第1版（Michael Dorman、Anita Graser、Jakub Nowosad、Robin Lovelace，2025） | **Python进阶。** 处理向量、栅格、几何关系、坐标系统与地图输出。 | [免费在线书与代码](https://py.geocompx.org/)。 |
+| **Online Companion to Network Science in Archaeology**（Matthew A. Peeples、Tom Brughmans，2023） | **R进阶。** 练习构建、分析与展示考古网络，并检查资料与不确定性。 | [免费配套教程、代码与数据](https://book.archnetworks.net/)。此处提供在线配套，纸本教材另行获取。 |
+| **Exploring and Analyzing Network Data with Python**（Programming Historian） | **Python进阶。** 用历史人文资料练习NetworkX的网络指标与图形，再思考考古网络的构建。 | [免费逐步教程与代码](https://programminghistorian.org/en/lessons/exploring-and-analyzing-network-data-with-python)。 |
+| **Open Context API Cookbook与Jupyter示例**（Open Context、Eric Kansa） | **Python进阶。** 学习从公开考古数据库取回记录、整理成表及绘制测量数据图形。 | [API指南](https://opencontext.org/about/recipes)；[作者Notebook与代码库](https://github.com/ekansa/open-context-jupyter)。数据使用条件按具体项目查看。 |
+
+## 专题方法与软件
+
+| 资源 | 适合怎样使用 | 文档与材料入口 |
+|---|---|---|
+| **Calibrating Radiocarbon Dates with R**（Nicolas Frerebeau、Brice Lebrun，Programming Historian） | **R与基础统计知识后。** 按完整示例练习校正碳十四年代、表达不确定性与报告结果。 | [免费教程与代码](https://programminghistorian.org/en/lessons/calibrating-radiocarbon-dates-r)。 |
+| **rcarbon**（Andrew Bevan、Enrico Crema等） | **R专题。** 在理解测年与抽样假设后，学习校正、汇总及比较多组碳十四年代。 | [软件、手册与示例](https://CRAN.R-project.org/package=rcarbon)；[方法论文（Crema与Bevan，2021）](https://doi.org/10.1017/RDC.2020.95)。 |
+| **IOSACal**（Stefano Costa与贡献者） | **Python专题。** 练习碳十四年代校正、图形表达与测定值比较。 | [软件文档与示例](https://c14.iosa.it/en/latest/)。 |
+| **tesselle**（Nicolas Frerebeau及项目贡献者） | **R专题。** 按计数、组成与年代数据的特点查找相应分析工具。 | [软件包与文档目录](https://www.tesselle.org/)；[使用说明](https://www.tesselle.org/use.html)。 |
+| **PyLithics**（Palaeoanalytics项目） | **Python专题。** 从二维石器线描图提取轮廓与几何测量，比较数字表示与实物特征。 | [免费软件指南](https://alan-turing-institute.github.io/Palaeoanalytics/)。它采用轮廓与几何测量方法，不使用训练后的机器学习模型。 |
+| **roadDB** | **R专题。** 按遗址、组合或对象层级查询ROAD数据库，生成可分析的数据表。 | [作者教程](https://www.sommergeo.com/roadDB/tutorial.html)；[CRAN软件页](https://CRAN.R-project.org/package=roadDB)。查询依赖远程数据库。 |
+| **Quantitative Methods in Archaeology Using R**（David L. Carlson，2017）与 **archdata** | **进阶参考。** 查阅较系统的考古统计方法，并用书中配套数据练习。 | [出版社图书页](https://www.cambridge.org/core/books/quantitative-methods-in-archaeology-using-r/DEAE593FA2418EA3B8ECD538C34ED2D5)：正文需购买或机构访问；[archdata配套数据](https://CRAN.R-project.org/package=archdata)免费。 |
+
+## 补充书稿与编程进阶
+
+| 资源 | 适合怎样使用 | 阅读入口与状态 |
+|---|---|---|
+| **Advanced R**，第2版（Hadley Wickham） | **R进阶。** 理解函数、环境与对象系统，帮助编写更可靠的分析代码。 | [作者免费在线书](https://adv-r.hadley.nz/)。 |
+| **How To Do Archaeological Science Using R**（Ben Marwick编） | **R专题查阅。** 选读数据导入、测年、制图或模拟章节，观察代码与方法说明怎样配合。 | [免费HTML草稿](https://benmarwick.github.io/How-To-Do-Archaeological-Science-Using-R/)，为尚未完成的编辑文集。 |
+| **Archaeological Science with R**（Ben Marwick） | **R入门补充。** 选读数据采集、导入、整理及可重复研究的已写成部分。 | [免费HTML书稿](https://benmarwick.github.io/aswr/)，部分后续章节仍未完成。 |
+| **R pour l’archéologue: Exploration, visualisation et analyse de données**（Nicolas Frerebeau、Julie Gravier、Ben Marwick） | **法文，R入门至专题查阅。** 补充学习数据整理、绘图与考古分析。 | [免费在线书稿](https://r-archeo.huma-num.fr/)，仍在写作中。 |
+| **《R语言数据分析实战》**（黄湘云） | **中文，R基础后。** 补充数据整理、图表、统计与分析报告的具体做法。 | [作者免费网页书稿](https://xiangyunhuang.github.io/data-analysis-in-action/)；[配套代码](https://github.com/XiangyunHuang/data-analysis-in-action)。书稿仍处于开发阶段。 |
+| **Digging with Python**（Juan Palomeque-Gonzalez） | **Python专题演示。** 通过遗产记录查询、表格关联与图像处理脚本，观察Python可承担的具体工作。 | [作者代码与演示材料](https://github.com/jfpalomeque/Digging-with-Python)，主要为概念验证示例。 |
+
+## 进一步查找
+
+| 资源目录 | 适合查找什么 | 入口 |
+|---|---|---|
+| **open-archaeo**（Zack Batist、Joe Roe） | 按考古问题与工具类型查找指南、软件与示例。 | [资源目录](https://open-archaeo.info/)；[Guides分类](https://open-archaeo.info/categories/guides/)。 |
+| **考古学R资源目录（ctv-archaeology）**（Ben Marwick维护） | 按测年、遗物、空间分析等主题寻找R工具与公开研究代码。 | [社区维护目录](https://github.com/benmarwick/ctv-archaeology)。 |
+| **Matthew Peeples: Data and Software** | 查找年代、网络与空间分析等主题的脚本、教程和研究配套材料。 | [作者目录](https://mattpeeples.net/data-and-software/)；[ASU计算考古工具介绍](https://shesc.asu.edu/research/projects/research-tools-computational-archaeology)。 |
+| **Big Book of R**（Oscar Baruffa） | 按主题寻找进一步的R教材。 | [编者目录](https://www.bigbookofr.com/)，同时收录免费与付费资源。 |
+
+统计学习与深度学习教材见[人工智能与统计学习](ai-learning.qmd)。返回[参考资源导读](../references.qmd)。

@@ -91,7 +91,14 @@ book:
         - dataset-teaching-ceramics-01.qmd
         - exercises.qmd
         - data-policy.qmd
+    - part: "参考资源"
+      chapters:
         - references.qmd
+        - reference-resources/archaeology.qmd
+        - reference-resources/programming.qmd
+        - reference-resources/ai-learning.qmd
+        - reference-resources/ai-cases.qmd
+        - reference-resources/archaeological-data.qmd
 
 format:
   html:

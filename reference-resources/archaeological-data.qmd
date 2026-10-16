@@ -1,0 +1,48 @@
+---
+number-sections: false
+toc-depth: 2
+---
+
+# 考古数据与比较研究 {.unnumbered}
+
+这些资源展示考古资料怎样被汇总、编码并用于跨地区或跨时期研究。使用数据前，先查看样本如何进入数据库、每个字段表示什么、缺失值怎样处理，以及数据版本与原论文是否对应。研究中的测年频数、房屋面积、专家判断或遗传相似性，都需要结合其取得方式和考古背景解释。
+
+可以先阅读论文中的研究问题、图表和资料说明，再选择适合自己方法基础的数据。以下分别列出论文和资料入口，获取方式以原站说明为准。
+
+## 测年与人口研究
+
+| 资源 | 适合关注的问题 | 论文与资料入口 |
+|---|---|---|
+| **英国与爱尔兰放射性碳测年研究**（Bevan等，2017） | 测年资料怎样用于讨论人口、食物生产与气候的关系，以及测年频数怎样受抽样影响。 | [原论文](https://doi.org/10.1073/pnas.1709190114)；[UCL数据与分析存档](https://discovery.ucl.ac.uk/id/eprint/10025178/)；[2018年更正（资料来源致谢）](https://doi.org/10.1073/pnas.1804206115)。 |
+| **p3k14c**（Bird等，2022） | 跨数据库测年资料的整合、清洗与抽样偏差。 | [数据论文](https://doi.org/10.1038/s41597-022-01118-7)；[tDAR数据集合](https://core.tdar.org/collection/70213/p3k14c-data)；[R包与数据入口](https://github.com/people3k/p3k14c)。公开版中部分坐标经过模糊化；含敏感地点信息的若干数据版本需申请访问。 |
+| **测年记录与人口增长**（Zahid等，2016） | 利用测年记录推断人口增长时所依赖的统计假设。 | [公开论文](https://pmc.ncbi.nlm.nih.gov/articles/PMC4743794/)与[更正](https://pmc.ncbi.nlm.nih.gov/articles/PMC4983861/)。此项供论文阅读。 |
+
+## 土地利用与景观
+
+| 资源 | 适合关注的问题 | 论文与资料入口 |
+|---|---|---|
+| **ArchaeoGLOBE**（Stephens等，2019） | 全球土地利用知识怎样通过专家调查汇总与比较，怎样理解地区间资料覆盖的差异。 | [原论文](https://doi.org/10.1126/science.aax1192)；[发表数据存档](https://doi.org/10.7910/DVN/CNCANQ)；[作者R分析项目](https://github.com/nick-gauthier/ArchaeoGLOBE)。资料来自专家调查，使用时须理解其汇总单位。 |
+| **亚马孙土方工程分布研究**（Peripato等，2023） | 怎样将LiDAR观察与区域空间预测对应起来，区分已观察到的遗迹和模型外推。 | [原论文](https://doi.org/10.1126/science.ade2541)；[Zenodo存档](https://zenodo.org/records/10214943)与[作者代码](https://github.com/Vperipato/ade2541)提供分析资料、R代码和预测栅格。 |
+| **亚马孙西南部景观调查**（Pärssinen等，2026） | LiDAR景观调查与区域外推之间的联系。 | [原论文及补充材料](https://doi.org/10.1038/s41586-026-10835-7)可用于阅读调查结果与测年背景；原始LiDAR数据限制访问。 |
+
+## 社会比较与生业
+
+| 资源 | 适合关注的问题 | 论文与资料入口 |
+|---|---|---|
+| **Seshat与社会复杂性研究**（Turchin等，2018） | 历史与考古资料怎样编码为比较变量，数据版本怎样影响研究对照。 | [原论文](https://doi.org/10.1073/pnas.1708800115)；[Seshat官方数据入口](https://seshatdatabank.info/data)。使用时区分论文对应资料与不同年份的数据库快照。 |
+| **房屋规模与财富差异**（Kohler等，2017） | 怎样使用房屋面积分布作为财富差异的代理指标，及其解释范围。 | [原论文与补充数据表2](https://doi.org/10.1038/nature24646)；[2018年更正](https://doi.org/10.1038/nature25992)。 |
+| **乳品利用与乳糖酶持续性**（Evershed等，2022） | 器物残留、环境与遗传资料怎样联合分析。 | [原论文](https://doi.org/10.1038/s41586-022-05010-7)；[作者资料仓库](https://github.com/AdrianTimpson/2020-03-03523A)提供考古汇总表等材料。现代UK Biobank数据另有申请条件。 |
+
+## 古DNA与人口流动
+
+这组研究适合进阶阅读。可以先阅读考古取样背景与结论的论证过程；序列、处理后的基因型和统计汇总资料属于不同分析阶段，需要相应的基因组学基础。
+
+| 资源 | 适合关注的问题 | 论文与资料入口 |
+|---|---|---|
+| **维京世界的古基因组研究**（Margaryan等，2020） | 考古取样与古基因组比较怎样结合。 | [原论文](https://doi.org/10.1038/s41586-020-2688-8)；[ENA序列存档PRJEB37976](https://www.ebi.ac.uk/ena/browser/view/PRJEB37976)。 |
+| **Southern Arc研究**（Lazaridis等，2022） | 怎样比较西亚与东南欧古代人群资料。 | [原论文](https://doi.org/10.1126/science.abm4247)；[处理后的基因型](https://doi.org/10.7910/DVN/3AR0CD)；[ENA比对序列PRJEB54831](https://www.ebi.ac.uk/ena/browser/view/PRJEB54831)。 |
+| **南亚与中亚人群形成研究**（Narasimhan等，2019） | 古基因组资料怎样与考古背景共同参与人群历史研究。 | [原论文](https://doi.org/10.1126/science.aat7487)；[ENA序列存档PRJEB32466](https://www.ebi.ac.uk/ena/browser/view/PRJEB32466)。 |
+| **丹麦新石器时代综合研究**（Allentoft等，2024） | 古DNA、同位素与花粉资料怎样用于综合研究。 | [原论文](https://doi.org/10.1038/s41586-023-06862-3)；[ENA序列存档PRJEB64656](https://www.ebi.ac.uk/ena/browser/view/PRJEB64656)；[处理后的基因型](https://doi.org/10.17894/ucph.d71a6a5a-8107-4fd9-9440-bdafdfe81455)；[同祖片段（IBD）汇总资料](https://doi.org/10.5281/zenodo.8196989)。 |
+| **古基因组与人口流动**（Schmid与Schiffels，2023） | 遗传相似性怎样用于时空建模。 | [原论文](https://doi.org/10.1073/pnas.2218375120)；[研究存档](https://doi.org/10.17605/OSF.IO/6UWM5)；[mobest方法文档](https://nevrome.de/mobest)。主数据另取AADR，完整分析的计算要求较高。 |
+
+铭文语料、器物图像与相关模型见[AI考古研究案例](ai-cases.qmd)；测年与空间分析的工具见[R、Python与数字方法](programming.qmd)。返回[参考资源导读](../references.qmd)。
