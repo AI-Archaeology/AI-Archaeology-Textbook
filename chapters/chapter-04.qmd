@@ -63,7 +63,7 @@
 
 本章的**保存与取样偏差**指考古遗存进入研究样本之前的选择性损失；**测量和标注偏差**指资料记录及人为归类中的系统差异。统计学习中的**偏差—方差权衡（bias–variance trade-off）**又是另一层概念：模型过于简单可能无法捕捉重要关系，过于灵活则可能对现有训练数据拟合得很好、在新样本上表现很差。James等（2023）第2.2节和Goodfellow等（2016）第5.3—5.5节说明模型复杂度、过拟合和评价之间的关系。**统计模型的偏差—方差问题，不等于考古发掘样本的保存偏差**；它们作用于证据链的不同环节，也可能共同影响最终推论。
 
-例如，陶片照片全部来自同一摄影台，即使模型在随机留出的图片上取得较高分数，也可能借助背景、光照或拍摄机构的特征作出判断。Prince（2023年出版的*Understanding Deep Learning*；上传版更新于2024年）第8章讨论性能测量及误差来源；Zhang等*Dive into Deep Learning*第3.6与4.6—4.7节则分别讨论泛化、测试集重复使用和环境分布变化。因此，**模型是在已有照片上学得很好，还是能用于另一遗址或另一摄影流程，是两个不同的问题**。
+例如，陶片照片全部来自同一摄影台，即使模型在随机留出的图片上取得较高分数，也可能借助背景、光照或拍摄机构的特征作出判断。Prince（2023）的*Understanding Deep Learning*第8章讨论模型性能、测试误差、偏差—方差等问题；其[作者官方网站](https://udlbook.github.io/udlbook/)提供可配合阅读的[第8章性能评估Notebook](https://github.com/udlbook/udlbook/tree/main/Notebooks/Chap08)、交互图示和教学幻灯片。学生可先不写代码，通过图示比较模型在已有资料与新资料上的表现；Notebook留给有Python基础的读者进阶选做。这里的模型评价原理并不直接给出任何考古遗址的实证结果。Zhang等*Dive into Deep Learning*第3.6与4.6—4.7节则分别讨论泛化、测试集重复使用和环境分布变化。因此，**模型是在已有照片上学得很好，还是能用于另一遗址或另一摄影流程，是两个不同的问题**。
 
 ## 年代与空间位置的不确定性
 
@@ -146,7 +146,7 @@ Bickler（2021）同样提醒，考古资料形成缓慢、规模有限、保存
 - James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. [*An Introduction to Statistical Learning with Applications in Python*.](https://doi.org/10.1007/978-3-031-38747-0) Springer.
 - Murphy, Kevin P. 2023. *Probabilistic Machine Learning: Advanced Topics*. MIT Press.
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
-- Prince, Simon J. D. 2023. *Understanding Deep Learning*. MIT Press. 中译本：《理解深度学习》，清华大学出版社，2025。
+- Prince, Simon J. D. 2023. [*Understanding Deep Learning*.](https://udlbook.github.io/udlbook/) MIT Press. 中译本：《理解深度学习》，清华大学出版社，2025。
 - Renfrew, Colin, and Paul Bahn. 2020. *Archaeology: Theories, Methods and Practice*. 8th ed. Thames & Hudson.
 - Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. *Dive into Deep Learning*. 电子教材，所用版本年份待核.
 - 马库斯，盖瑞. 2026. 《驯服AI：创造可信的人工智能》. 中信出版集团. 原著 *Taming Silicon Valley*.
