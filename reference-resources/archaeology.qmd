@@ -1,0 +1,36 @@
+---
+number-sections: false
+toc-depth: 2
+---
+
+# 考古学开放阅读 {.unnumbered}
+
+先理解考古资料怎样产生、保存和解释，再阅读数字分析方法，会更容易判断技术能回答什么问题。这里选列可免费阅读的入门教材、课堂活动、专题著作和报告入口。
+
+## 入门教材与课堂活动
+
+| 资源 | 适合怎样使用 | 阅读入口 |
+|---|---|---|
+| **Traces: An Open Invitation to Archaeology**（SACC项目） | **入门。** 从考古学的问题、调查发掘与解释方法读起，并结合伦理和社区参与理解考古实践。 | [在线教材](https://textbooks.whatcom.edu/tracesarchaeology/)；[SACC出版说明](https://sacc.americananthro.org/publication/open-source-textbook/)另提供草稿PDF。 |
+| **Digging into Archaeology: A Brief OER Introduction to Archaeology with Activities**（Amanda Wolcott Paskey、AnnMarie Beasley Cisneros，2020） | **入门。** 通过简短说明和课堂活动练习考古资料、方法与推理。 | [原出版方免费PDF](https://asccc-oeri.org/wp-content/uploads/2020/06/OERI-Archaeology_Final_4_29.pdf)；[LibreTexts网页版](https://socialsci.libretexts.org/Bookshelves/Anthropology/Archaeology/Digging_into_Archaeology%3A_A_Brief_OER_Introduction_to_Archaeology_with_Activities_%28Paskey_and_Cisneros%29)。 |
+| **Introduction to Archaeology: A Workbook**（Ashley Lemke、Alanis Ramos、Brooke Troutman，2020） | **入门练习。** 用问题、活动和阅读练习巩固课堂内容，适合与主教材配合。 | [UTA机构库及免费PDF](https://mavmatrix.uta.edu/oer_mavsopenpress/29/)；[网页版](https://uta.pressbooks.pub/introtoarchaeology/)。 |
+| **Key Concepts in Public Archaeology**（Gabriel Moshenska编，2017） | **专题阅读。** 了解公众参与、考古教育、媒体传播与遗产实践中的基本问题。 | [UCL Press图书页](https://uclpress.co.uk/book/key-concepts-in-public-archaeology/)；[UCL机构库全文](https://discovery.ucl.ac.uk/id/eprint/1574530/)。 |
+
+## 中文延伸阅读
+
+[宋殷《大数据时代的考古学：从考古统计学到考古数据科学》讲座纪要](https://archaeology.pku.edu.cn/info/1031/4593.htm)由北京大学考古文博学院发布，记录了2023年11月17日的讲座。可借此了解考古统计、探索性分析与预测问题的联系，作为进入数字方法学习的中文短篇阅读。
+
+## 专著与调查发掘报告
+
+以下是按问题查找材料的目录。选定书目后，再查看该书的版本、下载格式和使用条件。
+
+| 资源集合 | 适合查找什么 | 访问入口 |
+|---|---|---|
+| **Archaeopress Open Access／Access Archaeology** | 按地区、时期和方法查找考古专著、专题论文集与调查报告。 | [Open Access目录](https://www.archaeopress.com/Archaeopress/Open-Access)；[Access Archaeology系列](https://www.archaeopress.com/Archaeopress/Imprint/Access-Archaeology)，提供免费PDF入口。 |
+| **Wessex Archaeology Open Library** | 从调查、发掘与专业检测报告观察材料怎样组织成论证。 | [图书与报告库](https://wessexarchaeologylibrary.org/)，可阅读和下载。 |
+| **SFU Archaeology Press** | 查找区域考古专著与研究报告，对照研究设计、材料与解释。 | [官方图书目录](https://archpress.lib.sfu.ca/index.php/archpress/catalog)，由单书页面进入PDF。 |
+| **LibreTexts Archaeology** | 按教材主题寻找入门读物与教学活动。 | [考古学书架](https://socialsci.libretexts.org/Bookshelves/Anthropology/Archaeology)，提供在线阅读。 |
+| **OAPEN Library** | 按关键词查找考古学、人类学及相关领域的开放学术专著。 | [图书库](https://library.oapen.org/)；[研究者使用说明](https://www.oapen.org/researchers)。 |
+| **Open Book Publishers** | 在考古、宗教、物质文化及相邻领域寻找专题阅读。 | [Archaeology and Religion分类](https://www.openbookpublishers.com/categories/archaeology_and_religion)，由单书页面进入免费阅读与下载。 |
+
+数字考古导论与实践教材ODATE见[R、Python与数字方法](programming.qmd)。返回[参考资源导读](../references.qmd)。
