@@ -106,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="../">AI考古学通论</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/ZCJing2022/AI-Archaeology-Textbook" title="源代码" class="quarto-navigation-tool px-1" aria-label="源代码"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/AI-Archaeology/AI-Archaeology-Textbook" title="源代码" class="quarto-navigation-tool px-1" aria-label="源代码"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -559,10 +559,51 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">数据伦理、许可与使用说明</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+ <span class="menu-text">参考资源</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="展开或折叠此栏">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">参考资料</span></a>
+ <span class="menu-text">参考资源导读</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference-resources/archaeology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">考古学开放阅读</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference-resources/programming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">R、Python与数字方法</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference-resources/ai-learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">人工智能与统计学习</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference-resources/ai-cases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI考古研究案例</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference-resources/archaeological-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">考古数据与比较研究</span></a>
   </div>
 </li>
       </ul>
@@ -603,7 +644,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#参考文献" id="toc-参考文献" class="nav-link" data-scroll-target="#参考文献">参考文献</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/ZCJing2022/AI-Archaeology-Textbook/edit/main/chapters/chapter-04.qmd" class="toc-action"><i class="bi bi-github"></i>编辑该页面</a></li><li><a href="https://github.com/ZCJing2022/AI-Archaeology-Textbook/issues/new" class="toc-action"><i class="bi empty"></i>反馈问题</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/AI-Archaeology/AI-Archaeology-Textbook/edit/main/chapters/chapter-04.qmd" class="toc-action"><i class="bi bi-github"></i>编辑该页面</a></li><li><a href="https://github.com/AI-Archaeology/AI-Archaeology-Textbook/issues/new" class="toc-action"><i class="bi empty"></i>反馈问题</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -726,7 +767,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="不要混淆三种偏差也不要混淆训练成绩与泛化能力" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="不要混淆三种偏差也不要混淆训练成绩与泛化能力">不要混淆三种“偏差”，也不要混淆训练成绩与泛化能力</h3>
 <p>本章的<strong>保存与取样偏差</strong>指考古遗存进入研究样本之前的选择性损失；<strong>测量和标注偏差</strong>指资料记录及人为归类中的系统差异。统计学习中的<strong>偏差—方差权衡（bias–variance trade-off）</strong>又是另一层概念：模型过于简单可能无法捕捉重要关系，过于灵活则可能对现有训练数据拟合得很好、在新样本上表现很差。James等（2023）第2.2节和Goodfellow等（2016）第5.3—5.5节说明模型复杂度、过拟合和评价之间的关系。<strong>统计模型的偏差—方差问题，不等于考古发掘样本的保存偏差</strong>；它们作用于证据链的不同环节，也可能共同影响最终推论。</p>
-<p>例如，陶片照片全部来自同一摄影台，即使模型在随机留出的图片上取得较高分数，也可能借助背景、光照或拍摄机构的特征作出判断。Prince（2023年出版的<em>Understanding Deep Learning</em>；上传版更新于2024年）第8章讨论性能测量及误差来源；Zhang等<em>Dive into Deep Learning</em>第3.6与4.6—4.7节则分别讨论泛化、测试集重复使用和环境分布变化。因此，<strong>模型是在已有照片上学得很好，还是能用于另一遗址或另一摄影流程，是两个不同的问题</strong>。</p>
+<p>例如，陶片照片全部来自同一摄影台，即使模型在随机留出的图片上取得较高分数，也可能借助背景、光照或拍摄机构的特征作出判断。Prince（2023）的<em>Understanding Deep Learning</em>第8章讨论模型性能、测试误差、偏差—方差等问题；其<a href="https://udlbook.github.io/udlbook/">作者官方网站</a>提供可配合阅读的<a href="https://github.com/udlbook/udlbook/tree/main/Notebooks/Chap08">第8章性能评估Notebook</a>、交互图示和教学幻灯片。学生可先不写代码，通过图示比较模型在已有资料与新资料上的表现；Notebook留给有Python基础的读者进阶选做。这里的模型评价原理并不直接给出任何考古遗址的实证结果。Zhang等<em>Dive into Deep Learning</em>第3.6与4.6—4.7节则分别讨论泛化、测试集重复使用和环境分布变化。因此，<strong>模型是在已有照片上学得很好，还是能用于另一遗址或另一摄影流程，是两个不同的问题</strong>。</p>
 </section>
 </section>
 <section id="年代与空间位置的不确定性" class="level2" data-number="4.5">
@@ -752,6 +793,7 @@ ul.task-list li input[type="checkbox"] {
 <p>考古地点通常不是在空间上完全随机、互不相关的。相邻地点可能共享地貌、交通、环境资源、年代背景与调查强度。这种<strong>空间自相关</strong>意味着：一个地点的测量结果往往与邻近地点有联系。</p>
 <p><strong>虚构例子：</strong> 在同一条河谷附近记录了20个相邻样点，发现其中大部分具有相似土壤和陶器保存状态。它们并不一定提供了20份与另一条河谷完全独立的环境证据。若随机挑选其中一些点训练模型，再用同一河谷的邻近点测试，模型也许得到很好成绩；但换到未见过的河谷后可能失效。</p>
 <p>这不等于邻近样本毫无价值，而是要求验证设计与研究问题对应。对于预测另一区域的遗址位置，可以考虑把空间块或独立调查区留作测试集；对于研究同一河谷内的局部变化，则要清楚说明推论范围。空间分块也不是万能方案：块大小、地理距离、样本量和区域差异都会影响结果。</p>
+<p><strong>一项真实的考古预测研究：</strong> Comer等（2023）在美国加利福尼亚州Fort Irwin，比较随机抽取像元与逐次留出一处已知遗址或一块标为非遗址的区域两种方式；后一方式仍评价留出区域中抽取像元的分类表现（第3节，5页）。随机像元方式的评价分数较高，作者主要从训练与测试资料间的空间自相关解释这一差异，并明确说明两种方案均未使用真正独立的数据（第5节，7—8页）。这提醒我们，<strong>评价分数须结合取样方式和研究任务理解</strong>；留出区域的像元分类成绩，不能直接证明在新地区发现完整遗址的能力。<a href="https://doi.org/10.1016/j.jasrep.2022.103824">原始论文</a>。</p>
 <p>本节只建立直观认识；空间自相关的进一步方法讨论安排在<a href="../chapters/chapter-14.html">第14章</a>相关内容中。</p>
 <section id="当代ai实证研究为何重视外推验证" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="当代ai实证研究为何重视外推验证">当代AI实证研究为何重视外推验证？</h3>
@@ -793,11 +835,12 @@ ul.task-list li input[type="checkbox"] {
 <li>Bickler, Simon H. 2021. <a href="https://doi.org/10.1017/aap.2021.6">“Machine Learning Arrives in Archaeology.”</a> <em>Advances in Archaeological Practice</em> 9(2): 186–191.</li>
 <li>Carver, Martin, and Madeleine Hummler. 2025. <a href="https://doi.org/10.4324/9781003185147"><em>Archaeological Investigation</em>.</a> 2nd ed.&nbsp;Routledge.</li>
 <li>Chapman, Robert, and Alison Wylie. 2016. <em>Evidential Reasoning in Archaeology</em>. Bloomsbury Academic.</li>
+<li>Comer, Jacob A., Douglas C. Comer, Ioana A. Dumitru, Carey E. Priebe, and Jesse L. Patsolic. 2023. <a href="https://doi.org/10.1016/j.jasrep.2022.103824">“Sampling Methods for Archaeological Predictive Modeling: Spatial Autocorrelation and Model Performance.”</a> <em>Journal of Archaeological Science: Reports</em> 48: 103824.</li>
 <li>Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. <em>Deep Learning</em>. MIT Press.</li>
 <li>James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. <a href="https://doi.org/10.1007/978-3-031-38747-0"><em>An Introduction to Statistical Learning with Applications in Python</em>.</a> Springer.</li>
 <li>Murphy, Kevin P. 2023. <em>Probabilistic Machine Learning: Advanced Topics</em>. MIT Press.</li>
 <li>Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. <a href="https://doi.org/10.1016/j.jas.2026.106571">“Theory and Practice of Artificial Intelligence in Archaeology.”</a> <em>Journal of Archaeological Science</em> 190: 106571.</li>
-<li>Prince, Simon J. D. 2023. <em>Understanding Deep Learning</em>. MIT Press. 中译本：《理解深度学习》，清华大学出版社，2025。</li>
+<li>Prince, Simon J. D. 2023. <a href="https://udlbook.github.io/udlbook/"><em>Understanding Deep Learning</em>.</a> MIT Press. 中译本：《理解深度学习》，清华大学出版社，2025。</li>
 <li>Renfrew, Colin, and Paul Bahn. 2020. <em>Archaeology: Theories, Methods and Practice</em>. 8th ed.&nbsp;Thames &amp; Hudson.</li>
 <li>Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. <em>Dive into Deep Learning</em>. 电子教材，所用版本年份待核.</li>
 <li>马库斯，盖瑞. 2026. 《驯服AI：创造可信的人工智能》. 中信出版集团. 原著 <em>Taming Silicon Valley</em>.</li>
@@ -1230,4 +1273,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/ZCJing2022/AI-Archaeology-Textbook/edit/main/chapters/chapter-04.qmd" class="toc-action"><i class="bi bi-github"></i>编辑该页面</a></li><li><a href="https://github.com/ZCJing2022/AI-Archaeology-Textbook/issues/new" class="toc-action"><i class="bi empty"></i>反馈问题</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/AI-Archaeology/AI-Archaeology-Textbook/edit/main/chapters/chapter-04.qmd" class="toc-action"><i class="bi bi-github"></i>编辑该页面</a></li><li><a href="https://github.com/AI-Archaeology/AI-Archaeology-Textbook/issues/new" class="toc-action"><i class="bi empty"></i>反馈问题</a></li></ul></div></div></div></footer></body></html>

@@ -61,4 +61,4 @@ title-block-style: none
 
 ## 开放与反馈 {.unnumbered}
 
-项目源代码托管于 [GitHub](https://github.com/ZCJing2022/AI-Archaeology-Textbook)。欢迎通过 [Issues](https://github.com/ZCJing2022/AI-Archaeology-Textbook/issues) 提出错误、更正或资源建议。
+项目源代码托管于 [GitHub](https://github.com/AI-Archaeology/AI-Archaeology-Textbook)。欢迎通过 [Issues](https://github.com/AI-Archaeology/AI-Archaeology-Textbook/issues) 提出错误、更正或资源建议。
