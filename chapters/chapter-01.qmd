@@ -49,6 +49,14 @@
 
 这些概念之间的关系可以概括为：**深度学习属于机器学习的重要组成部分，机器学习属于人工智能的重要组成部分；大语言模型通常依赖深度学习，但“语言生成”只是其特定应用能力。**
 
+### 从“能完成任务”到“能在新资料上使用”：AI方法的基本评价 {.unnumbered}
+
+Russell与Norvig在*Artificial Intelligence: A Modern Approach*（第4版）中以**智能体（agent）与任务环境**组织整个AI领域：搜索、知识表示、概率推理、规划与机器学习都是广义AI体系中的不同路线，而非“AI就是深度学习”的同义表达。Chollet与Watson的*Deep Learning with Python*（第3版，2026）第1章进一步比较了传统程序和机器学习：前者由人写明规则，后者在设定任务、数据与评价方式后，从样本中学习可应用的关系。这只是理解两类典型工作的简化对比，不意味着机器学习系统不需要人为设计。
+
+以陶片分类为例，“**训练**”是根据一部分有标签记录调整模型；“**预测**”是向模型输入待判断的记录；“**泛化**”则是模型面对未参与训练、符合研究预期的新记录时，仍能保持有用表现。三者不能混淆。James等（2023）*An Introduction to Statistical Learning with Applications in Python*第2章区分预测精度与可解释性；Chollet与Watson（2026）第5章区分训练、验证、测试以及过拟合。这些是方法概念，不是声称考古模型已经达到某一性能。
+
+**入门时不必计算梯度或训练神经网络**，但应知道：模型的良好表现必须针对清楚定义的任务和独立评价资料，之后才谈得上是否有助于解释过去。
+
 还应分清学习任务：
 
 - **监督学习**使用已有目标标签进行训练，如根据专家标注预测陶片器类。
@@ -165,6 +173,13 @@ Magnani与Clindaniel的一项已发表研究，以尼安德特人生活场景为
 **进阶：** 阅读第5—8章，进一步理解特征、标签、软聚类、模型评估和过拟合。学习时始终用一个考古问题比较传统统计与AI方法。
 
 **研究前沿：** 从[六例AI考古学核心案例库](../core-case-library/index.qmd)选一例，追踪论文、数据说明与复现审查，辨别“研究者报告的结果”“数据来源已核验”“算法已在虚构数据上测试”和“真实研究结果已被独立复现”四种不同证据状态。
+
+### AI与机器学习的基础读物（已核对版本及相应章节） {.unnumbered}
+
+- Russell, Stuart, and Peter Norvig. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson，英文原书版权©2021；重点第1—2章AI的范围与智能体。中译本《人工智能：现代方法》第4版，人民邮电出版社，2023年首版。
+- Chollet, François, and Matthew Watson. 2026. *Deep Learning with Python*. 3rd ed. Manning，第1章的程序与学习对比及第5章泛化和评价。注意上传文件名标为2025，PDF版权页为2026。
+- James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. [*An Introduction to Statistical Learning with Applications in Python*.](https://doi.org/10.1007/978-3-031-38747-0) Springer，第2章学习任务与预测—解释权衡；其Python实验并不是第一编必做练习。
+- Bishop, Christopher M., and Hugh Bishop. 2024. [*Deep Learning: Foundations and Concepts*.](https://doi.org/10.1007/978-3-031-45468-4) Springer，第1章深度学习导论，用作更高阶的概念参考。
 
 ### 已核对来源与进一步阅读 {.unnumbered}
 
