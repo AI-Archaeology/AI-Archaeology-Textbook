@@ -176,6 +176,7 @@ Nikita与Martinón-Torres（2026）回顾*Journal of Archaeological Science*不�
 
 ## 参考文献 {.unnumbered}
 
+- Bickler, Simon H. 2021. [“Machine Learning Arrives in Archaeology.”](https://doi.org/10.1017/aap.2021.6) *Advances in Archaeological Practice* 9(2): 186–191.
 - Bellat, Mathias, et al. 2025. [“Machine Learning Applications in Archaeological Practices: A Review.”](https://doi.org/10.5334/jcaa.201) *Journal of Computer Applications in Archaeology* 8(1): 282–321.
 - Binford, Lewis R. 1962. [“Archaeology as Anthropology.”](https://doi.org/10.2307/278380) *American Antiquity* 28(2): 217–225.
 - Bishop, Christopher M., and Hugh Bishop. 2024. [*Deep Learning: Foundations and Concepts*.](https://doi.org/10.1007/978-3-031-45468-4) Springer.
@@ -184,6 +185,7 @@ Nikita与Martinón-Torres（2026）回顾*Journal of Archaeological Science*不�
 - Goodfellow, Ian, Yoshua Bengio, and Aaron Courville. 2016. *Deep Learning*. MIT Press.
 - Hodder, Ian. 1986. *Reading the Past: Current Approaches to Interpretation in Archaeology*. Cambridge University Press.
 - Nikita, Efthymia, and Marcos Martinón-Torres. 2026. [“Next Generation Archaeological Science: From the Past to the Future.”](https://doi.org/10.1016/j.jas.2026.106603) *Journal of Archaeological Science* 192: 106603.
+- Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
 - Russell, Stuart, and Peter Norvig. 2021. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson.
 - Theodoridis, Sergios. 2026. *Machine Learning: From the Classics to Deep Networks, Transformers, and Diffusion Models*. 3rd ed. Academic Press.
 - Urban, Patricia A., and Edward Schortman. 2019. *Archaeological Theory in Practice*. 2nd ed. Routledge.
