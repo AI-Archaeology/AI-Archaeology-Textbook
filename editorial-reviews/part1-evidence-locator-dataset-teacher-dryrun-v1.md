@@ -41,7 +41,7 @@
 | `coarse_inclusion_flag` | 1共5条、0共13条；**0指未记录到可见夹杂，不代表已证明不存在** |
 | `surface_unrecorded_flag` | 恰有一条1，与“未记录”一一对应（TC011） |
 
-这些是**源CSV逐行核读的结果**，并非从AI模型推断。新增`audit-tools/part1_teaching_ceramics_check_v1.py`为**标准库只读、可复核**的独立脚本；它要求用户在本地Positron实际执行，日志将作为正式脚本验收结果。在本轮提交阶段**尚未声称本地Python脚本PASS**。
+这些是**源CSV逐行核读的结果**，并非从AI模型推断。新增`audit-tools/part1_teaching_ceramics_check_v1.py`为**标准库只读、可复核**的独立脚本；它要求用户在本地Positron实际执行，日志将作为正式脚本验收结果。用户随后于2026-10-16在Positron运行该脚本，实际日志显示**19 PASS / 0 FAIL**，并成功渲染Quarto **64/64**。这属于虚构教学数据的技术验收，并不代表真实考古资料或模型通过验证。
 
 ## 三、四章练习的教师桌面试做
 
@@ -64,4 +64,4 @@
 4. 在`editorial-reviews/`保留测试与文献审读记录，不把`PASS`/ `HOLD`编辑术语混入教材正式参考文献。
 5. 第1—4章各自仍只有一个章末`参考文献`；第5章继续暂缓。
 
-**本轮闸门：** `FILE-LEVEL REVIEW: COMPLETE`；`INDEPENDENT SCRIPT EXECUTION: PENDING USER LOCAL RUN`；`TEACHER DESK WALKTHROUGH: COMPLETE (NO STUDENTS)`；`CLAIM-TO-SOURCE FULL-TEXT AUDIT: PARTIAL/HOLD`；`SCHOLARLY FINAL REVIEW: HOLD`；`A6 REAL-EM PILOT: HOLD`。
+**本轮闸门：** `FILE-LEVEL REVIEW: COMPLETE`；`INDEPENDENT SCRIPT EXECUTION: PASS (19/19, user local Positron log)`；`TEACHER DESK WALKTHROUGH: COMPLETE (NO STUDENTS)`；`CLAIM-TO-SOURCE FULL-TEXT AUDIT: PARTIAL/HOLD`；`SCHOLARLY FINAL REVIEW: HOLD`；`A6 REAL-EM PILOT: HOLD`。
