@@ -1,6 +1,6 @@
 # 从考古资料到可计算数据
 
-> **本章性质：** 本科教学正文初稿，尚待学术与教学审定。贯穿全章的18条陶片记录均为**虚构教学数据**，不对应真实遗址或出土器物。本章的核心问题是：**考古资料不会自动成为数据；观察单位、记录选择与编码规则决定了计算能够回答什么问题。**
+> 贯穿全章的18条陶片记录均为**虚构教学数据**，不对应真实遗址或出土器物。本章的核心问题是：**考古资料不会自动成为数据；观察单位、记录选择与编码规则决定了计算能够回答什么问题。**
 
 ## 本章学习目标 {.unnumbered}
 
@@ -56,7 +56,7 @@
 
 Orengo、Berganzo-Besga与Lumbreras（2026）在对考古机器学习理论与实践的分析中，区分了**实际考古对象**和**为计算构造的代理表示（proxies）**。例如同一片陶片可以表现为颜色像素、轮廓、纹理、测量值或人工类别标签；这些可计算特征没有一个能够穷尽“陶片是什么”。论文强调，模型的学习结果会随考古学家怎样定义目标、怎样获取资料、怎样标注和取样而变化。[论文第2—3节](https://doi.org/10.1016/j.jas.2026.106571)。
 
-Lucas的*Archaeological Situations*（版权页2023）第3章“Making Records”也从考古实践本身讨论资料记录，并涉及数据轨迹与概念模型。两者的出发点不同，却共同提醒我们：**资料形成过程需要被记录，不能把数字字段当作无须解释的直接事实。** 这里是两部作品的教学性对读，并不是说它们使用了相同的理论术语。
+Lucas（2023，第57、61页）在第3章“Making Records”中说明，研究者可以从既有记录中生成新的数据，所选记录属性和编码方式会影响后续分析。因此，**理解数字字段，还需要了解资料怎样形成、属性怎样记录与编码。**
 
 ### 从研究问题到数据表：计算思维不等于编程熟练度 {.unnumbered}
 
@@ -89,7 +89,7 @@ Lucas的*Archaeological Situations*（版权页2023）第3章“Making Records�
 
 统计学习教材（James等，2023，第2章）区分用于预测的**输入变量（predictors/features）**与需要估计的**响应变量或标签（response/target）**。考古调查记录中则还包括不应用作预测指标的**身份字段和情境关联字段**。例如，表中的`artifact_id`是追踪一条陶片记录的标识符；`fragment_part`是观察得到的陶片部位；`rim_diameter_cm`是仅在适用条件下测量的尺寸。如果模型的任务是预测专家所定陶片类型，该类型字段才可能成为监督学习的标签；若不预设类型而探索分组，则不能把事后看到的专家类别偷偷作为模型输入，再宣称算法独立发现了同样的分组。**同一字段可以在不同研究设计中扮演不同角色，其角色必须在分析前说明。**
 
-Murphy的*Probabilistic Machine Learning: An Introduction*（2022；所上传在线版更新于2024年）第1.5节讨论离散输入与文本预处理及缺失资料；Zhang等的*Dive into Deep Learning*第2.2节把读取、准备数据和张量转换分成不同步骤。对初学者而言，更重要的是**先描述记录意义和编码规则，再谈模型怎样读入数据**。
+Murphy的*Probabilistic Machine Learning: An Introduction*（2022）第1.5节讨论离散输入与文本预处理及缺失资料；Zhang等（2023）的*Dive into Deep Learning*第2.2节把读取、准备数据和张量转换分成不同步骤。对初学者而言，更重要的是**先描述记录意义和编码规则，再谈模型怎样读入数据**。
 
 **一个无需编程的检查：** 从现有18条虚构陶片记录中任取一行，分别圈出记录标识符、出土情境字段、描述性属性、可用数值和缺失状态。再解释为什么“给每行一个编号”并没有增加一项可以解释史前陶器差异的测量变量。不要改写原始CSV。
 
@@ -193,7 +193,7 @@ Murphy的*Probabilistic Machine Learning: An Introduction*（2022；所上传在
 
 **入门：** 阅读[教学模拟数据说明](../dataset-teaching-ceramics-01.qmd)及其数据字典。**进阶：** 进入第4章的缺失与偏差、第5章的变量与统计推断以及第8章的评价设计。**研究实践：** 比较不同考古项目如何记录对象、采样、出处、版本及许可；必要时进一步学习CIDOC CRM与[FAIR原则原始论文](https://doi.org/10.1038/sdata.2016.18)。
 
-> **资料说明：** 本章18条陶片记录及其清洗示例均为虚构教学资料，不对应真实遗址。正文中的概念解释仍待全书学术与术语审定。
+> **资料说明：** 本章18条陶片记录及其清洗示例均为虚构教学资料，不对应真实遗址。
 
 ## 参考文献 {.unnumbered}
 
@@ -205,6 +205,6 @@ Murphy的*Probabilistic Machine Learning: An Introduction*（2022；所上传在
 - Murphy, Kevin P. 2022. *Probabilistic Machine Learning: An Introduction*. MIT Press.
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
 - Wilkinson, Mark D., et al. 2016. [“The FAIR Guiding Principles for Scientific Data Management and Stewardship.”](https://doi.org/10.1038/sdata.2016.18) *Scientific Data* 3: 160018.
-- Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. *Dive into Deep Learning*. 电子教材，所用版本年份待核.
+- Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. 2023. [*Dive into Deep Learning*.](https://d2l.ai/) Cambridge University Press. 本章所引章节采用英文在线版1.0.3（访问日期：2026-10-16）。
 - 刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.
 - 王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.

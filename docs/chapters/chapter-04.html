@@ -624,11 +624,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#考古记录的历史差异与标准不一致" id="toc-考古记录的历史差异与标准不一致" class="nav-link" data-scroll-target="#考古记录的历史差异与标准不一致"><span class="header-section-number">4.3</span> 考古记录的历史差异与标准不一致</a></li>
   <li><a href="#缺失数据的机制处理偏差与数据质量评价" id="toc-缺失数据的机制处理偏差与数据质量评价" class="nav-link" data-scroll-target="#缺失数据的机制处理偏差与数据质量评价"><span class="header-section-number">4.4</span> 缺失数据的机制、处理偏差与数据质量评价</a>
   <ul class="collapse">
-  <li><a href="#不要混淆三种偏差也不要混淆训练成绩与泛化能力" id="toc-不要混淆三种偏差也不要混淆训练成绩与泛化能力" class="nav-link" data-scroll-target="#不要混淆三种偏差也不要混淆训练成绩与泛化能力">不要混淆三种“偏差”，也不要混淆训练成绩与泛化能力</a></li>
+  <li><a href="#不要混淆三种偏差也不要混淆训练成绩与泛化能力" id="toc-不要混淆三种偏差也不要混淆训练成绩与泛化能力" class="nav-link" data-scroll-target="#不要混淆三种偏差也不要混淆训练成绩与泛化能力">资料偏差与模型泛化</a></li>
   </ul></li>
   <li><a href="#年代与空间位置的不确定性" id="toc-年代与空间位置的不确定性" class="nav-link" data-scroll-target="#年代与空间位置的不确定性"><span class="header-section-number">4.5</span> 年代与空间位置的不确定性</a>
   <ul class="collapse">
-  <li><a href="#从田野形成过程到数据偏差证据不是直接复制的过去" id="toc-从田野形成过程到数据偏差证据不是直接复制的过去" class="nav-link" data-scroll-target="#从田野形成过程到数据偏差证据不是直接复制的过去"><span class="header-section-number">4.5.1</span> 从田野形成过程到数据偏差：证据不是直接复制的过去</a></li>
+  <li><a href="#从田野形成过程到数据偏差证据不是直接复制的过去" id="toc-从田野形成过程到数据偏差证据不是直接复制的过去" class="nav-link" data-scroll-target="#从田野形成过程到数据偏差证据不是直接复制的过去"><span class="header-section-number">4.5.1</span> 考古资料的形成与证据解释</a></li>
   </ul></li>
   <li><a href="#数据偏差怎样影响ai模型" id="toc-数据偏差怎样影响ai模型" class="nav-link" data-scroll-target="#数据偏差怎样影响ai模型"><span class="header-section-number">4.6</span> 数据偏差怎样影响AI模型</a></li>
   <li><a href="#空间自相关的直观理解邻近样本不等于独立样本详见14.3" id="toc-空间自相关的直观理解邻近样本不等于独立样本详见14.3" class="nav-link" data-scroll-target="#空间自相关的直观理解邻近样本不等于独立样本详见14.3"><span class="header-section-number">4.7</span> 空间自相关的直观理解：邻近样本不等于独立样本（详见14.3）</a>
@@ -638,7 +638,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#数据代表性与考古推论的有效范围" id="toc-数据代表性与考古推论的有效范围" class="nav-link" data-scroll-target="#数据代表性与考古推论的有效范围"><span class="header-section-number">4.8</span> 数据代表性与考古推论的有效范围</a>
   <ul class="collapse">
-  <li><a href="#教学案例三种缺失能否合并" id="toc-教学案例三种缺失能否合并" class="nav-link" data-scroll-target="#教学案例三种缺失能否合并">教学案例：三种“缺失”能否合并？</a></li>
+  <li><a href="#教学案例三种缺失能否合并" id="toc-教学案例三种缺失能否合并" class="nav-link" data-scroll-target="#教学案例三种缺失能否合并">陶片记录中的缺失状态与编码</a></li>
   <li><a href="#何时用何时不用" id="toc-何时用何时不用" class="nav-link" data-scroll-target="#何时用何时不用">何时用、何时不用</a></li>
   <li><a href="#继续深入" id="toc-继续深入" class="nav-link" data-scroll-target="#继续深入">继续深入</a></li>
   </ul></li>
@@ -669,7 +669,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <blockquote class="blockquote">
-<p><strong>本章性质：</strong> 面向考古学本科生的教学正文初稿，尚待学术审定。本章所有用来解释偏差的数字与田野情境均为<strong>虚构示例</strong>，不是任何真实遗址的报告。第3章讨论资料怎样变成数据；本章追问：<strong>哪些过去的活动没有进入考古记录？现有数据能代表什么，不能代表什么？</strong></p>
+<p>本章以标明为<strong>虚构示例</strong>的数字与田野情境说明偏差的影响；真实研究案例另列文献出处。第3章讨论资料怎样变成数据；本章追问：<strong>哪些过去的活动没有进入考古记录？现有数据能代表什么，不能代表什么？</strong></p>
 </blockquote>
 <section id="本章学习目标" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="本章学习目标">本章学习目标</h2>
@@ -677,9 +677,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="埋藏过程与保存偏差" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="埋藏过程与保存偏差"><span class="header-section-number">4.1</span> 埋藏过程与保存偏差</h2>
-<p>我们今天所能发现的东西，只是过去物质生活的一部分。一件物品先要被制作、使用、遗弃或埋藏，随后经历漫长的埋藏过程，最后才可能被发现、记录并保留在研究资料中。<strong>从过去的活动到现在的数据库，中间至少经历了多道筛选。</strong></p>
-<p>不同材料保存的机会并不相等。某些土壤和水分条件有利于保存陶器，却未必有利于保存木材、植物纤维或骨骼；火烧、水流、耕作和后期建筑也可能改变遗迹。即使两处聚落在过去使用了数量相近的木器，今天保存的木器数量也可能截然不同。用现存木器数直接推断古人的使用偏好，便有把<strong>保存差异</strong>误当作<strong>行为差异</strong>的风险。</p>
-<p>埋藏过程（formation processes）提醒我们：遗物为何留在某处，本身就是需要研究的问题。发现地点不一定等于使用地点；遗物可能经过搬动、填埋、二次利用或扰动。研究者应把地层关系、堆积性质、保存状况以及可能的后期干扰与器物属性一同考虑，而不是认为一张整洁的数据表已经保留了全部情境。</p>
+<p>我们今天所能发现的东西，只是过去物质生活的一部分。器物可能在制作、使用或丢弃等不同阶段进入考古记录，此后经历程度不同的保存与扰动，最终才可能被发现、记录并保留在研究资料中。<strong>从过去的活动到现在的数据库，中间至少经历了多道筛选。</strong></p>
+<p>不同材料保存的机会并不相等。某些土壤和水分条件有利于保存陶器，却未必有利于保存木材、植物纤维或骨骼；火烧、水流、耕作和后期建筑也可能改变遗迹。即使两处聚落在过去使用了数量相近的木器，今天保存的木器数量也可能截然不同。用现存木器数直接推断古人的使用偏好，便有把<strong>保存差异</strong>误当作<strong>行为差异</strong>的风险（Renfrew与Bahn，2020，第53—54、57—58页）。</p>
+<p><strong>考古记录形成过程（formation processes）</strong>包括人类活动与自然作用，不只指遗物掩埋后的变化（Renfrew与Bahn，2020，第50—52页）。遗物为何留在某处，本身就是需要研究的问题。发现地点不一定等于使用地点；遗物可能经过搬动、填埋、二次利用或扰动。研究者应把地层关系、堆积性质、保存状况以及可能的后期干扰与器物属性一同考虑，而不是认为一张整洁的数据表已经保留了全部情境。</p>
 <p><strong>教学情境（虚构）：</strong> 两处聚落中，甲地保存100件陶器和2件木器，乙地保存40件陶器和20件木器。这并不能独立证明乙地过去“更依赖木器”。必须先检查采集条件、土壤环境、发掘面积、年代以及其他可保存材料。这里所有数量仅用于说明推理错误。</p>
 </section>
 <section id="调查发掘与取样偏差" class="level2" data-number="4.2">
@@ -765,9 +765,9 @@ ul.task-list li input[type="checkbox"] {
 <p>常见处理方法包括保留缺失并报告比例、回查原始资料、在适合的前提下只分析有记录的样本，或采用统计插补。<strong>没有一种方法适用于所有缺失。</strong> 插补得到的是有条件的估计，不是重新发现的田野事实；只删除不完整记录也可能改变样本组成。</p>
 <p>一份最低限度的数据质量说明应包含记录总数、变量定义、各字段可用数量、缺失和不适用的区分、重复记录检查、异常值处理、来源版本以及限制性声明。进一步建模时，还需要测试结论对不同合理处理方案是否敏感。</p>
 <section id="不要混淆三种偏差也不要混淆训练成绩与泛化能力" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="不要混淆三种偏差也不要混淆训练成绩与泛化能力">不要混淆三种“偏差”，也不要混淆训练成绩与泛化能力</h3>
+<h3 class="unnumbered anchored" data-anchor-id="不要混淆三种偏差也不要混淆训练成绩与泛化能力">资料偏差与模型泛化</h3>
 <p>本章的<strong>保存与取样偏差</strong>指考古遗存进入研究样本之前的选择性损失；<strong>测量和标注偏差</strong>指资料记录及人为归类中的系统差异。统计学习中的<strong>偏差—方差权衡（bias–variance trade-off）</strong>又是另一层概念：模型过于简单可能无法捕捉重要关系，过于灵活则可能对现有训练数据拟合得很好、在新样本上表现很差。James等（2023）第2.2节和Goodfellow等（2016）第5.3—5.5节说明模型复杂度、过拟合和评价之间的关系。<strong>统计模型的偏差—方差问题，不等于考古发掘样本的保存偏差</strong>；它们作用于证据链的不同环节，也可能共同影响最终推论。</p>
-<p>例如，陶片照片全部来自同一摄影台，即使模型在随机留出的图片上取得较高分数，也可能借助背景、光照或拍摄机构的特征作出判断。Prince（2023）的<em>Understanding Deep Learning</em>第8章讨论模型性能、测试误差、偏差—方差等问题；其<a href="https://udlbook.github.io/udlbook/">作者官方网站</a>提供可配合阅读的<a href="https://github.com/udlbook/udlbook/tree/main/Notebooks/Chap08">第8章性能评估Notebook</a>、交互图示和教学幻灯片。学生可先不写代码，通过图示比较模型在已有资料与新资料上的表现；Notebook留给有Python基础的读者进阶选做。这里的模型评价原理并不直接给出任何考古遗址的实证结果。Zhang等<em>Dive into Deep Learning</em>第3.6与4.6—4.7节则分别讨论泛化、测试集重复使用和环境分布变化。因此，<strong>模型是在已有照片上学得很好，还是能用于另一遗址或另一摄影流程，是两个不同的问题</strong>。</p>
+<p>例如，陶片照片全部来自同一摄影台，即使模型在随机留出的图片上取得较高分数，也可能借助背景、光照或拍摄机构的特征作出判断。Prince（2023）的<em>Understanding Deep Learning</em>第8章讨论模型性能、测试误差、偏差—方差等问题；其<a href="https://udlbook.github.io/udlbook/">作者官方网站</a>提供可配合阅读的<a href="https://github.com/udlbook/udlbook/tree/main/Notebooks/Chap08">第8章性能评估Notebook</a>、交互图示和教学幻灯片。学生可先不写代码，通过图示比较模型在已有资料与新资料上的表现；Notebook留给有Python基础的读者进阶选做。这里的模型评价原理并不直接给出任何考古遗址的实证结果。Zhang等（2023）的<em>Dive into Deep Learning</em>第3.6、4.6.2和4.7节则分别讨论泛化、测试集重复使用和环境分布变化。因此，<strong>模型是在已有照片上学得很好，还是能用于另一遗址或另一摄影流程，是两个不同的问题</strong>。</p>
 </section>
 </section>
 <section id="年代与空间位置的不确定性" class="level2" data-number="4.5">
@@ -776,14 +776,14 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>空间数据也有层级。</strong> 全站中心点、探方定位、器物三维坐标、遥感预测像元，是不同精度和不同含义的位置资料。若只有“在遗址北部发现”的旧记录，就不能把它处理成厘米级的准确坐标。历史地图配准误差、坐标转换、设备精度以及敏感遗址位置的公开限制，都应进入数据说明。</p>
 <p>研究者可以根据合适的方法把年代表示为区间或概率分布，把位置表示为合理的空间范围，或者明确标出某些数据仅能支持遗址级比较。<strong>显示更多小数位，不会提高原始资料精度。</strong></p>
 <section id="从田野形成过程到数据偏差证据不是直接复制的过去" class="level3" data-number="4.5.1">
-<h3 data-number="4.5.1" class="anchored" data-anchor-id="从田野形成过程到数据偏差证据不是直接复制的过去"><span class="header-section-number">4.5.1</span> 从田野形成过程到数据偏差：证据不是直接复制的过去</h3>
-<p>Renfrew与Bahn（2020）第2章区分自然形成过程与人类活动造成的形成过程，第3章讨论调查、发掘和取样方法；Carver与Hummler（版权页2025）第1章讨论遗址怎样形成，并在其田野调查和发掘章节说明如何取得与记录资料。它们提供了本章讨论<strong>保存、发现和取样</strong>的考古学方法基础，而非AI算法的性能证据。</p>
-<p>Chapman与Wylie（2016）导论及第1—3章进一步强调：物质遗存能对我们的解释提出独立约束，但它们成为证据依赖背景知识、田野操作、记录和相互比较的推理过程。因此，从统计相关性进入历史解释时，必须说明究竟是哪一项观察、哪种推论前提以及哪些竞争解释支持或削弱结论。</p>
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="从田野形成过程到数据偏差证据不是直接复制的过去"><span class="header-section-number">4.5.1</span> 考古资料的形成与证据解释</h3>
+<p>Renfrew与Bahn（2020，第77、79—80页）讨论调查覆盖、能见度与取样方式怎样影响所得资料；Carver与Hummler（2025，第102—103页）讨论抽样范围与方法选择，并说明已移除堆积的信息如何通过记录留存（第187—188页）。因此，<strong>保存、发现、取样与记录</strong>共同影响可用于分析的考古资料。将这些资料用于AI预测时，还需检验模型在具体任务中的表现。</p>
+<p>Chapman与Wylie（2016，导论，第6页）强调，考古资料成为证据依赖背景知识、技术实践和反思性的检验，同时仍能挑战和约束既有解释。据此，从统计相关性进入历史解释时，应说明哪些观察和推论前提支持结论，并比较其他可能的解释。</p>
 </section>
 </section>
 <section id="数据偏差怎样影响ai模型" class="level2" data-number="4.6">
 <h2 data-number="4.6" class="anchored" data-anchor-id="数据偏差怎样影响ai模型"><span class="header-section-number">4.6</span> 数据偏差怎样影响AI模型</h2>
-<p>模型不能跳出训练数据的范围理解过去。如果训练集主要来自保存较好、图像清晰、分类明确的器物，模型在破损严重或不同时期、不同地区的器物上可能表现较差；如果不同地点的照片由不同机构拍摄，它也可能利用背景或摄影习惯代替真正的器物特征。</p>
+<p>模型从训练资料中学习关系；这些关系能否用于新的考古资料，需要进一步验证。如果训练集主要来自保存较好、图像清晰、分类明确的器物，模型在破损严重或不同时期、不同地区的器物上可能表现较差；如果不同地点的照片由不同机构拍摄，它也可能利用背景或摄影习惯代替真正的器物特征。</p>
 <p>这类现象可以从三个环节理解。<strong>输入偏差</strong>来自采集、保存与测量；<strong>标签偏差</strong>来自专家分类标准和记录习惯；<strong>评价偏差</strong>来自测试集是否真正独立、是否覆盖预期使用的新材料。</p>
 <p>一个看似准确的图像分类器，如果把同一件陶器的多张照片随机分到训练集和测试集，可能只是在辨认熟悉的器物。对于研究新遗址的任务，更有意义的检验可能是按器物、遗址、时期或机构分组测试，并报告不同组的表现。这不是一套适用于任何研究的固定规则，而要由考古问题决定<strong>什么才算新证据</strong>。</p>
 <p>因此，研究报告除总体准确度外，还应说明哪些类别经常混淆、哪些样本被排除、训练和验证资料来自哪里、是否存在跨地点或跨时期的表现差异。必要时与简单人工规则、传统统计或GIS方法比较，才能判断AI是否带来实际价值。</p>
@@ -809,13 +809,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="数据代表性与考古推论的有效范围" class="level2" data-number="4.8">
 <h2 data-number="4.8" class="anchored" data-anchor-id="数据代表性与考古推论的有效范围"><span class="header-section-number">4.8</span> 数据代表性与考古推论的有效范围</h2>
 <p>研究者经常希望从一批已发掘资料讨论更广泛的过去社会。然而，<strong>样本来自什么总体</strong>，不能在分析之后随意扩大。</p>
-<p>如果只系统调查了遗址周围一个可进入的区域，模型预测较准确，能够支持的首先是在相似调查条件下的表现；它未必支持对整个地区乃至所有时期的断言。如果研究仅记录了某一类墓葬，不应未经说明便将结论推广到整个人群。</p>
+<p>如果只系统调查了遗址周围一个可进入的区域，模型在测试资料上预测较准确，首先说明的是它在这些测试资料上的表现。能否用于其他调查条件、地区或时期，还需用与目标范围相符、未参与训练和模型选择的资料验证。如果研究仅记录了某一类墓葬，不应未经说明便将结论推广到整个人群。</p>
 <p>可用三个问题检验外推：<strong>（1）已观察到谁或什么？（2）哪些对象被遗漏或排除？（3）目标推论中的对象是否处于同样条件？</strong> 如果第三个问题答案是否定的，那么研究者应限制结论，或补充新资料和独立验证。</p>
 <section id="教学案例三种缺失能否合并" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="教学案例三种缺失能否合并">教学案例：三种“缺失”能否合并？</h3>
-<p>以下练习以<a href="../dataset-teaching-ceramics-01.html">教学模拟陶片属性数据01</a>的<strong>数据字典</strong>为依据，另加完全虚构的讨论情境，不修改原始CSV。</p>
-<p><strong>基础版（必做，无需统计或AI知识）：</strong> 某同学整理陶片表，将表面状态“未记录”一律改写成“素面”，又把腹片无法测量的口沿直径全部填成0，并称“数据清洗完成”。请解释这两项操作分别改变了什么原始记录；提出一种不猜测原值的处理方式；写出一份最小质量说明，至少列明记录单位、哪些字段不适用、哪些需要回查原始记录。</p>
-<p><strong>进阶版（学过第5—8章之后选做）：</strong> 假如这份数据将用于机器学习，推测上述错误处理可能使模型学到什么伪规律。设计两套明确说明处理规则的数据方案，比较所得结论是否变化；再解释为什么同一遗址内部的随机训练／测试划分未必能代表新遗址的表现。此题考察方案设计，不要求实际训练模型。</p>
+<h3 class="unnumbered anchored" data-anchor-id="教学案例三种缺失能否合并">陶片记录中的缺失状态与编码</h3>
+<p>以下练习依据<a href="../dataset-teaching-ceramics-01.html">教学模拟陶片属性数据01</a>的<strong>数据字典</strong>，采用虚构情境。请另写处理方案，保留原始CSV。</p>
+<p><strong>基础版（必做，无需统计或AI知识）：</strong> 对照数据字典，说明表面状态“未记录”与“素面”的区别，并解释腹片的口沿直径为什么不能填为0。为这两类记录分别拟定处理规则，保留原始值及处理依据；写出一份简短的数据质量说明，列明记录单位、不适用字段和需要回查的记录。</p>
+<p><strong>进阶版（学过第5—8章之后选做）：</strong> 假如这份数据将用于机器学习，分析把“未记录”改写为“素面”、把不适用的口沿直径填为0，可能怎样影响模型学习。设计两套明确说明处理规则的数据方案，并说明将怎样比较两种方案所得的结论；再解释为什么同一遗址内部的随机训练／测试划分未必能代表新遗址的表现。用文字说明方案即可，无需实际训练模型。</p>
 </section>
 <section id="何时用何时不用" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="何时用何时不用">何时用、何时不用</h3>
@@ -825,7 +825,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="unnumbered anchored" data-anchor-id="继续深入">继续深入</h3>
 <p><strong>入门：</strong> 返回第3章，复核观察单位、缺失状态及数据来源说明。<strong>进阶：</strong> 在第5—8章学习统计推断、训练与独立评价，在第14章进一步讨论空间资料的分析条件。<strong>研究实践：</strong> 对照真实论文的数据来源、取样、字段缺失和验证设计，逐项判断作者报告的预测结果可以推广到何种资料。</p>
 <blockquote class="blockquote">
-<p><strong>资料说明：</strong> 本章涉及的数字情境均为虚构教学示例。考古资料的保存偏差与统计模型偏差是不同概念，缺失机制不能凭单个空白格直接确定。本章仍待全面学术审定。</p>
+<p><strong>资料说明：</strong> 本章标为虚构的数字情境仅用于说明推理过程；真实研究案例以所引论文为依据。考古资料的保存偏差与统计模型偏差是不同概念，缺失机制不能凭单个空白格直接确定。</p>
 </blockquote>
 </section>
 </section>
@@ -842,7 +842,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. <a href="https://doi.org/10.1016/j.jas.2026.106571">“Theory and Practice of Artificial Intelligence in Archaeology.”</a> <em>Journal of Archaeological Science</em> 190: 106571.</li>
 <li>Prince, Simon J. D. 2023. <a href="https://udlbook.github.io/udlbook/"><em>Understanding Deep Learning</em>.</a> MIT Press. 中译本：《理解深度学习》，清华大学出版社，2025。</li>
 <li>Renfrew, Colin, and Paul Bahn. 2020. <em>Archaeology: Theories, Methods and Practice</em>. 8th ed.&nbsp;Thames &amp; Hudson.</li>
-<li>Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. <em>Dive into Deep Learning</em>. 电子教材，所用版本年份待核.</li>
+<li>Zhang, Aston, Zachary C. Lipton, Mu Li, and Alexander J. Smola. 2023. <a href="https://d2l.ai/"><em>Dive into Deep Learning</em>.</a> Cambridge University Press. 本章所引章节采用英文在线版1.0.3（访问日期：2026-10-16）。</li>
 <li>马库斯，盖瑞. 2026. 《驯服AI：创造可信的人工智能》. 中信出版集团. 原著 <em>Taming Silicon Valley</em>.</li>
 <li>王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.</li>
 </ul>
