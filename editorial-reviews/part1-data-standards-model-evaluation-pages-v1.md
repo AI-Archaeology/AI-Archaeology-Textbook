@@ -4,7 +4,7 @@
 
 **基线：** `AI-Archaeology/AI-Archaeology-Textbook`，PR #45 合并后的 `main 8e17c1d3b88d1c3e6b3c8ed939ae9317305863fe`。
 
-**本轮状态：** FAIR、CIDOC CRM和James等的指定原文与页图核验完成；Comer仍为公开全文转录及书目/摘要核实。第3—4章修订进入功能分支与Draft PR验收流程。本地Quarto渲染、预览、远端HTML与搜索索引验收尚未进行，完成前不合并。
+**本轮状态：** FAIR、CIDOC CRM和James等的指定原文与页图核验完成；Comer仍为公开全文转录及书目/摘要核实。用户已完成本地Quarto渲染及两章预览访问，远端HTML与搜索索引验收通过；PR #46本轮合并条件已满足，见第7节。
 
 ## 1. 范围与接续关系
 
@@ -108,8 +108,48 @@ Comer本轮没有取得原PDF，不填原PDF哈希或页数。
 | 第3章 | 9 | 12 |
 | 第4章 | 8 | 13 |
 
-第1—2章内容与基线blob一致；第3—4章所有可见标题、显式锚点与代码围栏数量保持不变。四个拟提交文件通过空白检查，第1—4章通过Pandoc Markdown解析；这不是Quarto渲染结果。矩阵含18条具体核验记录。
+第1—2章内容与基线blob一致；第3—4章所有可见标题、显式锚点与代码围栏数量保持不变。四个源文件通过空白检查，第1—4章通过Pandoc Markdown解析；这不是Quarto渲染结果。矩阵含18条具体核验记录。
 
-**本地与发布验收：** 待用户在功能分支运行 `quarto render`、`quarto preview`。预期新生成差异为 `docs/chapters/chapter-03.html`、`docs/chapters/chapter-04.html` 和 `docs/search.json`；应核对第3.8节、CIDOC章末条目、第4.4节及目录。用户提交推送后再检查远端源文/HTML/搜索文本一致性和PR状态。当前不能把源文件检查或原页核验写成本地渲染已通过。
+**本地与远端验收：通过。** 用户已运行全站 `quarto render`、`quarto preview` 并推送生成提交 `87491502`。远端两章HTML、目录、参考文献与三条更新的搜索记录已和源稿核对，详见第7节。该验收依据用户终端日志与远端文件检查，不表述为独立重现用户macOS上的视觉版面。
 
 本轮关闭的是上述指定引用的来源定位问题。矩阵中其他研究的原页图像、补充材料、历史档案及数据复现限制继续保留；全书学术终审、教学试用和A6实证复现状态均未因本轮自动改变。
+
+## 7. PR #46本地渲染与远端生成文件验收
+
+**追加日期：** 2026-10-17（UTC；用户当地为2026-10-16晚，America/Vancouver）。
+
+- **源文提交：** [`9706267ae7d0ad702a55851e5c6ee978fa05ad63`](https://github.com/AI-Archaeology/AI-Archaeology-Textbook/commit/9706267ae7d0ad702a55851e5c6ee978fa05ad63)。
+- **用户生成提交：** [`87491502c12ee1bb3b33895a394c8baa6beb9162`](https://github.com/AI-Archaeology/AI-Archaeology-Textbook/commit/87491502c12ee1bb3b33895a394c8baa6beb9162)，直接父提交为上述源文提交。
+- **PR：** [#46](https://github.com/AI-Archaeology/AI-Archaeology-Textbook/pull/46)，基线仍为 `8e17c1d3`。
+
+### 7.1 用户本地记录
+
+用户提供的日志显示69个Quarto页面全部完成渲染，输出为 `docs/index.html`。预览服务在 `http://localhost:5567/` 启动，并记录了第3、4章的访问。预览退出后，`git diff --check` 无输出；只有两章HTML和 `docs/search.json` 变化，共7行增加、6行删除。提交推送成功，最终工作区干净、分支与远端同步。
+
+上述本地执行情况来自用户日志。本轮远端验收没有另行运行用户的本地Quarto或声称目视检查全部69页。
+
+### 7.2 远端内容与结构
+
+| 检查对象 | 验收结果 |
+|---|---|
+| 生成提交范围 | 仅 `docs/chapters/chapter-03.html`、`docs/chapters/chapter-04.html`、`docs/search.json`，与用户日志一致 |
+| 已审源文件 | 两章QMD、矩阵及本报告在生成提交中均与 `9706267a` 的内容和blob哈希相同 |
+| 第3章正文与书目 | 两段更新正文及Bekiari新增条目与源稿相符；正式版本与PDF链接对应；一个末尾参考文献，12条无重复 |
+| 第4章正文与书目 | 方差说明及第32—34、28—31页引文与源稿相符；参考文献13条，与基线一致 |
+| 标题、目录与锚点 | 两章各18个正文标题，编号主节为9和8；标题、目录目标和HTML ID均与基线一致，无重复ID，目录片段目标可解析 |
+| 搜索索引 | 仍为410条；仅第3.8节、第3章参考文献、第4.4节的3条 `text` 字段变化，其余407条完全一致；标题、链接、节名等元数据未变 |
+| 搜索与页面一致性 | 3条更新搜索文本与对应HTML节内容逐项吻合 |
+| 内部记录隔离 | 本轮报告、矩阵及来源指纹未进入两章页面或新增搜索内容；既有其他案例库记录未改变 |
+| 独立复核 | 另行核对Git父子关系、生成差异、源码文本、完整HTML结构及搜索索引；未发现需修改的问题 |
+
+远端 `87491502` 的PR check-runs数量为0，commit status也没有状态条目；不据此写“CI通过”。本轮技术验收依据既定的用户本地Quarto流程、远端生成文件对照及独立复核。
+
+### 7.3 已验收生成文件指纹
+
+| 文件 | Git blob SHA-1 | SHA-256 |
+|---|---|---|
+| `docs/chapters/chapter-03.html` | `d3ac01a508cdad7fbada1cfe996503da2f6d421c` | `a4165ca9c889e02d4ec21116cf439754a1b5678559aecef04678eed0d507454e` |
+| `docs/chapters/chapter-04.html` | `3aaf880ea7247da588e0c82bec33e4dec591be44` | `81532ad11841648cde1052020b716222dbdc91cca7cfe44d56d50868f638b30e` |
+| `docs/search.json` | `81e2a1b8a6fb6ed1b73707a21bdcaa9e760e5a41` | `bb77c1ef213a1e7350deb81764c3218d30eecb89956726c1adbec001902f355f` |
+
+**验收结论：通过。** 本次收尾仅更新本报告和内部矩阵，已验收的QMD、HTML和搜索文件保持上述版本。PR #46可按既定流程合并；合并后的Pages发布由工作流状态与公开站点另行核对，不把合并前验收等同于已发布。
