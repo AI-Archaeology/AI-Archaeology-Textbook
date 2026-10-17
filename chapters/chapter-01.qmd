@@ -71,6 +71,14 @@ Russell与Norvig在*Artificial Intelligence: A Modern Approach*（第4版）中�
 
 对于考古学，识别陶片纹饰可能主要需要图像分析，整理遗迹之间的关系还可能涉及数据库或知识表示，判断一个类型学结论则必须返回地层、年代和实物证据。本书不会要求初学者记住所有技术名称；理解**为何选择某种方法、它需要何种证据**更重要。
 
+### 智能体式AI的工作过程 {#agentic-ai .unnumbered}
+
+**智能体式AI（Agentic AI）**关注AI如何围绕目标组织多步行动。在以语言模型为核心的系统中，模型可以规划步骤、调用工具、读取返回结果，再决定下一步。ReAct的检索实验展示了这种工作方式（Yao等，2023，3—4页）。这里的“行动”包括查询资料等计算操作，“观察”包括工具返回的信息；它们与考古工作中的实物观察需要区分。
+
+例如，EpiAgent针对受损铭文图像，让语言模型根据图像分析安排去噪、笔画补全等工具，并依据结果调整步骤；研究设计还允许专家核查文字线索和复原结果（Zhu等，2026，39307—39308页）。这些操作产生的是复原图像。补出的笔画属于复原假设，需要与原图、字形和语境一起核查，不能当作原件仍然保存的痕迹。
+
+连续调用工具仍可能出现检索无效、步骤重复等问题（Yao等，2023，6页）。用于考古研究时，应保存原始材料与中间结果，检查工具选择、来源对应及人工修改，并评价整个任务的完成质量。概念说明与相关阅读见[智能体式AI参考资源](../reference-resources/ai-learning.qmd#agentic-ai-learning)。
+
 ## AI在考古研究中的主要用途：识别、分类、探测、预测、检索与生成
 
 “使用AI”并不是一个足够明确的研究计划。首先要说明究竟希望系统完成什么工作，输出又如何用于考古研究。
@@ -89,6 +97,12 @@ Russell与Norvig在*Artificial Intelligence: A Modern Approach*（第4版）中�
 **预测尤其容易被误解。** 如果一个模型依据部分已有年代信息估计另一部分样本的年代，这是一项在既定输入和校准条件下的统计任务；但若考古学家进一步主张某文化现象的成因，仍要提出更广泛的独立证据与可反驳解释。预测成功和历史解释成立，不能画等号。
 
 类似地，智能检索与生成工具可以减少重复劳动，却不能负责考古文献的真实性。无论得到的是一个相似器物链接、一段甲骨释文建议，还是一篇摘要，研究者都需要能追踪到原始记录、图版、出版物和论证过程。
+
+### 古文字与铭文的识别、复原与解释 {.unnumbered}
+
+古文字与铭文研究可以帮助我们区分这些用途。Sommerschield等（2023，706—707页）将图像中的文字转为可计算记录、补充缺文、推测年代或来源，以及释读文字等列为不同任务。**辨认一个字形属于哪一已标注类别，与说明一个未释字的字义和用法，需要不同的证据。** 希腊文与拉丁文的相关研究，可结合本站[Ithaca](../core-case-library/a2-ithaca.qmd)与[Aeneas](../core-case-library/a3-aeneas.qmd)案例阅读。
+
+李春桃等（2023，165—170页）收集并标注甲骨文、金文和战国文字的字图，用深度学习模型学习字图与类别的对应关系。他们对错例的分析显示，形近字、样本稀少和标注分歧都会影响识别。模型找到的相似字形可以为考释提供比较线索（171—173页）。确定字义与用法，仍须结合原图、语句和相关材料论证。因此，字形分类的成绩不能直接当作未释字的破解率。原始资料、论文与数据入口见[古文字与铭文参考资源](../reference-resources/ai-cases.qmd#inscription-resources)。
 
 ## 两类方法与一类研究任务：传统计算方法、AI方法与考古学证据生产
 
@@ -186,7 +200,7 @@ Magnani与Clindaniel（2026，221、223页）以尼安德特人的日常生活�
 
 本章的六类AI用途是为教学组织的任务类别，并不是互斥、穷尽或依历史出现顺序排列的算法分类。对于具体论文的考古学结论，需要分别核查原始观察、模型评价和独立证据。
 
-> **资料说明：** 陶片分类活动中的数字均为虚构教学设定；A6案例与明确注明出处的Magnani—Clindaniel研究属于真实文献介绍。
+> **资料说明：** 陶片分类活动中的数字，以及以遗址为节点、以陶器组合相似性为连线的网络情景，均为教学设定；古文字识别、A6案例及Magnani—Clindaniel研究的介绍依据所引文献。
 
 ## 参考文献 {.unnumbered}
 
@@ -201,5 +215,9 @@ Magnani与Clindaniel（2026，221、223页）以尼安德特人的日常生活�
 - Magnani, Matthew, and Jon Clindaniel. 2026. [“Artificial Intelligence and the Interpretation of the Past.”](https://doi.org/10.1017/aap.2025.10110) *Advances in Archaeological Practice* 14(2): 218–233.
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
 - Russell, Stuart, and Peter Norvig. 2021. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson. 中译本：《人工智能：现代方法》，第4版，人民邮电出版社，2023。
+- Sommerschield, Thea, Yannis Assael, John Pavlopoulos, Vanessa Stefanak, Andrew Senior, Chris Dyer, John Bodel, Jonathan Prag, Ion Androutsopoulos, and Nando de Freitas. 2023. [“Machine Learning for Ancient Languages: A Survey.”](https://doi.org/10.1162/coli_a_00481) *Computational Linguistics* 49(3): 703–747.
+- Yao, Shunyu, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. 2023. [“ReAct: Synergizing Reasoning and Acting in Language Models.”](https://arxiv.org/abs/2210.03629) *The Eleventh International Conference on Learning Representations* (ICLR 2023).
+- Zhu, Shipeng, Ang Chen, Na Nie, Pengfei Fang, Min-Ling Zhang, and Hui Xue. 2026. [“EpiAgent: An Agent-Centric System for Ancient Inscription Restoration.”](https://openaccess.thecvf.com/content/CVPR2026/html/Zhu_EpiAgent_An_Agent-Centric_System_for_Ancient_Inscription_Restoration_CVPR_2026_paper.html) *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*: 39304–39313.
+- 李春桃、张骞、徐昊、高嘉英. 2023. [《基于人工智能技术的古文字研究》](https://doi.org/10.15939/j.jujsse.2023.02.wx2). 《吉林大学社会科学学报》63(2): 164–173, 238–239.
 - 刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.
 - 王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.

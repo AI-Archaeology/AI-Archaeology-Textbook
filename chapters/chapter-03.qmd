@@ -50,6 +50,8 @@
 
 不同数据类型可以围绕同一个考古对象建立关联。例如一件陶器可有器物编号、出土单位、照片、化学测量结果及一条修复记录；它们不应因文件格式不同就失去对应关系。
 
+甲骨资料也可以这样组织。**OBIMD甲骨文多模态数据集**用编号关联拓片、重新绘制并对齐的摹本、字形位置与释文（Li等，2026，3—4、7—8页）。摹本和释文包含整理者的判断；数据还分别标记缺字位置、残损难辨和字形分类存在争议等状态。整理这类资料时，应保留图像来源、标注规则和释读分歧，不能把它们都压缩成同一个“未知”值。有关论文及数据说明见[古文字与铭文参考资源](../reference-resources/ai-cases.qmd#inscription-resources)。
+
 **数字化并不等于AI。** 将照片存进数据库、绘制GIS地图、测量元素成分和建立三维模型，通常是数字记录、科学测量或传统计算任务；是否使用机器学习，需要进一步查看实际使用的方法。
 
 ### 为什么算法学习的是考古材料的“代理表示”，而不是器物本身？ {.unnumbered}
@@ -202,6 +204,7 @@ Murphy的*Probabilistic Machine Learning: An Introduction*（2022）第1.5节讨
 - Chapman, Robert, and Alison Wylie. 2016. *Evidential Reasoning in Archaeology*. Bloomsbury Academic.
 - Chollet, François, and Tomasz Kalinowski. 2026. *Deep Learning with R*. 3rd ed. Manning.
 - James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. [*An Introduction to Statistical Learning with Applications in Python*.](https://doi.org/10.1007/978-3-031-38747-0) Springer.
+- Li, Bang, Jing Yang, Yujie Liang, Xiaobin Hu, Zengmao Ding, Xu Peng, Shengwei Han, Peichao Qin, Donghao Luo, Taisong Jin, Feng Gao, Yongge Liu, and Rongrong Ji. 2026. [“OBIMD: A Multi-modal Dataset for Contextual Interpretation of Oracle Bone Inscriptions.”](https://doi.org/10.1038/s41597-026-06967-0) *Scientific Data* 13: 681.
 - Lucas, Gavin. 2023. [*Archaeological Situations: Archaeological Theory from the Inside Out*.](https://doi.org/10.4324/9781003098294) Routledge.
 - Murphy, Kevin P. 2022. *Probabilistic Machine Learning: An Introduction*. MIT Press.
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.

@@ -28,6 +28,8 @@ toc-depth: 2
 | **R for Archaeologists**（UCLA Digital Archaeology Lab，Bit by Bit教程） | **R入门。** 用带说明的R Markdown文件练习数据管理、绘图、测年资料与模型比较。 | [机构教程下载页](https://dal.ucla.edu/blog/2024/11/22/r-for-archaeologists/)介绍PDF资源指南、Rmd练习与CSV示例下载包。 |
 | **DAACS Open Academy: Introduction to R Programming for Historical Archaeologists** | **R入门。** 结合历史考古资料学习基础操作、数据处理与图表。 | [2021年课程录像存档](https://www.daacs.org/research/playlists/doa-archives/doa-fall-2021/)；[课程代码与材料](https://github.com/DAACS-Research-Consortium/DAACS-Open-Academy)。 |
 | **Introduction to Statistics Using R (for archaeologists)**（Efthymia Nikita，2020） | **统计入门至进阶。** 用考古科学实例理解统计方法的选择、操作与结果解释。 | [作者存档免费PDF](https://zenodo.org/records/6990414)；[练习数据](https://zenodo.org/records/3837331)。 |
+| **Machine Learning for Archaeological Applications in R**（Denisse L. Argote等，2024） | **R与基础统计知识后。** 用黑曜岩和陶器的光谱、化学组成数据，练习预处理、聚类与结果解释。 | [出版社图书页](https://doi.org/10.1017/9781009506625)与[配套材料](https://www.cambridge.org/argote_machine-learning)；书中提供R代码，配套页提供数据、示范录像与彩图。正文需购买或机构访问。 |
+| **Agent-Based Modeling for Archaeology: Simulating the Complexity of Societies**（Iza Romanowska、Colin D. Wren、Stefani A. Crabtree，2021） | **概念入门至模拟练习。** 通过NetLogo示例理解主体、行为规则和模拟结果，学习怎样将模拟与考古问题相联系。 | [出版社免费PDF与介绍](https://www.sfipress.org/books/agent-based-modeling-archaeology)；[配套指南](https://santafeinstitute.github.io/ABMA/)与[按章代码](https://github.com/SantaFeInstitute/ABMA)。 |
 
 ## 空间、网络与资料获取
 
