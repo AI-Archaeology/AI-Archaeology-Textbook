@@ -621,7 +621,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#基础阅读与练习" id="toc-基础阅读与练习" class="nav-link active" data-scroll-target="#基础阅读与练习">基础阅读与练习</a></li>
   <li><a href="#数学补充与概率方法" id="toc-数学补充与概率方法" class="nav-link" data-scroll-target="#数学补充与概率方法">数学补充与概率方法</a></li>
   <li><a href="#进阶专题" id="toc-进阶专题" class="nav-link" data-scroll-target="#进阶专题">进阶专题</a></li>
-  <li><a href="#主动推断与人工智能" id="toc-主动推断与人工智能" class="nav-link" data-scroll-target="#主动推断与人工智能">主动推断与人工智能</a></li>
+  <li><a href="#agentic-ai-learning" id="toc-agentic-ai-learning" class="nav-link" data-scroll-target="#agentic-ai-learning">智能体式AI</a></li>
+  <li><a href="#active-inference" id="toc-active-inference" class="nav-link" data-scroll-target="#active-inference">主动推理与人工智能</a></li>
   </ul>
 <div class="toc-actions"><ul class="collapse"><li><a href="https://github.com/AI-Archaeology/AI-Archaeology-Textbook/edit/main/reference-resources/ai-learning.qmd" class="toc-action"><i class="bi bi-github"></i>编辑该页面</a></li><li><a href="https://github.com/AI-Archaeology/AI-Archaeology-Textbook/issues/new" class="toc-action"><i class="bi empty"></i>反馈问题</a></li></ul></div></nav>
     </div>
@@ -752,9 +753,36 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
-<section id="主动推断与人工智能" class="level2">
-<h2 class="anchored" data-anchor-id="主动推断与人工智能">主动推断与人工智能</h2>
-<p>主动推断把根据观测更新判断与选择行动联系起来：行动既可用于获取信息，也可用于实现目标。它为研究智能体与环境的交互提供了一种建模框架（Parr、Pezzulo与Friston，2022，9—10页）。以下材料依次介绍基本概念、与生成式AI的关系及其理论争议；将这一框架用于考古学，还需要明确模型假设并检验它与考古材料的对应关系。</p>
+<section id="agentic-ai-learning" class="level2">
+<h2 class="anchored" data-anchor-id="agentic-ai-learning">智能体式AI</h2>
+<p>智能体式AI（Agentic AI）可以用来组织多步研究任务。阅读时可追踪：哪一步由预设流程安排，哪一步由模型依据工具结果选择，以及何时需要人的判断。第1章的<a href="../chapters/chapter-01.html#agentic-ai">铭文图像处理实例</a>可帮助理解这种工作方式。</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>资源</th>
+<th>适合怎样使用</th>
+<th>阅读入口</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>ReAct: Synergizing Reasoning and Acting in Language Models</strong>（Shunyu Yao等，2023）</td>
+<td><strong>原始研究。</strong> 第2页图1及第3—4页介绍步骤说明、检索操作与返回信息如何配合；第6页讨论重复循环和无效检索。原实验不涉及考古材料。</td>
+<td><a href="https://arxiv.org/abs/2210.03629">作者存档与版本记录</a>；<a href="https://arxiv.org/pdf/2210.03629v3">ICLR 2023会议定稿</a>。</td>
+</tr>
+<tr class="even">
+<td><strong>AI Engineering: Building Applications with Foundation Models</strong>（Chip Huyen，2025）</td>
+<td><strong>概念与评价。</strong> 先读作者节选中的“Agent Overview”和“Agent Failure Modes and Evaluation”，再看“Planning overview”，理解任务、工具、规划及失误之间的关系。</td>
+<td><a href="https://huyenchip.com/2025/01/07/agents.html">作者免费“Agents”节选</a>，改编自书中第6章；<a href="https://huyenchip.com/books/">作者书目页</a>。</td>
+</tr>
+</tbody>
+</table>
+<p>作为研究助手的智能体负责组织研究任务；<a href="../reference-resources/programming.html">基于主体的建模（ABM）</a>则用模拟主体及其交互研究可能形成的总体模式（Romanowska、Wren与Crabtree，2021，6—7页）。两类系统中的主体承担不同作用，具体研究需要说明它们代表什么、执行什么操作。</p>
+</section>
+<section id="active-inference" class="level2">
+<h2 class="anchored" data-anchor-id="active-inference">主动推理与人工智能</h2>
+<p><strong>主动推理（active inference）</strong>把根据观测更新判断与选择行动联系起来：行动既可用于获取信息，也可用于实现目标。它为研究智能体与环境的交互提供了一种建模框架（Parr、Pezzulo与Friston，2022，9—10页）。智能体式AI描述系统组织任务的一类方式，主动推理则是关于判断与行动的特定建模框架；使用工具和规划步骤本身，不能证明系统采用了主动推理。</p>
+<p>以下材料依次介绍基本概念、与生成式AI的关系及其理论争议。将这一框架用于考古学，还需要明确模型假设并检验它与考古材料的对应关系。</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">

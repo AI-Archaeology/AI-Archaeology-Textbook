@@ -627,6 +627,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#从能完成任务到能在新资料上使用ai方法的基本评价" id="toc-从能完成任务到能在新资料上使用ai方法的基本评价" class="nav-link" data-scroll-target="#从能完成任务到能在新资料上使用ai方法的基本评价">从“能完成任务”到“能在新资料上使用”：AI方法的基本评价</a></li>
   <li><a href="#为什么ai不仅仅是让机器从数据中学习" id="toc-为什么ai不仅仅是让机器从数据中学习" class="nav-link" data-scroll-target="#为什么ai不仅仅是让机器从数据中学习">为什么AI不仅仅是“让机器从数据中学习”？</a></li>
+  <li><a href="#agentic-ai" id="toc-agentic-ai" class="nav-link" data-scroll-target="#agentic-ai">智能体式AI的工作过程</a></li>
   </ul></li>
   <li><a href="#ai在考古研究中的主要用途识别分类探测预测检索与生成" id="toc-ai在考古研究中的主要用途识别分类探测预测检索与生成" class="nav-link" data-scroll-target="#ai在考古研究中的主要用途识别分类探测预测检索与生成"><span class="header-section-number">1.3</span> AI在考古研究中的主要用途：识别、分类、探测、预测、检索与生成</a>
   <ul class="collapse">
@@ -758,6 +759,12 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="unnumbered anchored" data-anchor-id="为什么ai不仅仅是让机器从数据中学习">为什么AI不仅仅是“让机器从数据中学习”？</h3>
 <p>中文教材《人工智能基础》从<strong>推理、知识和学习</strong>三个相互联系的研究传统介绍人工智能，并区分符号主义、连接主义与强调环境交互的行为主义（刘伟等，2025，第1章1.2—1.3节）。《人工智能概论》则从机器学习、多模态、生成式AI、科学研究应用和伦理治理等主题组织入门教学（王栋、卢湖川主编，2025，第1—4、6、8章）。两种编排提醒我们：<strong>机器学习很重要，但它不是整个AI的全部；研究任务、知识表示、算法和人的判断可以共同组成一个系统。</strong></p>
 <p>对于考古学，识别陶片纹饰可能主要需要图像分析，整理遗迹之间的关系还可能涉及数据库或知识表示，判断一个类型学结论则必须返回地层、年代和实物证据。本书不会要求初学者记住所有技术名称；理解<strong>为何选择某种方法、它需要何种证据</strong>更重要。</p>
+</section>
+<section id="agentic-ai" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="agentic-ai">智能体式AI的工作过程</h3>
+<p><strong>智能体式AI（Agentic AI）</strong>关注AI如何围绕目标组织多步行动。在以语言模型为核心的系统中，模型可以规划步骤、调用工具、读取返回结果，再决定下一步。ReAct的检索实验展示了这种工作方式（Yao等，2023，3—4页）。这里的“行动”包括查询资料等计算操作，“观察”包括工具返回的信息；它们与考古工作中的实物观察需要区分。</p>
+<p>例如，EpiAgent针对受损铭文图像，让语言模型根据图像分析安排去噪、笔画补全等工具，并依据结果调整步骤；研究设计还允许专家核查文字线索和复原结果（Zhu等，2026，39307—39308页）。这些操作产生的是复原图像。补出的笔画属于复原假设，需要与原图、字形和语境一起核查，不能当作原件仍然保存的痕迹。</p>
+<p>连续调用工具仍可能出现检索无效、步骤重复等问题（Yao等，2023，6页）。用于考古研究时，应保存原始材料与中间结果，检查工具选择、来源对应及人工修改，并评价整个任务的完成质量。概念说明与相关阅读见<a href="../reference-resources/ai-learning.html#agentic-ai-learning">智能体式AI参考资源</a>。</p>
 </section>
 </section>
 <section id="ai在考古研究中的主要用途识别分类探测预测检索与生成" class="level2" data-number="1.3">
@@ -954,6 +961,8 @@ ul.task-list li input[type="checkbox"] {
 <li>Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. <a href="https://doi.org/10.1016/j.jas.2026.106571">“Theory and Practice of Artificial Intelligence in Archaeology.”</a> <em>Journal of Archaeological Science</em> 190: 106571.</li>
 <li>Russell, Stuart, and Peter Norvig. 2021. <em>Artificial Intelligence: A Modern Approach</em>. 4th ed.&nbsp;Pearson. 中译本：《人工智能：现代方法》，第4版，人民邮电出版社，2023。</li>
 <li>Sommerschield, Thea, Yannis Assael, John Pavlopoulos, Vanessa Stefanak, Andrew Senior, Chris Dyer, John Bodel, Jonathan Prag, Ion Androutsopoulos, and Nando de Freitas. 2023. <a href="https://doi.org/10.1162/coli_a_00481">“Machine Learning for Ancient Languages: A Survey.”</a> <em>Computational Linguistics</em> 49(3): 703–747.</li>
+<li>Yao, Shunyu, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. 2023. <a href="https://arxiv.org/abs/2210.03629">“ReAct: Synergizing Reasoning and Acting in Language Models.”</a> <em>The Eleventh International Conference on Learning Representations</em> (ICLR 2023).</li>
+<li>Zhu, Shipeng, Ang Chen, Na Nie, Pengfei Fang, Min-Ling Zhang, and Hui Xue. 2026. <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Zhu_EpiAgent_An_Agent-Centric_System_for_Ancient_Inscription_Restoration_CVPR_2026_paper.html">“EpiAgent: An Agent-Centric System for Ancient Inscription Restoration.”</a> <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>: 39304–39313.</li>
 <li>李春桃、张骞、徐昊、高嘉英. 2023. <a href="https://doi.org/10.15939/j.jujsse.2023.02.wx2">《基于人工智能技术的古文字研究》</a>. 《吉林大学社会科学学报》63(2): 164–173, 238–239.</li>
 <li>刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.</li>
 <li>王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.</li>
