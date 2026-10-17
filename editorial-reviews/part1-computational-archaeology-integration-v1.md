@@ -5,7 +5,7 @@
 - 基线：`7cc17100b0aa09fedafbd4316fb7f00335b4e375`（PR #46 合并后）。
 - 分支：`feature/part1-computational-archaeology-v1`。
 - 范围：第1章1.4节、第2章2.8节、两章末尾的参考文献，以及既有“编程、统计与计算方法”资源页中的网络科学条目与阅读指南。
-- 当前阶段：两篇期刊原文、网络科学著作的公开试读原页及官方在线配套已核对；本地 Quarto 渲染、预览及生成 HTML 的远程验收仍待完成。
+- 当前阶段：原文与资源核对、用户本地 Quarto 渲染与预览、固定提交的远程 HTML 和搜索索引验收已完成；详见第8节。合并与发布状态以 PR #47 及 GitHub 记录为准。
 - 本记录是内部编辑材料，不进入教材正文或网站导航。它不宣称第一编所有既有引文均已完成原页核验；此前矩阵中的未决事项继续保留。
 
 ## 1. 本轮处理的问题
@@ -161,4 +161,47 @@ Hinz等542页对青铜时代克里特贸易模拟的讨论是对另一项研究�
 
 用户按既有流程在Positron中运行 `quarto render` 和 `quarto preview`，检查第1章1.4节、第2章2.8节、两章末参考文献、资源页的新增指南与章节跳转。项目页面清单不变，预计仍渲染69页。生成文件预计涉及两章HTML、`docs/reference-resources/programming.html`及 `docs/search.json`，实际范围以渲染后的差异为准。
 
-本记录不将源文件检查写成已完成HTML验收，不宣称执行了用户的macOS本地预览。待用户提交生成文件后，再核对远程HTML、搜索索引和最终提交，满足条件后合并。此前保持Draft。
+以上为源稿阶段的验收安排。源文件检查与HTML验收分别记录，用户的macOS本地预览与远程静态解析也分别说明；实际完成情况见第8节。
+
+## 8. PR #47 本地渲染与远程 HTML 验收
+
+验收日期：2026-10-17（UTC）。依据用户提供的Positron终端记录及GitHub固定提交进行核对。
+
+### 8.1 用户本地验证记录
+
+- 用户从干净的main工作区切换到本分支，并同步源稿提交 `f2242e59fceddcbe82cfe1533e81a3b1d5115ce3`。
+- `quarto render` 完整处理69页，正常输出 `docs/index.html`。
+- `quarto preview` 在本地5800端口启动；日志记录了第1章、编程资源页、第2章及第3—4章的访问，随后正常停止。
+- `git diff --check` 没有输出错误。生成差异为4个预期文件，共60行增加、13行删除。
+- 用户提交并推送 `d3d407fdf4a9566f72c5172df104168961542de3`（`Render computational archaeology and network science revisions`）；终端显示工作区干净且与远程分支同步。
+
+本地渲染与预览的依据为用户提供的日志；下述远程检查采用HTML和JSON静态解析，没有代替用户运行macOS预览或执行在线配套的R代码。
+
+### 8.2 固定提交与生成文件
+
+GitHub显示渲染提交的直接父提交为上述源稿提交，差异只包含下表4个文件。因此，本次渲染没有改变已复核的章节源稿、资源源稿或来源报告。
+
+| 生成文件 | Git blob SHA |
+|---|---|
+| `docs/chapters/chapter-01.html` | `847a6d1fff8d4e089c7246324d95cd1c5ff2a9fa` |
+| `docs/chapters/chapter-02.html` | `3fc223961ad5b75e29f03cfb0cd98c585379c4c6` |
+| `docs/reference-resources/programming.html` | `1f4302aa72154c4e5c72fcf85019d4db56f19077` |
+| `docs/search.json` | `4fac1a9ed6ba313756b6c5b88b5006faca2b82f7` |
+
+按固定提交取回文件后，本地字节的Git blob SHA与远程记录一致。
+
+### 8.3 HTML、链接与搜索索引
+
+- 第1章HTML的编号主节仍为1.1—1.7，第2章仍为2.1—2.8；两章各只有一个位于末尾的“参考文献”，分别13条和26条，无重复。
+- 每章新增的Brughmans／Peeples、Hinz与Huggett各出现一条正式书目，三个DOI链接均正确。
+- 第1章链接已正确转换为 `../reference-resources/programming.html#archaeological-network-learning`；资源页存在唯一对应ID，标题为“网络科学的阅读与练习”。三份受影响HTML页面均无重复ID，正文链接中没有残留的 `.qmd` 目标。
+- 将源稿中的第1章5段、第2章5段及资源指南4段与HTML逐段比较，去除Markdown样式并统一空白后均一致；资源指南表格各单元格文字也与源稿一致。
+- `docs/search.json` 可正常解析，共410条记录；上述三页分别有10、11、7条记录，包含核对段落的最新文字，其片段链接均有对应HTML目标。
+- 内部报告标题和 `editorial-reviews/` 路径未进入搜索索引。
+- 独立复核再次确认渲染提交范围、章节结构、书目条目与资源跳转。
+
+### 8.4 验收结论及适用范围
+
+本次本地渲染和远程生成文件验收通过，满足PR #47的技术验收条件。对渲染提交查询GitHub时，check runs、commit statuses和workflow runs均为0；因此本记录不把本地与静态检查称为GitHub CI通过。
+
+后续只补充本验收记录，不再改动教材源稿或生成文件；合并前复核最终提交内容和PR状态。书籍原文读取范围、在线资源核对层级及未运行配套代码等限制，仍按第2—4节保留。
