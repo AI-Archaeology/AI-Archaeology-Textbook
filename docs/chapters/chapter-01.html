@@ -632,7 +632,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#两类方法与一类研究任务传统计算方法ai方法与考古学证据生产" id="toc-两类方法与一类研究任务传统计算方法ai方法与考古学证据生产" class="nav-link" data-scroll-target="#两类方法与一类研究任务传统计算方法ai方法与考古学证据生产"><span class="header-section-number">1.4</span> 两类方法与一类研究任务：传统计算方法、AI方法与考古学证据生产</a>
   <ul class="collapse">
   <li><a href="#一个问题三种研究路线" id="toc-一个问题三种研究路线" class="nav-link" data-scroll-target="#一个问题三种研究路线"><span class="header-section-number">1.4.1</span> 一个问题，三种研究路线</a></li>
-  <li><a href="#研究实例生成的史前图像为什么需要独立证据" id="toc-研究实例生成的史前图像为什么需要独立证据" class="nav-link" data-scroll-target="#研究实例生成的史前图像为什么需要独立证据">研究实例：生成的史前图像为什么需要独立证据？</a></li>
+  <li><a href="#研究实例生成的史前图像为什么需要独立证据" id="toc-研究实例生成的史前图像为什么需要独立证据" class="nav-link" data-scroll-target="#研究实例生成的史前图像为什么需要独立证据">尼安德特人生活场景的生成与评价</a></li>
   </ul></li>
   <li><a href="#ai不能替代什么田野证据考古解释与学术判断" id="toc-ai不能替代什么田野证据考古解释与学术判断" class="nav-link" data-scroll-target="#ai不能替代什么田野证据考古解释与学术判断"><span class="header-section-number">1.5</span> AI不能替代什么：田野证据、考古解释与学术判断</a></li>
   <li><a href="#考古学家在ai研究中的角色" id="toc-考古学家在ai研究中的角色" class="nav-link" data-scroll-target="#考古学家在ai研究中的角色"><span class="header-section-number">1.6</span> 考古学家在AI研究中的角色</a></li>
@@ -669,7 +669,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <blockquote class="blockquote">
-<p><strong>本章定位：</strong> 面向没有编程基础的考古学本科生，从一个日常的陶片分类问题出发，认识人工智能能协助完成哪些工作、有哪些条件、为什么算法结果不能代替考古学证据。本章为<strong>正文初稿（待学术审定）</strong>；例子中如无明确真实资料来源，均为概念性教学情境，不是某遗址已发表的研究结果。</p>
+<p><strong>本章定位：</strong> 面向没有编程基础的考古学本科生，从一个日常的陶片分类问题出发，认识人工智能能协助完成哪些工作、有哪些条件、为什么算法结果不能代替考古学证据。例子中如无明确真实资料来源，均为概念性教学情境，不是某遗址已发表的研究结果。</p>
 </blockquote>
 <section id="本章学习目标" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="本章学习目标">本章学习目标</h2>
@@ -865,9 +865,9 @@ ul.task-list li input[type="checkbox"] {
 <p>研究设计至少应问四个问题：我们究竟要知道什么？已有观察能提供什么？不采用AI时如何解决？增加AI之后能获得什么可独立核验的新信息？如果后两个问题说不清，复杂模型通常没有充分理由成为第一选择。</p>
 </section>
 <section id="研究实例生成的史前图像为什么需要独立证据" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="研究实例生成的史前图像为什么需要独立证据">研究实例：生成的史前图像为什么需要独立证据？</h3>
-<p>Magnani与Clindaniel的一项已发表研究，以尼安德特人生活场景为对象，比较了生成式AI产生的文字、图像与相关考古研究文献。他们报告，生成内容与学术文献的对应程度较低，并存在过时的知识和文化时代错置问题（Magnani and Clindaniel 2026；2025年12月18日先行在线发表）。这是一项<strong>对特定研究设计、模型和提示条件所得结果的实证评价</strong>，不是“所有AI生成图像都错误”的普遍定律。<a href="https://doi.org/10.1017/aap.2025.10110">研究论文及方法</a>。</p>
-<p>这个案例让学生看到：<strong>生成图像首先是研究对象或待核查的表达，而不是从考古发掘直接获得的过去生活场景。</strong> 评价这类内容，需要返回骨骼、工具、环境资料及相关研究，而不能只判断它“看起来像史前”。</p>
+<h3 class="unnumbered anchored" data-anchor-id="研究实例生成的史前图像为什么需要独立证据">尼安德特人生活场景的生成与评价</h3>
+<p>Magnani与Clindaniel（2026，221、223页）以尼安德特人的日常生活为题，分别用GPT-3.5生成文字、DALL-E 3生成图像，并与JSTOR收录的<strong>2063篇相关论文摘要</strong>比较。研究将图文转成可比较的数值表示，计算内容的相似程度，并结合代表性图文作考古学分析（223—225页）；作者在图像中指出了玻璃容器、金属器具等时代错置（230页）。<a href="https://doi.org/10.1017/aap.2025.10110">研究论文</a>。</p>
+<p><strong>内容相似度并不直接测量考古事实的准确率。</strong> 这些结果反映的是所用模型、提示条件和摘要样本下的表现。生成图像首先是研究对象或待核查的表达，而不是从考古发掘直接获得的过去生活场景。评价这类内容，需要返回骨骼、工具、环境资料及相关研究，而不能只判断它“看起来像史前”。</p>
 </section>
 </section>
 <section id="ai不能替代什么田野证据考古解释与学术判断" class="level2" data-number="1.5">
@@ -925,7 +925,7 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>研究前沿：</strong> 从<a href="../core-case-library/index.html">六例AI考古学核心案例库</a>选一例，追踪论文、数据说明与复现审查，辨别“研究者报告的结果”“数据来源已核验”“算法已在虚构数据上测试”和“真实研究结果已被独立复现”四种不同证据状态。</p>
 <p>本章的六类AI用途是为教学组织的任务类别，并不是互斥、穷尽或依历史出现顺序排列的算法分类。对于具体论文的考古学结论，需要分别核查原始观察、模型评价和独立证据。</p>
 <blockquote class="blockquote">
-<p><strong>资料说明：</strong> 陶片分类活动中的数字均为虚构教学设定；A6案例与明确注明出处的Magnani—Clindaniel研究属于真实文献介绍。本章仍为待学术审定的教材初稿。</p>
+<p><strong>资料说明：</strong> 陶片分类活动中的数字均为虚构教学设定；A6案例与明确注明出处的Magnani—Clindaniel研究属于真实文献介绍。</p>
 </blockquote>
 </section>
 </section>
@@ -937,7 +937,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Chapman, Robert, and Alison Wylie. 2016. <em>Evidential Reasoning in Archaeology</em>. Bloomsbury Academic.</li>
 <li>Chollet, François, and Matthew Watson. 2026. <em>Deep Learning with Python</em>. 3rd ed.&nbsp;Manning.</li>
 <li>James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. <a href="https://doi.org/10.1007/978-3-031-38747-0"><em>An Introduction to Statistical Learning with Applications in Python</em>.</a> Springer.</li>
-<li>Magnani, Matthew, and Jon Clindaniel. 2026. <a href="https://doi.org/10.1017/aap.2025.10110">“Artificial Intelligence and the Interpretation of the Past.”</a> <em>Advances in Archaeological Practice</em> 14: 218–233 (online 2025).</li>
+<li>Magnani, Matthew, and Jon Clindaniel. 2026. <a href="https://doi.org/10.1017/aap.2025.10110">“Artificial Intelligence and the Interpretation of the Past.”</a> <em>Advances in Archaeological Practice</em> 14(2): 218–233.</li>
 <li>Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. <a href="https://doi.org/10.1016/j.jas.2026.106571">“Theory and Practice of Artificial Intelligence in Archaeology.”</a> <em>Journal of Archaeological Science</em> 190: 106571.</li>
 <li>Russell, Stuart, and Peter Norvig. 2021. <em>Artificial Intelligence: A Modern Approach</em>. 4th ed.&nbsp;Pearson. 中译本：《人工智能：现代方法》，第4版，人民邮电出版社，2023。</li>
 <li>刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.</li>
