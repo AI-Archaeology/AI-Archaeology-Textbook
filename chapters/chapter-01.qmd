@@ -71,6 +71,14 @@ Russell与Norvig在*Artificial Intelligence: A Modern Approach*（第4版）中�
 
 对于考古学，识别陶片纹饰可能主要需要图像分析，整理遗迹之间的关系还可能涉及数据库或知识表示，判断一个类型学结论则必须返回地层、年代和实物证据。本书不会要求初学者记住所有技术名称；理解**为何选择某种方法、它需要何种证据**更重要。
 
+### 智能体式AI的工作过程 {#agentic-ai .unnumbered}
+
+**智能体式AI（Agentic AI）**关注AI如何围绕目标组织多步行动。在以语言模型为核心的系统中，模型可以规划步骤、调用工具、读取返回结果，再决定下一步。ReAct的检索实验展示了这种工作方式（Yao等，2023，3—4页）。这里的“行动”包括查询资料等计算操作，“观察”包括工具返回的信息；它们与考古工作中的实物观察需要区分。
+
+例如，EpiAgent针对受损铭文图像，让语言模型根据图像分析安排去噪、笔画补全等工具，并依据结果调整步骤；研究设计还允许专家核查文字线索和复原结果（Zhu等，2026，39307—39308页）。这些操作产生的是复原图像。补出的笔画属于复原假设，需要与原图、字形和语境一起核查，不能当作原件仍然保存的痕迹。
+
+连续调用工具仍可能出现检索无效、步骤重复等问题（Yao等，2023，6页）。用于考古研究时，应保存原始材料与中间结果，检查工具选择、来源对应及人工修改，并评价整个任务的完成质量。概念说明与相关阅读见[智能体式AI参考资源](../reference-resources/ai-learning.qmd#agentic-ai-learning)。
+
 ## AI在考古研究中的主要用途：识别、分类、探测、预测、检索与生成
 
 “使用AI”并不是一个足够明确的研究计划。首先要说明究竟希望系统完成什么工作，输出又如何用于考古研究。
@@ -208,6 +216,8 @@ Magnani与Clindaniel（2026，221、223页）以尼安德特人的日常生活�
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
 - Russell, Stuart, and Peter Norvig. 2021. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson. 中译本：《人工智能：现代方法》，第4版，人民邮电出版社，2023。
 - Sommerschield, Thea, Yannis Assael, John Pavlopoulos, Vanessa Stefanak, Andrew Senior, Chris Dyer, John Bodel, Jonathan Prag, Ion Androutsopoulos, and Nando de Freitas. 2023. [“Machine Learning for Ancient Languages: A Survey.”](https://doi.org/10.1162/coli_a_00481) *Computational Linguistics* 49(3): 703–747.
+- Yao, Shunyu, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. 2023. [“ReAct: Synergizing Reasoning and Acting in Language Models.”](https://arxiv.org/abs/2210.03629) *The Eleventh International Conference on Learning Representations* (ICLR 2023).
+- Zhu, Shipeng, Ang Chen, Na Nie, Pengfei Fang, Min-Ling Zhang, and Hui Xue. 2026. [“EpiAgent: An Agent-Centric System for Ancient Inscription Restoration.”](https://openaccess.thecvf.com/content/CVPR2026/html/Zhu_EpiAgent_An_Agent-Centric_System_for_Ancient_Inscription_Restoration_CVPR_2026_paper.html) *Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition*: 39304–39313.
 - 李春桃、张骞、徐昊、高嘉英. 2023. [《基于人工智能技术的古文字研究》](https://doi.org/10.15939/j.jujsse.2023.02.wx2). 《吉林大学社会科学学报》63(2): 164–173, 238–239.
 - 刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.
 - 王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.

@@ -53,6 +53,13 @@ toc-depth: 2
 | **古文字字形识别**（李春桃等，2023） | 第165—170页：字图收集、人工标注、深度学习识别与错例；第171—173页：相似字形怎样辅助考释。 | [原论文](https://doi.org/10.15939/j.jujsse.2023.02.wx2)。适合作为论文阅读，字形分类表现不能当作未释字的破解率。 |
 | **OBIMD甲骨文多模态数据集**（Li等，2026） | 第3—4、7—8页：拓片、摹本、释文和字形位置怎样关联，以及缺字和分类争议怎样标记。先读第7页图6与表2，再按方法基础查看基线实验。 | [正式数据论文](https://doi.org/10.1038/s41597-026-06967-0)；[作者机构库全文](https://www.repository.cam.ac.uk/items/a4151126-465e-434c-ac41-dcf789ebeeff)；[代码与字段说明](https://github.com/libang1991/OBIMD)；[数据页](https://huggingface.co/datasets/KLOBIP/OBIMD)。数据页与代码库中的再利用条件不一致；转载或再发布前，应确认具体材料的许可。 |
 
+### 智能体辅助的铭文研究
+
+| 资源 | 阅读重点 | 入口 |
+|---|---|---|
+| **EpiAgent**（Zhu等，2026） | **原始研究。** 第39307—39308页：语言模型如何安排去噪、笔画补全等工具，并检查铭文图像的复原结果。重点区分原图、复原图像与文字判断。 | [CVPR 2026正式论文](https://openaccess.thecvf.com/content/CVPR2026/html/Zhu_EpiAgent_An_Agent-Centric_System_for_Ancient_Inscription_Restoration_CVPR_2026_paper.html)；[作者仓库](https://github.com/blackprotoss/EpiAgent)。截至2026年10月核验时，仓库仅有说明与许可文件，适合作为论文阅读资源。 |
+| **Conversing with antiquity**（Google DeepMind） | **工作流程说明。** 了解Gemini如何结合Ithaca与Aeneas的专门模型输出，组织铭文分析与可视化。模型原论文见本页核心案例，工作流展示本身不等于新的模型性能验证。 | [研究团队说明](https://deepmind.google/science/workflows/conversing-with-antiquity/)；[官方操作说明与脚本](https://github.com/google-deepmind/science-skills/tree/main/skills/predictingthepast)。可先阅读操作过程，再按官方要求配置环境。 |
+
 ## 遥感与景观调查
 
 | 研究 | 适合关注的问题 | 论文与资料入口 |

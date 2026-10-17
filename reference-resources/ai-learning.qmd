@@ -38,9 +38,22 @@ toc-depth: 2
 | **Reinforcement Learning: An Introduction**，第2版（Richard S. Sutton、Andrew G. Barto，2018） | **强化学习。** 了解通过行动与反馈进行学习的基本框架。 | [作者第二版页面](https://incompleteideas.net/book/the-book-2nd.html)提供书籍及配套资料入口。 |
 | **Machine Learning Systems**（Vijay Janapa Reddi及项目贡献者） | **系统实践。** 了解机器学习系统的构建、优化与部署，适合技术实践的延伸阅读。 | [项目网站](https://mlsysbook.ai/)提供两卷的在线阅读、PDF、EPUB与相关实践入口。 |
 
-## 主动推断与人工智能
+## 智能体式AI {#agentic-ai-learning}
 
-主动推断把根据观测更新判断与选择行动联系起来：行动既可用于获取信息，也可用于实现目标。它为研究智能体与环境的交互提供了一种建模框架（Parr、Pezzulo与Friston，2022，9—10页）。以下材料依次介绍基本概念、与生成式AI的关系及其理论争议；将这一框架用于考古学，还需要明确模型假设并检验它与考古材料的对应关系。
+智能体式AI（Agentic AI）可以用来组织多步研究任务。阅读时可追踪：哪一步由预设流程安排，哪一步由模型依据工具结果选择，以及何时需要人的判断。第1章的[铭文图像处理实例](../chapters/chapter-01.qmd#agentic-ai)可帮助理解这种工作方式。
+
+| 资源 | 适合怎样使用 | 阅读入口 |
+|---|---|---|
+| **ReAct: Synergizing Reasoning and Acting in Language Models**（Shunyu Yao等，2023） | **原始研究。** 第2页图1及第3—4页介绍步骤说明、检索操作与返回信息如何配合；第6页讨论重复循环和无效检索。原实验不涉及考古材料。 | [作者存档与版本记录](https://arxiv.org/abs/2210.03629)；[ICLR 2023会议定稿](https://arxiv.org/pdf/2210.03629v3)。 |
+| **AI Engineering: Building Applications with Foundation Models**（Chip Huyen，2025） | **概念与评价。** 先读作者节选中的“Agent Overview”和“Agent Failure Modes and Evaluation”，再看“Planning overview”，理解任务、工具、规划及失误之间的关系。 | [作者免费“Agents”节选](https://huyenchip.com/2025/01/07/agents.html)，改编自书中第6章；[作者书目页](https://huyenchip.com/books/)。 |
+
+作为研究助手的智能体负责组织研究任务；[基于主体的建模（ABM）](programming.qmd)则用模拟主体及其交互研究可能形成的总体模式（Romanowska、Wren与Crabtree，2021，6—7页）。两类系统中的主体承担不同作用，具体研究需要说明它们代表什么、执行什么操作。
+
+## 主动推理与人工智能 {#active-inference}
+
+**主动推理（active inference）**把根据观测更新判断与选择行动联系起来：行动既可用于获取信息，也可用于实现目标。它为研究智能体与环境的交互提供了一种建模框架（Parr、Pezzulo与Friston，2022，9—10页）。智能体式AI描述系统组织任务的一类方式，主动推理则是关于判断与行动的特定建模框架；使用工具和规划步骤本身，不能证明系统采用了主动推理。
+
+以下材料依次介绍基本概念、与生成式AI的关系及其理论争议。将这一框架用于考古学，还需要明确模型假设并检验它与考古材料的对应关系。
 
 | 资源 | 适合怎样使用 | 阅读入口 |
 |---|---|---|
