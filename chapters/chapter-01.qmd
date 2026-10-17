@@ -90,6 +90,12 @@ Russell与Norvig在*Artificial Intelligence: A Modern Approach*（第4版）中�
 
 类似地，智能检索与生成工具可以减少重复劳动，却不能负责考古文献的真实性。无论得到的是一个相似器物链接、一段甲骨释文建议，还是一篇摘要，研究者都需要能追踪到原始记录、图版、出版物和论证过程。
 
+### 古文字与铭文的识别、复原与解释 {.unnumbered}
+
+古文字与铭文研究可以帮助我们区分这些用途。Sommerschield等（2023，706—707页）将图像中的文字转为可计算记录、补充缺文、推测年代或来源，以及释读文字等列为不同任务。**辨认一个字形属于哪一已标注类别，与说明一个未释字的字义和用法，需要不同的证据。** 希腊文与拉丁文的相关研究，可结合本站[Ithaca](../core-case-library/a2-ithaca.qmd)与[Aeneas](../core-case-library/a3-aeneas.qmd)案例阅读。
+
+李春桃等（2023，165—170页）收集并标注甲骨文、金文和战国文字的字图，用深度学习模型学习字图与类别的对应关系。他们对错例的分析显示，形近字、样本稀少和标注分歧都会影响识别。模型找到的相似字形可以为考释提供比较线索（171—173页）。确定字义与用法，仍须结合原图、语句和相关材料论证。因此，字形分类的成绩不能直接当作未释字的破解率。原始资料、论文与数据入口见[古文字与铭文参考资源](../reference-resources/ai-cases.qmd#inscription-resources)。
+
 ## 两类方法与一类研究任务：传统计算方法、AI方法与考古学证据生产
 
 **计算考古学（computational archaeology）**运用明确的数据表示、算法和模型研究考古问题。它既可以分析已观察到的器物属性和遗址分布，也可以通过计算机模拟，考察一组假设可能产生怎样的结果。频数统计、对应分析、GIS空间分析、贝叶斯年代建模、网络分析、基于主体的模拟与机器学习，都可以参与这样的研究。Hinz等（2025，538、543页）将模型视为连接理论与资料的环节，并强调计算方法应服务于具体的考古问题。
@@ -186,7 +192,7 @@ Magnani与Clindaniel（2026，221、223页）以尼安德特人的日常生活�
 
 本章的六类AI用途是为教学组织的任务类别，并不是互斥、穷尽或依历史出现顺序排列的算法分类。对于具体论文的考古学结论，需要分别核查原始观察、模型评价和独立证据。
 
-> **资料说明：** 陶片分类活动中的数字均为虚构教学设定；A6案例与明确注明出处的Magnani—Clindaniel研究属于真实文献介绍。
+> **资料说明：** 陶片分类活动中的数字，以及以遗址为节点、以陶器组合相似性为连线的网络情景，均为教学设定；古文字识别、A6案例及Magnani—Clindaniel研究的介绍依据所引文献。
 
 ## 参考文献 {.unnumbered}
 
@@ -201,5 +207,7 @@ Magnani与Clindaniel（2026，221、223页）以尼安德特人的日常生活�
 - Magnani, Matthew, and Jon Clindaniel. 2026. [“Artificial Intelligence and the Interpretation of the Past.”](https://doi.org/10.1017/aap.2025.10110) *Advances in Archaeological Practice* 14(2): 218–233.
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
 - Russell, Stuart, and Peter Norvig. 2021. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson. 中译本：《人工智能：现代方法》，第4版，人民邮电出版社，2023。
+- Sommerschield, Thea, Yannis Assael, John Pavlopoulos, Vanessa Stefanak, Andrew Senior, Chris Dyer, John Bodel, Jonathan Prag, Ion Androutsopoulos, and Nando de Freitas. 2023. [“Machine Learning for Ancient Languages: A Survey.”](https://doi.org/10.1162/coli_a_00481) *Computational Linguistics* 49(3): 703–747.
+- 李春桃、张骞、徐昊、高嘉英. 2023. [《基于人工智能技术的古文字研究》](https://doi.org/10.15939/j.jujsse.2023.02.wx2). 《吉林大学社会科学学报》63(2): 164–173, 238–239.
 - 刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.
 - 王栋、卢湖川（主编）. 2025. 《人工智能概论》. 科学出版社.

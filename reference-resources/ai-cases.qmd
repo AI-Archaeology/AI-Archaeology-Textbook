@@ -22,6 +22,37 @@ toc-depth: 2
 | [Ithaca希腊铭文研究](../core-case-library/a2-ithaca.qmd)（Assael等，2022） | 缺文复原、断代与地域预测怎样辅助铭文研究。 | [原论文](https://doi.org/10.1038/s41586-022-04448-z)；[官方模型与代码](https://github.com/google-deepmind/ithaca)；[I.PHI语料处理项目](https://github.com/sommerschield/iphi)。 |
 | [Aeneas拉丁铭文研究](../core-case-library/a3-aeneas.qmd)（Assael等，2025） | 类例检索、缺文复原与铭文语境研究。 | [原论文](https://doi.org/10.1038/s41586-025-09292-5)；[官方项目仓库](https://github.com/google-deepmind/predictingthepast)提供语料和模型入口，各底层数据库的许可须分别查看。 |
 
+## 古文字与铭文 {#inscription-resources}
+
+可以从一件有图像、编号和刊布出处的材料开始，对照字形、转写与研究说明，再阅读模型怎样使用这些记录。[Sommerschield等（2023）的综述](https://aclanthology.org/2023.cl-3.5/)第706—707页区分数字化、缺文复原、年代与来源推测等任务；第714页还讨论了用既有学术断代训练模型时可能产生的循环论证。上表的Ithaca与Aeneas可用于希腊文、拉丁文的后续阅读。
+
+### 甲骨文与中国古文字资料
+
+| 资源 | 适合怎样使用 | 入口 |
+|---|---|---|
+| **殷契文渊**（安阳师范学院与中国社会科学院相关研究团队） | 按甲骨著录、字形与研究文献查找资料，联系片号、图像和研究出处。 | [平台与说明](https://jgw.aynu.edu.cn/)；具体功能按站内说明使用。 |
+| **小學堂文字學資料庫** | 对照甲骨文、金文、战国文字等字形，并查找相关字书与音韵资料。 | [数据库](https://xiaoxue.iis.sinica.edu.tw/)；[范围与使用简介](https://xiaoxue.iis.sinica.edu.tw/About/About)。 |
+| **中研院史语所甲骨典藏** | 从馆藏甲骨的编号、图像与器物说明入手，认识文字所在的实物及其记录。 | [历史文物陈列馆甲骨专页](https://museum.sinica.edu.tw/collection/32/)。 |
+| **“綴玉聯珠”甲骨缀合信息库**（复旦大学出土文献与古文字研究中心） | 查找缀合情况、提出者、出处及相关意见，继续阅读具体缀合的论证。 | [信息库与检索说明](https://www.fdgwz.org.cn/zhuihelab/home)。收录一项缀合意见，不等于该意见已无争议。 |
+
+### 其他文字的比较资料
+
+| 资源 | 适合怎样使用 | 入口 |
+|---|---|---|
+| **CDLI：Cuneiform Digital Library Initiative** | 对照楔形文字器物的图像、目录记录与出版信息。 | [官方目录](https://cdli.earth/)。 |
+| **Oracc：Open Richly Annotated Cuneiform Corpus** | 查阅学者整理的楔形文字文本、翻译与标注，理解各子项目的编辑约定。 | [项目与文档](https://oracc.museum.upenn.edu/doc/about/)。 |
+| **ClassicMayan**（古典玛雅语文本数据库与词典项目） | 从字形目录及遗址信息认识玛雅文字资料的组织。 | [项目门户](https://classicmayan.org/portal/)；[字形目录](https://classicmayan.org/portal/signcatalog)。 |
+| **LiBER：Linear B Electronic Resources**（CNR） | 对照线形文字B的转写、照片、校勘说明和出土地点，观察文字布局与空间记录。 | [数据库与使用说明](https://liber.cnr.it/)。图像与文本的再利用条件分别列于官网。 |
+
+这些平台首先提供文献与资料查询。用于模型训练时，还要另行检查记录版本、标注依据及数据划分；浏览数据库不等于已经取得可直接训练的数据集。
+
+### 机器学习论文与数据
+
+| 研究 | 阅读重点 | 论文与资料入口 |
+|---|---|---|
+| **古文字字形识别**（李春桃等，2023） | 第165—170页：字图收集、人工标注、深度学习识别与错例；第171—173页：相似字形怎样辅助考释。 | [原论文](https://doi.org/10.15939/j.jujsse.2023.02.wx2)。适合作为论文阅读，字形分类表现不能当作未释字的破解率。 |
+| **OBIMD甲骨文多模态数据集**（Li等，2026） | 第3—4、7—8页：拓片、摹本、释文和字形位置怎样关联，以及缺字和分类争议怎样标记。先读第7页图6与表2，再按方法基础查看基线实验。 | [正式数据论文](https://doi.org/10.1038/s41597-026-06967-0)；[作者机构库全文](https://www.repository.cam.ac.uk/items/a4151126-465e-434c-ac41-dcf789ebeeff)；[代码与字段说明](https://github.com/libang1991/OBIMD)；[数据页](https://huggingface.co/datasets/KLOBIP/OBIMD)。数据页与代码库中的再利用条件不一致；转载或再发布前，应确认具体材料的许可。 |
+
 ## 遥感与景观调查
 
 | 研究 | 适合关注的问题 | 论文与资料入口 |

@@ -38,4 +38,14 @@ toc-depth: 2
 | **Reinforcement Learning: An Introduction**，第2版（Richard S. Sutton、Andrew G. Barto，2018） | **强化学习。** 了解通过行动与反馈进行学习的基本框架。 | [作者第二版页面](https://incompleteideas.net/book/the-book-2nd.html)提供书籍及配套资料入口。 |
 | **Machine Learning Systems**（Vijay Janapa Reddi及项目贡献者） | **系统实践。** 了解机器学习系统的构建、优化与部署，适合技术实践的延伸阅读。 | [项目网站](https://mlsysbook.ai/)提供两卷的在线阅读、PDF、EPUB与相关实践入口。 |
 
+## 主动推断与人工智能
+
+主动推断把根据观测更新判断与选择行动联系起来：行动既可用于获取信息，也可用于实现目标。它为研究智能体与环境的交互提供了一种建模框架（Parr、Pezzulo与Friston，2022，9—10页）。以下材料依次介绍基本概念、与生成式AI的关系及其理论争议；将这一框架用于考古学，还需要明确模型假设并检验它与考古材料的对应关系。
+
+| 资源 | 适合怎样使用 | 阅读入口 |
+|---|---|---|
+| **Active Inference: The Free Energy Principle in Mind, Brain, and Behavior**（Thomas Parr、Giovanni Pezzulo、Karl J. Friston，2022） | **概念入门至进阶。** 先读第1章第9—10页，理解观测、判断、行动与信息获取的联系；涉及公式的章节需要概率知识。 | [出版社图书页](https://mitpress.mit.edu/9780262045353/active-inference/)与[电子版入口](https://doi.org/10.7551/mitpress/12441.001.0001)。 |
+| **Generating meaning: active inference and the scope and limits of passive AI**（Giovanni Pezzulo等，2024） | **AI理论讨论。** 第97—99、107—108页讨论环境交互与生成式AI的关系。这是一篇观点文章（Opinion）；作者指出，文中所提的结合方案在写作时尚未得到系统研究。 | [原论文](https://doi.org/10.1016/j.tics.2023.10.002)与[机构库记录](https://researchers.mq.edu.au/en/publications/generating-meaning-active-inference-and-the-scope-and-limits-of-p/)，发表于*Trends in Cognitive Sciences* 28(2): 97–112。 |
+| **A Drive to Survive: The Free Energy Principle and the Meaning of Life**（Kathryn Nave，2025） | **理论边界。** 第12章第256—257页讨论近似建模的用途，以及把自由能原理用于解释生命与目的时面临的问题，可与前两项对照阅读。 | [出版社与开放阅读入口](https://mitpress.mit.edu/9780262551328/a-drive-to-survive/)。 |
+
 返回[参考资源导读](../references.qmd)。
