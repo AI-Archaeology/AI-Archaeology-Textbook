@@ -1,6 +1,6 @@
 # 人工智能与考古学：机遇、能力与边界
 
-> **本章定位：** 面向没有编程基础的考古学本科生，从一个日常的陶片分类问题出发，认识人工智能能协助完成哪些工作、有哪些条件、为什么算法结果不能代替考古学证据。本章为**正文初稿（待学术审定）**；例子中如无明确真实资料来源，均为概念性教学情境，不是某遗址已发表的研究结果。
+> **本章定位：** 面向没有编程基础的考古学本科生，从一个日常的陶片分类问题出发，认识人工智能能协助完成哪些工作、有哪些条件、为什么算法结果不能代替考古学证据。例子中如无明确真实资料来源，均为概念性教学情境，不是某遗址已发表的研究结果。
 
 ## 本章学习目标 {.unnumbered}
 
@@ -110,11 +110,11 @@ Russell与Norvig在*Artificial Intelligence: A Modern Approach*（第4版）中�
 
 研究设计至少应问四个问题：我们究竟要知道什么？已有观察能提供什么？不采用AI时如何解决？增加AI之后能获得什么可独立核验的新信息？如果后两个问题说不清，复杂模型通常没有充分理由成为第一选择。
 
-### 研究实例：生成的史前图像为什么需要独立证据？ {.unnumbered}
+### 尼安德特人生活场景的生成与评价 {#研究实例生成的史前图像为什么需要独立证据 .unnumbered}
 
-Magnani与Clindaniel的一项已发表研究，以尼安德特人生活场景为对象，比较了生成式AI产生的文字、图像与相关考古研究文献。他们报告，生成内容与学术文献的对应程度较低，并存在过时的知识和文化时代错置问题（Magnani and Clindaniel 2026；2025年12月18日先行在线发表）。这是一项**对特定研究设计、模型和提示条件所得结果的实证评价**，不是“所有AI生成图像都错误”的普遍定律。[研究论文及方法](https://doi.org/10.1017/aap.2025.10110)。
+Magnani与Clindaniel（2026，221、223页）以尼安德特人的日常生活为题，分别用GPT-3.5生成文字、DALL-E 3生成图像，并与JSTOR收录的**2063篇相关论文摘要**比较。研究将图文转成可比较的数值表示，计算内容的相似程度，并结合代表性图文作考古学分析（223—225页）；作者在图像中指出了玻璃容器、金属器具等时代错置（230页）。[研究论文](https://doi.org/10.1017/aap.2025.10110)。
 
-这个案例让学生看到：**生成图像首先是研究对象或待核查的表达，而不是从考古发掘直接获得的过去生活场景。** 评价这类内容，需要返回骨骼、工具、环境资料及相关研究，而不能只判断它“看起来像史前”。
+**内容相似度并不直接测量考古事实的准确率。** 这些结果反映的是所用模型、提示条件和摘要样本下的表现。生成图像首先是研究对象或待核查的表达，而不是从考古发掘直接获得的过去生活场景。评价这类内容，需要返回骨骼、工具、环境资料及相关研究，而不能只判断它“看起来像史前”。
 
 ## AI不能替代什么：田野证据、考古解释与学术判断
 
@@ -182,7 +182,7 @@ Magnani与Clindaniel的一项已发表研究，以尼安德特人生活场景为
 
 本章的六类AI用途是为教学组织的任务类别，并不是互斥、穷尽或依历史出现顺序排列的算法分类。对于具体论文的考古学结论，需要分别核查原始观察、模型评价和独立证据。
 
-> **资料说明：** 陶片分类活动中的数字均为虚构教学设定；A6案例与明确注明出处的Magnani—Clindaniel研究属于真实文献介绍。本章仍为待学术审定的教材初稿。
+> **资料说明：** 陶片分类活动中的数字均为虚构教学设定；A6案例与明确注明出处的Magnani—Clindaniel研究属于真实文献介绍。
 
 ## 参考文献 {.unnumbered}
 
@@ -191,7 +191,7 @@ Magnani与Clindaniel的一项已发表研究，以尼安德特人生活场景为
 - Chapman, Robert, and Alison Wylie. 2016. *Evidential Reasoning in Archaeology*. Bloomsbury Academic.
 - Chollet, François, and Matthew Watson. 2026. *Deep Learning with Python*. 3rd ed. Manning.
 - James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor. 2023. [*An Introduction to Statistical Learning with Applications in Python*.](https://doi.org/10.1007/978-3-031-38747-0) Springer.
-- Magnani, Matthew, and Jon Clindaniel. 2026. [“Artificial Intelligence and the Interpretation of the Past.”](https://doi.org/10.1017/aap.2025.10110) *Advances in Archaeological Practice* 14: 218–233 (online 2025).
+- Magnani, Matthew, and Jon Clindaniel. 2026. [“Artificial Intelligence and the Interpretation of the Past.”](https://doi.org/10.1017/aap.2025.10110) *Advances in Archaeological Practice* 14(2): 218–233.
 - Orengo, Hector A., Iban Berganzo-Besga, and Felipe Lumbreras. 2026. [“Theory and Practice of Artificial Intelligence in Archaeology.”](https://doi.org/10.1016/j.jas.2026.106571) *Journal of Archaeological Science* 190: 106571.
 - Russell, Stuart, and Peter Norvig. 2021. *Artificial Intelligence: A Modern Approach*. 4th ed. Pearson. 中译本：《人工智能：现代方法》，第4版，人民邮电出版社，2023。
 - 刘伟、李明、陈少飞、谢海斌. 2025. 《人工智能基础》. 科学出版社.
