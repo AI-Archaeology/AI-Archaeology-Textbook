@@ -88,6 +88,8 @@ book:
         - teaching-modules/real-data-rubrics-v1.qmd
         - teaching-modules/real-data-teaching-qa-v1.qmd
         - teaching-modules/real-data-pilot-pack-v1.qmd
+        - teaching-modules/real-data-calibration-answers-v1.qmd
+        - teaching-modules/real-data-calibration-protocol-v1.qmd
         - dataset-teaching-ceramics-01.qmd
         - exercises.qmd
         - data-policy.qmd
